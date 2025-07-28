@@ -24,6 +24,39 @@
                 "focus": false,
                 "panel": "shared"
             }
+        },
+        {
+            "label": "install-professorx",
+            "command": "npm",
+            "type": "process",
+            "args": [
+                "install"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/ProfessorX"
+            },
+            "problemMatcher": [],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "start-professorx",
+            "command": "npm",
+            "type": "process",
+            "args": [
+                "start"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/ProfessorX"
+            },
+            "problemMatcher": [],
+            "group": "build",
+            "isBackground": true
         }
     ]
 }

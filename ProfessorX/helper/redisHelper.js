@@ -23,20 +23,56 @@ async function auth(redisAuth) {
 
 // todo:可以考虑直接参数传递进来不在依赖配置文件
 exports.init = async () => {
-  client = redis.createClient(
-    config.redisCache.redisPort,
-    config.redisCache.redisHost
-  );
-  // docker 容器之间通信有问题，需要特别关注处理
-  if (config.redisCache.redisAuth !== '') {
-    // 要等待授权成功后 在进行操作
-    await auth(config.redisCache.redisAuth);
-  }
+  const redisHost = config.redisCache.redisHost || '127.0.0.1';
+  const redisPort = config.redisCache.redisPort || 6379;
+  
+  console.log(`Initializing Redis Cache - Host: ${redisHost}, Port: ${redisPort}`);
+  
+  return new Promise((resolve, reject) => {
+    client = redis.createClient(redisPort, redisHost);
+    
+    // 监听连接成功事件
+    client.on('connect', async () => {
+      console.log('Redis Cache connected successfully');
+      try {
+        // docker 容器之间通信有问题，需要特别关注处理
+        if (config.redisCache.redisAuth && config.redisCache.redisAuth !== '' && config.redisCache.redisAuth !== 'undefined') {
+          // 要等待授权成功后 在进行操作
+          await auth(config.redisCache.redisAuth);
+        }
+        resolve();
+      } catch (error) {
+        console.error('Redis Cache auth error:', error);
+        reject(error);
+      }
+    });
+    
+    // 监听连接错误事件
+    client.on('error', (err) => {
+      console.error('Redis Cache connection error:', err);
+      reject(err);
+    });
+    
+    // 监听连接就绪事件
+    client.on('ready', () => {
+      console.log('Redis Cache is ready');
+    });
+    
+    // 设置连接超时
+    setTimeout(() => {
+      if (!client || !client.connected) {
+        const timeoutError = new Error(`Redis Cache connection timeout - Host: ${redisHost}, Port: ${redisPort}`);
+        console.error(timeoutError.message);
+        reject(timeoutError);
+      }
+    }, 5000);
+  });
 };
 
 function checkRedisConnect() {
-  if (!client.connected) {
+  if (!client || !client.connected) {
     // 如果正式环境可以考虑输出日志，但是还是返回null让程序继续执行！
+    console.warn('Redis connection not available, operation skipped');
     const err = { statusCode: 500, message: 'Redis 连接失败' };
     throw err;
   }

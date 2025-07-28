@@ -48,7 +48,13 @@ async function Initialize() {
   await notificationTranspond.init();
   await notificationStorage.init();
   await resourceAlarmManager.init();
-  await cacheManger.init();
+  try {
+    await cacheManger.init();
+    logger.info('Cache manager initialized successfully');
+  } catch (error) {
+    logger.error('Cache manager initialization failed:', error.message);
+    // 继续启动应用程序，但不使用缓存功能
+  }
   await clientManager.init();
   await edgeManager.init();
   await licenseManager.init();
