@@ -28,6 +28,8 @@ public static class Program
 
     public static void Main(string[] args)
     {
+        // 清除默认的Trace监听器，避免重复输出
+        Trace.Listeners.Clear();
         Trace.Listeners.Add(new ConsoleTraceListener());
         // args = new string[] { "template", "-g", "-t", "-p" };
         //加载.json配置文件
@@ -735,7 +737,7 @@ public static class Program
         HttpHelper.Instance.Initialized(Settings.CloudIpAddress, Settings.CloudPort);
         MessageManager.Instance.Initialized();
         Manager.Instance.Initialized();
-        Debug.WriteLine("程序启动成功!");
+        Trace.WriteLine("程序启动成功!");
         AppDomain.CurrentDomain.ProcessExit += ProcessExit;
         Console.CancelKeyPress += CancelKeyPress;
         Server.RunServer(_port);

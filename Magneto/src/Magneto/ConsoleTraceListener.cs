@@ -12,13 +12,15 @@ public class ConsoleTraceListener : TraceListener
     {
         RunningLog.Instance.AddLog(str);
         Console.Write(str);
-        MessageManager.Instance.Log("Trace", LogType.Message, str);
+        // 移除重复的消息管理器日志输出，避免重复显示
+        // MessageManager.Instance.Log("Trace", LogType.Message, str);
     }
 
     public override void WriteLine(string str)
     {
         RunningLog.Instance.AddLog(str);
         Console.WriteLine(str);
-        MessageManager.Instance.Log("Trace", LogType.Message, str);
+        // 移除重复的消息管理器日志输出，避免重复显示
+        // MessageManager.Instance.Log("Trace", LogType.Message, str);
     }
 }

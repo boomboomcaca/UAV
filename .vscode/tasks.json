@@ -1,36 +1,29 @@
 {
     "version": "2.0.0",
     "tasks": [
-      {
-        "label": "start-vite",
-        "type": "shell",
-        "command": "cd MAIN-vite; npm run dev",
-        "isBackground": true,
-        "problemMatcher": {
-          "pattern": {
-            "regexp": "."
-          },
-          "background": {
-            "activeOnStart": true,
-            "beginsPattern": ".",
-            "endsPattern": "ready in"
-          }
+        {
+            "label": "build-magneto",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/Magneto/src/Magneto/Magneto.csproj",
+                "--configuration",
+                "Debug",
+                "--verbosity",
+                "quiet"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared"
+            }
         }
-      },
-      {
-        "label": "stop-vite",
-        "type": "shell",
-        "command": "taskkill /F /IM node.exe /T",
-        "windows": {
-          "command": "taskkill /F /IM node.exe /T"
-        },
-        "linux": {
-          "command": "pkill -f 'node.*vite'"
-        },
-        "osx": {
-          "command": "pkill -f 'node.*vite'"
-        },
-        "problemMatcher": []
-      }
     ]
-  }
+}

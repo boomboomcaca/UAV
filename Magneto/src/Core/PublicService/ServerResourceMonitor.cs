@@ -219,7 +219,7 @@ public class ServerResourceMonitor
     {
         try
         {
-            var str = ExecuteCommand("top -b -n 1 1");
+            var str = ExecuteCommand("top -b -n 1");
             var strL = str.Where(o => !string.IsNullOrWhiteSpace(o))
                 .Select(o => o.Split(' ', StringSplitOptions.RemoveEmptyEntries));
             // top - 11:51:05 up  2:25,  2 users,  load average: 0.51, 0.31, 0.22
