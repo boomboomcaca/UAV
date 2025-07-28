@@ -1,0 +1,55 @@
+.monitorRoot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .monitorLeft {
+    //     flex: 30;
+    //     width: 10%;
+    height: 100%;
+  }
+  .monitorRight {
+    flex: 1;
+    display: flex;
+    border: solid thin aqua;
+
+    .mrightLeft {
+      flex: 20;
+      border: solid thin dodgerblue;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10%;
+    }
+    .mrightRight {
+      flex: 20;
+      border: solid thin salmon;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10%;
+    }
+  }
+}
+
+.featureItem {
+  position: relative;
+  background-color: wheat;
+  > div {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .featureMask {
+    background-color: aliceblue;
+    opacity: 0.01;
+    z-index: 10;
+  }
+}

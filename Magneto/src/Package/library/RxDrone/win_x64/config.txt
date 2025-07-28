@@ -1,0 +1,11 @@
+ip1:192.168.2.1
+ip2:192.168.2.2
+ip_pc:192.168.2.18
+gain: 70
+freq: 0
+COM:200
+RID_Port: 0
+scan_time:20
+sample_rate: 26.88
+gps_lon:112.977978
+gps_lat:28.249484

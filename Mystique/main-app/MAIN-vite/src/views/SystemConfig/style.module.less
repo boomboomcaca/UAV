@@ -1,0 +1,101 @@
+.configRoot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("/images/home_background.png");
+  background-color: #0f121a;
+  height: 100%;
+}
+
+.rootContent {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16px;
+  color: whitesmoke;
+  margin: 8px;
+  padding: 16px;
+  box-sizing: border-box;
+  background: linear-gradient(0deg, #072b54, #072b54), #f6f8ff;
+  box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.4),
+    inset 0px 2px 2px rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+.tableItems {
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 16px;
+
+  .tableItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    line-height: 56px;
+    font-size: large;
+    user-select: none;
+    border-radius: 8px;
+    background: #102f5e;
+    border: 1px solid rgba(64, 169, 255, 0.5);
+    gap: 8px;
+    padding: 0 16px 0 16px;
+
+    .tt {
+      text-align: center;
+      flex: 1;
+    }
+
+    &:hover {
+      opacity: 0.9;
+      color: aqua;
+      font-weight: 600;
+      font-size: larger;
+    }
+    &:active {
+      opacity: 1;
+    }
+
+    &.sel {
+      color: #30b4ff;
+      font-weight: 700;
+      background: linear-gradient(
+          180deg,
+          rgba(64, 169, 255, 0.3) 0%,
+          rgba(64, 169, 255, 0) 100%
+        ),
+        #072b54;
+      border: 2px solid #40a9ff;
+      box-shadow: 0px 0px 4px rgba(64, 169, 255, 0.5);
+    }
+  }
+}
+
+.content {
+  flex: 1;
+  background: #091636;
+  box-shadow: inset 0px 1px 4px rgba(4, 5, 27, 0.4);
+  border-radius: 8px;
+  padding: 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.conditions {
+  // line-height: 48px;
+  // padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  > span {
+    opacity: 0.7;
+    font-size: medium;
+  }
+}

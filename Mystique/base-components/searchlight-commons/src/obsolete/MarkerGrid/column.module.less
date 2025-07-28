@@ -1,0 +1,157 @@
+.index {
+  margin-right: 10px;
+}
+
+.cell {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.x {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  height: 100%;
+  width: calc(100% - 40px);
+  transform: translate(0%, -50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #14172e;
+  box-shadow: 0px -0.5px 0.5px rgba(127, 132, 172, 0.15), inset 0px -1px 1px rgba(255, 255, 255, 0.1),
+    inset 0px 6px 10px rgba(4, 5, 27, 0.6);
+}
+
+.xx {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  height: 100%;
+  width: calc(100% - 40px);
+  transform: translate(0%, -50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.fcBase {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%, -50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  margin: 0 8px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  background: linear-gradient(180deg, rgba(53, 61, 91, 0) 0%, #3e486a 15%, #475070 86.87%, #4e5778 100%), #3c4565;
+  box-shadow: inset 0px -1px 1px rgba(4, 4, 28, 0.3), inset 0px 1px 1px rgba(240, 253, 255, 0.2);
+}
+
+.fc {
+  .fcBase();
+}
+
+.fcSelect {
+  .fcBase();
+  background: #3ce5d3;
+  color: white;
+}
+
+.fc:hover {
+  opacity: 0.8;
+}
+
+.fc:active {
+  opacity: 0.9;
+}
+
+.mk {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  opacity: 1;
+}
+
+.mk::after {
+  content: '';
+  cursor: pointer;
+  user-select: none;
+  transform: rotate(45deg);
+}
+
+.mk:hover {
+  opacity: 0.85;
+}
+
+.mk:active {
+  opacity: 1;
+}
+
+.tag {
+  position: absolute;
+  font-size: 10px;
+  left: 10px;
+  color: #ffffffce;
+}
+
+.btnlabelCont {
+  input:checked + div {
+    &:before {
+      background-image: url(./lightOn.png);
+    }
+
+    &.openDF {
+      background-image: url(./DFIcon2.png);
+    }
+
+    &.openIF {
+      background-image: url(./IFIcon2.png);
+    }
+  }
+}
+
+.operateIcon {
+  width: 56px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* 按钮/正常颜色 */
+
+  background-color: #353d5b;
+  /* y-1模糊1/y1模糊0 */
+  cursor: pointer;
+  box-shadow: inset 0px -1px 1px rgba(26, 32, 56, 0.5), inset 0px 1px 0px rgba(240, 253, 255, 0.2);
+  border-radius: 2px;
+  background-position: center;
+  background-repeat: no-repeat;
+  &.openDF {
+    background-image: url(./DFIcon1.png);
+  }
+
+  &.openIF {
+    background-image: url(./IFIcon1.png);
+  }
+  &:before {
+    width: 12px;
+    height: 12px;
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(./lightOff.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

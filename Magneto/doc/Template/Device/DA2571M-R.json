@@ -1,0 +1,132 @@
+﻿{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "edgeId": null,
+  "mfid": null,
+  "type": "Magneto.Device.DA2571M.DA2571M",
+  "moduleType": "device",
+  "moduleCategory": [
+    "swivel"
+  ],
+  "moduleState": "idle",
+  "supportedFeatures": [
+    "ffdf",
+    "ampdf"
+  ],
+  "displayName": "DA2571M-R",
+  "description": "适用于比幅式单频测向的天线转台控制模块",
+  "manufacturer": "成都阿莱夫信息技术有限公司",
+  "model": "DA2571M-R",
+  "sn": "",
+  "maximumInstance": 1,
+  "parameters": [
+    {
+      "name": "dfindMode",
+      "supportedFeatures": [
+        "ffdf",
+        "ampdf"
+      ],
+      "displayName": "测向模式",
+      "description": "设置测向模式，分别适用于测量常规和突发信号",
+      "unit": "",
+      "category": "测向控制",
+      "style": "radio",
+      "type": "string",
+      "children": [],
+      "relatedValue": [],
+      "default": "normal",
+      "minimum": null,
+      "maximum": null,
+      "step": null,
+      "values": [
+        "normal",
+        "gate"
+      ],
+      "displayValues": [
+        "常规信号",
+        "突发信号"
+      ],
+      "browsable": true,
+      "selectOnly": true,
+      "readonly": false,
+      "isInstallation": false,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 1,
+      "template": [],
+      "value": "normal"
+    },
+    {
+      "name": "ipAddress",
+      "supportedFeatures": [
+        "none"
+      ],
+      "displayName": "地址",
+      "description": "设置连接设备的（IPv4）网络地址，格式：xxx.xxx.xxx.xxx",
+      "unit": "",
+      "category": "安装参数",
+      "style": "input",
+      "type": "string",
+      "children": [],
+      "relatedValue": [],
+      "default": "127.0.0.1",
+      "minimum": null,
+      "maximum": null,
+      "step": 100.0,
+      "values": [],
+      "displayValues": [],
+      "browsable": true,
+      "selectOnly": false,
+      "readonly": false,
+      "isInstallation": true,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 2,
+      "template": [],
+      "value": "127.0.0.1"
+    },
+    {
+      "name": "port",
+      "supportedFeatures": [
+        "none"
+      ],
+      "displayName": "端口",
+      "description": "设置连接到设备的网络控制端口",
+      "unit": "",
+      "category": "安装参数",
+      "style": "input",
+      "type": "number",
+      "children": [],
+      "relatedValue": [],
+      "default": 10000,
+      "minimum": 1024.0,
+      "maximum": 65535.0,
+      "step": 0.0,
+      "values": [],
+      "displayValues": [],
+      "browsable": true,
+      "selectOnly": false,
+      "readonly": false,
+      "isInstallation": true,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 3,
+      "template": [],
+      "value": 10000
+    }
+  ],
+  "constraintScript": {},
+  "version": "1.1.1",
+  "capability": null
+}

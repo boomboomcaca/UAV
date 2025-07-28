@@ -1,0 +1,63 @@
+[
+	{
+	  "machinetype": "DJI PH2",
+	  "manufacturer": "大疆创新",
+	  "description": "大疆创新 DJI PH2 系列无人机",
+	  "imagePath": "public/uav/dji_ph2_001.png"
+	},
+	{
+	  "machinetype": "DJI Air25",
+	  "manufacturer": "大疆创新",
+	  "description": "大疆创新 DJI Air25 系列无人机",
+	  "imagePath": "public/uav/dji_air25_001.png"
+	},
+	{
+	  "machinetype": "DJI Air25",
+	  "manufacturer": "大疆创新",
+	  "description": "大疆创新 DJI Air25 系列无人机",
+	  "imagePath": "public/uav/dji_air25_002.png"
+	},
+	{
+	  "machinetype": "DJI Air25",
+	  "manufacturer": "大疆创新",
+	  "description": "大疆创新 DJI Air25 系列无人机",
+	  "imagePath": "public/uav/dji_air25_003.png"
+	},
+	{
+	  "machinetype": "DJI Air25",
+	  "manufacturer": "大疆创新",
+	  "description": "大疆创新 DJI Air25 系列无人机",
+	  "imagePath": "public/uav/dji_air25_004.png"
+	},
+	{
+	  "machinetype": "DJI Air25",
+	  "manufacturer": "大疆创新",
+	  "description": "大疆创新 DJI Air25 系列无人机",
+	  "imagePath": "public/uav/dji_air25_005.png"
+	},
+	{
+	  "machinetype": "DJI Air25",
+	  "manufacturer": "大疆创新",
+	  "description": "大疆创新 DJI Air25 系列无人机",
+	  "imagePath": "public/uav/dji_air25_006.png"
+	},
+	{
+	  "machinetype": "DJI Air25",
+	  "manufacturer": "大疆创新",
+	  "description": "大疆创新 DJI Air25 系列无人机",
+	  "imagePath": "public/uav/dji_air25_007.png"
+	},
+	{
+	  "machinetype": "DJI Air25",
+	  "manufacturer": "大疆创新",
+	  "description": "大疆创新 DJI Air25 系列无人机",
+	  "imagePath": "public/uav/dji_air25_008.png"
+	},
+	{
+	  "machinetype": "DJI Air25",
+	  "manufacturer": "大疆创新",
+	  "description": "大疆创新 DJI Air25 系列无人机",
+	  "imagePath": "public/uav/dji_air25_009.png"
+	}
+]
+

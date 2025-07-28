@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+        <InvariantGlobalization>true</InvariantGlobalization>
+        <OutputPath>../../../../bin/$(Configuration)/Device/</OutputPath>
+        <PublishDir>../../../../publish/$(RuntimeIdentifier)/$(Configuration)/Device/</PublishDir>
+        <SelfContained>false</SelfContained>
+        <Company>成都阿莱夫信息技术有限公司</Company>
+        <Description>海康威视录播盒模块</Description>
+        <Copyright>@Aleph Co. Ltd. 2023</Copyright>
+        <RootNamespace>Magneto.Device.DDF255</RootNamespace>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)'=='Release'">
+        <DebugType>none</DebugType>
+        <DebugSymbols>false</DebugSymbols>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Update="ERROR_CODE.txt">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\..\Protocol\Protocol.csproj">
+            <Private>false</Private>
+            <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Contract\Contract.csproj">
+            <Private>false</Private>
+            <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+        </ProjectReference>
+    </ItemGroup>
+</Project>

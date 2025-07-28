@@ -1,0 +1,150 @@
+.scroll {
+  &::-webkit-scrollbar {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background: var(--theme-font-30);
+  }
+}
+
+.root {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
+  th,
+  td {
+    padding: 0;
+  }
+}
+
+.outline {
+  border: 1px solid var(--theme-font-20);
+}
+
+.borderBottom {
+  border-bottom: 1px solid var(--theme-font-20);
+}
+
+.table {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border-spacing: 0;
+  table-layout: fixed;
+  user-select: none;
+  position: relative;
+  border: none;
+}
+
+.table1 {
+  height: 42px;
+  background-color: rgba(20, 139, 237, 0.15);
+  .scroll();
+  overflow-y: scroll;
+  scrollbar-gutter: stable both-edges;
+}
+
+.table2 {
+  top: 42px;
+  position: absolute;
+  height: calc(100% - 42px);
+  .scroll();
+  overflow-y: scroll;
+  scrollbar-gutter: stable both-edges;
+}
+
+.thead {
+  > tr {
+    > th {
+      > div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.headBorder {
+  > th {
+    border-right: 1px solid var(--theme-font-20);
+    // border-bottom: 1px solid var(--theme-font-20);
+  }
+  > :nth-last-child(1) {
+    border-right: none;
+  }
+}
+
+.tbody {
+  color: rgba(255, 255, 255, 0.8);
+  > tr {
+    > td {
+      // padding: 16px 8px;
+      text-align: center;
+      word-break: break-all;
+    }
+    background-color: #091636;
+  }
+  > :nth-child(even) {
+    background-color: rgba(64, 169, 255, 0.05);
+  }
+  // > :nth-last-child(1) {
+  //   > td {
+  //     border-bottom: none;
+  //   }
+  // }
+}
+
+.bodyBorder {
+  position: relative;
+  > td {
+    border-right: 1px solid var(--theme-font-20);
+    border-bottom: 1px solid var(--theme-font-20);
+  }
+  > :nth-last-child(1) {
+    border-right: none;
+  }
+}
+
+.sort {
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check {
+  border-radius: 2px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--theme-font-30);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trtdHover {
+  &:hover {
+    background-color: #3ce5d320;
+  }
+}
+
+.trtdSelect {
+  background-color: rgba(60, 229, 211, 0.16) !important;
+  position: relative;
+  color: #3ce5d3;
+}

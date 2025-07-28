@@ -1,0 +1,68 @@
+[
+  { "id": 1, "name": "校园广播", "group": "广播", "startFrequency": 78, "stopFrequency": 87, "stepFrequency": 25 },
+  { "id": 2, "name": "调频广播", "group": "广播", "startFrequency": 87, "stopFrequency": 108, "stepFrequency": 25 },
+  {
+    "id": 3,
+    "name": "电视（VHF-L）",
+    "group": "电视",
+    "startFrequency": 48.5,
+    "stopFrequency": 92,
+    "stepFrequency": 25
+  },
+  {
+    "id": 4,
+    "name": "电视（VHF-H）",
+    "group": "电视",
+    "startFrequency": 167,
+    "stopFrequency": 223,
+    "stepFrequency": 25
+  },
+  {
+    "id": 5,
+    "name": "电视（UHF）",
+    "group": "电视",
+    "startFrequency": 470,
+    "stopFrequency": 958,
+    "stepFrequency": 25
+  },
+  {
+    "id": 6,
+    "name": "对讲机V段",
+    "group": "对讲机",
+    "startFrequency": 136,
+    "stopFrequency": 174,
+    "stepFrequency": 5
+  },
+  {
+    "id": 7,
+    "name": "对讲机U段",
+    "group": "对讲机",
+    "startFrequency": 400,
+    "stopFrequency": 470,
+    "stepFrequency": 5
+  },
+  {
+    "id": 8,
+    "name": "水上通信",
+    "group": "水上移动",
+    "startFrequency": 156.025,
+    "stopFrequency": 163.275,
+    "stepFrequency": 12.5
+  },
+  {
+    "id": 9,
+    "name": "无人机通信（2.4G）",
+    "group": "无人机通信",
+    "startFrequency": 2400,
+    "stopFrequency": 2480,
+    "stepFrequency": 25
+  },
+  {
+    "id": 10,
+    "name": "无人机通信（5.8G）",
+    "group": "无人机通信",
+    "startFrequency": 5725,
+    "stopFrequency": 5850,
+    "stepFrequency": 25
+  }
+]

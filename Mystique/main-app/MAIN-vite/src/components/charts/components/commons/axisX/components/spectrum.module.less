@@ -1,0 +1,55 @@
+@import "../../styles/variables.less";
+
+.axisYRoot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  .span {
+    width: (@axisYWidth);
+  }
+
+  .tickLabels {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    pointer-events: none;
+  }
+
+  .ticks {
+    height: 8px;
+  }
+  .labels {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    // align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .centerTick {
+    position: absolute;
+    width: 3px;
+    height: 8px;
+    background-color: orange;
+    top: 0;
+  }
+  .tickLabel div {
+    flex: 1;
+  }
+
+  .leftLabel {
+    text-align: left;
+  }
+
+  .rightLabel {
+    text-align: right;
+  }
+}

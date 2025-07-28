@@ -1,0 +1,39 @@
+.containerButtonSwitch {
+  display: inline-block;
+  height: 40px;
+  width: 128px;
+  background: var(--theme-button-radio-unchecked);
+  border: 1px solid var(--theme-iconswitch-border);
+  box-shadow: var(--theme-iconswitch-shadow);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  .bottomBox {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .tabBox {
+    position: absolute;
+    margin: 0px;
+    height: calc(100% - 2px);
+    transition-property: left;
+    transition-duration: 0.3s;
+    width: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--theme-button-primary);
+    /* 按钮1.1/投影 */
+    box-shadow: var(--theme-iconswitch-select);
+    border-radius: 2px;
+    .icon {
+      position: absolute;
+      right: 0;
+      top: -6px;
+    }
+  }
+}

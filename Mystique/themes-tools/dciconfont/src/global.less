@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  padding: 2vmin;
+  box-sizing: border-box;
+  background: #f7f8f9;
+  > * {
+    position: relative;
+    box-sizing: border-box;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    padding: 2vmin;
+    border-radius: 2px;
+  }
+}
+
+// 仅支持 chrome 滚动条样式
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #ccc;
+}
+
+::selection {
+  background: #3ce5d3;
+  color: #fff;
+}

@@ -1,0 +1,24 @@
+.steps {
+  width: 128px;
+  height: 100%;
+  background: #202741;
+  box-shadow: inset 0px 0px 2px 1px rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.steps::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 80%;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0.3;
+  background-color: white;
+}

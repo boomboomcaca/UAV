@@ -1,0 +1,39 @@
+.TimerCommons {
+  &__ss {
+    background-color: rgba(60, 229, 211, 0.1);
+    border: 1px solid rgba(60, 229, 211, 0.3);
+    position: relative;
+    height: 20px;
+    text-align: center;
+    &::before {
+      content: attr(number);
+      color: #fff;
+      position: absolute;
+      z-index: 11;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &::after {
+      content: attr(max);
+      position: absolute;
+      color: #fff;
+      right: 0;
+      z-index: 11;
+    }
+    &_1 {
+      height: 100%;
+      background-color: #3ce5d3;
+      position: absolute;
+      top: 0;
+      left: 0;
+      &::after {
+        content: attr(min);
+        width: 35px;
+        position: absolute;
+        color: #fff;
+        left: 0;
+        z-index: 11;
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "passive": [
+    {
+      "frequency": 20,
+      "factor": 25
+    },
+    {
+      "frequency": 50,
+      "factor": 16
+    },
+    {
+      "frequency": 150,
+      "factor": 7
+    },
+    {
+      "frequency": 350,
+      "factor": 0
+    },
+    {
+      "frequency": 350.000001,
+      "factor": 10
+    },
+    {
+      "frequency": 500,
+      "factor": 10
+    },
+    {
+      "frequency": 600,
+      "factor": 7
+    },
+    {
+      "frequency": 700,
+      "factor": 5
+    },
+    {
+      "frequency": 800,
+      "factor": 3
+    },
+    {
+      "frequency": 900,
+      "factor": 4
+    },
+    {
+      "frequency": 1100,
+      "factor": 12
+    },
+    {
+      "frequency": 1300,
+      "factor": 19
+    },
+    {
+      "frequency": 1300.000001,
+      "factor": 4
+    },
+    {
+      "frequency": 1400,
+      "factor": 1
+    },
+    {
+      "frequency": 1500,
+      "factor": -1
+    },
+    {
+      "frequency": 1600,
+      "factor": 3
+    },
+    {
+      "frequency": 1700,
+      "factor": 4
+    },
+    {
+      "frequency": 1800,
+      "factor": 2
+    },
+    {
+      "frequency": 1900,
+      "factor": 3
+    },
+    {
+      "frequency": 2000,
+      "factor": 0
+    },
+    {
+      "frequency": 2200,
+      "factor": 3
+    },
+    {
+      "frequency": 2400,
+      "factor": 12
+    },
+    {
+      "frequency": 2600,
+      "factor": 9
+    },
+    {
+      "frequency": 2800,
+      "factor": 10
+    },
+    {
+      "frequency": 3000,
+      "factor": 11
+    }
+  ],
+  "active": []
+}

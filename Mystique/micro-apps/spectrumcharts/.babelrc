@@ -1,0 +1,13 @@
+{
+  "presets": [
+    "@babel/preset-react",
+    ["@babel/preset-env", { "modules": false }]
+  ],
+  "plugins": [
+    "@babel/plugin-syntax-jsx",
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-transform-react-jsx",
+    "@babel/plugin-transform-runtime"
+  ]
+}

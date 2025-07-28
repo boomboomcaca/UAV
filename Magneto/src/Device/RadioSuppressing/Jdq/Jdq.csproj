@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+		<SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+		<InvariantGlobalization>true</InvariantGlobalization>
+		<OutputPath>../../../../bin/$(Configuration)/Device/</OutputPath>
+		<PublishDir>../../../../publish/$(RuntimeIdentifier)/$(Configuration)/Device/</PublishDir>
+		<SelfContained>false</SelfContained>
+		<Company>成都阿莱夫信息技术有限公司</Company>
+		<Description>Jdq控制的压制设备</Description>
+		<Copyright>@Aleph Co. Ltd. 2023</Copyright>
+		<RootNamespace>Magneto.Device.Jdq</RootNamespace>
+		<Version>1.10.1.0</Version>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)'=='Release'">
+		<DebugType>none</DebugType>
+		<DebugSymbols>false</DebugSymbols>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'" />
+	<ItemGroup>
+	  <PackageReference Include="StreamJsonRpc" Version="2.21.10" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\Protocol\Protocol.csproj">
+			<Private>false</Private>
+			<CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+		</ProjectReference>
+		<ProjectReference Include="..\..\..\Contract\Contract.csproj">
+			<Private>false</Private>
+			<CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+		</ProjectReference>
+	</ItemGroup>
+</Project>
+

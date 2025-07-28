@@ -1,0 +1,30 @@
+{
+  "fdf": {
+    "startup": [
+      "$spectrumSwitch.browsable=false"
+    ],
+    "$filterBandwidth.value>15": [
+      "$demMode.values=['fm','am','pulse','pm','iq']",
+      "$demMode.displayValues=['FM','AM','PULSE','PM','IQ']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'fm'"
+    ],
+    "$filterBandwidth.value==15": [
+      "$demMode.values=['fm','am','pulse','pm','iq','isb']",
+      "$demMode.displayValues=['FM','AM','PULSE','PM','IQ','ISB']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'fm'"
+    ],
+    "$filterBandwidth.value<15": [
+      "$demMode.values=['fm','am','pulse','pm','iq','isb','cw','usb','lsb']",
+      "$demMode.displayValues=['FM','AM','PULSE','PM','IQ','ISB','CW','USB','LSB']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'fm'"
+    ],
+    "$dfindMode.value=='Feebleness'": [
+      "$qualityThreshold.browsable=false",
+      "$integrationTime.browsable=false"
+    ],
+    "$dfindMode.value!='Feebleness'": [
+      "$qualityThreshold.browsable=true",
+      "$integrationTime.browsable=true"
+    ]
+  }
+}

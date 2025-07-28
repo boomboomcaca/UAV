@@ -1,0 +1,209 @@
+@item-padding: 12px;
+@item-width: 21%;
+
+.generalRoot {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.container {
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  flex: 1;
+  display: flex;
+
+  .containerFit {
+    padding: 8px;
+  }
+  .content {
+    padding: 0;
+
+    flex: 1;
+    position: relative;
+
+    // &.fit {
+    //   padding: 16px;
+    // }
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: space-between;
+  }
+  .mapCon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    background: linear-gradient(0deg, #072b54, #072b54),
+      linear-gradient(0deg, #e4edf7, #e4edf7), #f6f8ff;
+    box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.8),
+      inset 0px 2px 2px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+
+    &.fit {
+      padding: 16px;
+      left: 8px;
+      top: 0px;
+      bottom: 8px;
+      right: 8px;
+    }
+
+    &.large {
+      left: calc(37% + 16px);
+      // width: 50%;
+      border-radius: 8px;
+    }
+  }
+
+  .videoCon {
+    position: absolute;
+    left: 5%;
+    top: 16px;
+    // width: 17.2%;
+    width: 300px;
+    height: 170px;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background: linear-gradient(0deg, #072b54, #072b54);
+    // border: solid 2px linear-gradient(180deg, #0d417c 0%, #001e40 100%);
+    // border: 2px solid;
+    // border-image: linear-gradient(180deg, #0d417c 0%, #001e40 100%) 1;
+
+    &.fit {
+      left: 32px;
+      top: 32px;
+    }
+
+    &.large0 {
+      left: calc(37% + 48px);
+      // width: 10.5%;
+      width: 200px;
+      height: 120px;
+    }
+
+    &.large1 {
+      left: 8px;
+      top: 0;
+      width: 37%;
+      bottom: 8px;
+      padding: 16px;
+      height: auto;
+      box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.8),
+        inset 0px 2px 2px rgba(255, 255, 255, 0.1);
+      &:hover {
+        box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.8),
+          inset 0px 2px 2px rgba(255, 255, 255, 0.1);
+      }
+    }
+    &:hover {
+      box-shadow: inset 0px 0px 3px 3px #148bed;
+    }
+  }
+
+  .itemcon {
+    position: absolute;
+    border-radius: 8px;
+    padding: 2px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: linear-gradient(90.04deg, #042c53 0.46%, #0c1a30 103.15%),
+      #d9d9d9;
+    box-shadow: inset -4px 0px 20px rgba(0, 0, 0, 0.1),
+      inset 1px 0px 4px rgba(255, 255, 255, 0.2);
+
+    &:hover {
+      box-shadow: inset 0px 0px 3px 3px #148bed;
+    }
+
+    .itemcontent {
+      width: 108px;
+      height: 100%;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    &.fit {
+      background: none;
+      border: none;
+      padding: 4px;
+      background-image: url("./itemBackground.png");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+
+    &.large {
+      left: 8px;
+      top: 0;
+      width: 37%;
+      bottom: 8px;
+      padding: 16px;
+      border-radius: 8px;
+      background-image: none;
+      background: linear-gradient(0deg, #072b54, #072b54),
+        linear-gradient(0deg, #e4edf7, #e4edf7), #f6f8ff;
+      box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.4),
+        inset 0px 2px 2px rgba(255, 255, 255, 0.1);
+
+      .itemcontent {
+        // clip-path: none;
+        width: 100%;
+      }
+
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .alarmCon {
+    position: absolute;
+    // left: calc(50% - 36px);
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    // height: 100%;
+    // pointer-events: none;
+
+    // > span {
+    //   flex: 1;
+    // }
+
+    &.large {
+      left: calc(37% + 8px);
+      width: calc(63% - 16px);
+    }
+  }
+
+  .detailinfo {
+    width: 568px;
+    left: calc(50% - 288px);
+    &.large {
+      left: calc(68% - 288px);
+    }
+  }
+
+  .mapLayer {
+    flex: 1;
+    position: relative;
+  }
+}
+
+.itemContent {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  background: var(--theme-background-main);
+}

@@ -1,0 +1,44 @@
+.zoomIn {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background-color: #40a9ff1a;
+  border: 1px solid #40a9ff;
+}
+.zoomOut {
+  .zoomIn();
+
+  &::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(
+      to top right,
+      transparent,
+      transparent calc(50% - 1px),
+      #40a9ff,
+      transparent calc(50% + 1px),
+      transparent
+    );
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(
+      to bottom right,
+      transparent,
+      transparent calc(50% - 1px),
+      #40a9ff,
+      transparent calc(50% + 1px),
+      transparent
+    );
+  }
+}

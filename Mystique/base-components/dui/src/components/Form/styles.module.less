@@ -1,0 +1,58 @@
+.vertical {
+  .field {
+    margin-bottom: 5px;
+    .label {
+      height: 20px;
+      line-height: 20px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.horizontal {
+  .field {
+    display: flex;
+    margin-bottom: 14px;
+    .label {
+      text-align: right;
+
+      span {
+        height: 32px;
+      }
+    }
+  }
+
+  .noLabelFiled {
+    display: inline-block;
+  }
+}
+
+.field:last-child {
+  margin-bottom: 0;
+}
+
+.label {
+  overflow: hidden;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size: 14px;
+  padding-right: 16px;
+  box-sizing: border-box;
+
+  span {
+    display: inline-flex;
+    color: var(--theme-font-100);
+    align-items: center;
+  }
+}
+
+.controlled {
+  vertical-align: top;
+}
+
+.error {
+  color: #ff4c2b;
+  font-size: 12px;
+  line-height: 18px;
+  min-height: 18px;
+}

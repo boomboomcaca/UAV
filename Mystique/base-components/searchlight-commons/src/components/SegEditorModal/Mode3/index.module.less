@@ -1,0 +1,101 @@
+.Mode3 {
+  width: 100%;
+  flex: 1;
+  overflow-y: auto;
+
+  .groupitem {
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .groupName {
+      height: 26px;
+      background: linear-gradient(90deg, rgba(60, 229, 211, 0.1) 0%, rgba(60, 229, 211, 0) 100%);
+      border-radius: 2px;
+      font-size: 18px;
+      font-weight: 700;
+      position: relative;
+      padding-left: 8px;
+      box-sizing: border-box;
+      margin-bottom: 8px;
+
+      .line {
+        width: 4px;
+        height: 16px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(181.95deg, #3ce5d3 2.6%, #3ca9e4 96.5%), #d9d9d9;
+        border-radius: 32px;
+      }
+    }
+
+    .groupList {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px;
+
+      .segitem {
+        background: #202741;
+        border-radius: 4px;
+        height: 64px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border: 2px solid transparent;
+        cursor: pointer;
+
+        &.active {
+          background: #353d5b;
+          border: 2px solid #3ce5d3;
+
+          .infohead,
+          .unit {
+            color: #3ce5d3 !important;
+          }
+        }
+
+        .infoitem {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+
+          .infohead {
+            font-size: 16px;
+            font-weight: 700;
+          }
+
+          .unit {
+            font-size: 12px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.8);
+          }
+
+          .segname {
+            max-width: 250px;
+            padding: 0 4px;
+            box-sizing: border-box;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            background: rgba(60, 229, 211, 0.12);
+            border-radius: 4px;
+            color: #3ce5d3;
+            font-size: 12px;
+            font-weight: 400;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            box-sizing: border-box;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}

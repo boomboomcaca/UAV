@@ -1,0 +1,104 @@
+.root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.list {
+  width: 50%;
+  background: #202741;
+  box-shadow: inset 0px 0px 2px 1px rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  margin-right: 4px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temps {
+  flex: 1;
+  margin-top: 8px;
+  width: 100%;
+  overflow: auto;
+  font-size: 14px;
+}
+.title {
+  margin-top: 10px;
+  color: darkgray;
+}
+
+.subtemps {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 33%;
+}
+
+.mcont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mitem {
+  min-width: 150px;
+  margin-right: 10px;
+}
+
+.upld {
+  width: 50%;
+  background: #181c36;
+  color: darkgray;
+  box-shadow: inset 0px 0px 2px 1px rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  margin-left: 4px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form {
+  flex: 1;
+}
+
+.textarea {
+  width: 300px;
+  height: 300px;
+  border: none;
+  outline: none;
+  resize: none;
+  color: white;
+  background: #14172e;
+  box-shadow: 0px -0.5px 0.5px rgba(127, 132, 172, 0.15), inset 0px -1px 1px rgba(255, 255, 255, 0.1),
+    inset 0px 6px 10px rgba(4, 5, 27, 0.6);
+  border-radius: 2px;
+}
+
+.operate {
+  height: 56px;
+  border-top: 1px solid #ffffff40;
+  display: flex;
+  align-items: center;
+}
+
+.log {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 200px;
+  height: 400px;
+  font-size: 12px;
+  color: #ffffff80;
+  text-align: right;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.error {
+  color: orangered;
+  font-weight: bold;
+}

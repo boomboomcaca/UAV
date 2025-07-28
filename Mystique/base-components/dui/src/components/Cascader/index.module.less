@@ -1,0 +1,115 @@
+.root {
+  background: var(--theme-background-chart);
+  border-radius: 2px;
+  color: var(--theme-font-100);
+  width: 250px;
+  height: 32px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.root:hover {
+  .icon {
+    > g {
+      opacity: 0.5;
+    }
+  }
+}
+
+.dropdown {
+  position: absolute;
+  width: auto;
+  height: 200px;
+  top: calc(100% + 1px);
+  background: var(--theme-background-primary);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  transition: height 0.3s ease;
+  z-index: 2;
+}
+
+.dropdownHide {
+  height: 0px;
+}
+
+.dropdownsub {
+  &::-webkit-scrollbar {
+    width: 2px;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background: var(--theme-font-30);
+    border-radius: 2px;
+  }
+  &:hover {
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+  }
+  height: 100%;
+  min-width: 120px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.dropdownitem {
+  width: 100%;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: var(--theme-font-50);
+  white-space: nowrap;
+}
+
+.dropdownitemselect {
+  color: #3ce5d3;
+  background: var(--theme-footer-radio-background);
+}
+
+.value {
+  &::-webkit-scrollbar {
+    height: 1px;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    box-shadow: inset 0 0 6px #0000004d;
+    background: var(--theme-font-30);
+    border-radius: 2px;
+  }
+  &:hover {
+    &::-webkit-scrollbar {
+      height: 1px;
+    }
+  }
+  // padding-left: 8px;
+  margin-left: 12px;
+  margin-right: 32px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.icon {
+  position: absolute;
+  right: 8px;
+}
+
+.icondeg {
+  transform: rotate(180deg);
+}

@@ -1,0 +1,60 @@
+.root {
+  height: calc(100% - 82px);
+  margin: 5px 0;
+  box-sizing: border-box;
+  color: white;
+  font-size: 14px;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+    // background-color: @primary-color;
+    background-color: @font-color-white20;
+  }
+}
+
+.item {
+  transition: height 0.3s ease;
+}
+
+.itemTitle {
+  margin: 5px 0;
+}
+
+.itemHide {
+  height: 0;
+  margin: 0;
+}
+
+.itemCheck {
+  background: #3ce5d350;
+}
+
+.btns {
+  height: 40px;
+  margin-right: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 136px;
+}
+
+.filter {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}

@@ -1,0 +1,50 @@
+.singleseg {
+  min-width: 175px;
+  max-width: 300px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--theme-newSegmentsEditor-background);
+  box-shadow: 0px -0.5px 0.5px rgba(127, 132, 172, 0.3), inset 0px 2px 4px rgba(4, 5, 27, 0.3),
+    inset 0px -1px 1px rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  cursor: pointer;
+  user-select: none;
+
+  .singleleft {
+    text-align: center;
+    flex: 1;
+    padding: 0 8px;
+    box-sizing: border-box;
+
+    .name {
+      font-size: 14px;
+      font-weight: 700;
+      color: rgba(60, 229, 211, 1);
+      line-height: 22px;
+      line-height: 22px;
+    }
+
+    .seg {
+      font-size: 12px;
+      line-height: 18px;
+      color: var(--theme-font-30);
+      line-height: 18px;
+    }
+  }
+
+  .onlyseg {
+    font-size: 14px;
+    font-weight: 700;
+    color: #3ce5d3;
+    line-height: 20px;
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+  }
+
+  .singleright {
+    margin: 0 10px;
+  }
+}

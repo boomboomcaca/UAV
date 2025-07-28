@@ -1,0 +1,41 @@
+.flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: inline-block;
+  border-radius: @border-radius-base;
+  height: 40px;
+}
+.switch {
+  width: 128px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  border-radius: @border-radius-base;
+  background: var(--theme-button-radio-unchecked);
+  box-shadow: var(--theme-iconswitch-shadow);
+  border-radius: 4px;
+  .selected {
+    height: 40px;
+    border-radius: @border-radius-base;
+    flex: 1;
+    .flexCenter();
+    background: var(--theme-button-primary);
+    box-shadow: var(--theme-iconswitch-select);
+  }
+  .unSelected {
+    cursor: pointer;
+    height: 100%;
+    border-radius: @border-radius-base;
+    flex: 1;
+    .flexCenter();
+    &:hover {
+      opacity: 1;
+    }
+    &:active {
+      background-color: #74747c;
+    }
+  }
+}

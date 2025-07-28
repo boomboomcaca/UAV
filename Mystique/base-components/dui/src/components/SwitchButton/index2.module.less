@@ -1,0 +1,219 @@
+.sbbase {
+  width: 104px;
+  height: 50px;
+  user-select: none;
+  font-size: 14px;
+  position: relative;
+  border-radius: 3px;
+  cursor: pointer;
+  background: var(--theme-specialbtn-bgc);
+  box-shadow: var(--theme-btn-shadow-special);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--theme-font-100);
+}
+
+.sbbaseDisabled {
+  cursor: default;
+  pointer-events: none;
+  background: var(--theme-button-hover);
+  box-shadow: var(--theme-btn-shadow-special);
+  color: var(--theme-font-20);
+}
+
+.sbbase:active .sbindicator {
+  transform: rotate(180deg);
+}
+
+.sbbase:active {
+  background: var(--theme-button-hover);
+  box-shadow: none;
+}
+
+.simple {
+  width: 104px;
+  height: 50px;
+  user-select: none;
+  font-size: 14px;
+  position: relative;
+  border-radius: 3px;
+  cursor: pointer;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--theme-font-100);
+}
+
+.simpleDisabled {
+  cursor: default;
+  pointer-events: none;
+  color: var(--theme-font-20);
+}
+
+.sbcollapse {
+  visibility: hidden;
+}
+
+.sbindicator {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 13px;
+  height: 5px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  & > svg {
+    transform: scale(1.25);
+  }
+}
+
+.sbindicatorDisabled {
+  opacity: 0.3;
+}
+
+.sbcontent {
+  display: flex;
+  justify-items: center;
+}
+
+.sbtag {
+  position: absolute;
+  right: 4px;
+  bottom: 2px;
+  font-size: 10px;
+  color: #3ce5d3;
+  // transform: scale(0.8);
+  // transform-origin: right;
+}
+
+.sbhide {
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.sbdrop {
+  pointer-events: all;
+  right: 100%;
+  opacity: 1;
+  z-index: 11;
+  top: 50%;
+  transform: translate(0, -50%);
+  position: absolute;
+  width: 480px;
+  // max-height: 138px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  transition: width 0.5s ease;
+}
+
+.sbtriangle2 {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translate(0, -50%) rotate(-45deg);
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: skew(15deg, 15deg);
+    background: var(--theme-background-chart);
+    border: 1px solid rgb(60 229 211 / 30%);
+    box-shadow: inset 1px 0px 0.5px rgb(60 229 211 / 10%), inset 0px 0px 16px rgb(59 237 219 / 10%);
+    border-radius: 2px;
+    clip-path: polygon(0 calc(100% - 1px), 100% 100%, calc(100% - 1px) 0);
+  }
+}
+
+.sblist {
+  box-sizing: border-box;
+  padding-left: 24px;
+  padding-right: 24px;
+  right: 12px;
+  width: calc(100% - 12px);
+  height: 100%;
+  border-radius: 8px;
+  background: var(--theme-background-chart);
+  box-shadow: inset -1px 0px 1px rgba(60, 229, 211, 0.3), inset 1px 0px 0.5px rgba(60, 229, 211, 0.3),
+    inset 0px 0px 16px rgba(59, 237, 219, 0.2);
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.sbitem {
+  // background: linear-gradient(
+  //     180deg,
+  //     rgba(4, 5, 27, 0.005) 0%,
+  //     rgba(4, 5, 27, 0.005) 48.96%,
+  //     rgba(4, 5, 27, 0.5) 52.08%
+  //   ),
+  //   rgba(60, 229, 211, 0.1);
+  // border: 1px solid #3ce5d340;
+  border-radius: 2px;
+  font-weight: normal;
+  font-size: 16px;
+  display: flex;
+  margin: 4px;
+  align-items: center;
+  justify-content: center;
+  min-width: 75px;
+  min-height: 40px;
+  position: relative;
+}
+
+.sbccc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sbselect {
+  // background: linear-gradient(
+  //     180deg,
+  //     rgba(4, 5, 27, 0.005) 0%,
+  //     rgba(4, 5, 27, 0.005) 48.96%,
+  //     rgba(4, 5, 27, 0.5) 52.08%
+  //   ),
+  //   rgba(60, 229, 211, 0.1);
+  // border: 1px solid #3ce5d3;
+  color: #3ce5d3;
+  font-weight: bold;
+}
+
+.simpleBorder {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(60, 229, 211, 0.04) 0%,
+    rgba(60, 229, 211, 0.2) 50.22%,
+    rgba(60, 229, 211, 0.04) 100%
+  );
+}

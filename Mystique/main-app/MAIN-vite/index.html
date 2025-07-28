@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="favicon.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, viewport-fit=cover, initial-scale=0.83455, maximum-scale=0.83455, minimum-scale=0.83455, user-scalable=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <meta name="author" content="liujian" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <link rel="manifest" href="manifest.json" />
+    <title>低空飞行器防御系统</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <!-- 应用配置文件 -->
+    <script type="text/javascript" src="system.config.js"></script>
+    <script type="text/javascript" src="project.config.js"></script>
+    <script type="module" src="./src/main.jsx"></script>
+  </body>
+  <script>
+    document.body.addEventListener("focusout", () => {
+      window.scroll(0, 0);
+    });
+  </script>
+  <noscript>浏览器不支持 JavaScript</noscript>
+</html>

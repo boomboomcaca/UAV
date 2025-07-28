@@ -1,0 +1,33 @@
+{
+  "global": {
+    "$filterBandwidth.value<=9": [
+      "$demMode.values=['am','fm','pulse','pm','iq','isb','cw','usb','lsb']",
+      "$demMode.displayValues=['AM','FM','PULSE','PM','IQ','ISB','CW','USB','LSB']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'fm'"
+    ],
+    "$filterBandwidth.value>9": [
+      "$demMode.values=['am','fm','pulse','pm','iq','isb']",
+      "$demMode.displayValues=['AM','FM','PULSE','PM','IQ','ISB']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'fm'"
+    ],
+    "$scanMode.value=='pscan'": [
+      "$detector.browsable=false",
+      "$measureTime.browsable=false",
+      "$filterBandwidth.browsable=false",
+      "$measureTime.value=-1"
+    ],
+    "$scanMode.value!='pscan'": [
+      "$detector.browsable=true",
+      "$measureTime.browsable=true",
+      "$filterBandwidth.browsable=true"
+    ],
+    "$bandMeasureMode.value=='XDB'": [
+      "$xdB.browsable=true",
+      "$betaValue.browsable=false"
+    ],
+    "$bandMeasureMode.value=='BETA'": [
+      "$xdB.browsable=false",
+      "$betaValue.browsable=true"
+    ]
+  }
+}

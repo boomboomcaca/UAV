@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+        <InvariantGlobalization>true</InvariantGlobalization>
+        <OutputPath>../../../../bin/$(Configuration)/Device/</OutputPath>
+        <PublishDir>../../../../publish/$(RuntimeIdentifier)/$(Configuration)/Device/</PublishDir>
+        <SelfContained>false</SelfContained>
+        <Company>成都阿莱夫信息技术有限公司</Company>
+        <Description>G33DDC仪表模块</Description>
+        <Copyright>@Aleph Co. Ltd. 2023</Copyright>
+        <RootNamespace>Magneto.Device.G33DDC</RootNamespace>
+        <!-- <RuntimeIdentifier>win-x86</RuntimeIdentifier> -->
+        <!-- <Platforms>x86</Platforms> -->
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)'=='Release'">
+        <DebugType>none</DebugType>
+        <DebugSymbols>false</DebugSymbols>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Remove="SDK\G33DDCCommon.cs~RF2fb00943.TMP" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\..\Protocol\Protocol.csproj">
+            <Private>false</Private>
+            <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Contract\Contract.csproj">
+            <Private>false</Private>
+            <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+        </ProjectReference>
+    </ItemGroup>
+</Project>

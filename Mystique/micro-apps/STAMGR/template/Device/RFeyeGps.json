@@ -1,0 +1,90 @@
+﻿{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "edgeId": null,
+  "mfid": null,
+  "type": "Cosmos.Device.RFeyeGps.RFeyeGps",
+  "moduleType": "device",
+  "moduleCategory": [
+    "gps"
+  ],
+  "moduleState": "idle",
+  "supportedFeatures": [
+    "none"
+  ],
+  "displayName": "RFeyeGPS",
+  "description": "射频眼GPS模块通用",
+  "manufacturer": "CRFS",
+  "model": "RFeyeGPS",
+  "sn": "",
+  "maximumInstance": 1,
+  "parameters": [
+    {
+      "name": "ipAddress",
+      "supportedFeatures": [
+        "none"
+      ],
+      "displayName": "IP地址",
+      "description": "GPS模块IP地址。",
+      "unit": "",
+      "category": "安装参数",
+      "style": "input",
+      "type": "string",
+      "children": [],
+      "relatedValue": [],
+      "default": "192.168.1.90",
+      "minimum": null,
+      "maximum": null,
+      "step": 100,
+      "values": [],
+      "displayValues": [],
+      "browsable": true,
+      "selectOnly": false,
+      "readonly": false,
+      "isInstallation": true,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 24,
+      "template": [],
+      "value": "192.168.1.90"
+    },
+    {
+      "name": "port",
+      "supportedFeatures": [
+        "none"
+      ],
+      "displayName": "TCP端口",
+      "description": "GPS模块端口号。",
+      "unit": "",
+      "category": "安装参数",
+      "style": "input",
+      "type": "number",
+      "children": [],
+      "relatedValue": [],
+      "default": 9999,
+      "minimum": null,
+      "maximum": null,
+      "step": 100,
+      "values": [],
+      "displayValues": [],
+      "browsable": true,
+      "selectOnly": false,
+      "readonly": false,
+      "isInstallation": true,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 25,
+      "template": [],
+      "value": 9999
+    }
+  ],
+  "constraintScript": "",
+  "version": "1.0.0"
+}

@@ -1,0 +1,11 @@
+{
+  "folder": "commons",
+  "pubcomponents": [
+    "StationSelectorLite",
+    "StatisticDataChart",
+    "DcBearingChart",
+    "StationSelectorLite2",
+    "EdgesModal",
+    "ADSBChart"
+  ]
+}

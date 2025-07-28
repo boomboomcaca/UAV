@@ -1,0 +1,100 @@
+.hide {
+  // height: 0;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+}
+.heightUnset {
+  height: unset;
+}
+.heightNo {
+  height: 0;
+}
+.drop {
+  pointer-events: all;
+  opacity: 1;
+  z-index: 11;
+  // transform: translateY(-50%);
+  position: absolute;
+  // height: 313px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  transition: all 1s ease;
+  box-sizing: border-box;
+}
+.imgTriangle {
+  width: 14px;
+  height: 12px;
+  position: absolute;
+  top: -11px;
+  z-index: 12;
+}
+.dropBox {
+  position: relative;
+  width: 100%;
+  margin-top: 11px;
+  height: calc(100% - 11px);
+  box-sizing: border-box;
+  box-sizing: border-box;
+  background: var(--theme-background-log);
+  box-shadow: inset -1px 0px 1px rgba(60, 229, 211, 0.3), inset 1px 0px 0.5px rgba(60, 229, 211, 0.3),
+    inset 0px 0px 16px rgba(59, 237, 219, 0.2);
+  border-radius: 8px;
+  .boxCon {
+    height: 100%;
+    padding: 16px 0px 16px 0px;
+    box-sizing: border-box;
+  }
+  .concon {
+    width: 100%;
+    height: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+    // overflow-y: overlay;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .buttonLine {
+    width: 100%;
+    .typeName {
+      position: static;
+      width: 100%;
+      height: 18px;
+      line-height: 18px;
+      background: rgba(255, 255, 255, 0.05);
+      margin-top: 8px;
+      text-align: center;
+      color: var(--theme-font-50);
+      font-size: 12px;
+      border-radius: 2px 2px 16px 16px;
+    }
+  }
+  .buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    .button {
+      width: 80px;
+      height: 50px;
+      position: relative;
+      .buttonText {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+.emptyBox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

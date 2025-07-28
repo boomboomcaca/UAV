@@ -1,0 +1,121 @@
+// @import "../commons//styles/variables.less";
+
+.plotArea1 {
+  // width: 100%;
+  // height: 100%;
+  flex: 1;
+  position: relative;
+}
+
+.plotArea {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.chartCon {
+  // flex: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--chartCon-bg-color);
+  .operation {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .chartLayer {
+    // margin: 8px 0 8px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    // 网格线
+    > div {
+      position: relative;
+      // border: var(--chart-border);
+    }
+
+    .bgline {
+      background-image: linear-gradient(
+          90deg,
+          var(--chart-tick-line) 1px,
+          rgba(0, 0, 0, 0) 1px
+        ),
+        linear-gradient(var(--chart-tick-line) 1px, rgba(0, 0, 0, 0) 1px);
+      background-size: 10% 10%;
+      background-color: var(--chart-bg-color);
+      border: var(--chart-border);
+      box-sizing: border-box;
+    }
+
+    // gap: 8px;
+    .specChart {
+      // flex: 1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      .bgline();
+    }
+
+    .rainChart {
+      // flex: 1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      .bgline();
+    }
+
+    .wbdf {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+
+      background-image: linear-gradient(
+          90deg,
+          var(--chart-tick-line) 1px,
+          rgba(0, 0, 0, 0) 1px
+        ),
+        linear-gradient(var(--chart-tick-line) 1px, rgba(0, 0, 0, 0) 1px);
+      background-size: 10% 25%;
+      background-color: var(--chart-bg-color);
+    }
+
+    .rainChart {
+      // flex: 1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      .bgline();
+    }
+
+    .occChart {
+      .bgline();
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "passive": [
+    {
+      "frequency": 0.01,
+      "factor": 18.7
+    },
+    {
+      "frequency": 0.02,
+      "factor": 17.4
+    },
+    {
+      "frequency": 0.05,
+      "factor": 16.9
+    },
+    {
+      "frequency": 0.1,
+      "factor": 16.8
+    },
+    {
+      "frequency": 1,
+      "factor": 16.7
+    },
+    {
+      "frequency": 10,
+      "factor": 16.7
+    },
+    {
+      "frequency": 40,
+      "factor": 16.7
+    },
+    {
+      "frequency": 60,
+      "factor": 16.6
+    },
+    {
+      "frequency": 80,
+      "factor": 16.3
+    },
+    {
+      "frequency": 100,
+      "factor": 16.1
+    },
+    {
+      "frequency": 120,
+      "factor": 16
+    }
+  ],
+  "active": []
+}

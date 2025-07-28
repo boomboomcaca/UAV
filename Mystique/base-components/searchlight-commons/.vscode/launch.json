@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome against localhost",
+      "url": "http://localhost:3099/",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "pwa-msedge",
+      "request": "launch",
+      "name": "Launch App2",
+      "url": "http://localhost:3099/",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "pwa-chrome",
+      "request": "launch",
+      "name": "Launch Demo",
+      "url": "http://localhost:3099/",
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}

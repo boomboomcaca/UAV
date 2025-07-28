@@ -1,0 +1,204 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 9px 16px 9px 54px;
+  box-sizing: border-box;
+  width: 32px;
+  height: 100%;
+  .itemBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -1px;
+    .ballBox {
+      position: relative;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .onball_nosel {
+      background: #14cf5f;
+      border: 2px solid rgba(255, 255, 255, 0.8);
+      box-sizing: border-box;
+    }
+    .onball_sel {
+      background: #3ce5d3;
+      border: 4px solid #ffffff;
+      box-sizing: unset !important;
+      padding: 0 !important;
+    }
+    .offball_nosel {
+      background: #202741;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      box-sizing: border-box;
+    }
+    .offball_sel {
+      background: #202741;
+      border: 4px solid rgba(255, 255, 255, 0.3);
+    }
+    .disable {
+      cursor: not-allowed !important;
+    }
+    .disable:hover {
+      background: #202741;
+      border: 2px solid rgba(255, 255, 255, 0.3) !important;
+      box-sizing: border-box;
+    }
+    .offball_nosel:hover {
+      background: #202741;
+      border: 4px solid rgba(255, 255, 255, 0.3);
+      box-sizing: border-box;
+    }
+    .onball_nosel:hover {
+      background: #35e065;
+      border: 4px solid #ffffff;
+      box-sizing: border-box;
+    }
+    .ball {
+      cursor: pointer;
+      width: 24px;
+      height: 24px;
+      border-radius: 50px;
+      position: relative;
+      z-index: 100;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      padding: 2px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .lable_sel {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+    }
+    .lable_nosel {
+      height: 28px;
+      line-height: 28px;
+    }
+    .lable {
+      z-index: 99;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      background: #353d5b;
+      border-radius: 2px;
+      font-size: 14px;
+      padding: 0 8px;
+      width: max-content;
+      span {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .removeBtn {
+        background-color: #3ce5d333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 16px;
+        height: 16px;
+        border-radius: 50px;
+        margin-left: 8px;
+        font-size: 30px;
+      }
+    }
+    .runBall_sel {
+      border: 4px solid #ff4c2b;
+    }
+    .runBall_nosel {
+      border: 2px solid #ff4c2b;
+      box-sizing: border-box;
+    }
+    .runBall_nosel:hover {
+      border: 3px solid #ff4c2b;
+      box-sizing: border-box;
+    }
+    .arrow {
+      position: absolute;
+      left: 26px;
+      top: 2px;
+    }
+    .runBall {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+      width: 24px;
+      height: 24px;
+      border-radius: 50px;
+      background: #202741;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @-webkit-keyframes rotation {
+        from {
+          -webkit-transform: rotate(0deg);
+        }
+
+        to {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+      .loadingImg {
+        width: 16px;
+        height: 16px;
+        -webkit-transform: rotate(360deg);
+
+        animation: rotation 3s linear infinite;
+
+        -moz-animation: rotation 3s linear infinite;
+
+        -webkit-animation: rotation 3s linear infinite;
+
+        -o-animation: rotation 3s linear infinite;
+      }
+    }
+    .runLable {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      background: #353d5b;
+      border: 2px solid #ff4c2b;
+      border-radius: 2px;
+      font-size: 14px;
+      color: #ffffff;
+      padding: 0 4px;
+      width: max-content;
+      span {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+    .runLable_sel {
+      height: 32px;
+      line-height: 32px;
+    }
+    .runLable_nosel {
+      height: 20px;
+      line-height: 20px;
+    }
+
+    .line {
+      flex: 1;
+      min-height: 8px;
+      width: 8px;
+      margin-bottom: -1px;
+    }
+    .online {
+      background: #14cf5f;
+    }
+    .offline {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+}

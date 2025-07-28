@@ -1,0 +1,15 @@
+[Unit]
+# 简短描述
+Description=edgeServer
+# 文档描述
+Documentation=xmen Edge Server
+
+[Service]
+User=root
+WorkingDirectory=/opt/edge/
+ExecStart=/opt/edge/Magneto
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

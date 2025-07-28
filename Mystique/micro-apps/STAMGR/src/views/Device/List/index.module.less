@@ -1,0 +1,56 @@
+.root {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  position: relative;
+}
+
+.query {
+  margin: 8px 8px 0px 8px;
+  display: flex;
+  font-size: 16px;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.filters {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.operate {
+  display: flex;
+  align-items: center;
+}
+
+.list {
+  flex: 1;
+  margin: 8px;
+  width: calc(100% - 16px);
+  overflow: auto;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.item {
+  margin: 8px;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  background: linear-gradient(0deg, rgba(60, 229, 211, 0.05), rgba(60, 229, 211, 0.05)), #181c36;
+  box-shadow: inset 0px 1px 0px rgba(189, 255, 248, 0.15), inset 0px -1px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}

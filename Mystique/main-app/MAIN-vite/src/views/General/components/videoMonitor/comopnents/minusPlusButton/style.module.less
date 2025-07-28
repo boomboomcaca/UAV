@@ -1,0 +1,66 @@
+.setBox {
+  margin-right: 12px;
+  display: flex;
+
+  font-size: 14px;
+  align-items: center;
+  // background-color: #18406e;
+  .setButton {
+    width: 32px;
+    height: 24px;
+    border-radius: 1px;
+    background-color: rgba(20, 139, 237, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 800;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+    &.noInput {
+      gap: 16px;
+    }
+  }
+}
+
+.setValue {
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0 5px;
+
+  color: var(--theme-font-100);
+  span {
+    color: var(--theme-font-50);
+  }
+
+  &.showInput {
+    width: 36px;
+    height: 24px;
+    background-color: #072b54;
+  }
+}
+
+.input {
+  outline: none;
+  line-height: 24px;
+  width: 36px;
+  border: 0px;
+  text-align: center;
+  color: var(--theme-font-100);
+  padding: 0;
+  background: transparent;
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+}

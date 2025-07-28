@@ -1,0 +1,29 @@
+{
+  "scan,scandf": {
+    "$stopFrequency.name=='stopFrequency' ||$startFrequency.name=='startFrequency'||$stepFrequency.name=='stepFrequency' ":
+    [
+      "$startFrequency.value=$startFrequency.value-(($startFrequency.value*1000000)%$stepFrequency.value*1000)/1000000",
+      "$stopFrequency.value=$stopFrequency.value-(($stopFrequency.value*1000000)%$stepFrequency.value*1000)/1000000"
+    ],
+    "$detector.value=='fast'": [
+      "$sweepNumLoops.browsable=false"
+    ],
+    "$detector.value!='fast'": [
+      "$sweepNumLoops.browsable=true",
+      "$sweepNumLoops.value=3"
+    ]
+  },
+  "ifmca": {
+    "startup": [
+      "$ifBandwidth.value=40000",
+      "$ifBandwidth.values=[40000]",
+      "$ifBandwidth.displayValues=['40MHz']"
+    ],
+    "$frequency.value<40": ["$frequency.value=40"],
+    "$frequency.value>2980": ["$frequency.value=2980"]
+  },
+  "wbdf": {
+    "$frequency.value<40": ["$frequency.value=40"],
+    "$frequency.value>2980": ["$frequency.value=2980"]
+  }
+}

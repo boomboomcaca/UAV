@@ -1,0 +1,23 @@
+{
+  "startFrequency": {
+    "value": 87,
+    "min": 20,
+    "max": 888888,
+    "suffix": "MHz",
+    "displayName": "起始频率"
+  },
+  "stopFrequency": {
+    "value": 108,
+    "min": 20,
+    "max": 888888,
+    "suffix": "MHz",
+    "displayName": "终止频率"
+  },
+  "stepFrequency": {
+    "value": 25,
+    "min": 0,
+    "max": 888888,
+    "suffix": "kHz",
+    "displayName": "步进带宽"
+  }
+}

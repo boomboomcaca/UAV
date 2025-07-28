@@ -1,0 +1,70 @@
+.setBox {
+  margin-right: 8px;
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  .setButton {
+    width: 24px;
+    height: 24px;
+    border-radius: 1px;
+    background-color: var(--theme-primary-10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 800;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
+  .setValue {
+    width: 48px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    padding: 0 5px;
+    background-color: var(--theme-select);
+    color: var(--theme-font-100);
+    span {
+      color: var(--theme-font-50);
+    }
+  }
+}
+.valueBox {
+  width: 42px;
+  margin-right: 8px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  .valText {
+    color: var(--theme-font-100);
+    line-height: 20px;
+  }
+  .unitText {
+    color: var(--theme-font-50);
+    line-height: 20px;
+  }
+}
+
+.input {
+  outline: none;
+  line-height: 20px;
+  flex: 1;
+  width: 30px;
+  border: 0px;
+  color: var(--theme-font-100);
+  padding: 0;
+  background: transparent;
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+}

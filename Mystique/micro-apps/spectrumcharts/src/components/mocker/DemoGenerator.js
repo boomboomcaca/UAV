@@ -1,0 +1,487 @@
+function sineGenerator(outInterval, onDataGenerated) {
+  this.rvariables = {
+    amplitude: 80, // Y最大参考值
+    outPointCount: 1601,
+    sineMargin: 800,
+    amplitudeOffset: 8,
+    onDataGenerated: () => {}, // 数据生成回调
+    tmr: undefined,
+  };
+
+  this.rvariables.onDataGenerated = onDataGenerated;
+  if (outInterval) {
+    setTimeout(() => {
+      this.rvariables.tmr = setInterval(() => {
+        // 生产数据
+        const datas = this.generate();
+        if (this.rvariables.onDataGenerated) {
+          this.rvariables.onDataGenerated(datas);
+        }
+      }, outInterval);
+    }, 1000);
+  }
+}
+
+sineGenerator.prototype.setOption = function (options) {
+  // amplitude,
+  // outPointCount,
+  // sineMargin,
+  // amplitudeOffset
+  if (options.amplitude !== undefined) {
+    this.rvariables.amplitude = options.amplitude;
+  }
+  if (options.outPointCount !== undefined) {
+    this.rvariables.outPointCount = options.outPointCount;
+  }
+  if (options.sineMargin !== undefined) {
+    this.rvariables.sineMargin = options.outPosineMarginintCount;
+  }
+  if (options.amplitudeOffset !== undefined) {
+    this.rvariables.amplitudeOffset = options.amplitudeOffset;
+  }
+};
+
+sineGenerator.prototype.generate = function () {
+  const ampOffsetMin = 0 - this.rvariables.amplitudeOffset;
+  const ampOffsetRange = this.rvariables.amplitudeOffset * 2;
+  const waveMarginOffsetMmin = 0 - this.rvariables.sineMargin;
+  const waveMarginOffsetRange = this.rvariables.sineMargin * 2;
+  const count = this.rvariables.outPointCount;
+  const waveMargin =
+    this.rvariables.sineMargin +
+    waveMarginOffsetMmin +
+    Math.floor(Math.random() * waveMarginOffsetRange);
+  const radGap = 179.99 / (count - waveMargin * 2);
+  const max =
+    this.rvariables.amplitude +
+    ampOffsetMin +
+    Math.floor(Math.random() * ampOffsetRange);
+  const datas = [];
+  for (let i = 0; i < count; i++) {
+    const mk = ampOffsetMin + Math.floor(Math.random() * ampOffsetRange);
+    if (i < waveMargin || i > count - waveMargin) {
+      // 2022-8-31 liujian * 10
+      datas[i] = Math.round(mk) * 10 + 80;
+    } else {
+      const angle = (i - waveMargin) * radGap;
+      const scale = Math.sin((angle * Math.PI) / 180);
+      const d = max * scale;
+      const offset = mk * (1 - scale);
+      // 2022-8-31 liujian * 10
+      datas[i] = Math.round(d + offset) * 10 + 80;
+    }
+  }
+  return datas;
+};
+
+sineGenerator.prototype.setConfig = function (options) {
+  // outPointCount
+  // sineMargin
+  // amplitude
+  // onlyOverZero
+  // amplitudeOffset
+  if (options.outPointCount !== undefined) {
+    this.rvariables.outPointCount = options.outPointCount;
+  }
+  if (options.sineMargin !== undefined) {
+    this.rvariables.sineMargin = options.sineMargin;
+  }
+  if (options.amplitude !== undefined) {
+    this.rvariables.amplitude = options.amplitude;
+  }
+  if (options.onlyOverZero !== undefined) {
+    this.rvariables.onlyOverZero = options.onlyOverZero;
+  }
+  if (options.amplitudeOffset !== undefined) {
+    this.rvariables.amplitudeOffset = options.amplitudeOffset;
+  }
+  if (this.rvariables.sineMargin >= this.rvariables.outPointCount / 2) {
+    this.rvariables.sineMargin = this.rvariables.outPointCount / 3;
+  }
+};
+
+sineGenerator.prototype.dispose = function () {
+  if (this.rvariables.tmr) {
+    clearInterval(this.rvariables.tmr);
+  }
+};
+
+/**
+ *
+ * @param {Function} onDataGenerated
+ * @param {boolean} split
+ * @param {Number} splitPoints
+ */
+function scanGenerator(outPointCount) {
+  this.singalSineCount = 801; // 但信号波形占据的品点数
+  // this.split = split;
+  // let onePack = Math.floor(outPointCount / 3);
+  // if (onePack % 2 === 0) {
+  //   onePack += 1;
+  // }
+  // this.splitPoints = onePack;
+  // this.onDataGenerated = onDataGenerated;
+  this.outPointCount = outPointCount;
+  this.amplitude = 80; // Y最大参考值
+  this.amplitudeOffset = 8;
+  this.sineGenerator = new sineGenerator();
+  // 信号
+  let sineCount = Math.floor(this.outPointCount / this.singalSineCount);
+  if (this.outPointCount % this.singalSineCount > 0) sineCount += 1;
+  let outSignalCount = 5; // this.outPointCount / 400;
+  if (outSignalCount >= sineCount) outSignalCount = sineCount - 1;
+  const signalIndexes = [];
+  const band = [
+    401, 801, 301, 801, 201, 401, 801, 301, 801, 201, 401, 801, 301, 801, 201,
+  ];
+  for (let i = 0; i < outSignalCount; i++) {
+    let indx = -1;
+    while (indx === -1 || signalIndexes.includes(indx)) {
+      indx = Math.floor(Math.random() * sineCount);
+    }
+    signalIndexes.push({
+      index: indx,
+      singalSineCount: band[i],
+    });
+  }
+  this.signalIndexes = signalIndexes;
+}
+
+scanGenerator.prototype.generate = function () {
+  const ampOffsetMin = 0 - this.amplitudeOffset;
+  const ampOffsetRange = this.amplitudeOffset * 2;
+  const count = this.outPointCount;
+  const datas = [];
+
+  let dataStart = 0; // 数据生成位置
+
+  while (dataStart < count) {
+    let needLen = 1;
+    const sIndex = this.signalIndexes.find(
+      (id) => id.index * this.singalSineCount === dataStart
+    );
+    // if (this.signalIndexes.includes(sineStart)) {
+    if (sIndex) {
+      needLen = sIndex.singalSineCount;
+      if (dataStart + needLen >= count) {
+        needLen = count - dataStart;
+      }
+      // 生成不同宽度的信号
+      const margin = 6 + Math.floor(Math.random() * (needLen / 2));
+      this.sineGenerator.setConfig({
+        sineMargin: margin,
+        outPointCount: needLen,
+      });
+      // console.log(margin, needLen);
+      const oneSine = this.sineGenerator.generate();
+      datas.push(...oneSine);
+    } else {
+      // for (let i = dataStart; i < dataStart + needLen; i++) {
+      datas[dataStart] = ampOffsetMin + Math.random() * ampOffsetRange * 10;
+      // }
+    }
+
+    dataStart += needLen;
+  }
+  // console.log(datas.length, this.outPointCount);
+  return datas;
+};
+
+// /**
+//  *
+//  * @param {Array} spectrum
+//  * @param {Number} outMax
+//  * @returns {Array}
+//  */
+// const combineData = (spectrum, outMax) => {
+//   if (spectrum.length > outMax) {
+//     const res = [];
+//     let freqIndex = 0;
+//     const perPointGap = spectrum.length / (outMax - 1);
+//     let freqN = freqIndex + perPointGap / 2;
+//     for (let j = 0; j < outMax; j += 1) {
+//       let maxValue = spectrum[freqIndex];
+//       const k = Math.round(freqN);
+//       for (; freqIndex < k; freqIndex += 1) {
+//         if (maxValue < spectrum[freqIndex]) {
+//           maxValue = spectrum[freqIndex];
+//         }
+//       }
+//       res[j] = maxValue;
+//       freqN += perPointGap;
+//       if (freqN > spectrum.length) freqN = spectrum.length;
+//     }
+//     return res;
+//   }
+//   return spectrum;
+// };
+
+/**
+ *
+ * @param {{Array<{segmentIndex:Number,startFrequency:Number,stopFrequency:Number}>}} segments
+ * @param {Number} frameInterval
+ * @param {Function} onData
+ */
+function scanMocker(segments, frameInterval, onData) {
+  this.extractMax = [200001, 200001, 200001, 200001, 200001];
+  this.zoomInfo = {
+    segmentIndex: 0,
+    startIndex: 0,
+    endIndex: 2000,
+  };
+  let totalSplitTimes = 0;
+  // 计算点数
+  for (let i = 0; i < segments.length; i += 1) {
+    const seg = segments[i];
+    const { startFrequency, stopFrequency, stepFrequency } = seg;
+    const pointCount =
+      Math.round(((stopFrequency - startFrequency) * 1000) / stepFrequency) + 1;
+    seg.pointCount = pointCount;
+    // 构造数据构造器
+    seg.generator = new scanGenerator(pointCount);
+    // 计算单包发送量&分包次数
+    let onePack = Math.ceil(pointCount / 2);
+    seg.onePack = onePack;
+    //seg.onePack = pointCount;
+    const splitTime = Math.ceil(pointCount / onePack);
+    seg.splitTime = splitTime;
+    totalSplitTimes += splitTime;
+    //seg.splitTime = 1;
+  }
+  this.segments = segments;
+  let prevOver = true;
+  const splitInterval = Math.ceil(frameInterval / totalSplitTimes);
+  this.tmr = setInterval(() => {
+    if (!prevOver) return;
+    prevOver = false;
+    // 1. 构造所有频段的数据&分发
+    const segsData = [];
+    this.segments.forEach((s, index) => {
+      const segData = s.generator.generate();
+
+      for (let i = 0; i < s.splitTime; i += 1) {
+        const packData = segData.slice(i * s.onePack, (i + 1) * s.onePack);
+        if (index === 0 && i * s.onePack > 0) {
+          console.log(packData);
+        }
+        segsData.push({
+          type: "scan",
+          segmentOffset: index,
+          startFrequency: s.startFrequency,
+          stopFrequency: s.stopFrequency,
+          stepFrequency: s.stepFrequency,
+          offset: i * s.onePack,
+          total: s.pointCount,
+          data: new Int16Array(packData),
+        });
+      }
+    });
+
+    const sendOneSplit = () => {
+      const oneSplitData = segsData.shift();
+      if (!oneSplitData) {
+        prevOver = true;
+        return;
+      }
+      // 发射
+      if (onData) {
+        onData(oneSplitData);
+      }
+      setTimeout(() => {
+        sendOneSplit();
+      }, splitInterval);
+    };
+    sendOneSplit();
+  }, frameInterval);
+}
+
+/**
+ *
+ * @param {{Array<{segmentIndex:Number,startFrequency:Number,stopFrequency:Number}>}} segments
+ * @param {Number} frameInterval
+ * @param {Function} onData
+ */
+function scanMocker1(segments, frameInterval, onData) {
+  this.extractMax = [200001, 200001, 200001, 200001, 200001];
+  this.zoomInfo = {
+    segmentIndex: 0,
+    startIndex: 0,
+    endIndex: 2000,
+  };
+  // 计算点数
+  for (let i = 0; i < segments.length; i += 1) {
+    const seg = segments[i];
+    const { startFrequency, stopFrequency, stepFrequency } = seg;
+    const pointCount =
+      Math.round(((stopFrequency - startFrequency) * 1000) / stepFrequency) + 1;
+    seg.pointCount = pointCount;
+    // 构造数据构造器
+    seg.generator = new scanGenerator(pointCount);
+    // 计算单包发送量&分包次数
+    seg.onePack = pointCount;
+    seg.splitTime = 1;
+    this.totalSplitTimes += splitTime;
+  }
+  this.segments = segments;
+
+  // 1. 构造所有频段的数据&分发
+  const dataList = [];
+  for (let i = 0; i < 1000; i++) {
+    const segsData = [];
+    this.segments.forEach((s, index) => {
+      const segData = s.generator.generate();
+
+      for (let i = 0; i < s.splitTime; i += 1) {
+        const packData = segData.slice(i * s.onePack, (i + 1) * s.onePack);
+        segsData.push({
+          type: "scan",
+          segmentOffset: index,
+          startFrequency: s.startFrequency,
+          stopFrequency: s.stopFrequency,
+          stepFrequency: s.stepFrequency,
+          offset: i * s.onePack,
+          total: s.pointCount,
+          data: new Int16Array(packData),
+        });
+      }
+    });
+    dataList.push(segsData);
+  }
+  console.log("data created:::", dataList.length);
+  const dt1 = new Date().getTime();
+  let count = -1;
+  // const splitInterval = Math.ceil((frameInterval - 5) / totalSplitTimes || 1);
+  this.tmr = setInterval(() => {
+    // if (!prevOver) return;
+    count++;
+    if (count >= dataList.length) {
+      clearInterval(this.tmr);
+      const dt2 = new Date().getTime();
+      console.log("send over:::", dt2 - dt1);
+      return;
+    }
+    // prevOver = false;
+
+    const segsData = dataList[count];
+    // const sendOneSplit = () => {
+    const oneSplitData = segsData[0];
+    // if (!oneSplitData) {
+    //   prevOver = true;
+    //   return;
+    // }
+    // 发射
+    if (onData) {
+      onData(oneSplitData);
+    }
+    // setTimeout(() => {
+    //   sendOneSplit();
+    // }, splitInterval);
+    // };
+    // sendOneSplit();
+  }, frameInterval);
+}
+
+/**
+ *
+ * @param {Array<Number>} outMax
+ */
+scanMocker.prototype.setOutMax = function (outMax) {
+  this.extractMax = outMax;
+};
+
+/**
+ *
+ * @param {{segmentIndex:Number,startFrequency:Number,stopFrequency:Number}} options
+ */
+scanMocker.prototype.zoom = function (options) {
+  // 计算索引位置
+  const seg = this.segments[options.segmentIndex];
+  const startIndex = Math.ceil(
+    ((options.startFrequency - seg.startFrequency) * 1000) / seg.stepFrequency
+  );
+  const endIndex = Math.floor(
+    ((options.stopFrequency - seg.startFrequency) * 1000) / seg.stepFrequency
+  );
+  this.zoomInfo = {
+    segmentIndex: options.segmentIndex,
+    startIndex,
+    endIndex,
+  };
+};
+
+scanMocker.prototype.dispose = function () {
+  if (this.tmr) {
+    clearInterval(this.tmr);
+    this.tmr = undefined;
+  }
+};
+
+scanMocker1.prototype.dispose = function () {
+  if (this.tmr) {
+    clearInterval(this.tmr);
+    this.tmr = undefined;
+  }
+};
+
+// let mocker;
+/**
+ *
+ * @param {{frame:Number, type:String,segments:Array<any>,performance:boolean}} options
+ * @param {Function} onData
+ * @returns {scanMocker | sineGenerator}
+ */
+const demoData = (options, onData) => {
+  const { frame, type, performance } = options;
+  let mocker;
+  if (type === "spectrum") {
+    const interval = Math.round(1000 / frame);
+    mocker = new sineGenerator(interval, (d) => {
+      if (onData) {
+        onData({
+          type: "spectrum",
+          frequency: 101.7,
+          span: 200,
+          data: d,
+        });
+      }
+    });
+    // 每5s 变化一次数据长度
+    // setTimeout(() => {
+    //   let pointCount = Math.floor(1000 + Math.random() * 1000);
+    //   pointCount = pointCount % 2 === 0 ? pointCount + 1 : pointCount;
+    //   if (mocker) {
+    //     mocker.setOption({ outPointCount: pointCount });
+    //   }
+    // }, 5000);
+  }
+  if (type === "scan") {
+    console.log("init scan mocker:::", options);
+    if (performance) {
+      mocker = new scanMocker1(
+        options.segments,
+        Math.round(950 / frame),
+        (d) => {
+          if (onData) {
+            onData(d);
+          }
+        },
+        false
+      );
+    } else {
+      mocker = new scanMocker(
+        options.segments,
+        Math.round(950 / frame),
+        (d) => {
+          if (onData) {
+            onData(d);
+          }
+        },
+        false
+      );
+    }
+  }
+  return mocker;
+};
+
+export default demoData;
+export { sineGenerator, scanGenerator };

@@ -1,0 +1,58 @@
+﻿{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "edgeId": null,
+  "mfid": null,
+  "type": "Magneto.Device.ADS_B_USB",
+  "moduleType": "device",
+  "moduleCategory": [
+    "decoder"
+  ],
+  "moduleState": "idle",
+  "supportedFeatures": [
+    "none"
+  ],
+  "displayName": "ADS_B_USB",
+  "description": "USB ADS-B接收器",
+  "manufacturer": "成都阿莱夫信息技术有限公司",
+  "model": "ADS_B_USB",
+  "sn": "",
+  "maximumInstance": 1,
+  "parameters": [
+    {
+      "name": "com",
+      "supportedFeatures": [
+        "none"
+      ],
+      "displayName": "串口号",
+      "description": "设置ADS_B_USB的串口号，格式：COMx  。",
+      "unit": "",
+      "category": "安装参数",
+      "style": "input",
+      "type": "string",
+      "children": [],
+      "relatedValue": [],
+      "default": "COM3",
+      "minimum": null,
+      "maximum": null,
+      "step": null,
+      "values": [],
+      "displayValues": [],
+      "browsable": true,
+      "selectOnly": false,
+      "readonly": false,
+      "isInstallation": true,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 0,
+      "template": [],
+      "value": "COM3"
+    }
+  ],
+  "constraintScript": {},
+  "version": "1.0.0",
+  "capability": null
+}

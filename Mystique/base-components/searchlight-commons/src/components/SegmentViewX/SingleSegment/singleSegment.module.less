@@ -1,0 +1,64 @@
+.ssroot {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0 8px;
+
+  &:nth-child(2n) {
+    background-color: #3ce5d30d;
+  }
+
+  .valuelabel {
+    flex: 1;
+    max-width: 100px;
+    text-align: center;
+    cursor: pointer;
+    background: var(--theme-background-chart);
+    border-radius: 2px;
+    font-size: 12px;
+    height: 32px;
+    margin: 0 5px;
+    line-height: 32px;
+    min-width: 50px;
+    color: #3ce5d3;
+
+    &.disable {
+      opacity: 0.8;
+    }
+  }
+}
+
+.selectItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 68px;
+  cursor: pointer;
+  color: var(--theme-font-100);
+  font-size: 14px;
+  margin-bottom: 1px;
+  background: linear-gradient(
+    90.05deg,
+    rgba(61, 200, 231, 0) 0.06%,
+    rgba(61, 200, 231, 0.1) 25.43%,
+    rgba(61, 200, 231, 0.1) 71.61%,
+    rgba(61, 200, 231, 0) 97.48%
+  );
+  &:hover {
+    background: linear-gradient(
+      90.05deg,
+      rgba(61, 200, 231, 0) 0.06%,
+      rgba(61, 200, 231, 0.15) 25.43%,
+      rgba(61, 200, 231, 0.15) 71.61%,
+      rgba(61, 200, 231, 0) 97.48%
+    );
+  }
+}
+
+.selectItemSel {
+  .selectItem();
+  span {
+    color: #3ce5d3;
+  }
+}

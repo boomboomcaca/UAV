@@ -1,0 +1,47 @@
+{
+  "global": {
+    "$filterBandwidth.value<=9": [
+      "$demMode.values=['am','fm','pulse','cw','usb','lsb']",
+      "$demMode.displayValues=['AM','FM','PULSE','CW','USB','LSB']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'fm'"
+    ],
+    "$filterBandwidth.value>9": [
+      "$demMode.values=['am','fm','pulse','pm']",
+      "$demMode.displayValues=['AM','FM','PULSE','PM']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'fm'"
+    ],
+    "$scanMode.value=='pscan'": [
+      "$detector.browsable=false",
+      "$filterBandwidth.browsable=false",
+      "$fftMode.browsable=true"
+    ],
+    "$scanMode.value!='pscan'": [
+      "$detector.browsable=true",
+      "$filterBandwidth.browsable=true",
+      "$fftMode.browsable=false"
+    ],
+    "$bandMeasureMode.value=='XDB'": [
+      "$xdB.browsable=true",
+      "$betaValue.browsable=false"
+    ],
+    "$bandMeasureMode.value=='BETA'": [
+      "$xdB.browsable=false",
+      "$betaValue.browsable=true"
+    ],
+    "$detector.value=='fast'": [
+      "$measureTime.values=[-1,1,2,4,7,16,32,63,125,250,500]",
+      "$measureTime.displayValues=['自动','1μs','2μs','4μs','7μs','16μs','32μs','63μs','125μs','250μs','500μs']",
+      "$measureTime.value=$measureTime.values.includes($measureTime.value)?$measureTime.value:-1"
+    ],
+    "$detector.value=='pos'": [
+      "$measureTime.values=[-1,1000,2000,4000,5000,10000,20000,30000,60000,100000,200000,400000,500000]",
+      "$measureTime.displayValues=['自动','1ms','2ms','4ms','5ms','10ms','20ms','30ms','60ms','100ms','200ms','400ms','500ms']",
+      "$measureTime.value=$measureTime.values.includes($measureTime.value)?$measureTime.value:-1"
+    ],
+    "$detector.value=='avg'||$detector.value=='rms'": [
+      "$measureTime.values=[-1,1000,2000,3000,4000,6000,12000,25000,50000,100000,200000]",
+      "$measureTime.displayValues=['自动','1ms','2ms','3ms','4ms','6ms','12ms','25ms','50ms','100ms','200ms']",
+      "$measureTime.value=$measureTime.values.includes($measureTime.value)?$measureTime.value:-1"
+    ]
+  }
+}

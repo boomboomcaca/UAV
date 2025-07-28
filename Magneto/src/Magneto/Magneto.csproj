@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+        <InvariantGlobalization>true</InvariantGlobalization>
+        <OutputType>Exe</OutputType>
+        <OutputPath>../../bin/$(Configuration)/</OutputPath>
+        <PublishDir>../../publish/$(Configuration)/</PublishDir>
+        <Company>成都阿莱夫信息技术有限公司</Company>
+        <Description />
+        <Copyright>@Aleph Co. Ltd. 2023</Copyright>
+        <PackAsTool>true</PackAsTool>
+        <ToolCommandName>Magneto</ToolCommandName>
+        <Version>1.10.1.0</Version>
+        <UserSecretsId>63d0b4ff-b4ce-40ad-a6c1-c2a9ad152c2d</UserSecretsId>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)'=='Release'">
+        <DebugType>none</DebugType>
+        <DebugSymbols>false</DebugSymbols>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\CCC\CCC.csproj" />
+        <ProjectReference Include="..\Core\Core.csproj" />
+        <Reference Include="CommandLine" HintPath="..\Package\CommandLine.dll" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Update="settings.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Include="wwwroot\**">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+    <!-- 暂时这样，将类库在发布的时候就加入到程序输出目录 -->
+    <ItemGroup>
+        <MySourceFiles Include="../Package/library/**/*.*" />
+        <MySourceFilesOther1 Include="../Package/misc/**/*.*" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="StreamJsonRpc" Version="2.21.10" />
+    </ItemGroup>
+    <Target Name="CopyCustomContentBuild" AfterTargets="AfterBuild">
+        <Copy SourceFiles="@(MySourceFiles)" DestinationFolder="$(OutDir)/library/%(RecursiveDir)" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(MySourceFilesOther1)" DestinationFolder="$(OutDir)/%(RecursiveDir)" SkipUnchangedFiles="true" />
+    </Target>
+    <Target Name="CopyCustomContent" AfterTargets="Publish" Condition="'$(Configuration)' == 'Release'">
+        <Copy SourceFiles="@(MySourceFiles)" DestinationFolder="$(PublishDir)/library/%(RecursiveDir)" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(MySourceFilesOther1)" DestinationFolder="$(PublishDir)/%(RecursiveDir)" SkipUnchangedFiles="true" />
+    </Target>
+</Project>

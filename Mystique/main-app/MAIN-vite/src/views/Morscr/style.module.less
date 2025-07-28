@@ -1,0 +1,84 @@
+@bottomheight: 40%;
+.morscrRoot {
+  background: var(--theme-background-main);
+  //   background-color: #12274f;
+  height: 100%;
+  padding: 12px;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  //   height: 100%;
+  gap: 12px;
+  margin-top: 12px;
+  margin-bottom: 24px;
+  //   border: red solid thin;
+  .contentLeft {
+    height: 100%;
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+    .item1 {
+      flex: 1;
+    }
+    .item2 {
+      height: @bottomheight;
+    }
+  }
+
+  .contentCenter {
+    width: 54%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+
+    .centerTop {
+      flex: 1;
+    }
+
+    .centerBottom {
+      height: @bottomheight;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 12px;
+
+      .item1 {
+        flex: 1;
+      }
+      .item2 {
+        flex: 1;
+      }
+    }
+  }
+
+  .contentRight {
+    width: 27%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+
+    .item1 {
+      flex: 1;
+    }
+    .item2 {
+      height: @bottomheight;
+    }
+  }
+}
+
+.mapcon {
+  background: linear-gradient(0deg, #072b54, #072b54),
+    linear-gradient(0deg, #e4edf7, #e4edf7), #f6f8ff;
+}

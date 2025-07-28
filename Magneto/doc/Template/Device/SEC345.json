@@ -1,0 +1,130 @@
+﻿{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "edgeId": null,
+  "mfid": null,
+  "type": "Magneto.Device.SEC345.SEC345",
+  "moduleType": "device",
+  "moduleCategory": [
+    "compass"
+  ],
+  "moduleState": "idle",
+  "supportedFeatures": [
+    "none"
+  ],
+  "displayName": "SEC345",
+  "description": "适用于慧联科技SEC340系列电子罗盘模块",
+  "manufacturer": "成都阿莱夫信息技术有限公司",
+  "model": "SEC345",
+  "sn": "",
+  "maximumInstance": 0,
+  "parameters": [
+    {
+      "name": "connection",
+      "supportedFeatures": [
+        "none"
+      ],
+      "displayName": "通信方式",
+      "description": "设置罗盘数据输出串口或网口。\r\n【串口通信】格式：\"COMx\"或\"COMx,XXXX\"，其中\"x\"表示串口号，例如：\"COM1\"，\"XXXX\"表示波特率，例如：\"4800\"，未指定时，默认为\"115200\"\r\n【网口通信】格式：\"[tcp://]x.x.x.x:y\"，其中\"[tcp://]\"为可选项，表示网络协议使用TCP，\"x\"表示IPv4点分十进制值,\"y\"表示网络服务端口号，例如：\"tcp://192.168.1.100:9553\"或\"192.168.1.100:9553\"\r\n其它格式为非法输入值",
+      "unit": "",
+      "category": "安装参数",
+      "style": "input",
+      "type": "string",
+      "children": [],
+      "relatedValue": [],
+      "default": "COM1,9600",
+      "minimum": null,
+      "maximum": null,
+      "step": 100.0,
+      "values": [],
+      "displayValues": [],
+      "browsable": true,
+      "selectOnly": false,
+      "readonly": false,
+      "isInstallation": true,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 0,
+      "template": [],
+      "value": "COM1,9600"
+    },
+    {
+      "name": "reportingDirection",
+      "supportedFeatures": [
+        "none"
+      ],
+      "displayName": "公布方位",
+      "description": "是否通过消息对外公布地理方位",
+      "unit": "",
+      "category": "安装参数",
+      "style": "switch",
+      "type": "bool",
+      "children": [],
+      "relatedValue": [],
+      "default": true,
+      "minimum": null,
+      "maximum": null,
+      "step": null,
+      "values": [
+        true,
+        false
+      ],
+      "displayValues": [
+        "是",
+        "否"
+      ],
+      "browsable": true,
+      "selectOnly": true,
+      "readonly": false,
+      "isInstallation": true,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 1,
+      "template": [],
+      "value": true
+    },
+    {
+      "name": "extraAngle",
+      "supportedFeatures": [
+        "none"
+      ],
+      "displayName": "补偿角度",
+      "description": "设置角度补偿值，有效值范围-180~180，主要用于工程安装时的角度纠偏",
+      "unit": "",
+      "category": "安装参数",
+      "style": "slider",
+      "type": "number",
+      "children": [],
+      "relatedValue": [],
+      "default": 0.0,
+      "minimum": -180.0,
+      "maximum": 180.0,
+      "step": 1.0,
+      "values": [],
+      "displayValues": [],
+      "browsable": true,
+      "selectOnly": false,
+      "readonly": false,
+      "isInstallation": true,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 3,
+      "template": [],
+      "value": 0.0
+    }
+  ],
+  "constraintScript": {},
+  "version": "1.2.0",
+  "capability": null
+}

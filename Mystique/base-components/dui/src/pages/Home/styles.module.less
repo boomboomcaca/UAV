@@ -1,0 +1,67 @@
+.home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+
+  .tabs {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed #dfdfdf;
+
+    .tips {
+      font-size: 14px;
+      font-weight: 800;
+      color: rgba(0, 0, 0, 0.85);
+      width: 90px;
+    }
+    .item {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      .radio {
+        margin: 3px;
+        height: 18px;
+        padding: 3px 12px;
+        border-radius: 2px;
+        background: #ffffff;
+        border: 1px solid #dfdfdf00;
+        color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 14px;
+      }
+      .radioActive {
+        .radio();
+        background: @primary-color;
+        border: 1px solid @primary-color;
+        color: #fff;
+      }
+    }
+  }
+  .demo {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+
+    .demoview {
+      background: var(--theme-background-main);
+      color: var(--theme-font-100);
+      box-sizing: border-box;
+      padding: 8px;
+      height: 100%;
+      width: 100%;
+      overflow: auto;
+    }
+    .demodoc {
+      flex: 1;
+      overflow: auto;
+      padding: 0 8px 8px 8px;
+    }
+  }
+}

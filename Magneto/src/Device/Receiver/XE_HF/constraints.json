@@ -1,0 +1,16 @@
+{
+  "scan,scandf": {
+    "$stopFrequency.name=='stopFrequency' ||$startFrequency.name=='startFrequency'||$stepFrequency.name=='stepFrequency' ":
+    [
+      "$startFrequency.value=$startFrequency.value-(($startFrequency.value*1000000)%$stepFrequency.value*1000)/1000000",
+      "$stopFrequency.value=$stopFrequency.value-(($stopFrequency.value*1000000)%$stepFrequency.value*1000)/1000000"
+    ],
+    "$detector.value=='fast'": [
+      "$sweepNumLoops.browsable=false"
+    ],
+    "$detector.value!='fast'": [
+      "$sweepNumLoops.browsable=true",
+      "$sweepNumLoops.value=3"
+    ]
+  }
+}

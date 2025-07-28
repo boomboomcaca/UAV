@@ -1,0 +1,64 @@
+.mapopRoot {
+  position: relative;
+  border-radius: 4px;
+  width: 115px;
+  height: 75px;
+  color: white;
+  cursor: pointer;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  .mapOpt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2px 4px 0 4px;
+    box-sizing: border-box;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .mapName {
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 35px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background-color: #148bed50;
+  }
+
+  &:hover {
+    box-shadow: inset 0px 0px 2px 2px #148bed;
+    .mapOpt {
+      opacity: 1;
+      // background-color: rgba(0, 0, 0, 50);
+    }
+  }
+
+  &.sel {
+    border: solid 2px #148bed;
+    box-sizing: border-box;
+    .mapName {
+      background-color: #148bed;
+    }
+  }
+
+  &.normal2d {
+    background-image: url("../icons/normal2d.png");
+  }
+
+  &.satelite {
+    background-image: url("../icons/satelite.png");
+  }
+}
+
+.check {
+  font-size: 13px;
+}

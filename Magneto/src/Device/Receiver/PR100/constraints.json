@@ -1,0 +1,76 @@
+{
+  "scan": {
+    "$scanMode.value=='pscan'": [
+      "$ifBandwidth.browsable=true",
+      "$stepFrequency.selectOnly=true",
+      "$stepFrequency.values=[0.125,0.25,0.5,0.625,1.25,2.5,3.125,6.25,12.5,25,50,100]",
+      "$stepFrequency.displayValues=['125Hz','250Hz','500Hz','625Hz','1.25kHz','2.5kHz','3.125kHz','6.25kHz','12.5kHz','25kHz','50kHz','100kHz']",
+      "$stepFrequency.value=25"
+    ],
+    "$scanMode.value=='fscan'": [
+      "$ifBandwidth.browsable=true",
+      "$stepFrequency.selectOnly=true",
+      "$stepFrequency.values=[0.1,0.125,0.25,0.5,0.625,1.25,2.5,3.125,6.25,12.5,25,50,100,120,150,200,250,300,500,1000,2000,3000,5000,8000,10000]",
+      "$stepFrequency.displayValues=['100Hz','125Hz','250Hz','500Hz','625Hz','1.25kHz','2.5kHz','3.125kHz','6.25kHz','12.5kHz','25kHz','50kHz','100kHz','120kHz','150kHz','200kHz','250kHz','300kHz','500kHz','1MHz','2MHz','3MHz','5MHz','8MHz','10MHz']",
+      "$stepFrequency.value=25"
+    ]
+  },
+  "ffm": {
+    "$filterBandwidth.value>1||$filterBandwidth.value<0.0015": [
+      "$iqSwitch.browsable=false",
+      "$iqSwitch.value=false"
+    ],
+    "$filterBandwidth.value<=1&&$filterBandwidth.value>=0.0015": [
+      "$iqSwitch.browsable=true"
+    ],
+    "($ifBandwidth.value >=0.15&&ifBandwidth.value<0.6)||($filterBandwidth.value >=0.15&&$filterBandwidth.value<0.6)": [
+      "$demMode.values=['fm','am','pm','pulse','cw','iq','lsb','usb']",
+      "$demMode.displayValues=['FM','AM','PM','PULSE','CW','IQ','LSB','USB']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'fm'"
+    ],
+    "($ifBandwidth.value >=0.6&&ifBandwidth.value<=9)||($filterBandwidth.value >=0.6&&$filterBandwidth.value<=9)": [
+      "$demMode.values=['fm','am','pm','pulse','cw','iq','isb','lsb','usb']",
+      "$demMode.displayValues=['FM','AM','PM','PULSE','CW','IQ','ISB','LSB','USB']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'fm'"
+    ],
+    "($ifBandwidth.value >9&&ifBandwidth.value<=10000)||($filterBandwidth.value >9&&$filterBandwidth.value<=10000)": [
+      "$demMode.values=['fm','am','pm','pulse','iq','isb']",
+      "$demMode.displayValues=['FM','AM','PM','PULSE','IQ','ISB']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'fm'"
+    ]
+  },
+  "mscne": {
+    "($ifBandwidth.value >=0.15&&ifBandwidth.value<0.6)||($filterBandwidth.value >=0.15&&$filterBandwidth.value<0.6)": [
+      "$demMode.values=['fm','am','pm','pulse','cw','iq','lsb','usb']",
+      "$demMode.displayValues=['FM','AM','PM','PULSE','CW','IQ','LSB','USB']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'fm'"
+    ],
+    "($ifBandwidth.value >=0.6&&ifBandwidth.value<=9)||($filterBandwidth.value >=0.6&&$filterBandwidth.value<=9)": [
+      "$demMode.values=['fm','am','pm','pulse','cw','iq','isb','lsb','usb']",
+      "$demMode.displayValues=['FM','AM','PM','PULSE','CW','IQ','ISB','LSB','USB']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'fm'"
+    ],
+    "($ifBandwidth.value >9&&ifBandwidth.value<=10000)||($filterBandwidth.value >9&&$filterBandwidth.value<=10000)": [
+      "$demMode.values=['fm','am','pm','pulse','iq','isb']",
+      "$demMode.displayValues=['FM','AM','PM','PULSE','IQ','ISB']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'fm'"
+    ]
+  },
+  "mscan": {
+    "($ifBandwidth.value >=0.15&&ifBandwidth.value<0.6)||($filterBandwidth.value >=0.15&&$filterBandwidth.value<0.6)": [
+      "$demMode.values=['fm','am','pm','pulse','cw','iq','lsb','usb']",
+      "$demMode.displayValues=['FM','AM','PM','PULSE','CW','IQ','LSB','USB']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'fm'"
+    ],
+    "($ifBandwidth.value >=0.6&&ifBandwidth.value<=9)||($filterBandwidth.value >=0.6&&$filterBandwidth.value<=9)": [
+      "$demMode.values=['fm','am','pm','pulse','cw','iq','isb','lsb','usb']",
+      "$demMode.displayValues=['FM','AM','PM','PULSE','CW','IQ','ISB','LSB','USB']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'fm'"
+    ],
+    "($ifBandwidth.value >9&&ifBandwidth.value<=10000)||($filterBandwidth.value >9&&$filterBandwidth.value<=10000)": [
+      "$demMode.values=['fm','am','pm','pulse','iq','isb']",
+      "$demMode.displayValues=['FM','AM','PM','PULSE','IQ','ISB']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'fm'"
+    ]
+  }
+}

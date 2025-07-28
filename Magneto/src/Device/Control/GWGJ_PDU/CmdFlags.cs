@@ -1,0 +1,36 @@
+﻿namespace Magneto.Device.GWGJ_PDU;
+
+internal enum CmdFlags : byte
+{
+    Login = 1,
+    GetSocketState,
+    GetPvcInfo,
+    GetPvcConfig,
+    GetSocketConfigs,
+    GetScheduleInfos,
+    GetNetInfo,
+    GetHistory,
+    GetDate,
+    SocketControl,
+    UpdatePvcConfig,
+    UpdateSocketConfig,
+    UpdateNetworkConfig,
+    UpdateSuperAccount,
+    AddSchedule,
+    DeleteSchedule,
+    UpdateSchedule,
+    ResetPdu,
+    UpdateDate,
+    HandControl,
+    UpdateGeneralUserPassword,
+    GetGeneralUserList,
+    UpdateGeneralUserPower,
+    UpdateGeneralUserAble,
+    GetTemperature = 32,
+    GetTemperatureConfig,
+    GetControlRecordPageTotal,
+    GetControlRecordsByPage,
+    GetEightCurrentInfo,
+    UpdateTemperatureConfig = 48,
+    Logout = 80
+}

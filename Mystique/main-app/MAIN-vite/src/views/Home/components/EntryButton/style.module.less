@@ -1,0 +1,74 @@
+.link {
+  flex: 1;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+
+  display: flex;
+}
+
+.entrybtnRoot {
+  background: linear-gradient(
+    180deg,
+    rgba(60, 229, 211, 0) 0%,
+    rgba(60, 229, 211, 0.09) 50%,
+    rgba(60, 229, 211, 0) 100%
+  );
+  //   min-width: 200px;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  user-select: none;
+  &:hover {
+    color: #52ffff;
+    background: linear-gradient(
+      180deg,
+      rgba(60, 229, 211, 0) 0%,
+      rgba(60, 229, 211, 0.25) 50%,
+      rgba(60, 229, 211, 0) 100%
+    );
+    .icon {
+      width: 65%;
+      height: 65%;
+      opacity: 0.8;
+    }
+  }
+  &:active {
+    background: linear-gradient(
+      180deg,
+      rgba(60, 229, 211, 0) 0%,
+      rgba(60, 229, 211, 0.09) 50%,
+      rgba(60, 229, 211, 0) 100%
+    );
+    .icon {
+      width: 60%;
+      height: 60%;
+    }
+  }
+  .icon {
+    width: 55%;
+    height: 55%;
+  }
+}
+
+.btncon {
+  height: 65%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .iconcon {
+    background-image: url("../../icons/engty_button_background.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 4.5vw;
+    height: 4.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

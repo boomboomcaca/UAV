@@ -1,0 +1,108 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  padding: 0 0 16px 8px;
+
+  .img + .img {
+    margin-top: 8px;
+  }
+
+  .img {
+    flex: 1;
+    position: relative;
+    overflow: auto;
+    width: 20vw;
+    border: 1px solid #ffffff;
+    // filter: drop-shadow(0px 10px 20px rgba(4, 5, 27, 0.3));
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .btn {
+      top: 0;
+      position: absolute;
+      width: 100%;
+      height: 30px;
+
+      .close {
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        cursor: pointer;
+      }
+
+      .down {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.imgMax {
+  flex: 1;
+  position: relative;
+  width: 90%;
+  height: 90%;
+  transform: translate(5%, 5%);
+  background: #202741;
+  box-shadow: inset 0px 0px 2px rgb(255 255 255 / 10%);
+  border-radius: 2px;
+  border: 1px solid #ffffff;
+  overflow: hide;
+  pointer-events: all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .image {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .btnMax {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    .closeMax {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.6);
+      cursor: pointer;
+    }
+    .okMax {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(60, 229, 211, 0.5);
+      cursor: pointer;
+    }
+  }
+}

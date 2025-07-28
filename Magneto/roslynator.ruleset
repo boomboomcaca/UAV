@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+This rule set can be used to:
+
+ 1) Enable/disable analyzer(s) by DEFAULT.
+ 2) Change DEFAULT severity (action) of the analyzer(s).
+ 
+Default configuration is applied once when analyzers are loaded.
+Therefore, it may be neccessary to restart IDE for changes to take effect.
+
+Although it is possible to edit ruleset manually, Visual Studio has built-in support for editing ruleset.
+Just add ruleset file to a solution and open it.
+
+-->
+<RuleSet Name="MyRules" ToolsVersion="16.0">
+  <Rules AnalyzerId="Roslynator.CSharp.Analyzers" RuleNamespace="Roslynator.CSharp.Analyzers">
+    <!-- Formatting -->
+    <Rule Id="RCS0002" Action="Info" />
+    <Rule Id="RCS0003" Action="Info" />
+    <Rule Id="RCS0005" Action="Info" />
+    <Rule Id="RCS0009" Action="Info" />
+    <Rule Id="RCS0014" Action="Info" />
+    <Rule Id="RCS0016" Action="Error" />
+    <Rule Id="RCS0020" Action="Error" />
+    <Rule Id="RCS0021" Action="Error" />
+    <Rule Id="RCS0022" Action="Error" />
+    <Rule Id="RCS0023" Action="Error" />
+    <Rule Id="RCS0024" Action="Error" />
+    <Rule Id="RCS0025" Action="Error" />
+    <Rule Id="RCS0030" Action="Error" />
+    <Rule Id="RCS0031" Action="Error" />
+    <Rule Id="RCS0033" Action="Error" />
+    <Rule Id="RCS0041" Action="Info" />
+    <Rule Id="RCS0046" Action="Warning" />
+    <Rule Id="RCS0050" Action="Info" />
+    <Rule Id="RCS0051" Action="Error" />
+    <Rule Id="RCS0054" Action="Info" />
+    <Rule Id="RCS1101" Action="Error" />
+    <!-- Design -->
+    <Rule Id="RCS1059" Action="Error" />
+    <Rule Id="RCS1241" Action="Error" />
+    <!-- General -->
+    <Rule Id="RCS1181" Action="Info" />
+    <!-- Maintainability -->
+    <Rule Id="RCS1044" Action="Error" />
+    <Rule Id="RCS1141" Action="Info" />
+    <Rule Id="RCS1142" Action="Info" />
+    <!-- Naming -->
+    <Rule Id="RCS1045" Action="Error" />
+    <Rule Id="RCS1046" Action="Warning" />
+    <!-- Performance -->
+    <!-- Readability -->
+    <Rule Id="RCS1018" Action="Error" />
+    <Rule Id="RCS1019" Action="Warning" />
+    <Rule Id="RCS1052" Action="Error" />
+    <Rule Id="RCS1081" Action="Error" />
+    <Rule Id="RCS1094" Action="Error" />
+    <Rule Id="RCS1162" Action="Info" />
+    <Rule Id="RCS1228" Action="Info" />
+    <!-- Redundancy -->
+    <Rule Id="RCS1033" Action="Error" />
+    <Rule Id="RCS1035" Action="Warning" />
+    <Rule Id="RCS1040" Action="Info" />
+    <Rule Id="RCS1042" Action="Info" />
+    <Rule Id="RCS1043" Action="Info" />
+    <Rule Id="RCS1055" Action="Info" />
+    <Rule Id="RCS1066" Action="Info" />
+    <Rule Id="RCS1074" Action="Info" />
+    <Rule Id="RCS1133" Action="Info" />
+    <Rule Id="RCS1134" Action="Info" />
+    <Rule Id="RCS1145" Action="Info" />
+    <Rule Id="RCS1151" Action="Info" />
+    <Rule Id="RCS1174" Action="Info" />
+    <Rule Id="RCS1211" Action="Info" />
+    <!-- Simplification -->
+    <Rule Id="RCS1006" Action="Warning" />
+    <Rule Id="RCS1010" Action="Warning" />
+    <Rule Id="RCS1049" Action="Error" />
+    <Rule Id="RCS1177" Action="Warning" />
+    <Rule Id="RCS1207" Action="Info" />
+    <!-- Style -->
+    <Rule Id="RCS1007" Action="Error" />
+    <Rule Id="RCS1064" Action="Info" />
+    <Rule Id="RCS1126" Action="Error" />
+    <Rule Id="RCS1208" Action="Info" />
+    <!-- Usage -->
+    <Rule Id="RCS1155" Action="Error" />
+  </Rules>
+
+</RuleSet>

@@ -1,0 +1,62 @@
+.segmentListCommons {
+  padding: 8px 16px;
+  font-size: 14px;
+  color: var(--theme-font-100);
+  .addSegment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .label {
+      font-weight: bold;
+    }
+    > div {
+      margin: 0;
+    }
+  }
+  .list {
+    overflow: auto;
+    max-height: 240px;
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+      background: var(--theme-background-primary);
+      border-radius: 4px;
+      position: relative;
+      margin-top: 8px;
+      .idx {
+        height: 56px;
+        width: 72px;
+        border-right: 1px solid var(--theme-font-20);
+        line-height: 56px;
+        text-align: center;
+        font-weight: 700;
+      }
+      .ipt {
+        display: flex;
+        height: 100%;
+        padding-left: 16px;
+        flex: 1;
+        .iptItem {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          .iptItemLabel {
+            color: var(--theme-font-80);
+            span {
+              color: red;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .minus {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+      }
+    }
+  }
+}

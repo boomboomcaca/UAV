@@ -1,0 +1,47 @@
+.markerRoot {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+  &.sel {
+    background-color: #ff6347;
+  }
+}
+
+.markerBase {
+  position: absolute;
+  user-select: none;
+}
+
+.lineX {
+  .markerBase();
+  z-index: 5;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  border-right: dashed thin aliceblue;
+}
+
+.lineY {
+  .markerBase();
+  z-index: 6;
+  width: 100%;
+  left: 0;
+  height: 1px;
+  border-top: dashed thin aliceblue;
+}
+
+.triangle {
+  left: 1px;
+  top: 1px;
+  width: 19px;
+  height: 19px;
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+  background-color: skyblue;
+}
+
+.symbol {
+  .markerBase();
+  .triangle();
+  z-index: 1;
+}

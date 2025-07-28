@@ -1,0 +1,192 @@
+{
+  "global": {
+    "$detector.value=='fast'": [
+      "$measureTime.browsable=false",
+      "$measureTime.value=0.0"
+    ],
+    "$detector.value=='pos'": [
+      "$measureTime.browsable=true",
+      "$measureTime.value=0.0",
+      "$measureTime.values=[1,2,3,4,5]",
+      "$measureTime.displayValues=['1ms','2ms','3ms','4ms','5ms']"
+    ],
+    "$detector.value=='avg'||$detector.value=='rms'": [
+      "$measureTime.browsable=true",
+      "$measureTime.value=0.0",
+      "$measureTime.values=[2,3,4,5,6]",
+      "$measureTime.displayValues=['2ms','3ms','4ms','5ms','6ms']"
+    ]
+  },
+  "ifmca": {
+    "startup": [
+      "$ifBandwidth.value=40000",
+      "$ifBandwidth.values=[40000]",
+      "$ifBandwidth.displayValues=['40MHz']"
+    ]
+  },
+  "mscan,ffm": {
+    "startup": [
+      "$dwellTime.browsable=false",
+      "$dwellTime.value=0.0",
+      "$holdTime.browsable=false",
+      "$holdTime.value=0.0"
+    ]
+  },
+  "ffm,itum": {
+    "$iqSwitch.value==true": [
+      "$ifBandwidth.values=[19.53125,39.0625,50.0,78.125,125.0,156.25,250.0,312.5,500.0,625.0,1250,2500,5000,10000,20000,40000]",
+      "$ifBandwidth.displayValues=['19.53125kHz','39.0625kHz','50kHz','78.125kHz','125kHz','156.25kHz','250kHz','312.5kHz','500kHz','625kHz','1.25MHz','2.5MHz','5MHz','10MHz','20MHz','40MHz']",
+      "$ifBandwidth.value=$ifBandwidth.values.includes($ifBandwidth.value)?$ifBandwidth.value:500.0"
+    ],
+    "$iqSwitch.value==false": [
+      "$ifBandwidth.values=[ 1.0,2.0,5.0,10.0,20.0,50.0,100.0,120.0,150.0,200.0,500.0,1000.0,2000.0,5000.0,10000.0,20000.0,40000.0]",
+      "$ifBandwidth.displayValues=['1kHz','2kHz','5kHz','10kHz','20kHz','50kHz','100kHz','120kHz','150kHz','200kHz','500kHz','1MHz','2MHz','5MHz','10MHz','20MHz','40MHz']",
+      "$ifBandwidth.value=$ifBandwidth.values.includes($ifBandwidth.value)?$ifBandwidth.value:500.0"
+    ],
+    "!([25,30,40,50].includes($ifBandwidth.value))": [
+      "$audioSwitch.readonly=false",
+      "$audioSwitch.browsable=true"
+    ],
+    "$ifBandwidth.value==40000": [
+      "$filterBandwidth.values=[3.125,6.25,12.5,25.0,50.0,100.0,120.0,200.0,250.0,500.0,1000.0,5000.0,10000.0,20000.0,40000.0]",
+      "$filterBandwidth.displayValues=['3.125kHz','6.25kHz','12.5kHz','25kHz','50kHz','100kHz','120kHz','200kHz','250kHz','500kHz','1MHz','5MHz','10MHz','20MHz','40MHz']",
+      "$filterBandwidth.value=$filterBandwidth.values.includes($filterBandwidth.value)?$filterBandwidth.value:500.0"
+    ],
+    "$ifBandwidth.value==20000": [
+      "$filterBandwidth.values=[3.125,6.25,12.5,25.0,50.0,100.0,120.0,200.0,250.0,500.0,1000.0,5000.0,10000.0,20000.0]",
+      "$filterBandwidth.displayValues=['3.125kHz','6.25kHz','12.5kHz','25kHz','50kHz','100kHz','120kHz','200kHz','250kHz','500kHz','1MHz','5MHz','10MHz','20MHz']",
+      "$filterBandwidth.value=$filterBandwidth.values.includes($filterBandwidth.value)?$filterBandwidth.value:500.0"
+    ],
+    "$ifBandwidth.value==10000": [
+      "$filterBandwidth.values=[3.125,6.25,12.5,25.0,50.0,100.0,120.0,200.0,250.0,500.0,1000.0,5000.0,10000.0]",
+      "$filterBandwidth.displayValues=['3.125kHz','6.25kHz','12.5kHz','25kHz','50kHz','100kHz','120kHz','200kHz','250kHz','500kHz','1MHz','5MHz','10MHz']",
+      "$filterBandwidth.value=$filterBandwidth.values.includes($filterBandwidth.value)?$filterBandwidth.value:500.0"
+    ],
+    "$ifBandwidth.value==5000": [
+      "$filterBandwidth.values=[3.125,6.25,12.5,25.0,50.0,100.0,120.0,200.0,250.0,500.0,1000.0,5000.0]",
+      "$filterBandwidth.displayValues=['3.125kHz','6.25kHz','12.5kHz','25kHz','50kHz','100kHz','120kHz','200kHz','250kHz','500kHz','1MHz','5MHz']",
+      "$filterBandwidth.value=$filterBandwidth.values.includes($filterBandwidth.value)?$filterBandwidth.value:500.0"
+    ],
+    "$ifBandwidth.value==2000||$ifBandwidth.value==1000": [
+      "$filterBandwidth.values=[3.125,6.25,12.5,25.0,50.0,100.0,120.0,200.0,250.0,500.0,1000.0]",
+      "$filterBandwidth.displayValues=['3.125kHz','6.25kHz','12.5kHz','25kHz','50kHz','100kHz','120kHz','200kHz','250kHz','500kHz','1MHz']",
+      "$filterBandwidth.value=$filterBandwidth.values.includes($filterBandwidth.value)?$filterBandwidth.value:500.0"
+    ],
+    "$ifBandwidth.value==500": [
+      "$filterBandwidth.values=[3.125,6.25,12.5,25.0,50.0,100.0,120.0,200.0,250.0,500.0]",
+      "$filterBandwidth.displayValues=['3.125kHz','6.25kHz','12.5kHz','25kHz','50kHz','100kHz','120kHz','200kHz','250kHz','500kHz']",
+      "$filterBandwidth.value=$filterBandwidth.values.includes($filterBandwidth.value)?$filterBandwidth.value:500.0"
+    ],
+    "$ifBandwidth.value==200": [
+      "$filterBandwidth.values=[3.125,6.25,12.5,25.0,50.0,100.0,120.0,200.0]",
+      "$filterBandwidth.displayValues=['3.125kHz','6.25kHz','12.5kHz','25kHz','50kHz','100kHz','120kHz','200kHz']",
+      "$filterBandwidth.value=$filterBandwidth.values.includes($filterBandwidth.value)?$filterBandwidth.value:200.0"
+    ],
+    "$ifBandwidth.value==150||$ifBandwidth.value==120": [
+      "$filterBandwidth.values=[3.125,6.25,12.5,25.0,50.0,100.0,120.0]",
+      "$filterBandwidth.displayValues=['3.125kHz','6.25kHz','12.5kHz','25kHz','50kHz','100kHz','120kHz']",
+      "$filterBandwidth.value=$filterBandwidth.values.includes($filterBandwidth.value)?$filterBandwidth.value:120.0"
+    ],
+    "$ifBandwidth.value==100": [
+      "$filterBandwidth.values=[3.125,6.25,12.5,25.0,50.0,100.0]",
+      "$filterBandwidth.displayValues=['3.125kHz','6.25kHz','12.5kHz','25kHz','50kHz','100kHz']",
+      "$filterBandwidth.value=$filterBandwidth.values.includes($filterBandwidth.value)?$filterBandwidth.value:100.0"
+    ],
+    "$ifBandwidth.value==50": [
+      "$filterBandwidth.values=[3.125,6.25,12.5,25.0,50.0]",
+      "$filterBandwidth.displayValues=['3.125kHz','6.25kHz','12.5kHz','25kHz','50kHz']",
+      "$filterBandwidth.value=$filterBandwidth.values.includes($filterBandwidth.value)?$filterBandwidth.value:50.0"
+    ],
+    "$ifBandwidth.value==20": [
+      "$filterBandwidth.values=[3.125,6.25,12.5]",
+      "$filterBandwidth.displayValues=['3.125kHz','6.25kHz','12.5kHz']",
+      "$filterBandwidth.value=$filterBandwidth.values.includes($filterBandwidth.value)?$filterBandwidth.value:12.5"
+    ],
+    "$ifBandwidth.value==10": [
+      "$filterBandwidth.values=[3.125,6.25]",
+      "$filterBandwidth.displayValues=['3.125kHz','6.25kHz']",
+      "$filterBandwidth.value=$filterBandwidth.values.includes($filterBandwidth.value)?$filterBandwidth.value:6.25"
+    ],
+    "$ifBandwidth.value==5": [
+      "$filterBandwidth.values=[3.125]",
+      "$filterBandwidth.displayValues=['3.125kHz']",
+      "$filterBandwidth.value=$filterBandwidth.values.includes($filterBandwidth.value)?$filterBandwidth.value:3.125"
+    ]
+  },
+  "scan,ese,emda,emdc,nsic,satels": {
+    "startup": [
+      "$startFrequency.browsable=false",
+      "$stopFrequency.browsable=false",
+      "$stepFrequency.browsable=false"
+    ]
+  },
+  "uavd": {
+    "startup": [
+      "$startFrequency.browsable=true",
+      "$stopFrequency.browsable=true",
+      "$stepFrequency.browsable=true"
+    ]
+  },
+  "fdf": {
+    "$dfBandwidth.value==40000": [
+      "$filterBandwidth.values=[3.125,6.25,12.5,25.0,50.0,100.0,120.0,200.0,250.0,500.0,1000.0,5000.0,10000.0,20000.0,40000.0]",
+      "$filterBandwidth.displayValues=['3.125kHz','6.25kHz','12.5kHz','25kHz','50kHz','100kHz','120kHz','200kHz','250kHz','500kHz','1MHz','5MHz','10MHz','20MHz','40MHz']"
+    ],
+    "$dfBandwidth.value==20000": [
+      "$filterBandwidth.values=[3.125,6.25,12.5,25.0,50.0,100.0,120.0,200.0,250.0,500.0,1000.0,5000.0,10000.0,20000.0]",
+      "$filterBandwidth.displayValues=['3.125kHz','6.25kHz','12.5kHz','25kHz','50kHz','100kHz','120kHz','200kHz','250kHz','500kHz','1MHz','5MHz','10MHz','20MHz']"
+    ],
+    "$dfBandwidth.value==10000": [
+      "$filterBandwidth.values=[3.125,6.25,12.5,25.0,50.0,100.0,120.0,200.0,250.0,500.0,1000.0,5000.0,10000.0]",
+      "$filterBandwidth.displayValues=['3.125kHz','6.25kHz','12.5kHz','25kHz','50kHz','100kHz','120kHz','200kHz','250kHz','500kHz','1MHz','5MHz','10MHz']"
+    ],
+    "$dfBandwidth.value==5000": [
+      "$filterBandwidth.values=[3.125,6.25,12.5,25.0,50.0,100.0,120.0,200.0,250.0,500.0,1000.0,5000.0]",
+      "$filterBandwidth.displayValues=['3.125kHz','6.25kHz','12.5kHz','25kHz','50kHz','100kHz','120kHz','200kHz','250kHz','500kHz','1MHz','5MHz']"
+    ],
+    "$dfBandwidth.value==2000||$dfBandwidth.value==1000": [
+      "$filterBandwidth.values=[3.125,6.25,12.5,25.0,50.0,100.0,120.0,200.0,250.0,500.0,1000.0]",
+      "$filterBandwidth.displayValues=['3.125kHz','6.25kHz','12.5kHz','25kHz','50kHz','100kHz','120kHz','200kHz','250kHz','500kHz','1MHz']"
+    ],
+    "$dfBandwidth.value==500": [
+      "$filterBandwidth.values=[3.125,6.25,12.5,25.0,50.0,100.0,120.0,200.0,250.0,500.0]",
+      "$filterBandwidth.displayValues=['3.125kHz','6.25kHz','12.5kHz','25kHz','50kHz','100kHz','120kHz','200kHz','250kHz','500kHz']"
+    ],
+    "$dfBandwidth.value==200": [
+      "$filterBandwidth.values=[3.125,6.25,12.5,25.0,50.0,100.0,120.0,200.0]",
+      "$filterBandwidth.displayValues=['3.125kHz','6.25kHz','12.5kHz','25kHz','50kHz','100kHz','120kHz','200kHz']"
+    ],
+    "$dfBandwidth.value==150||$dfBandwidth.value==120": [
+      "$filterBandwidth.values=[3.125,6.25,12.5,25.0,50.0,100.0,120.0]",
+      "$filterBandwidth.displayValues=['3.125kHz','6.25kHz','12.5kHz','25kHz','50kHz','100kHz','120kHz']"
+    ],
+    "$dfBandwidth.value==100": [
+      "$filterBandwidth.values=[3.125,6.25,12.5,25.0,50.0,100.0]",
+      "$filterBandwidth.displayValues=['3.125kHz','6.25kHz','12.5kHz','25kHz','50kHz','100kHz']"
+    ],
+    "$dfBandwidth.value==50": [
+      "$filterBandwidth.values=[3.125,6.25,12.5,25.0,50.0]",
+      "$filterBandwidth.displayValues=['3.125kHz','6.25kHz','12.5kHz','25kHz','50kHz']"
+    ],
+    "$dfBandwidth.value==20": [
+      "$filterBandwidth.values=[3.125,6.25,12.5]",
+      "$filterBandwidth.displayValues=['3.125kHz','6.25kHz','12.5kHz']"
+    ],
+    "$dfBandwidth.value==10": [
+      "$filterBandwidth.values=[3.125,6.25]",
+      "$filterBandwidth.displayValues=['3.125kHz','6.25kHz']"
+    ],
+    "$dfBandwidth.value==5": [
+      "$filterBandwidth.values=[3.125]",
+      "$filterBandwidth.displayValues=['3.125kHz']",
+      "$filterBandwidth.value=3.125"
+    ]
+  },
+  "mfdf": {
+    "startup": [
+      "$dfBandwidth.values=[5.0,10.0,20.0,50.0,100.0,120.0,150.0,200.0,500.0,1000.0,2000.0,5000.0,10000.0,20000.0,40000.0]",
+      "$dfBandwidth.displayValues=['5kHz','10kHz','20kHz','50kHz','100kHz','120kHz','150kHz','200kHz','500kHz','1MHz','2MHz','5MHz','10MHz','20MHz','40MHz']",
+      "$dfBandwidth.value=500"
+    ]
+  }
+}

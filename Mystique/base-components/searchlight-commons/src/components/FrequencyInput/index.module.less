@@ -1,0 +1,196 @@
+.freqInputBIGNEW {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  user-select: none;
+  font-size: 14px;
+  color: #3ce5d3;
+  width: 206px;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 13px;
+  position: relative;
+  box-sizing: border-box;
+  &.hideLight {
+    width: 180px;
+    padding: 0;
+    .text {
+      background: var(--theme-enumSelector-background);
+      box-shadow: var(--theme-enumSelector-boxshadow);
+    }
+  }
+
+  &.disable {
+    opacity: 0.8;
+  }
+
+  &.lightUp {
+    .left,
+    .right {
+      background: linear-gradient(180deg, #55ff66 45.13%, #007e42 100%);
+      background-size: 100% 100%;
+    }
+  }
+
+  .text {
+    cursor: pointer;
+    position: relative;
+    background: var(--theme-enumSelector-background);
+    box-shadow: var(--theme-enumSelector-boxshadow);
+    &::after {
+      content: '';
+      position: absolute;
+      height: 3px;
+      left: 3px;
+      right: 3px;
+      top: 2px;
+      background: var(--theme-font-100);
+      opacity: 0.06;
+      border-radius: 2px;
+    }
+  }
+
+  .simple {
+    cursor: pointer;
+    background: linear-gradient(
+        180deg,
+        rgba(4, 5, 27, 0.005) 0%,
+        rgba(4, 5, 27, 0.005) 48.96%,
+        rgba(4, 5, 27, 0.5) 52.08%
+      ),
+      rgba(60, 229, 211, 0.1);
+    box-shadow: inset 0px 1px 0.5px rgba(60, 229, 211, 0.3), inset 0px 0px 1px rgba(60, 229, 211, 0.3),
+      inset 0px 0px 8px rgba(59, 237, 219, 0.2);
+    border-radius: 2px;
+  }
+
+  .left {
+    position: absolute;
+    left: -11px;
+    top: 10px;
+    height: 12px;
+    width: 32px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    background: var(--theme-enumSelector-light-bulb);
+    box-shadow: var(--theme-btn-shadow-special);
+    transform: rotateZ(90deg);
+  }
+
+  .right {
+    position: absolute;
+    right: -11px;
+    top: 10px;
+    height: 12px;
+    width: 32px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    background: var(--theme-enumSelector-light-bulb);
+    box-shadow: var(--theme-btn-shadow-special);
+    transform: rotateZ(-90deg);
+  }
+}
+
+.freqModalBIGNEW {
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+  left: 0;
+  width: 70%;
+  padding: 32px 48px;
+  margin: 0 auto;
+  color: var(--theme-font-100);
+  text-align: left;
+  user-select: none;
+  background: var(--theme-background-log);
+  box-shadow: inset -1px 0px 1px rgba(60, 229, 211, 0.3), inset 1px 0px 0.5px rgba(60, 229, 211, 0.3),
+    inset 0px 0px 16px rgba(59, 237, 219, 0.2), inset 0px -2px 2px rgba(10, 16, 40, 0.8);
+  border-radius: 8px;
+
+  .freqipt {
+    background: var(--theme-enumSelector-captionTextBg);
+    font-size: 36px;
+
+    &::selection {
+      background: rgba(60, 229, 211, 0.2);
+    }
+  }
+
+  .error {
+    position: absolute;
+    top: 104px;
+    left: 64px;
+    font-size: 12px;
+    color: #ff4c2b;
+  }
+
+  .tools {
+    margin-top: 30px;
+
+    .numarea {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      gap: 16px;
+    }
+
+    .toolarea {
+      display: grid;
+      grid-template-columns: 6028fr 3972fr;
+      gap: 16px;
+      margin-top: 16px;
+
+      .llg {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 16px;
+      }
+
+      .rrg {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+    }
+
+    .btn {
+      height: 48px;
+      font-size: 20px;
+      line-height: 48px;
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+      border-radius: 4px;
+      background: var(--theme-bubbleSelector-background);
+      background-size: 100% 100%;
+      border: 2px solid rgba(60, 229, 211, 0.5);
+      border-image: linear-gradient(
+          -180deg,
+          rgba(60, 229, 211, 0.7) 0%,
+          rgba(60, 229, 211, 0.4) 50%,
+          rgba(60, 229, 211, 0.1) 99%
+        )
+        2 2 2 2;
+      opacity: 0.8;
+      &:hover {
+        opacity: 1;
+        border: 2px solid rgba(60, 229, 211, 1);
+        border-image: linear-gradient(
+            -180deg,
+            rgba(60, 229, 211, 1) 0%,
+            rgba(60, 229, 211, 0.5) 50%,
+            rgba(60, 229, 211, 0.1) 99%
+          )
+          2 2 2 2;
+      }
+
+      &.bbtn {
+        background: var(--theme-bubbleSelector-background);
+        background-size: 100% 100%;
+      }
+    }
+
+    .ban {
+      border-radius: 4px;
+    }
+  }
+}

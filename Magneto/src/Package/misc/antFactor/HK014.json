@@ -1,0 +1,73 @@
+{
+  "passive": [
+    {
+      "frequency": 80,
+      "factor": 6.2
+    },
+    {
+      "frequency": 100,
+      "factor": 8.2
+    },
+    {
+      "frequency": 200,
+      "factor": 14.5
+    },
+    {
+      "frequency": 300,
+      "factor": 18.1
+    },
+    {
+      "frequency": 400,
+      "factor": 20.4
+    },
+    {
+      "frequency": 500,
+      "factor": 24
+    },
+    {
+      "frequency": 600,
+      "factor": 24.9
+    },
+    {
+      "frequency": 700,
+      "factor": 25.9
+    },
+    {
+      "frequency": 800,
+      "factor": 26.8
+    },
+    {
+      "frequency": 900,
+      "factor": 27.9
+    },
+    {
+      "frequency": 1000,
+      "factor": 28.5
+    },
+    {
+      "frequency": 1100,
+      "factor": 29
+    },
+    {
+      "frequency": 1200,
+      "factor": 29.6
+    },
+    {
+      "frequency": 1300,
+      "factor": 30.5
+    },
+    {
+      "frequency": 1400,
+      "factor": 30.7
+    },
+    {
+      "frequency": 1500,
+      "factor": 30.8
+    },
+    {
+      "frequency": 1600,
+      "factor": 31.5
+    }
+  ],
+  "active": []
+}

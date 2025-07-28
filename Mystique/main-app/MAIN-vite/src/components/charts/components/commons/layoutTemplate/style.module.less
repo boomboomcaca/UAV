@@ -1,0 +1,141 @@
+// :root {
+//   --chartCon-bg-color: #04051b10;
+//   --chart-bg-color: #04051b;
+// }
+
+// .lightTheme {
+//   --chartCon-bg-color: "#e6eff5";
+//   --chart-bg-color: "#fff";
+// }
+
+.chartRoot {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #181c36;
+
+  --chartCon-bg-color: #04051b10;
+  --chart-bg-color: #091636;
+  --chart-tick-line: #353e5c80;
+  --marker-caption-bg: rgba(100, 100, 100, 0.5);
+  --markerContainer-bg-color: rgba(100, 100, 100, 0.3);
+  --marker-symbol-bg: skyblue;
+  --marker-symbol-sel: #f28300;
+  --marker-slider-bg: #ff6347;
+  --marker-slider-border: none;
+  --marker-slider-icon-fill: #157afa;
+  --marker-cross-line: dashed 1px whitesmoke;
+  --marker-caption-title-color: white;
+  --marker-caption-color: white;
+  --cur-caption-color: aliceBlue;
+  --cur-caption-bg-color: rgba(100, 100, 100, 0.3);
+  --axisY-lbl-color: rgba(255, 255, 255, 0.6);
+  --axisY-caption-color: rgba(255, 255, 255, 0.8);
+  --axisY-btn-bg-color: linear-gradient(0deg, #18406e, #18406e), #d9d9d9;
+  --axisX-lbl-color: #fff;
+  --autoY-bg-color: #082147;
+  --autoY-item-bgColor: rgba(255, 255, 255, 0.1);
+  --autoY-item-bgColor-sel: "#148bed";
+  --scan-seg-bg-color: rgba(20, 139, 237, 0.08);
+
+  // --chartCon-bg-color: "#e6eff5";
+  // --chart-bg-color: "#fff";
+  &.lightTheme {
+    background-color: #e6eff5;
+    // color: rgba(51, 51, 51, 0.8);
+
+    --chartCon-bg-color: #e6eff5;
+    --chart-bg-color: #fff;
+    --chart-tick-line: rgba(174, 184, 215, 0.3);
+    --marker-caption-bg: transparent;
+    --markerContainer-bg-color: transparent;
+    --marker-symbol-bg: #005bcd;
+    --marker-symbol-sel: #f28300;
+    --marker-slider-bg: #fff;
+    --marker-slider-border: 1px solid rgba(21, 122, 250, 1);
+    --marker-slider-icon-fill: #157afa;
+    --marker-cross-line: dashed 1px #005bcd;
+    --marker-caption-title-color: #005bcd;
+    --marker-caption-color: #333;
+    --cur-caption-color: #333;
+    --cur-caption-bg-color: transparent;
+    --axisY-lbl-color: #333;
+    --axisY-caption-color: #333;
+    --axisY-btn-bg-color: #fff;
+    --axisX-lbl-color: #333;
+    --autoY-bg-color: #fff;
+    --autoY-item-bgColor: #fff;
+    --autoY-item-bgColor-sel: #148bed;
+    --scan-seg-bg-color: rgba(33, 33, 33, 0.08);
+  }
+  > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .plotArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .axisYAndChart {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .axisYContainer {
+      width: 76px;
+      &.inside {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 28px;
+        z-index: 1;
+      }
+      &.insideX {
+        bottom: 0;
+      }
+    }
+
+    .insideSpan {
+      width: 37px;
+      height: 100%;
+    }
+
+    .chartContainer {
+      flex: 1;
+      //  padding: 8px 4px 8px 0;
+      box-sizing: border-box;
+    }
+  }
+
+  .axisXContainer {
+    height: 32px;
+    padding-left: 76px;
+    padding-right: 4px;
+
+    &.inside {
+      height: 24px;
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      right: 0;
+      // background: rgba(0, 0, 0, 0.1);
+      padding-left: 0;
+      margin-left: 76px;
+    }
+
+    &.insideY {
+      padding-left: 0;
+      left: 37px;
+    }
+  }
+}
+
+.touchSlider {
+  pointer-events: none;
+}

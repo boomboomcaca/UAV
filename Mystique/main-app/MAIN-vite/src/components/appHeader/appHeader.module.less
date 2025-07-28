@@ -1,0 +1,82 @@
+.loginHeader {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px 0 0;
+  -webkit-touch-callout: none;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 4;
+  padding-right: 8px;
+  .iconButon {
+    margin-left: 16px;
+    display: flex;
+    color: var(--theme-font-100);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .usrIcon {
+    .iconButon();
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .taskLists {
+    .iconButon();
+    position: relative;
+    .taskNo {
+      position: absolute;
+      top: -5px;
+      left: 55%;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: red;
+      text-align: center;
+      font-size: small;
+    }
+  }
+}
+
+.headerIco {
+  height: 60px;
+  display: flex;
+  // color: var(--theme-font-100);
+  color: #a5fefe;
+  align-items: center;
+  -webkit-touch-callout: none;
+  font-size: 36px;
+  gap: 8px;
+  font-weight: 800;
+}
+
+.loginDcLogo {
+  margin-left: 50px;
+  width: 100px;
+  height: 64px;
+  margin-right: 8px;
+  background-image: url("/favicon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dcLogo {
+  width: 120px;
+  height: 60px;
+  margin-left: 8px;
+  // margin-top: 4px;
+  background-image: url("/images/alflogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 8px;
+}

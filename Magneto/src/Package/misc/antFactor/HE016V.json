@@ -1,0 +1,73 @@
+{
+  "passive": [
+    {
+      "frequency": 0.01,
+      "factor": -1
+    },
+    {
+      "frequency": 0.02,
+      "factor": -2.1
+    },
+    {
+      "frequency": 0.04,
+      "factor": -3
+    },
+    {
+      "frequency": 5,
+      "factor": -3
+    },
+    {
+      "frequency": 8,
+      "factor": -3.2
+    },
+    {
+      "frequency": 10,
+      "factor": -4.3
+    },
+    {
+      "frequency": 15,
+      "factor": -17
+    },
+    {
+      "frequency": 20,
+      "factor": -2.5
+    },
+    {
+      "frequency": 25,
+      "factor": 10.5
+    },
+    {
+      "frequency": 30,
+      "factor": 17.8
+    },
+    {
+      "frequency": 50,
+      "factor": -5.7
+    },
+    {
+      "frequency": 55,
+      "factor": -6.5
+    },
+    {
+      "frequency": 60,
+      "factor": -6.9
+    },
+    {
+      "frequency": 65,
+      "factor": -5.5
+    },
+    {
+      "frequency": 70,
+      "factor": -2
+    },
+    {
+      "frequency": 75,
+      "factor": -1.8
+    },
+    {
+      "frequency": 80,
+      "factor": -5.2
+    }
+  ],
+  "active": []
+}

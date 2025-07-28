@@ -1,0 +1,191 @@
+.segRoot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+  padding: 4px 0;
+  box-sizing: border-box;
+  user-select: none;
+
+  .segLeft {
+    width: 78px;
+    margin-right: 10px;
+
+    .allSeeBtn {
+      text-align: center;
+      cursor: pointer;
+      color: var(--theme-font-100);
+      border-radius: 2px;
+      background: var(--theme-button-primary);
+      box-shadow: var(--theme-btn-shadow);
+      &.ban {
+        color: #8b8d94;
+      }
+
+      &.active {
+        color: #3ce5d3;
+        background: linear-gradient(0deg, rgba(60, 229, 211, 0.16), rgba(60, 229, 211, 0.16)),
+          var(--theme-switch-border);
+      }
+    }
+  }
+
+  .segRight {
+    padding-left: 8px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    .rightbtn {
+      height: 32px;
+      cursor: pointer;
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      border-radius: 2px;
+      background: var(--theme-button-primary);
+      box-shadow: var(--theme-btn-shadow);
+    }
+  }
+
+  .segCenter {
+    width: 0;
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    color: var(--theme-font-100);
+
+    .leftArrow {
+      position: absolute;
+      width: 48px;
+      height: 100%;
+      left: 0;
+      top: 50%;
+      z-index: 3;
+      cursor: pointer;
+      transform: translateY(-50%);
+      background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 89.55%);
+      opacity: 0.5;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+    }
+
+    .rightArrow {
+      position: absolute;
+      width: 48px;
+      height: 100%;
+      right: 0;
+      top: 50%;
+      z-index: 3;
+      cursor: pointer;
+      transform: translateY(-50%);
+      background: linear-gradient(-90deg, #000000 0%, rgba(0, 0, 0, 0) 89.55%);
+      opacity: 0.5;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+    }
+
+    .segArea {
+      width: 100%;
+      white-space: nowrap;
+      transition: transform ease 0.3s;
+
+      .emptyText {
+        text-align: center;
+        color: var(--theme-font-30);
+        font-size: 16px;
+      }
+
+      .segitem {
+        display: inline-block;
+        min-width: calc(100% / 6);
+        padding: 0 8px;
+        overflow: hidden;
+        box-sizing: border-box;
+        cursor: pointer;
+
+        &.see {
+          color: #3ce5d3;
+
+          .marginArea {
+            background: var(--theme-newSegmentsEditor-background);
+            box-shadow: 0px -0.5px 0.5px rgba(127, 132, 172, 0.3), inset 0px 2px 4px rgba(4, 5, 27, 0.3),
+              inset 0px -1px 1px rgba(255, 255, 255, 0.1);
+          }
+        }
+
+        .marginArea {
+          max-width: 320px;
+          height: 40px;
+          padding: 0 25px;
+          margin: 0 auto;
+          text-align: center;
+          border-radius: 2px;
+          background: var(--theme-button-primary);
+          box-shadow: var(--theme-btn-shadow);
+          position: relative;
+
+          .twofloorSeg {
+            text-align: center;
+            flex: 1;
+            box-sizing: border-box;
+            overflow: hidden;
+          }
+
+          .onlyseg {
+            font-size: 14px;
+            font-weight: 700;
+            height: 40px;
+            line-height: 20px;
+            padding: 10px 0;
+            text-align: center;
+            box-sizing: border-box;
+          }
+
+          .removeSegIcon {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+  }
+
+  .btntext1 {
+    font-size: 14px;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    word-wrap: normal;
+    white-space: nowrap;
+  }
+
+  .btntext2 {
+    font-size: 12px;
+    height: 16px;
+    line-height: 16px;
+    color: var(--theme-font-30);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    word-wrap: normal;
+    white-space: nowrap;
+  }
+
+  .overflowtext {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

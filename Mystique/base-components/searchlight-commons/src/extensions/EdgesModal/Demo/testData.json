@@ -1,0 +1,3831 @@
+[
+    {
+        "id": "1120001",
+        "type": "movableCategory",
+        "category": "1",
+        "mfid": "1120001",
+        "name": "测试站点2",
+        "longitude": 104.274123,
+        "latitude": 30.560916,
+        "altitude": 500,
+        "address": null,
+        "ip": "192.168.102.112",
+        "port": 10001,
+        "version": 127394652356608,
+        "remark": null,
+        "createTime": "2022-08-16 14:42:18",
+        "updateTime": "2022-08-17 10:43:07",
+        "modules": [
+            {
+                "id": "ce1e9830-24dc-11ed-a20f-87e82ff62df0",
+                "edgeId": "1120001",
+                "mfid": "1120001",
+                "type": "Cosmos.Device.MR3000A.MR3000A",
+                "templateId": 107488095502337,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "offline",
+                "supportedFeatures": [
+                    "ffm",
+                    "ffdf",
+                    "ampdf",
+                    "wbdf",
+                    "scandf",
+                    "sse",
+                    "scan",
+                    "fscne",
+                    "mscan",
+                    "mscne",
+                    "ifmca",
+                    "tdoa",
+                    "itum",
+                    "dpx"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "DF3000A(2)",
+                "description": "应用于德辰科技自研DF3000A系列双通道测向机",
+                "manufacturer": "北京德辰科技股份有限公司",
+                "model": "DF3000A",
+                "maximumInstance": "1",
+                "sn": "",
+                "version": "3.5.2",
+                "createTime": "2022-08-26 09:17:08",
+                "updateTime": "2022-09-19 10:59:25"
+            },
+            {
+                "id": "1e103220-1ec2-11ed-959f-f5feef791c8d",
+                "edgeId": "1120001",
+                "mfid": "1120001",
+                "type": "Cosmos.Driver.ITUM.ITUM",
+                "templateId": 107488170999808,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "itum"
+                ],
+                "deviceId": "c30f8ac0-21e0-11ed-a20f-87e82ff62df0",
+                "deviceName": "演示接收机",
+                "displayName": "ITU测量",
+                "description": "ITU测量功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.4.0",
+                "createTime": "2022-08-18 14:50:59",
+                "updateTime": "2022-10-06 10:51:06"
+            },
+            {
+                "id": "63921ea0-3efa-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1120001",
+                "mfid": "1120001",
+                "type": "Cosmos.Driver.IFMCA.IFMCA",
+                "templateId": 122380408061953,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "ifmca"
+                ],
+                "deviceId": "c30f8ac0-21e0-11ed-a20f-87e82ff62df0",
+                "deviceName": "演示接收机",
+                "displayName": "中频多路",
+                "description": "IFMCA功能",
+                "manufacturer": "Decentest",
+                "model": "IFMCA",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.8.0",
+                "createTime": "2022-09-28 14:54:25",
+                "updateTime": "2022-10-06 10:51:00"
+            },
+            {
+                "id": "3219b660-3efc-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1120001",
+                "mfid": "1120001",
+                "type": "Cosmos.Driver.IFMCA.IFMCA",
+                "templateId": 122380408061953,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "disabled",
+                "supportedFeatures": [
+                    "ifmca"
+                ],
+                "deviceId": "c30f8ac0-21e0-11ed-a20f-87e82ff62df0",
+                "deviceName": "演示接收机",
+                "displayName": "中频多路-5000",
+                "description": "IFMCA功能",
+                "manufacturer": "Decentest",
+                "model": "IFMCA",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.8.0",
+                "createTime": "2022-09-28 15:07:21",
+                "updateTime": "2022-10-08 10:39:14"
+            },
+            {
+                "id": "233db370-243b-11ed-a20f-87e82ff62df0",
+                "edgeId": "1120001",
+                "mfid": "1120001",
+                "type": "Cosmos.Driver.FDF",
+                "templateId": 107488162611202,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "fault",
+                "supportedFeatures": [
+                    "fdf"
+                ],
+                "deviceId": "ce1e9830-24dc-11ed-a20f-87e82ff62df0",
+                "deviceName": "DF3000A(2)",
+                "displayName": "单频测向2",
+                "description": "实现单频测向功能",
+                "manufacturer": "Decentest",
+                "model": "FDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.3.1",
+                "createTime": "2022-08-25 13:59:53",
+                "updateTime": "2022-10-06 10:51:03"
+            },
+            {
+                "id": "52dce4b0-1d2f-11ed-959f-f5feef791c8d",
+                "edgeId": "1120001",
+                "mfid": "1120001",
+                "type": "Cosmos.Driver.FixFQ.FixFQ",
+                "templateId": 107488166805504,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "ffm"
+                ],
+                "deviceId": "c30f8ac0-21e0-11ed-a20f-87e82ff62df0",
+                "deviceName": "演示接收机",
+                "displayName": "单频测量",
+                "description": "单频测量功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.5.3",
+                "createTime": "2022-08-16 14:47:40",
+                "updateTime": "2022-10-06 10:51:04"
+            },
+            {
+                "id": "a41ab720-24dd-11ed-a20f-87e82ff62df0",
+                "edgeId": "1120001",
+                "mfid": "1120001",
+                "type": "Cosmos.Driver.WBDF.WBDF",
+                "templateId": 107488183582721,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "fault",
+                "supportedFeatures": [
+                    "wbdf"
+                ],
+                "deviceId": "ce1e9830-24dc-11ed-a20f-87e82ff62df0",
+                "deviceName": "DF3000A(2)",
+                "displayName": "宽带测向",
+                "description": "带宽测向功能模块",
+                "manufacturer": "Decentest",
+                "model": "WBDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.6.0",
+                "createTime": "2022-08-26 09:23:07",
+                "updateTime": "2022-10-06 10:51:07"
+            },
+            {
+                "id": "47821680-3ef9-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1120001",
+                "mfid": "1120001",
+                "type": "Cosmos.Driver.AMIA.AMIA",
+                "templateId": 122380399673344,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "amia"
+                ],
+                "deviceId": "c30f8ac0-21e0-11ed-a20f-87e82ff62df0",
+                "deviceName": "演示接收机",
+                "displayName": "干扰分析",
+                "description": "航空监测干扰分析功能",
+                "manufacturer": "Decentest",
+                "model": "AMIA",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.0.0",
+                "createTime": "2022-09-28 14:46:28",
+                "updateTime": "2022-10-06 10:51:08"
+            },
+            {
+                "id": "a41a9010-24dd-11ed-a20f-87e82ff62df0",
+                "edgeId": "1120001",
+                "mfid": "1120001",
+                "type": "Cosmos.Driver.ScanDF.ScanDF",
+                "templateId": 107488179388417,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "fault",
+                "supportedFeatures": [
+                    "scandf"
+                ],
+                "deviceId": "ce1e9830-24dc-11ed-a20f-87e82ff62df0",
+                "deviceName": "DF3000A(2)",
+                "displayName": "扫描测向",
+                "description": "扫描测向功能模块",
+                "manufacturer": "Decentest",
+                "model": "ScanDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.6.0",
+                "createTime": "2022-08-26 09:23:07",
+                "updateTime": "2022-08-26 09:23:15"
+            },
+            {
+                "id": "e46262c0-1e0b-11ed-959f-f5feef791c8d",
+                "edgeId": "1120001",
+                "mfid": "1120001",
+                "type": "Cosmos.Driver.NSIC.NSIC",
+                "templateId": 107488175194112,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "fault",
+                "supportedFeatures": [
+                    "nsic"
+                ],
+                "deviceId": "c78996f0-1e0b-11ed-959f-f5feef791c8d",
+                "deviceName": "MR5000A",
+                "displayName": "新信号截获-160M",
+                "description": "新信号截获功能",
+                "manufacturer": "Decentest",
+                "model": "NSIC",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.9.0",
+                "createTime": "2022-08-17 17:06:34",
+                "updateTime": "2022-10-06 10:50:55"
+            },
+            {
+                "id": "e44bf490-1e0b-11ed-959f-f5feef791c8d",
+                "edgeId": "1120001",
+                "mfid": "1120001",
+                "type": "Cosmos.Driver.UAVD.UAVD",
+                "templateId": 107488179388421,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "fault",
+                "supportedFeatures": [
+                    "uavd"
+                ],
+                "deviceId": "c78996f0-1e0b-11ed-959f-f5feef791c8d",
+                "deviceName": "MR5000A",
+                "displayName": "无人机侦测-160M",
+                "description": "无人机侦测",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.5.0",
+                "createTime": "2022-08-17 17:06:34",
+                "updateTime": "2022-10-06 10:50:54"
+            },
+            {
+                "id": "c30f8ac0-21e0-11ed-a20f-87e82ff62df0",
+                "edgeId": "1120001",
+                "mfid": "1120001",
+                "type": "Cosmos.Device.DemoReceiver.DemoReceiver",
+                "templateId": 107488095502336,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "directionFinding",
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "ffm",
+                    "ffdf",
+                    "wbdf",
+                    "scandf",
+                    "sse",
+                    "scan",
+                    "mscan",
+                    "ifmca",
+                    "tdoa",
+                    "itum",
+                    "mscandf",
+                    "dpx"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "演示接收机",
+                "description": "演示接收机，内部测试使用",
+                "manufacturer": "Decentest",
+                "model": "DemoReceiver",
+                "maximumInstance": "1",
+                "sn": "",
+                "version": "5.2.6",
+                "createTime": "2022-08-22 14:07:54",
+                "updateTime": null
+            },
+            {
+                "id": "52dbac30-1d2f-11ed-959f-f5feef791c8d",
+                "edgeId": "1120001",
+                "mfid": "1120001",
+                "type": "Cosmos.Driver.MScan.MScan",
+                "templateId": 107488170999810,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "mscan"
+                ],
+                "deviceId": "c30f8ac0-21e0-11ed-a20f-87e82ff62df0",
+                "deviceName": "演示接收机",
+                "displayName": "离散扫描",
+                "description": "离散扫描功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.9.1",
+                "createTime": "2022-08-16 14:47:40",
+                "updateTime": "2022-10-06 10:50:53"
+            },
+            {
+                "id": "c9961300-21e0-11ed-a20f-87e82ff62df0",
+                "edgeId": "1120001",
+                "mfid": "1120001",
+                "type": "Cosmos.Driver.MFDF.MFDF",
+                "templateId": 107488170999809,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "fault",
+                "supportedFeatures": [
+                    "mfdf"
+                ],
+                "deviceId": "ce1e9830-24dc-11ed-a20f-87e82ff62df0",
+                "deviceName": "DF3000A(2)",
+                "displayName": "离散测向",
+                "description": "离散测向功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.0.1",
+                "createTime": "2022-08-22 14:08:05",
+                "updateTime": "2022-10-06 10:50:52"
+            },
+            {
+                "id": "42c1d0e0-1d2f-11ed-959f-f5feef791c8d",
+                "edgeId": "1120001",
+                "mfid": "1120001",
+                "type": "Cosmos.Device.DemoAntennaController.DemoAntennaController",
+                "templateId": 107488091308033,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "antennaControl"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "none"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "虚拟天线控制器",
+                "description": "用于模拟天线控制器，并获取天线因子数据",
+                "manufacturer": "北京德辰科技股份有限公司",
+                "model": "VIRT-ANT-001",
+                "maximumInstance": "0",
+                "sn": "003-34-54232",
+                "version": "2.4.0",
+                "createTime": "2022-08-16 14:47:13",
+                "updateTime": "2022-10-06 10:50:48"
+            },
+            {
+                "id": "52dcbda0-1d2f-11ed-959f-f5feef791c8d",
+                "edgeId": "1120001",
+                "mfid": "1120001",
+                "type": "Cosmos.Driver.Scan.Scan",
+                "templateId": 107488179388416,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "scan"
+                ],
+                "deviceId": "c30f8ac0-21e0-11ed-a20f-87e82ff62df0",
+                "deviceName": "演示接收机",
+                "displayName": "频段扫描",
+                "description": "频段扫描功能",
+                "manufacturer": "Decentest",
+                "model": "Scan",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "3.1.3",
+                "createTime": "2022-08-16 14:47:40",
+                "updateTime": "2022-10-06 10:50:51"
+            },
+            {
+                "id": "8221d290-4858-11ed-a423-e9d755962e09",
+                "edgeId": "1120001",
+                "mfid": "1120001",
+                "type": "Cosmos.Driver.SPEVL.SPEVL",
+                "templateId": 127394421669889,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "spevl"
+                ],
+                "deviceId": "c30f8ac0-21e0-11ed-a20f-87e82ff62df0",
+                "deviceName": "演示接收机",
+                "displayName": "频谱评估",
+                "description": "频谱评估功能",
+                "manufacturer": "Decentest",
+                "model": "SPEVL",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.0.0",
+                "createTime": "2022-10-10 13:00:49",
+                "updateTime": "2022-10-10 13:00:51"
+            }
+        ],
+        "isActive": true,
+        "state": "fault",
+        "stateFaultMsg": [
+            {
+                "moduleState": "fault"
+            }
+        ],
+        "lastUpdateTime": "2022-10-10T06:16:56.282Z",
+        "manufacturer": "dc",
+        "areacode": "510104",
+        "zone": "四川省 成都市 锦江区",
+        "fmaddrtype": "city",
+        "groupName": "",
+        "capacity": ""
+    },
+    {
+        "id": "1120003",
+        "type": "stationaryCategory",
+        "category": "4",
+        "mfid": "1120003",
+        "name": "测试站点3",
+        "longitude": 104.125781,
+        "latitude": 30.677627,
+        "altitude": 100,
+        "address": null,
+        "ip": "192.168.102.112",
+        "port": 10003,
+        "version": 127394568470533,
+        "remark": null,
+        "createTime": "2022-09-28 14:19:58",
+        "updateTime": null,
+        "modules": [
+            {
+                "id": "daf01470-3ef5-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1120003",
+                "mfid": "1120003",
+                "type": "Cosmos.Driver.ITUM.ITUM",
+                "templateId": 122380408061955,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "itum"
+                ],
+                "deviceId": "c6ae8870-3ef5-11ed-a409-fb56e90ec1f1",
+                "deviceName": "演示接收机",
+                "displayName": "ITU测量",
+                "description": "ITU测量功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.4.0",
+                "createTime": "2022-09-28 14:21:57",
+                "updateTime": "2022-10-06 10:50:26"
+            },
+            {
+                "id": "e5df4490-3fd2-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1120003",
+                "mfid": "1120003",
+                "type": "Cosmos.Device.MR3000A.MR3000A",
+                "templateId": 122380357730308,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "disabled",
+                "supportedFeatures": [
+                    "ffm",
+                    "ampdf",
+                    "scan",
+                    "fscne",
+                    "mscan",
+                    "mscne",
+                    "ifmca",
+                    "tdoa",
+                    "itum",
+                    "dpx"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "MR3000A",
+                "description": "应用于德辰科技自研MR3000A系列接收机",
+                "manufacturer": "北京德辰科技股份有限公司",
+                "model": "MR3000A",
+                "maximumInstance": "1",
+                "sn": "",
+                "version": "3.5.6",
+                "createTime": "2022-09-29 16:44:15",
+                "updateTime": "2022-10-08 14:19:47"
+            },
+            {
+                "id": "619be4e0-4545-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120003",
+                "mfid": "1120003",
+                "type": "Cosmos.Device.MR5000A.MR5000A",
+                "templateId": 123803191476229,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "disabled",
+                "supportedFeatures": [
+                    "ffm",
+                    "ffdf",
+                    "ampdf",
+                    "wbdf",
+                    "scandf",
+                    "sse",
+                    "scan",
+                    "fscne",
+                    "mscan",
+                    "mscne",
+                    "ifmca",
+                    "tdoa",
+                    "itum",
+                    "dpx",
+                    "iqretri"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "MR5000A",
+                "description": "应用于德辰科技自研MR5000A系列接收机",
+                "manufacturer": "北京德辰科技股份有限公司",
+                "model": "MR5000A",
+                "maximumInstance": "1",
+                "sn": "",
+                "version": "1.1.5",
+                "createTime": "2022-10-06 15:06:21",
+                "updateTime": "2022-10-08 14:19:46"
+            },
+            {
+                "id": "6777ecd0-3fd5-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1120003",
+                "mfid": "1120003",
+                "type": "Cosmos.Driver.IFMCA.IFMCA",
+                "templateId": 122380408061953,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "disabled",
+                "supportedFeatures": [
+                    "ifmca"
+                ],
+                "deviceId": "619be4e0-4545-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "MR5000A",
+                "displayName": "中频多路",
+                "description": "IFMCA功能",
+                "manufacturer": "Decentest",
+                "model": "IFMCA",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.8.0",
+                "createTime": "2022-09-29 17:02:11",
+                "updateTime": "2022-10-08 11:02:37"
+            },
+            {
+                "id": "daef5120-3ef5-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1120003",
+                "mfid": "1120003",
+                "type": "Cosmos.Driver.FDF",
+                "templateId": 122380403867654,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "fdf"
+                ],
+                "deviceId": "c6ae8870-3ef5-11ed-a409-fb56e90ec1f1",
+                "deviceName": "演示接收机",
+                "displayName": "单频测向",
+                "description": "实现单频测向功能",
+                "manufacturer": "Decentest",
+                "model": "FDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.3.1",
+                "createTime": "2022-09-28 14:21:57",
+                "updateTime": "2022-10-06 10:50:29"
+            },
+            {
+                "id": "daf03b80-3ef5-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1120003",
+                "mfid": "1120003",
+                "type": "Cosmos.Driver.FixFQ.FixFQ",
+                "templateId": 122380408061952,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "disabled",
+                "supportedFeatures": [
+                    "ffm"
+                ],
+                "deviceId": "619be4e0-4545-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "MR5000A",
+                "displayName": "单频测量",
+                "description": "单频测量功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.5.3",
+                "createTime": "2022-09-28 14:21:57",
+                "updateTime": "2022-10-08 11:02:35"
+            },
+            {
+                "id": "d6ef0140-4519-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120003",
+                "mfid": "1120003",
+                "type": "Cosmos.Driver.WBDF.WBDF",
+                "templateId": 123803241807873,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "wbdf"
+                ],
+                "deviceId": "c6ae8870-3ef5-11ed-a409-fb56e90ec1f1",
+                "deviceName": "演示接收机",
+                "displayName": "宽带测向",
+                "description": "带宽测向功能模块",
+                "manufacturer": "Decentest",
+                "model": "WBDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.6.0",
+                "createTime": "2022-10-06 09:54:40",
+                "updateTime": "2022-10-06 10:50:24"
+            },
+            {
+                "id": "d6eeb320-4519-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120003",
+                "mfid": "1120003",
+                "type": "Cosmos.Driver.ScanDF.ScanDF",
+                "templateId": 123803237613569,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "scandf"
+                ],
+                "deviceId": "c6ae8870-3ef5-11ed-a409-fb56e90ec1f1",
+                "deviceName": "演示接收机",
+                "displayName": "扫描测向",
+                "description": "扫描测向功能模块",
+                "manufacturer": "Decentest",
+                "model": "ScanDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.6.0",
+                "createTime": "2022-10-06 09:54:40",
+                "updateTime": "2022-10-06 10:50:23"
+            },
+            {
+                "id": "c6ae8870-3ef5-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1120003",
+                "mfid": "1120003",
+                "type": "Cosmos.Device.DemoReceiver.DemoReceiver",
+                "templateId": 122380345147398,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "directionFinding",
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "ffm",
+                    "ffdf",
+                    "wbdf",
+                    "scandf",
+                    "sse",
+                    "scan",
+                    "mscan",
+                    "ifmca",
+                    "tdoa",
+                    "itum",
+                    "mscandf",
+                    "dpx"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "演示接收机",
+                "description": "演示接收机，内部测试使用",
+                "manufacturer": "Decentest",
+                "model": "DemoReceiver",
+                "maximumInstance": "1",
+                "sn": "",
+                "version": "5.2.7",
+                "createTime": "2022-09-28 14:21:23",
+                "updateTime": null
+            },
+            {
+                "id": "d6eeb321-4519-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120003",
+                "mfid": "1120003",
+                "type": "Cosmos.Driver.MScan.MScan",
+                "templateId": 123803233419264,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "mscan"
+                ],
+                "deviceId": "c6ae8870-3ef5-11ed-a409-fb56e90ec1f1",
+                "deviceName": "演示接收机",
+                "displayName": "离散扫描",
+                "description": "离散扫描功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.9.1",
+                "createTime": "2022-10-06 09:54:40",
+                "updateTime": "2022-10-06 10:50:21"
+            },
+            {
+                "id": "d6edc8c0-4519-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120003",
+                "mfid": "1120003",
+                "type": "Cosmos.Driver.MFDF.MFDF",
+                "templateId": 123803229224966,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "mfdf"
+                ],
+                "deviceId": "c6ae8870-3ef5-11ed-a409-fb56e90ec1f1",
+                "deviceName": "演示接收机",
+                "displayName": "离散测向",
+                "description": "离散测向功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.0.2",
+                "createTime": "2022-10-06 09:54:40",
+                "updateTime": "2022-10-06 10:50:19"
+            },
+            {
+                "id": "c6ad7700-3ef5-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1120003",
+                "mfid": "1120003",
+                "type": "Cosmos.Device.DemoAntennaController.DemoAntennaController",
+                "templateId": 122380336758786,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "antennaControl"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "none"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "虚拟天线控制器",
+                "description": "用于模拟天线控制器，并获取天线因子数据",
+                "manufacturer": "北京德辰科技股份有限公司",
+                "model": "VIRT-ANT-001",
+                "maximumInstance": "0",
+                "sn": "003-34-54232",
+                "version": "2.4.0",
+                "createTime": "2022-09-28 14:21:23",
+                "updateTime": "2022-10-06 10:50:14"
+            },
+            {
+                "id": "e3db1890-3f00-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1120003",
+                "mfid": "1120003",
+                "type": "Cosmos.Device.VirtualCompass.VirtualCompass",
+                "templateId": 122380336758788,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "compass"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "none"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "虚拟罗盘",
+                "description": "虚拟罗盘，内部测试使用",
+                "manufacturer": "Decentest",
+                "model": "VirtualCompass",
+                "maximumInstance": "1",
+                "sn": "",
+                "version": "2.2.0",
+                "createTime": "2022-09-28 15:40:57",
+                "updateTime": null
+            },
+            {
+                "id": "daefc650-3ef5-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1120003",
+                "mfid": "1120003",
+                "type": "Cosmos.Driver.Scan.Scan",
+                "templateId": 122380416450563,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "disabled",
+                "supportedFeatures": [
+                    "scan"
+                ],
+                "deviceId": "619be4e0-4545-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "MR5000A",
+                "displayName": "频段扫描",
+                "description": "频段扫描功能",
+                "manufacturer": "Decentest",
+                "model": "Scan",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "3.1.3",
+                "createTime": "2022-09-28 14:21:57",
+                "updateTime": "2022-10-08 11:02:32"
+            },
+            {
+                "id": "749cd2f0-4858-11ed-a423-e9d755962e09",
+                "edgeId": "1120003",
+                "mfid": "1120003",
+                "type": "Cosmos.Driver.SPEVL.SPEVL",
+                "templateId": 127394421669889,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "disabled",
+                "supportedFeatures": [
+                    "spevl"
+                ],
+                "deviceId": "e5df4490-3fd2-11ed-a409-fb56e90ec1f1",
+                "deviceName": "MR3000A",
+                "displayName": "频谱评估",
+                "description": "频谱评估功能",
+                "manufacturer": "Decentest",
+                "model": "SPEVL",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.0.0",
+                "createTime": "2022-10-10 13:00:26",
+                "updateTime": "2022-10-10 13:00:32"
+            }
+        ],
+        "isActive": true,
+        "state": "online",
+        "stateFaultMsg": [],
+        "lastUpdateTime": "2022-10-10T06:16:59.154Z",
+        "manufacturer": "dc",
+        "areacode": "510108",
+        "zone": "四川省 成都市 成华区",
+        "fmaddrtype": "city",
+        "capacity": "compass",
+        "heading": 0
+    },
+    {
+        "id": "1120004",
+        "type": "mobileCategory",
+        "category": "3",
+        "mfid": "1120004",
+        "name": "测试站点4",
+        "longitude": 104.0780556,
+        "latitude": 30.6469444,
+        "altitude": 600,
+        "address": null,
+        "ip": "192.168.102.112",
+        "port": 10004,
+        "version": 127394459418630,
+        "remark": null,
+        "createTime": "2022-09-28 14:20:06",
+        "updateTime": "2022-09-30 15:04:17",
+        "modules": [
+            {
+                "id": "b313ead0-3ef5-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1120004",
+                "mfid": "1120004",
+                "type": "Cosmos.Driver.ITUM.ITUM",
+                "templateId": 122380408061955,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "deviceBusy",
+                "supportedFeatures": [
+                    "itum"
+                ],
+                "deviceId": "a4baab40-3ef5-11ed-a409-fb56e90ec1f1",
+                "deviceName": "演示接收机",
+                "displayName": "ITU测量",
+                "description": "ITU测量功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.4.0",
+                "createTime": "2022-09-28 14:20:51",
+                "updateTime": "2022-10-06 10:49:57"
+            },
+            {
+                "id": "b3130070-3ef5-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1120004",
+                "mfid": "1120004",
+                "type": "Cosmos.Driver.FDF",
+                "templateId": 122380403867654,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "deviceBusy",
+                "supportedFeatures": [
+                    "fdf"
+                ],
+                "deviceId": "a4baab40-3ef5-11ed-a409-fb56e90ec1f1",
+                "deviceName": "演示接收机",
+                "displayName": "单频测向",
+                "description": "实现单频测向功能",
+                "manufacturer": "Decentest",
+                "model": "FDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.3.1",
+                "createTime": "2022-09-28 14:20:51",
+                "updateTime": "2022-10-06 10:49:56"
+            },
+            {
+                "id": "b3139cb0-3ef5-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1120004",
+                "mfid": "1120004",
+                "type": "Cosmos.Driver.FixFQ.FixFQ",
+                "templateId": 122380408061952,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "deviceBusy",
+                "supportedFeatures": [
+                    "ffm"
+                ],
+                "deviceId": "a4baab40-3ef5-11ed-a409-fb56e90ec1f1",
+                "deviceName": "演示接收机",
+                "displayName": "单频测量",
+                "description": "单频测量功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.5.3",
+                "createTime": "2022-09-28 14:20:51",
+                "updateTime": "2022-10-06 10:49:55"
+            },
+            {
+                "id": "5f9c3ac0-4539-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120004",
+                "mfid": "1120004",
+                "type": "Cosmos.Driver.SSOA.SSOA",
+                "templateId": 123803237613571,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "deviceBusy",
+                "supportedFeatures": [
+                    "ssoa"
+                ],
+                "deviceId": "a4baab40-3ef5-11ed-a409-fb56e90ec1f1",
+                "deviceName": "演示接收机",
+                "displayName": "场强定位",
+                "description": "单车场强定位功能",
+                "manufacturer": "Decentest",
+                "model": "SSOA",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.9.0",
+                "createTime": "2022-10-06 13:40:23",
+                "updateTime": "2022-10-06 13:40:28"
+            },
+            {
+                "id": "14e81af0-3fa6-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1120004",
+                "mfid": "1120004",
+                "type": "Cosmos.Driver.WBDF.WBDF",
+                "templateId": 122380420644865,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "deviceBusy",
+                "supportedFeatures": [
+                    "wbdf"
+                ],
+                "deviceId": "a4baab40-3ef5-11ed-a409-fb56e90ec1f1",
+                "deviceName": "演示接收机",
+                "displayName": "宽带测向",
+                "description": "带宽测向功能模块",
+                "manufacturer": "Decentest",
+                "model": "WBDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.6.0",
+                "createTime": "2022-09-29 11:23:26",
+                "updateTime": "2022-10-06 10:49:53"
+            },
+            {
+                "id": "14e81af1-3fa6-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1120004",
+                "mfid": "1120004",
+                "type": "Cosmos.Driver.ScanDF.ScanDF",
+                "templateId": 122380416450561,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "deviceBusy",
+                "supportedFeatures": [
+                    "scandf"
+                ],
+                "deviceId": "a4baab40-3ef5-11ed-a409-fb56e90ec1f1",
+                "deviceName": "演示接收机",
+                "displayName": "扫描测向",
+                "description": "扫描测向功能模块",
+                "manufacturer": "Decentest",
+                "model": "ScanDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.6.0",
+                "createTime": "2022-09-29 11:23:26",
+                "updateTime": "2022-10-06 10:49:52"
+            },
+            {
+                "id": "a4baab40-3ef5-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1120004",
+                "mfid": "1120004",
+                "type": "Cosmos.Device.DemoReceiver.DemoReceiver",
+                "templateId": 122380345147398,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "directionFinding",
+                    "monitoring"
+                ],
+                "moduleState": "busy",
+                "supportedFeatures": [
+                    "ffm",
+                    "ffdf",
+                    "wbdf",
+                    "scandf",
+                    "sse",
+                    "scan",
+                    "mscan",
+                    "ifmca",
+                    "tdoa",
+                    "itum",
+                    "mscandf",
+                    "dpx"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "演示接收机",
+                "description": "演示接收机，内部测试使用",
+                "manufacturer": "Decentest",
+                "model": "DemoReceiver",
+                "maximumInstance": "1",
+                "sn": "",
+                "version": "5.2.7",
+                "createTime": "2022-09-28 14:20:26",
+                "updateTime": null
+            },
+            {
+                "id": "14e84200-3fa6-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1120004",
+                "mfid": "1120004",
+                "type": "Cosmos.Driver.MFDF.MFDF",
+                "templateId": 122380408061956,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "deviceBusy",
+                "supportedFeatures": [
+                    "mfdf"
+                ],
+                "deviceId": "a4baab40-3ef5-11ed-a409-fb56e90ec1f1",
+                "deviceName": "演示接收机",
+                "displayName": "离散测向",
+                "description": "离散测向功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.0.2",
+                "createTime": "2022-09-29 11:23:26",
+                "updateTime": "2022-10-06 10:49:51"
+            },
+            {
+                "id": "ec03f750-408e-11ed-831f-d75871c5d1d8",
+                "edgeId": "1120004",
+                "mfid": "1120004",
+                "type": "Cosmos.Device.VirtualGps.VirtualGps",
+                "templateId": 123803174699009,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "gps"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "none"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "虚拟GPS",
+                "description": "虚拟GPS，内部测试使用",
+                "manufacturer": "Decentest",
+                "model": "VirtualGps",
+                "maximumInstance": "1",
+                "sn": "",
+                "version": "2.2.0",
+                "createTime": "2022-09-30 15:10:10",
+                "updateTime": null
+            },
+            {
+                "id": "a4ba0f00-3ef5-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1120004",
+                "mfid": "1120004",
+                "type": "Cosmos.Device.DemoAntennaController.DemoAntennaController",
+                "templateId": 122380336758786,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "antennaControl"
+                ],
+                "moduleState": "busy",
+                "supportedFeatures": [
+                    "none"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "虚拟天线控制器",
+                "description": "用于模拟天线控制器，并获取天线因子数据",
+                "manufacturer": "北京德辰科技股份有限公司",
+                "model": "VIRT-ANT-001",
+                "maximumInstance": "0",
+                "sn": "003-34-54232",
+                "version": "2.4.0",
+                "createTime": "2022-09-28 14:20:26",
+                "updateTime": "2022-10-06 10:49:45"
+            },
+            {
+                "id": "eb15fcb0-3f00-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1120004",
+                "mfid": "1120004",
+                "type": "Cosmos.Device.VirtualCompass.VirtualCompass",
+                "templateId": 122380336758788,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "compass"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "none"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "虚拟罗盘",
+                "description": "虚拟罗盘，内部测试使用",
+                "manufacturer": "Decentest",
+                "model": "VirtualCompass",
+                "maximumInstance": "1",
+                "sn": "",
+                "version": "2.2.0",
+                "createTime": "2022-09-28 15:41:09",
+                "updateTime": null
+            },
+            {
+                "id": "b3134e90-3ef5-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1120004",
+                "mfid": "1120004",
+                "type": "Cosmos.Driver.Scan.Scan",
+                "templateId": 122380416450563,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "deviceBusy",
+                "supportedFeatures": [
+                    "scan"
+                ],
+                "deviceId": "a4baab40-3ef5-11ed-a409-fb56e90ec1f1",
+                "deviceName": "演示接收机",
+                "displayName": "频段扫描",
+                "description": "频段扫描功能",
+                "manufacturer": "Decentest",
+                "model": "Scan",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "3.1.3",
+                "createTime": "2022-09-28 14:20:51",
+                "updateTime": "2022-10-06 10:49:50"
+            },
+            {
+                "id": "67613860-4858-11ed-a423-e9d755962e09",
+                "edgeId": "1120004",
+                "mfid": "1120004",
+                "type": "Cosmos.Driver.SPEVL.SPEVL",
+                "templateId": 127394421669889,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "busy",
+                "supportedFeatures": [
+                    "spevl"
+                ],
+                "deviceId": "a4baab40-3ef5-11ed-a409-fb56e90ec1f1",
+                "deviceName": "演示接收机",
+                "displayName": "频谱评估",
+                "description": "频谱评估功能",
+                "manufacturer": "Decentest",
+                "model": "SPEVL",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.0.0",
+                "createTime": "2022-10-10 13:00:04",
+                "updateTime": "2022-10-10 13:00:06"
+            }
+        ],
+        "isActive": true,
+        "state": "online",
+        "stateFaultMsg": [],
+        "lastUpdateTime": "2022-10-10T06:16:59.170Z",
+        "manufacturer": "德辰",
+        "areacode": "510116",
+        "zone": "四川省 成都市 双流区",
+        "fmaddrtype": "city",
+        "capacity": "gps,compass",
+        "groupName": "",
+        "heading": 0
+    },
+    {
+        "id": "1120008",
+        "type": "mobileCategory",
+        "category": "1",
+        "mfid": "1120008",
+        "name": "测试站点8",
+        "longitude": 104.0636944,
+        "latitude": 30.6928333,
+        "altitude": 450,
+        "address": null,
+        "ip": "192.168.102.112",
+        "port": 10008,
+        "version": "125914977402881",
+        "remark": null,
+        "createTime": "2022-10-06 10:33:22",
+        "updateTime": null,
+        "modules": [
+            {
+                "id": "185b1e30-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120008",
+                "mfid": "1120008",
+                "type": "Cosmos.Driver.FDF",
+                "templateId": 123803229224960,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "fdf"
+                ],
+                "deviceId": "094bae00-4523-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "单频测向",
+                "description": "实现单频测向功能",
+                "manufacturer": "Decentest",
+                "model": "FDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.3.1",
+                "createTime": "2022-10-06 11:00:55",
+                "updateTime": "2022-10-06 11:01:10"
+            },
+            {
+                "id": "185aa900-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120008",
+                "mfid": "1120008",
+                "type": "Cosmos.Driver.FixFQ.FixFQ",
+                "templateId": 123803229224962,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "ffm"
+                ],
+                "deviceId": "094bae00-4523-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "单频测量",
+                "description": "单频测量功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.5.3",
+                "createTime": "2022-10-06 11:00:55",
+                "updateTime": "2022-10-06 11:01:08"
+            },
+            {
+                "id": "185a81f0-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120008",
+                "mfid": "1120008",
+                "type": "Cosmos.Driver.WBDF.WBDF",
+                "templateId": 123803241807873,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "wbdf"
+                ],
+                "deviceId": "094bae00-4523-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "宽带测向",
+                "description": "带宽测向功能模块",
+                "manufacturer": "Decentest",
+                "model": "WBDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.6.0",
+                "createTime": "2022-10-06 11:00:55",
+                "updateTime": "2022-10-06 11:01:05"
+            },
+            {
+                "id": "18594970-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120008",
+                "mfid": "1120008",
+                "type": "Cosmos.Driver.ScanDF.ScanDF",
+                "templateId": 123803237613569,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "scandf"
+                ],
+                "deviceId": "094bae00-4523-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "扫描测向",
+                "description": "扫描测向功能模块",
+                "manufacturer": "Decentest",
+                "model": "ScanDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.6.0",
+                "createTime": "2022-10-06 11:00:55",
+                "updateTime": "2022-10-06 11:01:04"
+            },
+            {
+                "id": "094bae00-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120008",
+                "mfid": "1120008",
+                "type": "Cosmos.Device.DemoReceiver.DemoReceiver",
+                "templateId": 123803183087620,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "directionFinding",
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "ffm",
+                    "ffdf",
+                    "wbdf",
+                    "scandf",
+                    "sse",
+                    "scan",
+                    "mscan",
+                    "ifmca",
+                    "tdoa",
+                    "itum",
+                    "mscandf",
+                    "dpx"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "演示接收机",
+                "description": "演示接收机，内部测试使用",
+                "manufacturer": "Decentest",
+                "model": "DemoReceiver",
+                "maximumInstance": "1",
+                "sn": "",
+                "version": "5.2.7",
+                "createTime": "2022-10-06 11:00:30",
+                "updateTime": null
+            },
+            {
+                "id": "1875f930-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120008",
+                "mfid": "1120008",
+                "type": "Cosmos.Driver.MScan.MScan",
+                "templateId": 123803233419264,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "mscan"
+                ],
+                "deviceId": "094bae00-4523-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "离散扫描",
+                "description": "离散扫描功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.9.1",
+                "createTime": "2022-10-06 11:00:55",
+                "updateTime": "2022-10-06 11:01:01"
+            },
+            {
+                "id": "18599790-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120008",
+                "mfid": "1120008",
+                "type": "Cosmos.Driver.MFDF.MFDF",
+                "templateId": 123803229224966,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "mfdf"
+                ],
+                "deviceId": "094bae00-4523-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "离散测向",
+                "description": "离散测向功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.0.2",
+                "createTime": "2022-10-06 11:00:55",
+                "updateTime": "2022-10-06 11:01:00"
+            },
+            {
+                "id": "0fd591a0-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120008",
+                "mfid": "1120008",
+                "type": "Cosmos.Device.VirtualGps.VirtualGps",
+                "templateId": 123803174699009,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "gps"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "none"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "虚拟GPS",
+                "description": "虚拟GPS，内部测试使用",
+                "manufacturer": "Decentest",
+                "model": "VirtualGps",
+                "maximumInstance": "1",
+                "sn": "",
+                "version": "2.2.0",
+                "createTime": "2022-10-06 11:00:41",
+                "updateTime": null
+            },
+            {
+                "id": "094b38d0-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120008",
+                "mfid": "1120008",
+                "type": "Cosmos.Device.DemoAntennaController.DemoAntennaController",
+                "templateId": 123803174699012,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "antennaControl"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "none"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "虚拟天线控制器",
+                "description": "用于模拟天线控制器，并获取天线因子数据",
+                "manufacturer": "北京德辰科技股份有限公司",
+                "model": "VIRT-ANT-001",
+                "maximumInstance": "0",
+                "sn": "003-34-54232",
+                "version": "2.4.0",
+                "createTime": "2022-10-06 11:00:30",
+                "updateTime": null
+            },
+            {
+                "id": "185af720-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120008",
+                "mfid": "1120008",
+                "type": "Cosmos.Driver.Scan.Scan",
+                "templateId": 123803237613568,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "scan"
+                ],
+                "deviceId": "094bae00-4523-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "频段扫描",
+                "description": "频段扫描功能",
+                "manufacturer": "Decentest",
+                "model": "Scan",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "3.1.3",
+                "createTime": "2022-10-06 11:00:55",
+                "updateTime": "2022-10-06 11:00:58"
+            }
+        ],
+        "isActive": true,
+        "state": "online",
+        "stateFaultMsg": [],
+        "lastUpdateTime": "2022-10-10T06:16:58.699Z",
+        "manufacturer": "德辰",
+        "areacode": "510106",
+        "zone": "四川省 成都市 金牛区",
+        "fmaddrtype": "city",
+        "groupName": "",
+        "capacity": "gps"
+    },
+    {
+        "id": "1120009",
+        "type": "stationaryCategory",
+        "category": "3",
+        "mfid": "1120009",
+        "name": "测试站点9",
+        "longitude": 104.090496,
+        "latitude": 30.637366,
+        "altitude": 450,
+        "address": null,
+        "ip": "192.168.102.112",
+        "port": 10009,
+        "version": "125915489107968",
+        "remark": null,
+        "createTime": "2022-10-06 10:33:22",
+        "updateTime": null,
+        "modules": [
+            {
+                "id": "60b770c1-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120009",
+                "mfid": "1120009",
+                "type": "Cosmos.Driver.FDF",
+                "templateId": 123803229224960,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "fdf"
+                ],
+                "deviceId": "57407f50-4523-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "单频测向",
+                "description": "实现单频测向功能",
+                "manufacturer": "Decentest",
+                "model": "FDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.3.1",
+                "createTime": "2022-10-06 11:02:56",
+                "updateTime": "2022-10-06 11:03:02"
+            },
+            {
+                "id": "60dafe50-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120009",
+                "mfid": "1120009",
+                "type": "Cosmos.Driver.FixFQ.FixFQ",
+                "templateId": 123803229224962,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "ffm"
+                ],
+                "deviceId": "57407f50-4523-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "单频测量",
+                "description": "单频测量功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.5.3",
+                "createTime": "2022-10-06 11:02:56",
+                "updateTime": "2022-10-06 11:03:12"
+            },
+            {
+                "id": "60b6fb90-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120009",
+                "mfid": "1120009",
+                "type": "Cosmos.Driver.WBDF.WBDF",
+                "templateId": 123803241807873,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "wbdf"
+                ],
+                "deviceId": "57407f50-4523-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "宽带测向",
+                "description": "带宽测向功能模块",
+                "manufacturer": "Decentest",
+                "model": "WBDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.6.0",
+                "createTime": "2022-10-06 11:02:56",
+                "updateTime": "2022-10-06 11:03:10"
+            },
+            {
+                "id": "60b770c0-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120009",
+                "mfid": "1120009",
+                "type": "Cosmos.Driver.ScanDF.ScanDF",
+                "templateId": 123803237613569,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "scandf"
+                ],
+                "deviceId": "57407f50-4523-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "扫描测向",
+                "description": "扫描测向功能模块",
+                "manufacturer": "Decentest",
+                "model": "ScanDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.6.0",
+                "createTime": "2022-10-06 11:02:56",
+                "updateTime": "2022-10-06 11:03:08"
+            },
+            {
+                "id": "57407f50-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120009",
+                "mfid": "1120009",
+                "type": "Cosmos.Device.DemoReceiver.DemoReceiver",
+                "templateId": 123803183087620,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "directionFinding",
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "ffm",
+                    "ffdf",
+                    "wbdf",
+                    "scandf",
+                    "sse",
+                    "scan",
+                    "mscan",
+                    "ifmca",
+                    "tdoa",
+                    "itum",
+                    "mscandf",
+                    "dpx"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "演示接收机",
+                "description": "演示接收机，内部测试使用",
+                "manufacturer": "Decentest",
+                "model": "DemoReceiver",
+                "maximumInstance": "1",
+                "sn": "",
+                "version": "5.2.7",
+                "createTime": "2022-10-06 11:02:40",
+                "updateTime": null
+            },
+            {
+                "id": "60b7e5f0-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120009",
+                "mfid": "1120009",
+                "type": "Cosmos.Driver.MScan.MScan",
+                "templateId": 123803233419264,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "mscan"
+                ],
+                "deviceId": "57407f50-4523-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "离散扫描",
+                "description": "离散扫描功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.9.1",
+                "createTime": "2022-10-06 11:02:56",
+                "updateTime": "2022-10-06 11:03:06"
+            },
+            {
+                "id": "60b749b0-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120009",
+                "mfid": "1120009",
+                "type": "Cosmos.Driver.MFDF.MFDF",
+                "templateId": 123803229224966,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "mfdf"
+                ],
+                "deviceId": "57407f50-4523-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "离散测向",
+                "description": "离散测向功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.0.2",
+                "createTime": "2022-10-06 11:02:56",
+                "updateTime": "2022-10-06 11:03:04"
+            },
+            {
+                "id": "573ef8b0-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120009",
+                "mfid": "1120009",
+                "type": "Cosmos.Device.DemoAntennaController.DemoAntennaController",
+                "templateId": 123803174699012,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "antennaControl"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "none"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "虚拟天线控制器",
+                "description": "用于模拟天线控制器，并获取天线因子数据",
+                "manufacturer": "北京德辰科技股份有限公司",
+                "model": "VIRT-ANT-001",
+                "maximumInstance": "0",
+                "sn": "003-34-54232",
+                "version": "2.4.0",
+                "createTime": "2022-10-06 11:02:40",
+                "updateTime": null
+            },
+            {
+                "id": "60b7bee0-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120009",
+                "mfid": "1120009",
+                "type": "Cosmos.Driver.Scan.Scan",
+                "templateId": 123803237613568,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "scan"
+                ],
+                "deviceId": "57407f50-4523-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "频段扫描",
+                "description": "频段扫描功能",
+                "manufacturer": "Decentest",
+                "model": "Scan",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "3.1.3",
+                "createTime": "2022-10-06 11:02:56",
+                "updateTime": "2022-10-06 11:03:00"
+            }
+        ],
+        "isActive": true,
+        "state": "online",
+        "stateFaultMsg": [],
+        "lastUpdateTime": "2022-10-10T06:16:53.922Z",
+        "manufacturer": "德辰",
+        "areacode": "510107",
+        "zone": "四川省 成都市 武侯区",
+        "fmaddrtype": "city",
+        "groupName": "",
+        "capacity": ""
+    },
+    {
+        "id": "1120010",
+        "type": "stationaryCategory",
+        "category": "2",
+        "mfid": "1120010",
+        "name": "测试站点10",
+        "longitude": 104.0554722,
+        "latitude": 30.6318889,
+        "altitude": 450,
+        "address": null,
+        "ip": "192.168.102.112",
+        "port": 10010,
+        "version": "125954181562368",
+        "remark": null,
+        "createTime": "2022-10-06 10:33:22",
+        "updateTime": null,
+        "modules": [
+            {
+                "id": "aaefd651-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120010",
+                "mfid": "1120010",
+                "type": "Cosmos.Driver.FDF",
+                "templateId": 123803229224960,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "fdf"
+                ],
+                "deviceId": "a2d91120-4523-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "单频测向",
+                "description": "实现单频测向功能",
+                "manufacturer": "Decentest",
+                "model": "FDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.3.1",
+                "createTime": "2022-10-06 11:05:01",
+                "updateTime": "2022-10-06 11:05:16"
+            },
+            {
+                "id": "ab2a9560-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120010",
+                "mfid": "1120010",
+                "type": "Cosmos.Driver.FixFQ.FixFQ",
+                "templateId": 123803229224962,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "ffm"
+                ],
+                "deviceId": "a2d91120-4523-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "单频测量",
+                "description": "单频测量功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.5.3",
+                "createTime": "2022-10-06 11:05:01",
+                "updateTime": "2022-10-06 11:05:14"
+            },
+            {
+                "id": "aaefaf40-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120010",
+                "mfid": "1120010",
+                "type": "Cosmos.Driver.WBDF.WBDF",
+                "templateId": 123803241807873,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "wbdf"
+                ],
+                "deviceId": "a2d91120-4523-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "宽带测向",
+                "description": "带宽测向功能模块",
+                "manufacturer": "Decentest",
+                "model": "WBDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.6.0",
+                "createTime": "2022-10-06 11:05:01",
+                "updateTime": "2022-10-06 11:05:12"
+            },
+            {
+                "id": "aaefd650-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120010",
+                "mfid": "1120010",
+                "type": "Cosmos.Driver.ScanDF.ScanDF",
+                "templateId": 123803237613569,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "scandf"
+                ],
+                "deviceId": "a2d91120-4523-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "扫描测向",
+                "description": "扫描测向功能模块",
+                "manufacturer": "Decentest",
+                "model": "ScanDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.6.0",
+                "createTime": "2022-10-06 11:05:01",
+                "updateTime": "2022-10-06 11:05:10"
+            },
+            {
+                "id": "a2d91120-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120010",
+                "mfid": "1120010",
+                "type": "Cosmos.Device.DemoReceiver.DemoReceiver",
+                "templateId": 123803183087620,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "directionFinding",
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "ffm",
+                    "ffdf",
+                    "wbdf",
+                    "scandf",
+                    "sse",
+                    "scan",
+                    "mscan",
+                    "ifmca",
+                    "tdoa",
+                    "itum",
+                    "mscandf",
+                    "dpx"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "演示接收机",
+                "description": "演示接收机，内部测试使用",
+                "manufacturer": "Decentest",
+                "model": "DemoReceiver",
+                "maximumInstance": "1",
+                "sn": "",
+                "version": "5.2.7",
+                "createTime": "2022-10-06 11:04:47",
+                "updateTime": null
+            },
+            {
+                "id": "aaf135e0-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120010",
+                "mfid": "1120010",
+                "type": "Cosmos.Driver.MScan.MScan",
+                "templateId": 123803233419264,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "mscan"
+                ],
+                "deviceId": "a2d91120-4523-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "离散扫描",
+                "description": "离散扫描功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.9.1",
+                "createTime": "2022-10-06 11:05:01",
+                "updateTime": "2022-10-06 11:05:07"
+            },
+            {
+                "id": "aaef6120-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120010",
+                "mfid": "1120010",
+                "type": "Cosmos.Driver.MFDF.MFDF",
+                "templateId": 123803229224966,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "mfdf"
+                ],
+                "deviceId": "a2d91120-4523-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "离散测向",
+                "description": "离散测向功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.0.2",
+                "createTime": "2022-10-06 11:05:01",
+                "updateTime": "2022-10-06 11:05:05"
+            },
+            {
+                "id": "e4a77be0-4538-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120010",
+                "mfid": "1120010",
+                "type": "Cosmos.Device.VirtualGps.VirtualGps",
+                "templateId": 123803174699009,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "gps"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "none"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "虚拟GPS",
+                "description": "虚拟GPS，内部测试使用",
+                "manufacturer": "Decentest",
+                "model": "VirtualGps",
+                "maximumInstance": "1",
+                "sn": "",
+                "version": "2.2.0",
+                "createTime": "2022-10-06 13:36:57",
+                "updateTime": null
+            },
+            {
+                "id": "a2d826c0-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120010",
+                "mfid": "1120010",
+                "type": "Cosmos.Device.DemoAntennaController.DemoAntennaController",
+                "templateId": 123803174699012,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "antennaControl"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "none"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "虚拟天线控制器",
+                "description": "用于模拟天线控制器，并获取天线因子数据",
+                "manufacturer": "北京德辰科技股份有限公司",
+                "model": "VIRT-ANT-001",
+                "maximumInstance": "0",
+                "sn": "003-34-54232",
+                "version": "2.4.0",
+                "createTime": "2022-10-06 11:04:47",
+                "updateTime": null
+            },
+            {
+                "id": "aaeffd60-4523-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1120010",
+                "mfid": "1120010",
+                "type": "Cosmos.Driver.Scan.Scan",
+                "templateId": 123803237613568,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "scan"
+                ],
+                "deviceId": "a2d91120-4523-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "频段扫描",
+                "description": "频段扫描功能",
+                "manufacturer": "Decentest",
+                "model": "Scan",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "3.1.3",
+                "createTime": "2022-10-06 11:05:01",
+                "updateTime": "2022-10-06 11:05:04"
+            }
+        ],
+        "isActive": true,
+        "state": "online",
+        "stateFaultMsg": [],
+        "lastUpdateTime": "2022-10-10T06:16:58.936Z",
+        "manufacturer": "德辰",
+        "areacode": "510112",
+        "zone": "四川省 成都市 龙泉驿区",
+        "fmaddrtype": "city",
+        "groupName": "",
+        "capacity": "gps"
+    },
+    {
+        "id": "1300001",
+        "type": "movableCategory",
+        "category": "2",
+        "mfid": "1300001",
+        "name": "测试站点01",
+        "longitude": 104.046528,
+        "latitude": 30.650962,
+        "altitude": 500,
+        "address": null,
+        "ip": "192.168.102.130",
+        "port": 10001,
+        "version": "126758946865153",
+        "remark": null,
+        "createTime": "2022-08-16 14:42:18",
+        "updateTime": "2022-08-26 11:32:10",
+        "modules": [
+            {
+                "id": "fc10c630-3e10-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1300001",
+                "mfid": "1300001",
+                "type": "Cosmos.Device.ADS_B_2020",
+                "templateId": 122380286427136,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "decoder"
+                ],
+                "moduleState": "offline",
+                "supportedFeatures": [
+                    "none"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "ADS_B_2020",
+                "description": "ADS-B接收器",
+                "manufacturer": "北京德辰科技股份有限公司",
+                "model": "ADS_B_2020",
+                "maximumInstance": "1",
+                "sn": "",
+                "version": "1.1.0",
+                "createTime": "2022-09-27 11:03:38",
+                "updateTime": "2022-10-08 09:41:07"
+            },
+            {
+                "id": "e29f3860-1d2e-11ed-959f-f5feef791c8d",
+                "edgeId": "1300001",
+                "mfid": "1300001",
+                "type": "Cosmos.Device.MR3000A.MR3000A",
+                "templateId": 107488095502338,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "ffm",
+                    "ffdf",
+                    "ampdf",
+                    "wbdf",
+                    "scandf",
+                    "sse",
+                    "scan",
+                    "fscne",
+                    "mscan",
+                    "mscne",
+                    "ifmca",
+                    "tdoa",
+                    "itum",
+                    "dpx"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "DF3000A(9)",
+                "description": "应用于德辰科技自研DF3000A系列九通道测向机",
+                "manufacturer": "北京德辰科技股份有限公司",
+                "model": "DF3000A",
+                "maximumInstance": "1",
+                "sn": "",
+                "version": "3.5.2",
+                "createTime": "2022-08-16 14:44:32",
+                "updateTime": "2022-10-06 11:07:44"
+            },
+            {
+                "id": "91d2cb20-1d30-11ed-959f-f5feef791c8d",
+                "edgeId": "1300001",
+                "mfid": "1300001",
+                "type": "Cosmos.Device.EM550",
+                "templateId": 107488103890945,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "fault",
+                "supportedFeatures": [
+                    "ffm",
+                    "scan",
+                    "fscne",
+                    "mscan",
+                    "mscne",
+                    "ifout",
+                    "itum"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "EM550",
+                "description": "R&S EM550监测接收机",
+                "manufacturer": "R&S",
+                "model": "",
+                "maximumInstance": "1",
+                "sn": "",
+                "version": "1.1.4",
+                "createTime": "2022-08-16 14:56:36",
+                "updateTime": "2022-10-06 11:07:32"
+            },
+            {
+                "id": "745d8490-3ed7-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1300001",
+                "mfid": "1300001",
+                "type": "Cosmos.Device.ESMD.ESMD",
+                "templateId": 122380349341698,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "offline",
+                "supportedFeatures": [
+                    "ffm",
+                    "ampdf",
+                    "scan",
+                    "fscne",
+                    "mscan",
+                    "mscne",
+                    "ifmca",
+                    "tdoa",
+                    "itum"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "ESMD",
+                "description": "R&S ESMD接收机，最大中频带宽20MHz，频率最高支持到3.6GHz",
+                "manufacturer": "R&S",
+                "model": "ESMD",
+                "maximumInstance": "1",
+                "sn": "",
+                "version": "1.8.4",
+                "createTime": "2022-09-28 10:44:20",
+                "updateTime": "2022-10-06 11:07:31"
+            },
+            {
+                "id": "48cd82b0-1ec2-11ed-959f-f5feef791c8d",
+                "edgeId": "1300001",
+                "mfid": "1300001",
+                "type": "Cosmos.Driver.ITUM.ITUM",
+                "templateId": 107488170999808,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "itum"
+                ],
+                "deviceId": "e29fad90-1d2e-11ed-959f-f5feef791c8d",
+                "deviceName": "MR3000A",
+                "displayName": "ITU测量",
+                "description": "ITU测量功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.4.0",
+                "createTime": "2022-08-18 14:52:11",
+                "updateTime": "2022-08-18 14:52:16"
+            },
+            {
+                "id": "e29fad90-1d2e-11ed-959f-f5feef791c8d",
+                "edgeId": "1300001",
+                "mfid": "1300001",
+                "type": "Cosmos.Device.MR3000A.MR3000A",
+                "templateId": 107488112279554,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "ffm",
+                    "ffdf",
+                    "ampdf",
+                    "wbdf",
+                    "scandf",
+                    "sse",
+                    "scan",
+                    "fscne",
+                    "mscan",
+                    "mscne",
+                    "ifmca",
+                    "tdoa",
+                    "itum",
+                    "dpx"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "MR3000A",
+                "description": "应用于德辰科技自研MR3000A系列接收机",
+                "manufacturer": "北京德辰科技股份有限公司",
+                "model": "MR3000A",
+                "maximumInstance": "1",
+                "sn": "",
+                "version": "3.5.5",
+                "createTime": "2022-08-16 14:44:32",
+                "updateTime": "2022-08-18 16:44:44"
+            },
+            {
+                "id": "48617d00-3ed8-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1300001",
+                "mfid": "1300001",
+                "type": "Cosmos.Device.MR3000A.MR3000A",
+                "templateId": 122380357730308,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "busy",
+                "supportedFeatures": [
+                    "ffm",
+                    "ampdf",
+                    "scan",
+                    "fscne",
+                    "mscan",
+                    "mscne",
+                    "ifmca",
+                    "tdoa",
+                    "itum",
+                    "dpx"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "MR3000A-30.101",
+                "description": "应用于德辰科技自研MR3000A系列接收机",
+                "manufacturer": "北京德辰科技股份有限公司",
+                "model": "MR3000A",
+                "maximumInstance": "1",
+                "sn": "",
+                "version": "3.5.6",
+                "createTime": "2022-09-28 10:50:16",
+                "updateTime": null
+            },
+            {
+                "id": "047d8bd0-3edb-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1300001",
+                "mfid": "1300001",
+                "type": "Cosmos.Driver.IFMCA.IFMCA",
+                "templateId": 122380408061953,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "fault",
+                "supportedFeatures": [
+                    "ifmca"
+                ],
+                "deviceId": "5bd37f90-46d1-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "MR5000A",
+                "displayName": "中频多路",
+                "description": "IFMCA功能",
+                "manufacturer": "Decentest",
+                "model": "IFMCA",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.8.0",
+                "createTime": "2022-09-28 11:09:51",
+                "updateTime": "2022-10-08 17:24:56"
+            },
+            {
+                "id": "f6557450-1d2e-11ed-959f-f5feef791c8d",
+                "edgeId": "1300001",
+                "mfid": "1300001",
+                "type": "Cosmos.Driver.FDF",
+                "templateId": 107488162611202,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "fdf"
+                ],
+                "deviceId": "e29f3860-1d2e-11ed-959f-f5feef791c8d",
+                "deviceName": "DF3000A(9)",
+                "displayName": "单频测向",
+                "description": "实现单频测向功能",
+                "manufacturer": "Decentest",
+                "model": "FDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.3.1",
+                "createTime": "2022-08-16 14:45:05",
+                "updateTime": "2022-08-17 17:03:10"
+            },
+            {
+                "id": "c43bcd30-243a-11ed-a20f-87e82ff62df0",
+                "edgeId": "1300001",
+                "mfid": "1300001",
+                "type": "Cosmos.Driver.FDF",
+                "templateId": 107488162611202,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "fdf"
+                ],
+                "deviceId": "b8c477e0-243a-11ed-a20f-87e82ff62df0",
+                "deviceName": "演示接收机",
+                "displayName": "单频测向1",
+                "description": "实现单频测向功能",
+                "manufacturer": "Decentest",
+                "model": "FDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.3.1",
+                "createTime": "2022-08-25 13:57:13",
+                "updateTime": "2022-08-25 13:57:21"
+            },
+            {
+                "id": "f654d810-1d2e-11ed-959f-f5feef791c8d",
+                "edgeId": "1300001",
+                "mfid": "1300001",
+                "type": "Cosmos.Driver.FixFQ.FixFQ",
+                "templateId": 107488166805504,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "ffm"
+                ],
+                "deviceId": "e29fad90-1d2e-11ed-959f-f5feef791c8d",
+                "deviceName": "MR3000A",
+                "displayName": "单频测量",
+                "description": "单频测量功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.5.3",
+                "createTime": "2022-08-16 14:45:05",
+                "updateTime": "2022-08-17 17:03:12"
+            },
+            {
+                "id": "aeac5a40-1d30-11ed-959f-f5feef791c8d",
+                "edgeId": "1300001",
+                "mfid": "1300001",
+                "type": "Cosmos.Driver.FixFQ.FixFQ",
+                "templateId": 107488166805504,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "busy",
+                "supportedFeatures": [
+                    "ffm"
+                ],
+                "deviceId": "48617d00-3ed8-11ed-a409-fb56e90ec1f1",
+                "deviceName": "MR3000A-30.101",
+                "displayName": "单频测量-esmd",
+                "description": "单频测量功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.5.3",
+                "createTime": "2022-08-16 14:57:24",
+                "updateTime": "2022-09-28 10:50:31"
+            },
+            {
+                "id": "f65462e0-1d2e-11ed-959f-f5feef791c8d",
+                "edgeId": "1300001",
+                "mfid": "1300001",
+                "type": "Cosmos.Driver.WBDF.WBDF",
+                "templateId": 107488183582721,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "wbdf"
+                ],
+                "deviceId": "e29f3860-1d2e-11ed-959f-f5feef791c8d",
+                "deviceName": "DF3000A(9)",
+                "displayName": "宽带测向",
+                "description": "带宽测向功能模块",
+                "manufacturer": "Decentest",
+                "model": "WBDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.6.0",
+                "createTime": "2022-08-16 14:45:05",
+                "updateTime": "2022-08-17 17:03:15"
+            },
+            {
+                "id": "dfc1e370-3ed7-11ed-a409-fb56e90ec1f1",
+                "edgeId": "1300001",
+                "mfid": "1300001",
+                "type": "Cosmos.Driver.AMIA.AMIA",
+                "templateId": 122380399673344,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "fault",
+                "supportedFeatures": [
+                    "amia"
+                ],
+                "deviceId": "57b91450-46dc-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "MR3000A-138",
+                "displayName": "干扰分析-esmd",
+                "description": "航空监测干扰分析功能",
+                "manufacturer": "Decentest",
+                "model": "AMIA",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.0.0",
+                "createTime": "2022-09-28 10:47:21",
+                "updateTime": "2022-10-08 17:25:22"
+            },
+            {
+                "id": "f6552630-1d2e-11ed-959f-f5feef791c8d",
+                "edgeId": "1300001",
+                "mfid": "1300001",
+                "type": "Cosmos.Driver.ScanDF.ScanDF",
+                "templateId": 107488179388417,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "scandf"
+                ],
+                "deviceId": "e29f3860-1d2e-11ed-959f-f5feef791c8d",
+                "deviceName": "DF3000A(9)",
+                "displayName": "扫描测向",
+                "description": "扫描测向功能模块",
+                "manufacturer": "Decentest",
+                "model": "ScanDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.6.0",
+                "createTime": "2022-08-16 14:45:05",
+                "updateTime": "2022-08-17 17:03:17"
+            },
+            {
+                "id": "b8c477e0-243a-11ed-a20f-87e82ff62df0",
+                "edgeId": "1300001",
+                "mfid": "1300001",
+                "type": "Cosmos.Device.DemoReceiver.DemoReceiver",
+                "templateId": 107488095502336,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "directionFinding",
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "ffm",
+                    "ffdf",
+                    "wbdf",
+                    "scandf",
+                    "sse",
+                    "scan",
+                    "mscan",
+                    "ifmca",
+                    "tdoa",
+                    "itum",
+                    "mscandf",
+                    "dpx"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "演示接收机",
+                "description": "演示接收机，内部测试使用",
+                "manufacturer": "Decentest",
+                "model": "DemoReceiver",
+                "maximumInstance": "1",
+                "sn": "",
+                "version": "5.2.6",
+                "createTime": "2022-08-25 13:56:54",
+                "updateTime": "2022-10-06 11:07:38"
+            },
+            {
+                "id": "f684e8c0-1d2e-11ed-959f-f5feef791c8d",
+                "edgeId": "1300001",
+                "mfid": "1300001",
+                "type": "Cosmos.Driver.MScan.MScan",
+                "templateId": 107488170999810,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "mscan"
+                ],
+                "deviceId": "e29fad90-1d2e-11ed-959f-f5feef791c8d",
+                "deviceName": "MR3000A",
+                "displayName": "离散扫描",
+                "description": "离散扫描功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.9.1",
+                "createTime": "2022-08-16 14:45:05",
+                "updateTime": "2022-08-17 17:03:18"
+            },
+            {
+                "id": "aeac0c20-1d30-11ed-959f-f5feef791c8d",
+                "edgeId": "1300001",
+                "mfid": "1300001",
+                "type": "Cosmos.Driver.MScan.MScan",
+                "templateId": 107488170999810,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "fault",
+                "supportedFeatures": [
+                    "mscan"
+                ],
+                "deviceId": "91d2cb20-1d30-11ed-959f-f5feef791c8d",
+                "deviceName": "EM550",
+                "displayName": "离散扫描-em550",
+                "description": "离散扫描功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.9.1",
+                "createTime": "2022-08-16 14:57:24",
+                "updateTime": "2022-08-17 17:03:20"
+            },
+            {
+                "id": "f654b100-1d2e-11ed-959f-f5feef791c8d",
+                "edgeId": "1300001",
+                "mfid": "1300001",
+                "type": "Cosmos.Driver.MFDF.MFDF",
+                "templateId": 107488170999809,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "mfdf"
+                ],
+                "deviceId": "e29f3860-1d2e-11ed-959f-f5feef791c8d",
+                "deviceName": "DF3000A(9)",
+                "displayName": "离散测向",
+                "description": "离散测向功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.0.1",
+                "createTime": "2022-08-16 14:45:05",
+                "updateTime": "2022-08-17 17:03:21"
+            },
+            {
+                "id": "7b7e2e70-2774-11ed-a20f-87e82ff62df0",
+                "edgeId": "1300001",
+                "mfid": "1300001",
+                "type": "Cosmos.Driver.ESE.ESE",
+                "templateId": 107488162611200,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "ese"
+                ],
+                "deviceId": "e29fad90-1d2e-11ed-959f-f5feef791c8d",
+                "deviceName": "MR3000A",
+                "displayName": "考试保障",
+                "description": "考试保障功能",
+                "manufacturer": "Decentest",
+                "model": "ESE",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.8.0",
+                "createTime": "2022-08-29 16:27:55",
+                "updateTime": "2022-08-29 16:28:03"
+            },
+            {
+                "id": "e29e4e00-1d2e-11ed-959f-f5feef791c8d",
+                "edgeId": "1300001",
+                "mfid": "1300001",
+                "type": "Cosmos.Device.DemoAntennaController.DemoAntennaController",
+                "templateId": 107488091308033,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "antennaControl"
+                ],
+                "moduleState": "busy",
+                "supportedFeatures": [
+                    "none"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "虚拟天线控制器",
+                "description": "用于模拟天线控制器，并获取天线因子数据",
+                "manufacturer": "北京德辰科技股份有限公司",
+                "model": "VIRT-ANT-001",
+                "maximumInstance": "0",
+                "sn": "003-34-54232",
+                "version": "2.4.0",
+                "createTime": "2022-08-16 14:44:32",
+                "updateTime": "2022-08-17 17:02:54"
+            },
+            {
+                "id": "f6557451-1d2e-11ed-959f-f5feef791c8d",
+                "edgeId": "1300001",
+                "mfid": "1300001",
+                "type": "Cosmos.Driver.Scan.Scan",
+                "templateId": 107488179388416,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "scan"
+                ],
+                "deviceId": "e29fad90-1d2e-11ed-959f-f5feef791c8d",
+                "deviceName": "MR3000A",
+                "displayName": "频段扫描",
+                "description": "频段扫描功能",
+                "manufacturer": "Decentest",
+                "model": "Scan",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "3.1.3",
+                "createTime": "2022-08-16 14:45:05",
+                "updateTime": "2022-10-08 17:26:01"
+            },
+            {
+                "id": "aeabe510-1d30-11ed-959f-f5feef791c8d",
+                "edgeId": "1300001",
+                "mfid": "1300001",
+                "type": "Cosmos.Driver.Scan.Scan",
+                "templateId": 107488179388416,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "scan"
+                ],
+                "deviceId": "e29fad90-1d2e-11ed-959f-f5feef791c8d",
+                "deviceName": "MR3000A",
+                "displayName": "频段扫描-esmd",
+                "description": "频段扫描功能",
+                "manufacturer": "Decentest",
+                "model": "Scan",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "3.1.3",
+                "createTime": "2022-08-16 14:57:24",
+                "updateTime": "2022-10-08 17:26:03"
+            },
+            {
+                "id": "261d7200-46f1-11ed-b807-bd58565b9147",
+                "edgeId": "1300001",
+                "mfid": "1300001",
+                "type": "Cosmos.Driver.SPEVL.SPEVL",
+                "templateId": 126739367854082,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "spevl"
+                ],
+                "deviceId": "e29fad90-1d2e-11ed-959f-f5feef791c8d",
+                "deviceName": "MR3000A",
+                "displayName": "频谱评估",
+                "description": "频谱评估功能",
+                "manufacturer": "Decentest",
+                "model": "SPEVL",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.0.0",
+                "createTime": "2022-10-08 18:08:25",
+                "updateTime": "2022-10-08 18:08:30"
+            }
+        ],
+        "isActive": true,
+        "state": "fault",
+        "stateFaultMsg": [
+            {
+                "moduleState": "fault"
+            }
+        ],
+        "lastUpdateTime": "2022-10-10T06:16:53.729Z",
+        "manufacturer": "dc",
+        "areacode": "510107",
+        "zone": "四川省 成都市 武侯区",
+        "fmaddrtype": "city",
+        "groupName": "",
+        "capacity": "ads-b"
+    },
+    {
+        "id": "1300005",
+        "type": "stationaryCategory",
+        "category": "2",
+        "mfid": "1300005",
+        "name": "测试站点5",
+        "longitude": 104.064211,
+        "latitude": 30.828664,
+        "altitude": 500,
+        "address": null,
+        "ip": "192.168.102.130",
+        "port": 10005,
+        "version": "125927732281345",
+        "remark": null,
+        "createTime": "2022-10-06 10:28:50",
+        "updateTime": null,
+        "modules": [
+            {
+                "id": "b16ed6c0-451e-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300005",
+                "mfid": "1300005",
+                "type": "Cosmos.Driver.ITUM.ITUM",
+                "templateId": 123803229224965,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "itum"
+                ],
+                "deviceId": "a6e9d0b0-451e-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "ITU测量",
+                "description": "ITU测量功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.4.0",
+                "createTime": "2022-10-06 10:29:24",
+                "updateTime": "2022-10-06 11:51:51"
+            },
+            {
+                "id": "b14d9320-451e-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300005",
+                "mfid": "1300005",
+                "type": "Cosmos.Driver.FDF",
+                "templateId": 123803229224960,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "fdf"
+                ],
+                "deviceId": "a6e9d0b0-451e-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "单频测向",
+                "description": "实现单频测向功能",
+                "manufacturer": "Decentest",
+                "model": "FDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.3.1",
+                "createTime": "2022-10-06 10:29:24",
+                "updateTime": "2022-10-06 11:51:50"
+            },
+            {
+                "id": "b17e4010-451e-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300005",
+                "mfid": "1300005",
+                "type": "Cosmos.Driver.FixFQ.FixFQ",
+                "templateId": 123803229224962,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "ffm"
+                ],
+                "deviceId": "a6e9d0b0-451e-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "单频测量",
+                "description": "单频测量功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.5.3",
+                "createTime": "2022-10-06 10:29:24",
+                "updateTime": "2022-10-06 11:51:48"
+            },
+            {
+                "id": "b14d4500-451e-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300005",
+                "mfid": "1300005",
+                "type": "Cosmos.Driver.WBDF.WBDF",
+                "templateId": 123803241807873,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "wbdf"
+                ],
+                "deviceId": "a6e9d0b0-451e-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "宽带测向",
+                "description": "带宽测向功能模块",
+                "manufacturer": "Decentest",
+                "model": "WBDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.6.0",
+                "createTime": "2022-10-06 10:29:24",
+                "updateTime": "2022-10-06 11:51:47"
+            },
+            {
+                "id": "b14cf6e0-451e-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300005",
+                "mfid": "1300005",
+                "type": "Cosmos.Driver.ScanDF.ScanDF",
+                "templateId": 123803237613569,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "scandf"
+                ],
+                "deviceId": "a6e9d0b0-451e-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "扫描测向",
+                "description": "扫描测向功能模块",
+                "manufacturer": "Decentest",
+                "model": "ScanDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.6.0",
+                "createTime": "2022-10-06 10:29:24",
+                "updateTime": "2022-10-06 11:51:46"
+            },
+            {
+                "id": "a6e9d0b0-451e-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300005",
+                "mfid": "1300005",
+                "type": "Cosmos.Device.DemoReceiver.DemoReceiver",
+                "templateId": 123803183087620,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "directionFinding",
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "ffm",
+                    "ffdf",
+                    "wbdf",
+                    "scandf",
+                    "sse",
+                    "scan",
+                    "mscan",
+                    "ifmca",
+                    "tdoa",
+                    "itum",
+                    "mscandf",
+                    "dpx"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "演示接收机",
+                "description": "演示接收机，内部测试使用",
+                "manufacturer": "Decentest",
+                "model": "DemoReceiver",
+                "maximumInstance": "1",
+                "sn": "",
+                "version": "5.2.7",
+                "createTime": "2022-10-06 10:29:07",
+                "updateTime": null
+            },
+            {
+                "id": "b14de140-451e-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300005",
+                "mfid": "1300005",
+                "type": "Cosmos.Driver.MScan.MScan",
+                "templateId": 123803233419264,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "mscan"
+                ],
+                "deviceId": "a6e9d0b0-451e-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "离散扫描",
+                "description": "离散扫描功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.9.1",
+                "createTime": "2022-10-06 10:29:24",
+                "updateTime": "2022-10-06 11:51:45"
+            },
+            {
+                "id": "b14d6c10-451e-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300005",
+                "mfid": "1300005",
+                "type": "Cosmos.Driver.MFDF.MFDF",
+                "templateId": 123803229224966,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "mfdf"
+                ],
+                "deviceId": "a6e9d0b0-451e-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "离散测向",
+                "description": "离散测向功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.0.2",
+                "createTime": "2022-10-06 10:29:24",
+                "updateTime": "2022-10-06 11:51:41"
+            },
+            {
+                "id": "a6e90d60-451e-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300005",
+                "mfid": "1300005",
+                "type": "Cosmos.Device.DemoAntennaController.DemoAntennaController",
+                "templateId": 123803174699012,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "antennaControl"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "none"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "虚拟天线控制器",
+                "description": "用于模拟天线控制器，并获取天线因子数据",
+                "manufacturer": "北京德辰科技股份有限公司",
+                "model": "VIRT-ANT-001",
+                "maximumInstance": "0",
+                "sn": "003-34-54232",
+                "version": "2.4.0",
+                "createTime": "2022-10-06 10:29:06",
+                "updateTime": "2022-10-06 11:51:37"
+            },
+            {
+                "id": "b14dba30-451e-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300005",
+                "mfid": "1300005",
+                "type": "Cosmos.Driver.Scan.Scan",
+                "templateId": 123803237613568,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "scan"
+                ],
+                "deviceId": "a6e9d0b0-451e-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "频段扫描",
+                "description": "频段扫描功能",
+                "manufacturer": "Decentest",
+                "model": "Scan",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "3.1.3",
+                "createTime": "2022-10-06 10:29:24",
+                "updateTime": "2022-10-06 11:51:40"
+            }
+        ],
+        "isActive": true,
+        "state": "online",
+        "stateFaultMsg": [],
+        "lastUpdateTime": "2022-10-10T06:16:58.962Z",
+        "manufacturer": "德辰",
+        "areacode": "510114",
+        "zone": "四川省 成都市 新都区",
+        "fmaddrtype": "city",
+        "capacity": ""
+    },
+    {
+        "id": "1300006",
+        "type": "stationaryCategory",
+        "category": "2",
+        "mfid": "1300006",
+        "name": "测试站点6",
+        "longitude": 104.079958,
+        "latitude": 30.649761,
+        "altitude": 600,
+        "address": null,
+        "ip": "192.168.102.130",
+        "port": 10006,
+        "version": "125911869423616",
+        "remark": null,
+        "createTime": "2022-10-06 10:31:20",
+        "updateTime": null,
+        "modules": [
+            {
+                "id": "080b89b0-451f-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300006",
+                "mfid": "1300006",
+                "type": "Cosmos.Driver.ITUM.ITUM",
+                "templateId": 123803229224965,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "itum"
+                ],
+                "deviceId": "fe7be020-451e-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "ITU测量",
+                "description": "ITU测量功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.4.0",
+                "createTime": "2022-10-06 10:31:49",
+                "updateTime": "2022-10-06 10:48:49"
+            },
+            {
+                "id": "080b1480-451f-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300006",
+                "mfid": "1300006",
+                "type": "Cosmos.Driver.FDF",
+                "templateId": 123803229224960,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "fdf"
+                ],
+                "deviceId": "fe7be020-451e-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "单频测向",
+                "description": "实现单频测向功能",
+                "manufacturer": "Decentest",
+                "model": "FDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.3.1",
+                "createTime": "2022-10-06 10:31:49",
+                "updateTime": "2022-10-06 10:31:54"
+            },
+            {
+                "id": "08342050-451f-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300006",
+                "mfid": "1300006",
+                "type": "Cosmos.Driver.FixFQ.FixFQ",
+                "templateId": 123803229224962,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "ffm"
+                ],
+                "deviceId": "fe7be020-451e-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "单频测量",
+                "description": "单频测量功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.5.3",
+                "createTime": "2022-10-06 10:31:50",
+                "updateTime": "2022-10-06 10:48:46"
+            },
+            {
+                "id": "080a9f50-451f-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300006",
+                "mfid": "1300006",
+                "type": "Cosmos.Driver.WBDF.WBDF",
+                "templateId": 123803241807873,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "wbdf"
+                ],
+                "deviceId": "fe7be020-451e-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "宽带测向",
+                "description": "带宽测向功能模块",
+                "manufacturer": "Decentest",
+                "model": "WBDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.6.0",
+                "createTime": "2022-10-06 10:31:49",
+                "updateTime": "2022-10-06 10:32:01"
+            },
+            {
+                "id": "080a2a20-451f-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300006",
+                "mfid": "1300006",
+                "type": "Cosmos.Driver.ScanDF.ScanDF",
+                "templateId": 123803237613569,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "scandf"
+                ],
+                "deviceId": "fe7be020-451e-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "扫描测向",
+                "description": "扫描测向功能模块",
+                "manufacturer": "Decentest",
+                "model": "ScanDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.6.0",
+                "createTime": "2022-10-06 10:31:49",
+                "updateTime": "2022-10-06 10:32:00"
+            },
+            {
+                "id": "fe7be020-451e-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300006",
+                "mfid": "1300006",
+                "type": "Cosmos.Device.DemoReceiver.DemoReceiver",
+                "templateId": 123803183087620,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "directionFinding",
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "ffm",
+                    "ffdf",
+                    "wbdf",
+                    "scandf",
+                    "sse",
+                    "scan",
+                    "mscan",
+                    "ifmca",
+                    "tdoa",
+                    "itum",
+                    "mscandf",
+                    "dpx"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "演示接收机",
+                "description": "演示接收机，内部测试使用",
+                "manufacturer": "Decentest",
+                "model": "DemoReceiver",
+                "maximumInstance": "1",
+                "sn": "",
+                "version": "5.2.7",
+                "createTime": "2022-10-06 10:31:33",
+                "updateTime": null
+            },
+            {
+                "id": "084e10f0-451f-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300006",
+                "mfid": "1300006",
+                "type": "Cosmos.Driver.MScan.MScan",
+                "templateId": 123803233419264,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "mscan"
+                ],
+                "deviceId": "fe7be020-451e-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "离散扫描",
+                "description": "离散扫描功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.9.1",
+                "createTime": "2022-10-06 10:31:50",
+                "updateTime": "2022-10-06 10:48:44"
+            },
+            {
+                "id": "080a7840-451f-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300006",
+                "mfid": "1300006",
+                "type": "Cosmos.Driver.MFDF.MFDF",
+                "templateId": 123803229224966,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "mfdf"
+                ],
+                "deviceId": "fe7be020-451e-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "离散测向",
+                "description": "离散测向功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.0.2",
+                "createTime": "2022-10-06 10:31:49",
+                "updateTime": "2022-10-06 10:31:57"
+            },
+            {
+                "id": "fe7b1cd0-451e-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300006",
+                "mfid": "1300006",
+                "type": "Cosmos.Device.DemoAntennaController.DemoAntennaController",
+                "templateId": 123803174699012,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "antennaControl"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "none"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "虚拟天线控制器",
+                "description": "用于模拟天线控制器，并获取天线因子数据",
+                "manufacturer": "北京德辰科技股份有限公司",
+                "model": "VIRT-ANT-001",
+                "maximumInstance": "0",
+                "sn": "003-34-54232",
+                "version": "2.4.0",
+                "createTime": "2022-10-06 10:31:33",
+                "updateTime": "2022-10-06 10:48:38"
+            },
+            {
+                "id": "080b62a0-451f-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300006",
+                "mfid": "1300006",
+                "type": "Cosmos.Driver.Scan.Scan",
+                "templateId": 123803237613568,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "scan"
+                ],
+                "deviceId": "fe7be020-451e-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "频段扫描",
+                "description": "频段扫描功能",
+                "manufacturer": "Decentest",
+                "model": "Scan",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "3.1.3",
+                "createTime": "2022-10-06 10:31:49",
+                "updateTime": "2022-10-06 10:48:43"
+            }
+        ],
+        "isActive": true,
+        "state": "online",
+        "stateFaultMsg": [],
+        "lastUpdateTime": "2022-10-10T06:16:59.135Z",
+        "manufacturer": "德辰",
+        "areacode": "510108",
+        "zone": "四川省 成都市 成华区",
+        "fmaddrtype": "city",
+        "capacity": ""
+    },
+    {
+        "id": "1300007",
+        "type": "stationaryCategory",
+        "category": "2",
+        "mfid": "1300007",
+        "name": "测试站点7",
+        "longitude": 104.040864,
+        "latitude": 30.696507,
+        "altitude": 450,
+        "address": null,
+        "ip": "192.168.102.130",
+        "port": 10007,
+        "version": "125911735205888",
+        "remark": null,
+        "createTime": "2022-10-06 10:33:22",
+        "updateTime": null,
+        "modules": [
+            {
+                "id": "54d08d90-451f-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300007",
+                "mfid": "1300007",
+                "type": "Cosmos.Driver.ITUM.ITUM",
+                "templateId": 123803229224965,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "itum"
+                ],
+                "deviceId": "485583e0-451f-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "ITU测量",
+                "description": "ITU测量功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.4.0",
+                "createTime": "2022-10-06 10:33:58",
+                "updateTime": "2022-10-06 10:48:17"
+            },
+            {
+                "id": "54b3b6c0-451f-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300007",
+                "mfid": "1300007",
+                "type": "Cosmos.Driver.FDF",
+                "templateId": 123803229224960,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "fdf"
+                ],
+                "deviceId": "485583e0-451f-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "单频测向",
+                "description": "实现单频测向功能",
+                "manufacturer": "Decentest",
+                "model": "FDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.3.1",
+                "createTime": "2022-10-06 10:33:58",
+                "updateTime": "2022-10-06 10:34:02"
+            },
+            {
+                "id": "54b368a0-451f-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300007",
+                "mfid": "1300007",
+                "type": "Cosmos.Driver.FixFQ.FixFQ",
+                "templateId": 123803229224962,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "ffm"
+                ],
+                "deviceId": "485583e0-451f-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "单频测量",
+                "description": "单频测量功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.5.3",
+                "createTime": "2022-10-06 10:33:58",
+                "updateTime": "2022-10-06 10:48:14"
+            },
+            {
+                "id": "54b42bf0-451f-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300007",
+                "mfid": "1300007",
+                "type": "Cosmos.Driver.WBDF.WBDF",
+                "templateId": 123803241807873,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "wbdf"
+                ],
+                "deviceId": "485583e0-451f-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "宽带测向",
+                "description": "带宽测向功能模块",
+                "manufacturer": "Decentest",
+                "model": "WBDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.6.0",
+                "createTime": "2022-10-06 10:33:58",
+                "updateTime": "2022-10-06 10:34:10"
+            },
+            {
+                "id": "54b3ddd0-451f-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300007",
+                "mfid": "1300007",
+                "type": "Cosmos.Driver.ScanDF.ScanDF",
+                "templateId": 123803237613569,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "scandf"
+                ],
+                "deviceId": "485583e0-451f-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "扫描测向",
+                "description": "扫描测向功能模块",
+                "manufacturer": "Decentest",
+                "model": "ScanDF",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.6.0",
+                "createTime": "2022-10-06 10:33:58",
+                "updateTime": "2022-10-06 10:34:09"
+            },
+            {
+                "id": "485583e0-451f-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300007",
+                "mfid": "1300007",
+                "type": "Cosmos.Device.DemoReceiver.DemoReceiver",
+                "templateId": 123803183087620,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "directionFinding",
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "ffm",
+                    "ffdf",
+                    "wbdf",
+                    "scandf",
+                    "sse",
+                    "scan",
+                    "mscan",
+                    "ifmca",
+                    "tdoa",
+                    "itum",
+                    "mscandf",
+                    "dpx"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "演示接收机",
+                "description": "演示接收机，内部测试使用",
+                "manufacturer": "Decentest",
+                "model": "DemoReceiver",
+                "maximumInstance": "1",
+                "sn": "",
+                "version": "5.2.7",
+                "createTime": "2022-10-06 10:33:37",
+                "updateTime": null
+            },
+            {
+                "id": "54b404e0-451f-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300007",
+                "mfid": "1300007",
+                "type": "Cosmos.Driver.MScan.MScan",
+                "templateId": 123803233419264,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "mscan"
+                ],
+                "deviceId": "485583e0-451f-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "离散扫描",
+                "description": "离散扫描功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "2.9.1",
+                "createTime": "2022-10-06 10:33:58",
+                "updateTime": "2022-10-06 10:48:11"
+            },
+            {
+                "id": "54b31a80-451f-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300007",
+                "mfid": "1300007",
+                "type": "Cosmos.Driver.MFDF.MFDF",
+                "templateId": 123803229224966,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "directionFinding"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "mfdf"
+                ],
+                "deviceId": "485583e0-451f-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "离散测向",
+                "description": "离散测向功能",
+                "manufacturer": "Decentest",
+                "model": "",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "1.0.2",
+                "createTime": "2022-10-06 10:33:58",
+                "updateTime": "2022-10-06 10:34:06"
+            },
+            {
+                "id": "4854c090-451f-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300007",
+                "mfid": "1300007",
+                "type": "Cosmos.Device.DemoAntennaController.DemoAntennaController",
+                "templateId": 123803174699012,
+                "moduleType": "device",
+                "moduleCategory": [
+                    "antennaControl"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "none"
+                ],
+                "deviceId": null,
+                "deviceName": null,
+                "displayName": "虚拟天线控制器",
+                "description": "用于模拟天线控制器，并获取天线因子数据",
+                "manufacturer": "北京德辰科技股份有限公司",
+                "model": "VIRT-ANT-001",
+                "maximumInstance": "0",
+                "sn": "003-34-54232",
+                "version": "2.4.0",
+                "createTime": "2022-10-06 10:33:37",
+                "updateTime": "2022-10-06 10:48:01"
+            },
+            {
+                "id": "54dc2650-451f-11ed-b6a5-21910e9d3cd5",
+                "edgeId": "1300007",
+                "mfid": "1300007",
+                "type": "Cosmos.Driver.Scan.Scan",
+                "templateId": 123803237613568,
+                "moduleType": "driver",
+                "moduleCategory": [
+                    "monitoring"
+                ],
+                "moduleState": "idle",
+                "supportedFeatures": [
+                    "scan"
+                ],
+                "deviceId": "485583e0-451f-11ed-b6a5-21910e9d3cd5",
+                "deviceName": "演示接收机",
+                "displayName": "频段扫描",
+                "description": "频段扫描功能",
+                "manufacturer": "Decentest",
+                "model": "Scan",
+                "maximumInstance": "0",
+                "sn": "",
+                "version": "3.1.3",
+                "createTime": "2022-10-06 10:33:58",
+                "updateTime": "2022-10-06 10:48:06"
+            }
+        ],
+        "isActive": true,
+        "state": "online",
+        "stateFaultMsg": [],
+        "lastUpdateTime": "2022-10-10T06:16:54.089Z",
+        "manufacturer": "德辰",
+        "areacode": "510106",
+        "zone": "四川省 成都市 金牛区",
+        "fmaddrtype": "city",
+        "capacity": ""
+    }
+]

@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+        <InvariantGlobalization>true</InvariantGlobalization>
+        <OutputPath>../../../../bin/$(Configuration)/Device/</OutputPath>
+        <PublishDir>../../../../publish/$(RuntimeIdentifier)/$(Configuration)/Device/</PublishDir>
+        <SelfContained>false</SelfContained>
+        <Company>成都阿莱夫信息技术有限公司</Company>
+        <Description>用于视频监控模块</Description>
+        <Copyright>@Aleph Co. Ltd. 2023</Copyright>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)'=='Release'">
+        <DebugType>none</DebugType>
+        <DebugSymbols>false</DebugSymbols>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\..\Protocol\Protocol.csproj">
+            <Private>false</Private>
+            <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Contract\Contract.csproj">
+            <Private>false</Private>
+            <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+        </ProjectReference>
+    </ItemGroup>
+</Project>

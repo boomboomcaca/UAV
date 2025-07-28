@@ -1,0 +1,139 @@
+.top {
+  display: flex;
+  height: 100%;
+}
+.dateAdd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  color: var(--theme-font-100);
+  .addBtn {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: var(--theme-enumSelector-button-primary);
+    position: relative;
+    box-shadow: inset 0px -1px 1px rgba(26, 32, 56, 0.5), inset 0px 1px 0px rgba(240, 253, 255, 0.2);
+    &::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 1px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: var(--theme-font-100);
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 14px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: var(--theme-font-100);
+    }
+    opacity: 0.75;
+    &:hover {
+      opacity: 0.9;
+    }
+    &:active {
+      opacity: 1;
+    }
+  }
+}
+.head {
+  padding: 5px;
+  display: inline-block;
+  color: var(--theme-font-50);
+}
+.left {
+  width: 238px;
+  height: 100%;
+  overflow: auto;
+  padding-right: 20px;
+  position: relative;
+}
+.center {
+  background: var(--theme-input);
+  box-shadow: inset -1px 0px 1px rgba(255, 255, 255, 0.15), inset 6px 0px 10px rgba(4, 5, 27, 0.6);
+  height: 100%;
+  width: 4px;
+}
+.card {
+  position: absolute;
+  width: 195px;
+  background: var(--theme-background-chart);
+  border-radius: 2px;
+  padding: 20px;
+  z-index: 99;
+  font-size: 14px;
+  > div div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    > div {
+      padding: 6px 32px;
+      border-radius: 0;
+      margin: 0 0 7px 0;
+    }
+  }
+}
+
+.cardFoot {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  > span {
+    cursor: pointer;
+    font-size: 14px;
+    color: #3ce5d3;
+  }
+}
+
+.checkedweek {
+  background-color: rgba(64, 224, 208, 0.2);
+  cursor: pointer;
+  color: var(--theme-font-100);
+  width: 174px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 2px;
+}
+.weekBottom {
+  margin-top: 30px 0;
+}
+.active {
+  font-weight: 600;
+  background-color: rgba(64, 224, 208, 0.6);
+}
+.right {
+  flex: 1;
+  padding: 0 20px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.configItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .tipLabel {
+    margin-right: 10px;
+    color: var(--theme-font-80);
+    line-height: 30px;
+  }
+}
+
+.valueDiv {
+  background: var(--theme-background-chart);
+  border-radius: 2px;
+  font-size: 20px;
+  color: var(--theme-font-100);
+  cursor: pointer;
+}

@@ -1,0 +1,210 @@
+.hide {
+  // height: 0;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  // top: 0;
+}
+.width1 {
+  width: 600px;
+}
+.width2 {
+  width: 1018px;
+}
+.drop {
+  pointer-events: all;
+  opacity: 1;
+  z-index: 11;
+  top: 38px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  transition: all 1s ease;
+  box-sizing: border-box;
+}
+.imgTriangle {
+  width: 14px;
+  height: 12px;
+  position: absolute;
+  top: 0px;
+  // z-index: 12;
+  clip-path: polygon(0 100%, 100% 100%, 50% 0);
+  background-color: var(--theme-enumSelector-floatbg);
+  box-shadow: 0px -1px 1px #e2f9fa, inset 0px 1px 0.5px rgba(59, 237, 219, 0.2),
+    inset 0px 2px 8px rgba(59, 237, 219, 0.2);
+}
+.dropBox {
+  width: 100%;
+  margin-top: 12px;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 8px;
+  padding: 12px 8px;
+  background-color: var(--theme-enumSelector-floatbg);
+  box-shadow: inset -1px 0px 1px rgba(60, 229, 211, 0.3), inset 1px 0px 0.5px rgba(60, 229, 211, 0.3),
+    inset 0px 0px 16px rgba(59, 237, 219, 0.2);
+  .boxCon {
+    height: 100%;
+    padding: 0px 8px;
+    box-sizing: border-box;
+    overflow-y: overlay;
+  }
+  .concon {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    min-height: 184px;
+    max-height: 376px;
+  }
+  .buttons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    .button {
+      margin: 4px 0;
+      width: 116px;
+      height: 48px;
+      position: relative;
+      .selButton2 {
+        height: 48px;
+        width: 116px;
+      }
+      .selButton2Check {
+        background-image: var(--theme-enumSelector-buttonbg-medium-check);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .selButton2NoCheck {
+        background-image: var(--theme-enumSelector-buttonbg-medium);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .buttonText {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .textP {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+.dropCapBox {
+  width: 100%;
+  margin-top: 12px;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 8px;
+  padding: 16px 8px;
+  background-color: var(--theme-enumSelector-floatbg);
+  box-shadow: inset -1px 0px 1px rgba(60, 229, 211, 0.3), inset 1px 0px 0.5px rgba(60, 229, 211, 0.3),
+    inset 0px 0px 16px rgba(59, 237, 219, 0.2);
+  .boxCapCon {
+    height: 100%;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    overflow-y: overlay;
+  }
+  .conCapcon {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    max-height: 864px;
+  }
+  .capButtons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    .button {
+      width: 100%;
+      height: 50px;
+      position: relative;
+      .selButton3 {
+        height: 50px;
+        width: 100%;
+      }
+      .selButton3Check {
+        background-image: var(--theme-enumSelector-buttonbg-large-check);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .selButton3NoCheck_2 {
+        background-image: var(--theme-enumSelector-buttonbg-large2);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .selButton3NoCheck_1 {
+        background-image: var(--theme-enumSelector-buttonbg-large1);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .buttonText {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .capBox {
+          box-sizing: border-box;
+          font-weight: bold;
+          font-size: 16px;
+          text-align: center;
+          width: 136px;
+          height: 100%;
+          line-height: 50px;
+          overflow: hidden; /*超出部分隐藏*/
+          text-overflow: ellipsis; /* 超出部分显示省略号 */
+          white-space: nowrap; /*规定段落中的文本不进行换行 */
+          padding: 0 4px;
+        }
+        .driver {
+          width: 1px;
+          height: 32px;
+          background-color: #3ce5d3;
+          opacity: 0.3;
+        }
+        .remarkBox {
+          padding: 0 8px;
+          box-sizing: border-box;
+          text-align: left;
+          flex: 1;
+          font-size: 12px;
+          line-height: 17px;
+          text-overflow: -o-ellipsis-lastline;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          line-clamp: 2;
+          -webkit-box-orient: vertical;
+          .remarkBoxCon {
+            border-radius: 4px;
+            padding: 2px 4px;
+            line-height: 18px;
+          }
+          .yellowCon {
+            background: var(--theme-enumSelector-captionTextBg);
+            box-shadow: var(--theme-enumSelector-captionText-boxShadow2);
+          }
+          .blueCon {
+            background: var(--theme-enumSelector-captionTextBg);
+            box-shadow: var(--theme-enumSelector-captionText-boxShadow1);
+          }
+        }
+      }
+    }
+  }
+}

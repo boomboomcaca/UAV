@@ -1,0 +1,38 @@
+.root {
+  position: absolute;
+  bottom: -8px;
+  left: -8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+  width: calc(100% + 16px);
+  height: 80px;
+  background: var(--theme-background-light);
+  opacity: 1;
+  box-shadow: 0px -10px 12px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  font-size: 14px;
+  .icon {
+    background: #3ce5d3;
+    border-radius: 2px;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

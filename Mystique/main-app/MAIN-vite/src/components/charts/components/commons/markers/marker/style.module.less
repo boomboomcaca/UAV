@@ -1,0 +1,231 @@
+.markerRoot {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+
+  z-index: 7;
+
+  .symbolContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    // clip-path: polygon(0 0, 50% 100%, 100% 0);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    cursor: move;
+    pointer-events: all;
+    &.sel {
+      background-color: var(--marker-symbol-sel);
+    }
+  }
+
+  .markerTip {
+    position: absolute;
+    top: -20px;
+  }
+}
+
+.markerBase {
+  position: absolute;
+  user-select: none;
+  pointer-events: all;
+}
+
+.lineX {
+  .markerBase();
+  z-index: 5;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  cursor: col-resize;
+  // display: flex;
+  // border-right: dashed thin aliceblue;
+  > div {
+    margin-left: 3px;
+    width: 1px;
+    height: 100%;
+    // background-color: aliceblue;
+    border-right: var(--marker-cross-line);
+  }
+}
+
+.lineY {
+  .markerBase();
+  z-index: 6;
+  width: 100%;
+  left: 0;
+  height: 5px;
+  cursor: row-resize;
+  > div {
+    margin-top: 3px;
+    height: 1px;
+    width: 100%;
+    border-top: var(--marker-cross-line);
+  }
+}
+
+.triangle {
+  left: 2px;
+  top: 2px;
+  width: 21px;
+  height: 21px;
+  // clip-path: polygon(0 0, 50% 100%, 100% 0);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  background-color: var(--marker-symbol-bg);
+}
+
+.symbol {
+  .markerBase();
+  .triangle();
+  z-index: 1;
+  font-size: 14px;
+}
+
+.markerCaption {
+  top: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  color: var(--marker-caption-color);
+  > span {
+    opacity: 0.6;
+    font-weight: 800;
+    color: var(--marker-caption-title-color);
+  }
+
+  .markerContent {
+    display: flex;
+    > div {
+      //    font-weight: 800;
+      margin-left: 10px;
+    }
+    > span {
+      opacity: 0.6;
+      margin-left: 2px;
+    }
+  }
+}
+
+.sliderYCon {
+  position: absolute;
+  pointer-events: all;
+  top: 0;
+  bottom: 0;
+  left: -36px;
+  width: 36px;
+}
+
+.sliderY {
+  position: absolute;
+  left: 0;
+  // top: -62px;
+  width: 36px !important;
+  height: 125px !important;
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: var(--marker-slider-bg);
+  border: var(--marker-slider-border);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  opacity: 0.25;
+  z-index: 99;
+
+  &.focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  > div {
+    // background-color: aqua;
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sliderYUp {
+    //
+    height: 32px;
+    line-height: 32px;
+  }
+
+  .sliderYTouch {
+    //
+  }
+
+  .sliderYDown {
+    //
+    height: 32px;
+    line-height: 32px;
+  }
+}
+
+.sliderXCon {
+  // pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  // bottom: 0;
+  bottom: -36px;
+  height: 36px;
+}
+
+.sliderX {
+  pointer-events: all;
+  position: absolute;
+  height: 36px;
+  // bottom: -36px;
+  width: 125px;
+  background-color: var(--marker-slider-bg);
+  border: var(--marker-slider-border);
+  box-sizing: border-box;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.25;
+  gap: 1px;
+  border-radius: 18px;
+  overflow: hidden;
+  &.focus {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.8;
+  }
+  > div {
+    // background-color: aqua;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .sliderXLeft {
+    //
+    line-height: 36px;
+    width: 32px;
+  }
+
+  .sliderXTouch {
+    //
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+      rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    box-sizing: border-box;
+  }
+
+  .sliderXRight {
+    //
+    line-height: 36px;
+    width: 32px;
+  }
+}

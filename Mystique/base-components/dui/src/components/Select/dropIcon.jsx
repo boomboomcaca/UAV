@@ -1,0 +1,14 @@
+import React from 'react';
+
+const dropIcon = (deg = -90) => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g opacity="0.3" transform={`rotate(${deg},12 12)`}>
+      <path
+        d="M12.822 15.8136C12.4243 16.3876 11.5757 16.3876 11.178 15.8136L7.89123 11.0695C7.43175 10.4063 7.9064 9.5 8.71322 9.5L15.2868 9.5C16.0936 9.5 16.5683 10.4063 16.1088 11.0695L12.822 15.8136Z"
+        fill="var(--theme-font-100)"
+      />
+    </g>
+  </svg>
+);
+
+export default dropIcon;

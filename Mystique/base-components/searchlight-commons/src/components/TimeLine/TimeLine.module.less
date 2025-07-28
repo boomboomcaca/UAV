@@ -1,0 +1,89 @@
+.container {
+    width: 100%;
+    .content {
+        width: 100%;
+        padding: 40px 10px 0;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+
+        .content_top {
+            height: 20px;
+            min-height: 20px;
+            background: var(--theme-primary-10);
+            border: 1px solid var(--theme-primary-30);
+            box-sizing: border-box;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            .top_dayItem {
+                height: 100%;
+                cursor: pointer;
+                position: absolute;
+                background-color: var(--theme-primary-60);
+                z-index: 1;
+            }
+
+            .top_dayItem_choose {
+                background-color: var(--theme-primary);
+            }
+
+            .top_alert {
+                display: none;
+                padding: 4px 8px;
+                font-size: 10px;
+                color: var(--theme-font-100);
+                white-space: nowrap;
+                background: var(--theme-primary-20);
+                border-radius: 2px;
+                position: absolute;
+                top: -60%;
+                left: 50%;
+                transform: translate(-50%, -100%);
+            }
+
+            .top_alert::after {
+                content: '';
+                width: 0;
+                border-style: solid;
+                border-width: 6px;
+                border-color: var(--theme-primary-20) transparent transparent  transparent;
+                position: absolute;
+                bottom: -12px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .top_dayItem:hover .top_alert{
+                display: block;
+            }
+
+            .top_time{
+                font-size: 14px;
+                line-height: 20px;
+                color: var(--theme-font-50);
+                white-space: nowrap;
+                border-radius: 2px;
+                position: absolute;
+                top: -100%;
+                transform: translateY(-20%);
+            }
+            .time_left{
+                left: 0;
+            }
+            .time_right{
+                right: 0;
+            }
+        }
+
+        .content_top_bg{
+            background: var(--theme-primary-10);
+            border: 1px solid var(--theme-primary-50);
+            .top_dayItem {
+                background-color: var(--theme-primary);
+            }
+        }
+    }
+}

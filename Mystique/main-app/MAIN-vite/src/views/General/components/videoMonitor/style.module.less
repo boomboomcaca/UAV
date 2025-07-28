@@ -1,0 +1,113 @@
+.vmRoot {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  gap: 16px;
+
+  .videoContainer {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    box-shadow: inset 0px 1px 4px rgba(4, 5, 27, 0.2);
+    border-radius: 8px;
+    > video {
+      object-fit: fill;
+    }
+
+    &.large {
+      aspect-ratio: 11/6;
+      overflow: auto;
+      flex: none;
+    }
+  }
+
+  .contentContainer {
+    position: absolute;
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // padding: 4px;
+    overflow: hidden;
+  }
+
+  .status {
+    z-index: 2;
+    text-align: center;
+    position: absolute;
+    // background: var(--theme-background-primary);
+    background-color: #091636;
+    background-image: url("/images/nodata.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.98;
+    left: 4px;
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+  }
+
+  .controls {
+    padding: 16px 0 16px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-y: auto;
+    background-color: #082147;
+    width: 100%;
+    min-height: 200px;
+    user-select: none;
+    .directionCtl {
+      flex: 50;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.itemrows {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 50;
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 8px 0 8px 16px;
+    background: #18406e;
+    border-radius: 4px;
+
+    box-sizing: border-box;
+    height: 48px;
+    // flex-wrap: wrap;
+    > span {
+      flex: 1;
+      // margin-right: 8px;
+      text-align: left;
+      font-size: 14px;
+      color: rgba(255, 255, 255);
+      font-size: medium;
+    }
+  }
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 3;
+}

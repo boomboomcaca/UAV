@@ -1,0 +1,44 @@
+.playerCon {
+  video::-webkit-media-controls-enclosure {
+    display: none;
+  }
+
+  flex: 1;
+  position: relative;
+  .opmask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    // background-color: aliceblue;
+    // opacity: 0.5;
+  }
+
+  .rect {
+    position: absolute;
+    border: solid thin red;
+    z-index: 1;
+  }
+}
+
+.bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 4px 8px 0 8px;
+  box-sizing: border-box;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.videoTag {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+}

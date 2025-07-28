@@ -1,0 +1,169 @@
+{
+  "passive": [
+    {
+      "frequency": 500,
+      "factor": 24.2
+    },
+    {
+      "frequency": 520,
+      "factor": 25
+    },
+    {
+      "frequency": 540,
+      "factor": 25.5
+    },
+    {
+      "frequency": 560,
+      "factor": 25.8
+    },
+    {
+      "frequency": 580,
+      "factor": 26.2
+    },
+    {
+      "frequency": 600,
+      "factor": 26.2
+    },
+    {
+      "frequency": 620,
+      "factor": 26.3
+    },
+    {
+      "frequency": 640,
+      "factor": 26.4
+    },
+    {
+      "frequency": 660,
+      "factor": 26.5
+    },
+    {
+      "frequency": 680,
+      "factor": 26.5
+    },
+    {
+      "frequency": 700,
+      "factor": 26.7
+    },
+    {
+      "frequency": 720,
+      "factor": 26.8
+    },
+    {
+      "frequency": 740,
+      "factor": 26.9
+    },
+    {
+      "frequency": 760,
+      "factor": 27
+    },
+    {
+      "frequency": 780,
+      "factor": 27.1
+    },
+    {
+      "frequency": 800,
+      "factor": 27.2
+    },
+    {
+      "frequency": 820,
+      "factor": 27.4
+    },
+    {
+      "frequency": 840,
+      "factor": 27.6
+    },
+    {
+      "frequency": 860,
+      "factor": 27.8
+    },
+    {
+      "frequency": 880,
+      "factor": 27.9
+    },
+    {
+      "frequency": 900,
+      "factor": 28
+    },
+    {
+      "frequency": 920,
+      "factor": 28
+    },
+    {
+      "frequency": 940,
+      "factor": 28.2
+    },
+    {
+      "frequency": 960,
+      "factor": 28.2
+    },
+    {
+      "frequency": 980,
+      "factor": 28.3
+    },
+    {
+      "frequency": 1000,
+      "factor": 28.4
+    },
+    {
+      "frequency": 1020,
+      "factor": 28.5
+    },
+    {
+      "frequency": 1040,
+      "factor": 28.5
+    },
+    {
+      "frequency": 1060,
+      "factor": 28.5
+    },
+    {
+      "frequency": 1080,
+      "factor": 28.5
+    },
+    {
+      "frequency": 1100,
+      "factor": 28.5
+    },
+    {
+      "frequency": 1120,
+      "factor": 28.5
+    },
+    {
+      "frequency": 1140,
+      "factor": 28.5
+    },
+    {
+      "frequency": 1160,
+      "factor": 28.7
+    },
+    {
+      "frequency": 1180,
+      "factor": 28.9
+    },
+    {
+      "frequency": 1200,
+      "factor": 29.1
+    },
+    {
+      "frequency": 1220,
+      "factor": 29.5
+    },
+    {
+      "frequency": 1240,
+      "factor": 29.8
+    },
+    {
+      "frequency": 1260,
+      "factor": 30
+    },
+    {
+      "frequency": 1280,
+      "factor": 30.2
+    },
+    {
+      "frequency": 1300,
+      "factor": 30.5
+    }
+  ],
+  "active": []
+}

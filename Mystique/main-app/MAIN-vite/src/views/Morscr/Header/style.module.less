@@ -1,0 +1,133 @@
+.morscrHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 108px;
+  box-shadow: inset 0px 0px 27px #1b4e9a;
+}
+
+.tipItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+
+  .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    gap: 8px;
+  }
+  .des {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: large;
+  }
+
+  .iconCon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .label {
+    color: aliceblue;
+    font-weight: 600;
+    font-size: x-large;
+  }
+
+  .warning {
+    color: #f47fc1;
+    .warnicon {
+      box-shadow: inset 0px 0px 24px #f47fc1;
+    }
+    .svg {
+      fill: #f47fc1;
+    }
+  }
+
+  .whitelist {
+    color: #5ce2cb;
+    .whiteicon {
+      box-shadow: inset 0px 0px 24px #5ce2cb;
+    }
+    .svg {
+      fill: #5ce2cb;
+    }
+  }
+
+  .nodeCount {
+    color: #fdd24c;
+    .nodeicon {
+      box-shadow: inset 0px 0px 24px #fdd24c;
+    }
+    .svg {
+      fill: #fdd24c;
+    }
+  }
+
+  .dealTimes {
+    color: #25c8f4;
+    .dealicon {
+      box-shadow: inset 0px 0px 24px #25c8f4;
+    }
+    .svg {
+      fill: #25c8f4;
+    }
+  }
+}
+
+.headerIco {
+  height: 92px;
+  display: flex;
+  flex-direction: column;
+  // color: var(--theme-font-100);
+  color: #a5fefe;
+  align-items: center;
+  -webkit-touch-callout: none;
+  font-size: x-large;
+  font-weight: 800;
+  margin-left: 16px;
+}
+
+.dcLogo {
+  width: 160px;
+  height: 64px;
+
+  // margin-top: 4px;
+  background-image: url("/favicon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 8px;
+}
+
+.right {
+  margin-right: 12px;
+  text-align: center;
+  .usrInfo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    line-height: 42px;
+    > span {
+      color: var(--theme-primary);
+    }
+  }
+
+  .timeLabel {
+    font-size: 14px;
+  }
+}

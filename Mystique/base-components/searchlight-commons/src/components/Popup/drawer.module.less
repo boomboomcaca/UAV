@@ -1,0 +1,244 @@
+.popup {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  // background-color: #3de7d57f;
+  // clip-path: polygon(
+  //   100% 0,
+  //   32px 0,
+  //   32px calc(50% - 65px),
+  //   0 calc(50% - 49px),
+  //   0 calc(50% + 49px),
+  //   32px calc(50% + 65px),
+  //   32px 100%,
+  //   100% 100%
+  // );
+  background: linear-gradient(180deg, rgba(60, 229, 211, 0) 0%, #3ce5d3 53.82%, rgba(60, 229, 211, 0) 100%), #121835;
+  clip-path: polygon(100% 0, 31px 0, 31px 100%, 100% 100%);
+  transition: right 0.5s;
+}
+
+.popupShow {
+  .popup();
+  right: -100%;
+  animation-delay: 0.05s;
+  animation-name: right-m;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+.popupHide {
+  .popup();
+  right: 0;
+  animation-name: right-r;
+  animation-duration: 0.35s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+@keyframes right-m {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes right-r {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -100%;
+  }
+}
+
+.clip {
+  width: 100%;
+  height: 100%;
+  background-color: #121934;
+  // clip-path: polygon(
+  //   100% 0,
+  //   33px 0,
+  //   33px calc(50% - 60px),
+  //   1px calc(50% - 44px),
+  //   1px calc(50% + 44px),
+  //   33px calc(50% + 60px),
+  //   33px 100%,
+  //   100% 100%
+  // );
+  clip-path: polygon(100% 0, 33px 0, 33px 100%, 100% 100%);
+}
+
+// .close {
+//   position: absolute;
+//   width: 32px;
+//   height: 130px;
+//   top: 50%;
+//   left: 0;
+//   transform: translate(0%, -50%);
+//   > div {
+//     position: absolute;
+//     width: 10px;
+//     height: 10px;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     background-color: #f0f0f080;
+//     clip-path: polygon(0 0, 100% 50%, 0 100%);
+//   }
+// }
+// .close:hover {
+//   &::before,
+//   &::after {
+//     background-color: #3ce5d380;
+//   }
+//   > div {
+//     background-color: #f0f0f0e0;
+//   }
+// }
+// .close:active {
+//   &::before,
+//   &::after {
+//     background-color: #3ce5d3;
+//   }
+//   > div {
+//     background-color: white;
+//   }
+// }
+
+// .close::before,
+// .close::after {
+//   position: absolute;
+//   content: '';
+//   width: 27px;
+//   height: 6px;
+//   top: 50%;
+//   right: 0;
+//   background-color: #3ce5d340;
+// }
+// .close::before {
+//   transform: translate(0, calc(-50% - 45px)) skewY(-26.5651deg);
+// }
+// .close::after {
+//   transform: translate(0, calc(-50% + 45px)) skewY(26.5651deg);
+// }
+
+.header {
+  height: 60px;
+  left: 33px;
+  width: calc(100% - 33px);
+  background-color: rgb(16, 41, 71);
+  position: relative;
+  border-bottom: 1px solid #3ce5d360;
+}
+
+.title {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translate(20px, -50%);
+  user-select: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.title::before {
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 16px;
+  top: 50%;
+  left: 0;
+  transform: translate(-10px, -50%);
+  background: #3ce5d3;
+  border-radius: 2px;
+}
+
+.titleAttach {
+  position: absolute;
+  width: auto;
+  min-width: 90px;
+  height: 80%;
+  top: 50%;
+  right: 0;
+  font-size: 16px;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  // color: #3ce5d3e0;
+  // border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.hasClose {
+  right: 50px;
+}
+
+.close {
+  position: absolute;
+  // background-color: #202020;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+.close:hover {
+  &::before {
+    background-color: orangered;
+  }
+  &::after {
+    background-color: orangered;
+  }
+}
+.close:active {
+  &::before {
+    background-color: red;
+  }
+  &::after {
+    background-color: red;
+  }
+}
+
+.close::before,
+.close::after {
+  position: absolute;
+  content: '';
+  width: 16px;
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+}
+.close::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.close::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.content {
+  background-color: #121934;
+  position: relative;
+  left: 33px;
+  height: calc(100% - 61px);
+  width: calc(100% - 33px);
+  color: white;
+  overflow: auto;
+}
+
+.content::-webkit-scrollbar {
+  width: 0 !important;
+}

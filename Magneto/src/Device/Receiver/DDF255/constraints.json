@@ -1,0 +1,253 @@
+{
+  "ampdf,ffm": {
+    "$filterBandwidth.value<=9&&$filterBandwidth.value>=1": [
+      "$demMode.values=['am','fm','pulse','pm','iq','isb','cw','usb','lsb']",
+      "$demMode.displayValues=['AM','FM','PULSE','PM','IQ','ISB','CW','USB','LSB']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'FM'"
+    ],
+    "$filterBandwidth.value<1": [
+      "$demMode.values=['am','fm','pulse','pm','iq','cw','usb','lsb']",
+      "$demMode.displayValues=['AM','FM','PULSE','PM','IQ','CW','USB','LSB']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'FM'"
+    ],
+    "$filterBandwidth.value>9": [
+      "$demMode.values=['am','fm','pulse','pm','iq','isb']",
+      "$demMode.displayValues=['AM','FM','PULSE','PM','IQ','ISB']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'FM'"
+    ],
+    "$bandMeasureMode.value=='XDB'": [
+      "$xdB.browsable=true",
+      "$betaValue.browsable=false"
+    ],
+    "$bandMeasureMode.value=='BETA'": [
+      "$xdB.browsable=false",
+      "$betaValue.browsable=true"
+    ],
+    "$detector.value=='fast'": [
+      "$measureTime.values=[-1,1,2,4,7,16,32,63,125,250,500]",
+      "$measureTime.displayValues=['自动','1μs','2μs','4μs','7μs','16μs','32μs','63μs','125μs','250μs','500μs']",
+      "$measureTime.value=$measureTime.values.includes($measureTime.value)?$measureTime.value:-1"
+    ],
+    "$detector.value=='pos'": [
+      "$measureTime.values=[-1,1000,2000,4000,5000,10000,20000,30000,60000,100000,200000,400000,500000]",
+      "$measureTime.displayValues=['自动','1ms','2ms','4ms','5ms','10ms','20ms','30ms','60ms','100ms','200ms','400ms','500ms']",
+      "$measureTime.value=$measureTime.values.includes($measureTime.value)?$measureTime.value:-1"
+    ],
+    "$detector.value=='avg'||$detector.value=='rms'": [
+      "$measureTime.values=[-1,1000,2000,3000,4000,6000,12000,25000,50000,100000,200000]",
+      "$measureTime.displayValues=['自动','1ms','2ms','3ms','4ms','6ms','12ms','25ms','50ms','100ms','200ms']",
+      "$measureTime.value=$measureTime.values.includes($measureTime.value)?$measureTime.value:-1"
+    ]
+  },
+  "fdf": {
+    "startup": [
+      "$ifBandwidth.values=[10,20,50,100,200,500,1000,2000,5000,10000,20000,40000,80000]",
+      "$ifBandwidth.displayValues=['10kHz','20kHz','50kHz','100kHz','200kHz','500kHz','1MHz','2MHz','5MHz','10MHz','20MHz','40MHz','80MHz']"
+    ],
+    "$filterBandwidth.value<=9&&$filterBandwidth.value>=1": [
+      "$demMode.values=['am','fm','pulse','pm','iq','isb','cw','usb','lsb']",
+      "$demMode.displayValues=['AM','FM','PULSE','PM','IQ','ISB','CW','USB','LSB']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'FM'"
+    ],
+    "$filterBandwidth.value<1": [
+      "$demMode.values=['am','fm','pulse','pm','iq','cw','usb','lsb']",
+      "$demMode.displayValues=['AM','FM','PULSE','PM','IQ','CW','USB','LSB']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'FM'"
+    ],
+    "$filterBandwidth.value>9": [
+      "$demMode.values=['am','fm','pulse','pm','iq','isb']",
+      "$demMode.displayValues=['AM','FM','PULSE','PM','IQ','ISB']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'FM'"
+    ],
+    "$ifBandwidth.value==20000": [
+      "$dfBandwidth.values=[6.25,8.333,10,12.5,20,25,50,100,200,500,1000,2000]",
+      "$dfBandwidth.displayValues=['6.25kHz','8.333kHz','10kHz','12.5kHz','20kHz','25kHz','50kHz','100kHz','200kHz','500kHz','1MHz','2MHz']"
+    ],
+    "$ifBandwidth.value==10000": [
+      "$dfBandwidth.values=[3.125,5,6.25,8.333,10,12.5,20,25,50,100,200,500,1000]",
+      "$dfBandwidth.displayValues=['3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz','20kHz','25kHz','50kHz','100kHz','200kHz','500kHz','1MHz']"
+    ],
+    "$ifBandwidth.value==5000": [
+      "$dfBandwidth.values=[2,2.5,3.125,5,6.25,8.333,10,12.5,20,25,50,100,200,500]",
+      "$dfBandwidth.displayValues=['2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz','20kHz','25kHz','50kHz','100kHz','200kHz','500kHz']"
+    ],
+    "$ifBandwidth.value==2000": [
+      "$dfBandwidth.values=[1,1.25,2,2.5,3.125,5,6.25,8.333,10,12.5,20,25,50,100,200]",
+      "$dfBandwidth.displayValues=['1kHz','1.25kHz','2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz','20kHz','25kHz','50kHz','100kHz','200kHz']"
+    ],
+    "$ifBandwidth.value==1000": [
+      "$dfBandwidth.values=[1,1.25,2,2.5,3.125,5,6.25,8.333,10,12.5,20,25,50,100]",
+      "$dfBandwidth.displayValues=['1kHz','1.25kHz','2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz','20kHz','25kHz','50kHz','100kHz']"
+    ],
+    "$ifBandwidth.value==500": [
+      "$dfBandwidth.values=[1,1.25,2,2.5,3.125,5,6.25,8.333,10,12.5,20,25,50]",
+      "$dfBandwidth.displayValues=['1kHz','1.25kHz','2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz','20kHz','25kHz','50kHz']"
+    ],
+    "$ifBandwidth.value==200": [
+      "$dfBandwidth.values=[1,1.25,2,2.5,3.125,5,6.25,8.333,10,12.5,20,25]",
+      "$dfBandwidth.displayValues=['1kHz','1.25kHz','2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz','20kHz','25kHz']"
+    ],
+    "$ifBandwidth.value==100": [
+      "$dfBandwidth.values=[1,1.25,2,2.5,3.125,5,6.25,8.333,10,12.5]",
+      "$dfBandwidth.displayValues=['1kHz','1.25kHz','2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz']"
+    ],
+    "$ifBandwidth.value==50": [
+      "$dfBandwidth.values=[1,1.25,2,2.5,3.125,5,6.25]",
+      "$dfBandwidth.displayValues=['1kHz','1.25kHz','2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz']"
+    ],
+    "$ifBandwidth.value==20": [
+      "$dfBandwidth.values=[1,1.25,2,2.5]",
+      "$dfBandwidth.displayValues=['1kHz','1.25kHz','2kHz','2.5kHz']"
+    ],
+    "$ifBandwidth.value==10": [
+      "$dfBandwidth.values=[1,1.25]",
+      "$dfBandwidth.displayValues=['1kHz','1.25kHz']"
+    ],
+    "$dfBandwidth.value<$dfBandwidth.values[0]": [
+      "$dfBandwidth.value=$dfBandwidth.values[0]"
+    ],
+    "$dfBandwidth.value>$dfBandwidth.values.at(-1)": [
+      "$dfBandwidth.value=$dfBandwidth.values.at(-1)"
+    ]
+  },
+  "wbdf": {
+    "startup": [
+      "$ifBandwidth.values=[10,20,50,100,200,500,1000,2000,5000,10000,20000,40000,80000]",
+      "$ifBandwidth.displayValues=['10kHz','20kHz','50kHz','100kHz','200kHz','500kHz','1MHz','2MHz','5MHz','10MHz','20MHz','40MHz','80MHz']"
+    ],
+    "$ifBandwidth.value==80000": [
+      "$resolutionBandwidth.values=[6.25,8.333,10,12.5,20,25,50,100,200,500,1000,2000]",
+      "$resolutionBandwidth.displayValues=['6.25kHz','8.333kHz','10kHz','12.5kHz','20kHz','25kHz','50kHz','100kHz','200kHz','500kHz','1MHz','2MHz']"
+    ],
+    "$ifBandwidth.value==40000": [
+      "$resolutionBandwidth.values=[6.25,8.333,10,12.5,20,25,50,100,200,500,1000,2000]",
+      "$resolutionBandwidth.displayValues=['6.25kHz','8.333kHz','10kHz','12.5kHz','20kHz','25kHz','50kHz','100kHz','200kHz','500kHz','1MHz','2MHz']"
+    ],
+    "$ifBandwidth.value==20000": [
+      "$resolutionBandwidth.values=[6.25,8.333,10,12.5,20,25,50,100,200,500,1000,2000]",
+      "$resolutionBandwidth.displayValues=['6.25kHz','8.333kHz','10kHz','12.5kHz','20kHz','25kHz','50kHz','100kHz','200kHz','500kHz','1MHz','2MHz']"
+    ],
+    "$ifBandwidth.value==10000": [
+      "$resolutionBandwidth.values=[3.125,5,6.25,8.333,10,12.5,20,25,50,100,200,500,1000]",
+      "$resolutionBandwidth.displayValues=['3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz','20kHz','25kHz','50kHz','100kHz','200kHz','500kHz','1MHz']"
+    ],
+    "$ifBandwidth.value==5000": [
+      "$resolutionBandwidth.values=[2,2.5,3.125,5,6.25,8.333,10,12.5,20,25,50,100,200,500]",
+      "$resolutionBandwidth.displayValues=['2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz','20kHz','25kHz','50kHz','100kHz','200kHz','500kHz']"
+    ],
+    "$ifBandwidth.value==2000": [
+      "$resolutionBandwidth.values=[1,1.25,2,2.5,3.125,5,6.25,8.333,10,12.5,20,25,50,100,200]",
+      "$resolutionBandwidth.displayValues=['1kHz','1.25kHz','2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz','20kHz','25kHz','50kHz','100kHz','200kHz']"
+    ],
+    "$ifBandwidth.value==1000": [
+      "$resolutionBandwidth.values=[1,1.25,2,2.5,3.125,5,6.25,8.333,10,12.5,20,25,50,100]",
+      "$resolutionBandwidth.displayValues=['1kHz','1.25kHz','2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz','20kHz','25kHz','50kHz','100kHz']"
+    ],
+    "$ifBandwidth.value==500": [
+      "$resolutionBandwidth.values=[1,1.25,2,2.5,3.125,5,6.25,8.333,10,12.5,20,25,50]",
+      "$resolutionBandwidth.displayValues=['1kHz','1.25kHz','2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz','20kHz','25kHz','50kHz']"
+    ],
+    "$ifBandwidth.value==200": [
+      "$resolutionBandwidth.values=[1,1.25,2,2.5,3.125,5,6.25,8.333,10,12.5,20,25]",
+      "$resolutionBandwidth.displayValues=['1kHz','1.25kHz','2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz','20kHz','25kHz']"
+    ],
+    "$ifBandwidth.value==100": [
+      "$resolutionBandwidth.values=[1,1.25,2,2.5,3.125,5,6.25,8.333,10,12.5]",
+      "$resolutionBandwidth.displayValues=['1kHz','1.25kHz','2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz']"
+    ],
+    "$ifBandwidth.value==50": [
+      "$resolutionBandwidth.values=[1,1.25,2,2.5,3.125,5,6.25]",
+      "$resolutionBandwidth.displayValues=['1kHz','1.25kHz','2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz']"
+    ],
+    "$ifBandwidth.value==20": [
+      "$resolutionBandwidth.values=[1,1.25,2,2.5]",
+      "$resolutionBandwidth.displayValues=['1kHz','1.25kHz','2kHz','2.5kHz']"
+    ],
+    "$ifBandwidth.value==10": [
+      "$resolutionBandwidth.values=[1,1.25]",
+      "$resolutionBandwidth.displayValues=['1kHz','1.25kHz']"
+    ],
+    "$resolutionBandwidth.value<$resolutionBandwidth.values[0]": [
+      "$resolutionBandwidth.value=$resolutionBandwidth.values[0]"
+    ],
+    "$resolutionBandwidth.value>$resolutionBandwidth.values.at(-1)": [
+      "$resolutionBandwidth.value=$resolutionBandwidth.values.at(-1)"
+    ]
+  },
+  "scan": {
+    "$scanMode.value=='pscan'": [
+      "$detector.browsable=false",
+      "$filterBandwidth.browsable=false",
+      "$fftMode.browsable=true"
+    ],
+    "$scanMode.value!='pscan'": [
+      "$detector.browsable=true",
+      "$filterBandwidth.browsable=true",
+      "$fftMode.browsable=false"
+    ],
+    "$detector.value=='fast'": [
+      "$measureTime.values=[-1,1,2,4,7,16,32,63,125,250,500]",
+      "$measureTime.displayValues=['自动','1μs','2μs','4μs','7μs','16μs','32μs','63μs','125μs','250μs','500μs']",
+      "$measureTime.value=$measureTime.values.includes($measureTime.value)?$measureTime.value:-1"
+    ],
+    "$detector.value=='pos'": [
+      "$measureTime.values=[-1,1000,2000,4000,5000,10000,20000,30000,60000,100000,200000,400000,500000]",
+      "$measureTime.displayValues=['自动','1ms','2ms','4ms','5ms','10ms','20ms','30ms','60ms','100ms','200ms','400ms','500ms']",
+      "$measureTime.value=$measureTime.values.includes($measureTime.value)?$measureTime.value:-1"
+    ],
+    "$detector.value=='avg'||$detector.value=='rms'": [
+      "$measureTime.values=[-1,1000,2000,3000,4000,6000,12000,25000,50000,100000,200000]",
+      "$measureTime.displayValues=['自动','1ms','2ms','3ms','4ms','6ms','12ms','25ms','50ms','100ms','200ms']",
+      "$measureTime.value=$measureTime.values.includes($measureTime.value)?$measureTime.value:-1"
+    ]
+  },
+  "mscne": {
+    "$detector.value=='fast'": [
+      "$measureTime.values=[-1,1,2,4,7,16,32,63,125,250,500]",
+      "$measureTime.displayValues=['自动','1μs','2μs','4μs','7μs','16μs','32μs','63μs','125μs','250μs','500μs']",
+      "$measureTime.value=$measureTime.values.includes($measureTime.value)?$measureTime.value:-1"
+    ],
+    "$detector.value=='pos'": [
+      "$measureTime.values=[-1,1000,2000,4000,5000,10000,20000,30000,60000,100000,200000,400000,500000]",
+      "$measureTime.displayValues=['自动','1ms','2ms','4ms','5ms','10ms','20ms','30ms','60ms','100ms','200ms','400ms','500ms']",
+      "$measureTime.value=$measureTime.values.includes($measureTime.value)?$measureTime.value:-1"
+    ],
+    "$detector.value=='avg'||$detector.value=='rms'": [
+      "$measureTime.values=[-1,1000,2000,3000,4000,6000,12000,25000,50000,100000,200000]",
+      "$measureTime.displayValues=['自动','1ms','2ms','3ms','4ms','6ms','12ms','25ms','50ms','100ms','200ms']",
+      "$measureTime.value=$measureTime.values.includes($measureTime.value)?$measureTime.value:-1"
+    ]
+  },
+  "ifmca": {
+    "$detector.value=='fast'": [
+      "$measureTime.values=[-1,1,2,4,7,16,32,63,125,250,500]",
+      "$measureTime.displayValues=['自动','1μs','2μs','4μs','7μs','16μs','32μs','63μs','125μs','250μs','500μs']",
+      "$measureTime.value=$measureTime.values.includes($measureTime.value)?$measureTime.value:-1"
+    ],
+    "$detector.value=='pos'": [
+      "$measureTime.values=[-1,1000,2000,4000,5000,10000,20000,30000,60000,100000,200000,400000,500000]",
+      "$measureTime.displayValues=['自动','1ms','2ms','4ms','5ms','10ms','20ms','30ms','60ms','100ms','200ms','400ms','500ms']",
+      "$measureTime.value=$measureTime.values.includes($measureTime.value)?$measureTime.value:-1"
+    ],
+    "$detector.value=='avg'||$detector.value=='rms'": [
+      "$measureTime.values=[-1,1000,2000,3000,4000,6000,12000,25000,50000,100000,200000]",
+      "$measureTime.displayValues=['自动','1ms','2ms','3ms','4ms','6ms','12ms','25ms','50ms','100ms','200ms']",
+      "$measureTime.value=$measureTime.values.includes($measureTime.value)?$measureTime.value:-1"
+    ],
+    "$filterBandwidth.value<=9&&$filterBandwidth.value>=1": [
+      "$demMode.values=['am','fm','pulse','pm','iq','isb','cw','usb','lsb']",
+      "$demMode.displayValues=['AM','FM','PULSE','PM','IQ','ISB','CW','USB','LSB']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'FM'"
+    ],
+    "$filterBandwidth.value<1": [
+      "$demMode.values=['am','fm','pulse','pm','iq','cw','usb','lsb']",
+      "$demMode.displayValues=['AM','FM','PULSE','PM','IQ','CW','USB','LSB']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'FM'"
+    ],
+    "$filterBandwidth.value>9": [
+      "$demMode.values=['am','fm','pulse','pm','iq','isb']",
+      "$demMode.displayValues=['AM','FM','PULSE','PM','IQ','ISB']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'FM'"
+    ]
+  }
+}

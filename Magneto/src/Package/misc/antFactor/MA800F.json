@@ -1,0 +1,2814 @@
+{
+  "passive": [
+    {
+      "frequency": 20,
+      "factor": 29
+    },
+    {
+      "frequency": 22,
+      "factor": 30.4
+    },
+    {
+      "frequency": 24,
+      "factor": 29.3
+    },
+    {
+      "frequency": 26,
+      "factor": 27.6
+    },
+    {
+      "frequency": 28,
+      "factor": 26.7
+    },
+    {
+      "frequency": 30,
+      "factor": 25.5
+    },
+    {
+      "frequency": 32,
+      "factor": 24.9
+    },
+    {
+      "frequency": 34,
+      "factor": 24.3
+    },
+    {
+      "frequency": 36,
+      "factor": 23.6
+    },
+    {
+      "frequency": 38,
+      "factor": 23.2
+    },
+    {
+      "frequency": 40,
+      "factor": 22.4
+    },
+    {
+      "frequency": 42,
+      "factor": 21.8
+    },
+    {
+      "frequency": 44,
+      "factor": 21
+    },
+    {
+      "frequency": 46,
+      "factor": 20.2
+    },
+    {
+      "frequency": 48,
+      "factor": 20.1
+    },
+    {
+      "frequency": 50,
+      "factor": 19.5
+    },
+    {
+      "frequency": 52,
+      "factor": 19.2
+    },
+    {
+      "frequency": 54,
+      "factor": 18.7
+    },
+    {
+      "frequency": 56,
+      "factor": 18.4
+    },
+    {
+      "frequency": 58,
+      "factor": 18.2
+    },
+    {
+      "frequency": 60,
+      "factor": 17.9
+    },
+    {
+      "frequency": 62,
+      "factor": 17.9
+    },
+    {
+      "frequency": 64,
+      "factor": 17.4
+    },
+    {
+      "frequency": 66,
+      "factor": 17.5
+    },
+    {
+      "frequency": 68,
+      "factor": 17.1
+    },
+    {
+      "frequency": 70,
+      "factor": 17.1
+    },
+    {
+      "frequency": 72,
+      "factor": 16.8
+    },
+    {
+      "frequency": 74,
+      "factor": 16.7
+    },
+    {
+      "frequency": 76,
+      "factor": 16.6
+    },
+    {
+      "frequency": 78,
+      "factor": 16.3
+    },
+    {
+      "frequency": 80,
+      "factor": 16.2
+    },
+    {
+      "frequency": 82,
+      "factor": 15.9
+    },
+    {
+      "frequency": 84,
+      "factor": 16.1
+    },
+    {
+      "frequency": 86,
+      "factor": 16
+    },
+    {
+      "frequency": 88,
+      "factor": 16.2
+    },
+    {
+      "frequency": 90,
+      "factor": 16.3
+    },
+    {
+      "frequency": 92,
+      "factor": 16.6
+    },
+    {
+      "frequency": 94,
+      "factor": 16.9
+    },
+    {
+      "frequency": 96,
+      "factor": 17
+    },
+    {
+      "frequency": 98,
+      "factor": 17.4
+    },
+    {
+      "frequency": 100,
+      "factor": 17.6
+    },
+    {
+      "frequency": 102,
+      "factor": 17.8
+    },
+    {
+      "frequency": 104,
+      "factor": 18
+    },
+    {
+      "frequency": 106,
+      "factor": 18.1
+    },
+    {
+      "frequency": 108,
+      "factor": 18.3
+    },
+    {
+      "frequency": 110,
+      "factor": 18.4
+    },
+    {
+      "frequency": 112,
+      "factor": 18.4
+    },
+    {
+      "frequency": 114,
+      "factor": 18.3
+    },
+    {
+      "frequency": 116,
+      "factor": 18.1
+    },
+    {
+      "frequency": 118,
+      "factor": 17.8
+    },
+    {
+      "frequency": 120,
+      "factor": 17.5
+    },
+    {
+      "frequency": 122,
+      "factor": 17
+    },
+    {
+      "frequency": 124,
+      "factor": 16.5
+    },
+    {
+      "frequency": 126,
+      "factor": 16
+    },
+    {
+      "frequency": 128,
+      "factor": 15.4
+    },
+    {
+      "frequency": 130,
+      "factor": 14.9
+    },
+    {
+      "frequency": 132,
+      "factor": 14.2
+    },
+    {
+      "frequency": 134,
+      "factor": 13.7
+    },
+    {
+      "frequency": 136,
+      "factor": 13.1
+    },
+    {
+      "frequency": 138,
+      "factor": 12.9
+    },
+    {
+      "frequency": 140,
+      "factor": 12.6
+    },
+    {
+      "frequency": 142,
+      "factor": 12.6
+    },
+    {
+      "frequency": 144,
+      "factor": 12.8
+    },
+    {
+      "frequency": 146,
+      "factor": 13
+    },
+    {
+      "frequency": 148,
+      "factor": 13.4
+    },
+    {
+      "frequency": 150,
+      "factor": 13.6
+    },
+    {
+      "frequency": 152,
+      "factor": 14.2
+    },
+    {
+      "frequency": 154,
+      "factor": 14.3
+    },
+    {
+      "frequency": 156,
+      "factor": 14.8
+    },
+    {
+      "frequency": 158,
+      "factor": 15.1
+    },
+    {
+      "frequency": 160,
+      "factor": 15.4
+    },
+    {
+      "frequency": 162,
+      "factor": 15.8
+    },
+    {
+      "frequency": 164,
+      "factor": 16
+    },
+    {
+      "frequency": 166,
+      "factor": 16.3
+    },
+    {
+      "frequency": 168,
+      "factor": 16.5
+    },
+    {
+      "frequency": 170,
+      "factor": 16.8
+    },
+    {
+      "frequency": 172,
+      "factor": 16.9
+    },
+    {
+      "frequency": 174,
+      "factor": 17.2
+    },
+    {
+      "frequency": 176,
+      "factor": 17.4
+    },
+    {
+      "frequency": 178,
+      "factor": 17.5
+    },
+    {
+      "frequency": 180,
+      "factor": 17.9
+    },
+    {
+      "frequency": 182,
+      "factor": 17.9
+    },
+    {
+      "frequency": 184,
+      "factor": 18.2
+    },
+    {
+      "frequency": 186,
+      "factor": 18.3
+    },
+    {
+      "frequency": 188,
+      "factor": 18.6
+    },
+    {
+      "frequency": 190,
+      "factor": 18.7
+    },
+    {
+      "frequency": 192,
+      "factor": 19
+    },
+    {
+      "frequency": 194,
+      "factor": 19.3
+    },
+    {
+      "frequency": 196,
+      "factor": 19.2
+    },
+    {
+      "frequency": 198,
+      "factor": 19.5
+    },
+    {
+      "frequency": 200,
+      "factor": 19.5
+    },
+    {
+      "frequency": 202,
+      "factor": 20
+    },
+    {
+      "frequency": 204,
+      "factor": 20.2
+    },
+    {
+      "frequency": 206,
+      "factor": 20.2
+    },
+    {
+      "frequency": 208,
+      "factor": 20.2
+    },
+    {
+      "frequency": 210,
+      "factor": 20.3
+    },
+    {
+      "frequency": 212,
+      "factor": 20.3
+    },
+    {
+      "frequency": 214,
+      "factor": 20.5
+    },
+    {
+      "frequency": 216,
+      "factor": 20.6
+    },
+    {
+      "frequency": 218,
+      "factor": 20.7
+    },
+    {
+      "frequency": 220,
+      "factor": 21
+    },
+    {
+      "frequency": 222,
+      "factor": 21
+    },
+    {
+      "frequency": 224,
+      "factor": 21.4
+    },
+    {
+      "frequency": 226,
+      "factor": 21.5
+    },
+    {
+      "frequency": 228,
+      "factor": 21.4
+    },
+    {
+      "frequency": 230,
+      "factor": 21.7
+    },
+    {
+      "frequency": 232,
+      "factor": 21.7
+    },
+    {
+      "frequency": 234,
+      "factor": 21.9
+    },
+    {
+      "frequency": 236,
+      "factor": 21.9
+    },
+    {
+      "frequency": 238,
+      "factor": 21.9
+    },
+    {
+      "frequency": 240,
+      "factor": 22.1
+    },
+    {
+      "frequency": 242,
+      "factor": 22.1
+    },
+    {
+      "frequency": 244,
+      "factor": 22.2
+    },
+    {
+      "frequency": 246,
+      "factor": 22.4
+    },
+    {
+      "frequency": 248,
+      "factor": 22.4
+    },
+    {
+      "frequency": 250,
+      "factor": 22.5
+    },
+    {
+      "frequency": 252,
+      "factor": 22.6
+    },
+    {
+      "frequency": 254,
+      "factor": 22.7
+    },
+    {
+      "frequency": 256,
+      "factor": 22.8
+    },
+    {
+      "frequency": 258,
+      "factor": 22.8
+    },
+    {
+      "frequency": 260,
+      "factor": 22.9
+    },
+    {
+      "frequency": 262,
+      "factor": 22.9
+    },
+    {
+      "frequency": 264,
+      "factor": 22.9
+    },
+    {
+      "frequency": 266,
+      "factor": 23
+    },
+    {
+      "frequency": 268,
+      "factor": 23
+    },
+    {
+      "frequency": 270,
+      "factor": 23.2
+    },
+    {
+      "frequency": 272,
+      "factor": 23.2
+    },
+    {
+      "frequency": 274,
+      "factor": 23.3
+    },
+    {
+      "frequency": 276,
+      "factor": 23.4
+    },
+    {
+      "frequency": 278,
+      "factor": 23.5
+    },
+    {
+      "frequency": 280,
+      "factor": 23.8
+    },
+    {
+      "frequency": 282,
+      "factor": 23.9
+    },
+    {
+      "frequency": 284,
+      "factor": 24.1
+    },
+    {
+      "frequency": 286,
+      "factor": 24.5
+    },
+    {
+      "frequency": 288,
+      "factor": 25
+    },
+    {
+      "frequency": 290,
+      "factor": 25.8
+    },
+    {
+      "frequency": 292,
+      "factor": 25.9
+    },
+    {
+      "frequency": 294,
+      "factor": 25.4
+    },
+    {
+      "frequency": 296,
+      "factor": 25.1
+    },
+    {
+      "frequency": 298,
+      "factor": 24.8
+    },
+    {
+      "frequency": 300,
+      "factor": 24.6
+    },
+    {
+      "frequency": 305,
+      "factor": 24.3
+    },
+    {
+      "frequency": 310,
+      "factor": 24.4
+    },
+    {
+      "frequency": 315,
+      "factor": 24.2
+    },
+    {
+      "frequency": 320,
+      "factor": 24
+    },
+    {
+      "frequency": 325,
+      "factor": 23.9
+    },
+    {
+      "frequency": 330,
+      "factor": 23.8
+    },
+    {
+      "frequency": 335,
+      "factor": 23.6
+    },
+    {
+      "frequency": 340,
+      "factor": 23.4
+    },
+    {
+      "frequency": 345,
+      "factor": 23.1
+    },
+    {
+      "frequency": 350,
+      "factor": 22.8
+    },
+    {
+      "frequency": 355,
+      "factor": 22.6
+    },
+    {
+      "frequency": 360,
+      "factor": 22.5
+    },
+    {
+      "frequency": 365,
+      "factor": 22.3
+    },
+    {
+      "frequency": 370,
+      "factor": 22.2
+    },
+    {
+      "frequency": 375,
+      "factor": 21.9
+    },
+    {
+      "frequency": 380,
+      "factor": 21.8
+    },
+    {
+      "frequency": 385,
+      "factor": 21.6
+    },
+    {
+      "frequency": 390,
+      "factor": 21.5
+    },
+    {
+      "frequency": 395,
+      "factor": 21.4
+    },
+    {
+      "frequency": 400,
+      "factor": 21.5
+    },
+    {
+      "frequency": 405,
+      "factor": 21.6
+    },
+    {
+      "frequency": 410,
+      "factor": 22
+    },
+    {
+      "frequency": 415,
+      "factor": 22.2
+    },
+    {
+      "frequency": 420,
+      "factor": 22.5
+    },
+    {
+      "frequency": 425,
+      "factor": 22.7
+    },
+    {
+      "frequency": 430,
+      "factor": 23.1
+    },
+    {
+      "frequency": 435,
+      "factor": 23.6
+    },
+    {
+      "frequency": 440,
+      "factor": 24.1
+    },
+    {
+      "frequency": 445,
+      "factor": 24.5
+    },
+    {
+      "frequency": 450,
+      "factor": 24.8
+    },
+    {
+      "frequency": 455,
+      "factor": 25.1
+    },
+    {
+      "frequency": 460,
+      "factor": 25.4
+    },
+    {
+      "frequency": 465,
+      "factor": 25.8
+    },
+    {
+      "frequency": 470,
+      "factor": 26.1
+    },
+    {
+      "frequency": 475,
+      "factor": 26.4
+    },
+    {
+      "frequency": 480,
+      "factor": 26.8
+    },
+    {
+      "frequency": 485,
+      "factor": 26.9
+    },
+    {
+      "frequency": 490,
+      "factor": 27.2
+    },
+    {
+      "frequency": 495,
+      "factor": 27.5
+    },
+    {
+      "frequency": 500,
+      "factor": 27.2
+    },
+    {
+      "frequency": 505,
+      "factor": 27.1
+    },
+    {
+      "frequency": 510,
+      "factor": 27
+    },
+    {
+      "frequency": 515,
+      "factor": 26.8
+    },
+    {
+      "frequency": 520,
+      "factor": 26.9
+    },
+    {
+      "frequency": 525,
+      "factor": 26.9
+    },
+    {
+      "frequency": 530,
+      "factor": 26.8
+    },
+    {
+      "frequency": 535,
+      "factor": 27
+    },
+    {
+      "frequency": 540,
+      "factor": 26.9
+    },
+    {
+      "frequency": 545,
+      "factor": 26.7
+    },
+    {
+      "frequency": 550,
+      "factor": 26.8
+    },
+    {
+      "frequency": 555,
+      "factor": 26.5
+    },
+    {
+      "frequency": 560,
+      "factor": 26.6
+    },
+    {
+      "frequency": 565,
+      "factor": 26.6
+    },
+    {
+      "frequency": 570,
+      "factor": 26.7
+    },
+    {
+      "frequency": 575,
+      "factor": 26.7
+    },
+    {
+      "frequency": 580,
+      "factor": 26.8
+    },
+    {
+      "frequency": 585,
+      "factor": 26.6
+    },
+    {
+      "frequency": 590,
+      "factor": 26.5
+    },
+    {
+      "frequency": 595,
+      "factor": 26.6
+    },
+    {
+      "frequency": 600,
+      "factor": 26.6
+    },
+    {
+      "frequency": 605,
+      "factor": 26.9
+    },
+    {
+      "frequency": 610,
+      "factor": 27.3
+    },
+    {
+      "frequency": 615,
+      "factor": 28.1
+    },
+    {
+      "frequency": 620,
+      "factor": 28.8
+    },
+    {
+      "frequency": 625,
+      "factor": 29.4
+    },
+    {
+      "frequency": 630,
+      "factor": 29.9
+    },
+    {
+      "frequency": 635,
+      "factor": 30.2
+    },
+    {
+      "frequency": 640,
+      "factor": 30.4
+    },
+    {
+      "frequency": 645,
+      "factor": 30.5
+    },
+    {
+      "frequency": 650,
+      "factor": 30.7
+    },
+    {
+      "frequency": 655,
+      "factor": 30.4
+    },
+    {
+      "frequency": 660,
+      "factor": 30.2
+    },
+    {
+      "frequency": 665,
+      "factor": 30.3
+    },
+    {
+      "frequency": 670,
+      "factor": 29.9
+    },
+    {
+      "frequency": 675,
+      "factor": 29.5
+    },
+    {
+      "frequency": 680,
+      "factor": 29.3
+    },
+    {
+      "frequency": 685,
+      "factor": 29.2
+    },
+    {
+      "frequency": 690,
+      "factor": 28.8
+    },
+    {
+      "frequency": 695,
+      "factor": 28.9
+    },
+    {
+      "frequency": 700,
+      "factor": 28.9
+    },
+    {
+      "frequency": 705,
+      "factor": 28.8
+    },
+    {
+      "frequency": 710,
+      "factor": 28.6
+    },
+    {
+      "frequency": 715,
+      "factor": 28.7
+    },
+    {
+      "frequency": 720,
+      "factor": 28.7
+    },
+    {
+      "frequency": 725,
+      "factor": 28.4
+    },
+    {
+      "frequency": 730,
+      "factor": 28.4
+    },
+    {
+      "frequency": 735,
+      "factor": 28.3
+    },
+    {
+      "frequency": 740,
+      "factor": 28.4
+    },
+    {
+      "frequency": 745,
+      "factor": 28.6
+    },
+    {
+      "frequency": 750,
+      "factor": 28.6
+    },
+    {
+      "frequency": 755,
+      "factor": 28.5
+    },
+    {
+      "frequency": 760,
+      "factor": 28.7
+    },
+    {
+      "frequency": 765,
+      "factor": 28.7
+    },
+    {
+      "frequency": 770,
+      "factor": 28.9
+    },
+    {
+      "frequency": 775,
+      "factor": 29.1
+    },
+    {
+      "frequency": 780,
+      "factor": 29.2
+    },
+    {
+      "frequency": 785,
+      "factor": 29.2
+    },
+    {
+      "frequency": 790,
+      "factor": 29
+    },
+    {
+      "frequency": 795,
+      "factor": 28.6
+    },
+    {
+      "frequency": 800,
+      "factor": 28.3
+    },
+    {
+      "frequency": 805,
+      "factor": 28
+    },
+    {
+      "frequency": 810,
+      "factor": 28
+    },
+    {
+      "frequency": 815,
+      "factor": 28.2
+    },
+    {
+      "frequency": 820,
+      "factor": 28.3
+    },
+    {
+      "frequency": 825,
+      "factor": 28.5
+    },
+    {
+      "frequency": 830,
+      "factor": 29
+    },
+    {
+      "frequency": 835,
+      "factor": 29.3
+    },
+    {
+      "frequency": 840,
+      "factor": 29.8
+    },
+    {
+      "frequency": 845,
+      "factor": 29.9
+    },
+    {
+      "frequency": 850,
+      "factor": 30.2
+    },
+    {
+      "frequency": 855,
+      "factor": 30.2
+    },
+    {
+      "frequency": 860,
+      "factor": 30.2
+    },
+    {
+      "frequency": 865,
+      "factor": 30.1
+    },
+    {
+      "frequency": 870,
+      "factor": 29.9
+    },
+    {
+      "frequency": 875,
+      "factor": 29.6
+    },
+    {
+      "frequency": 880,
+      "factor": 29.4
+    },
+    {
+      "frequency": 885,
+      "factor": 29.2
+    },
+    {
+      "frequency": 890,
+      "factor": 29.4
+    },
+    {
+      "frequency": 895,
+      "factor": 29.4
+    },
+    {
+      "frequency": 900,
+      "factor": 29.4
+    },
+    {
+      "frequency": 905,
+      "factor": 29.9
+    },
+    {
+      "frequency": 910,
+      "factor": 30.3
+    },
+    {
+      "frequency": 915,
+      "factor": 30.6
+    },
+    {
+      "frequency": 920,
+      "factor": 31.1
+    },
+    {
+      "frequency": 925,
+      "factor": 31.2
+    },
+    {
+      "frequency": 930,
+      "factor": 31
+    },
+    {
+      "frequency": 935,
+      "factor": 31.2
+    },
+    {
+      "frequency": 940,
+      "factor": 31.1
+    },
+    {
+      "frequency": 945,
+      "factor": 31.3
+    },
+    {
+      "frequency": 950,
+      "factor": 31.5
+    },
+    {
+      "frequency": 955,
+      "factor": 31.3
+    },
+    {
+      "frequency": 960,
+      "factor": 31.2
+    },
+    {
+      "frequency": 965,
+      "factor": 31.3
+    },
+    {
+      "frequency": 970,
+      "factor": 31.3
+    },
+    {
+      "frequency": 975,
+      "factor": 31.3
+    },
+    {
+      "frequency": 980,
+      "factor": 31.6
+    },
+    {
+      "frequency": 985,
+      "factor": 31.9
+    },
+    {
+      "frequency": 990,
+      "factor": 31.5
+    },
+    {
+      "frequency": 995,
+      "factor": 31.5
+    },
+    {
+      "frequency": 1000,
+      "factor": 31.3
+    },
+    {
+      "frequency": 1100,
+      "factor": 32.1
+    },
+    {
+      "frequency": 1200,
+      "factor": 30.4
+    },
+    {
+      "frequency": 1300,
+      "factor": 31
+    },
+    {
+      "frequency": 1400,
+      "factor": 34.3
+    },
+    {
+      "frequency": 1500,
+      "factor": 39.5
+    },
+    {
+      "frequency": 1600,
+      "factor": 33.6
+    },
+    {
+      "frequency": 1700,
+      "factor": 33.4
+    },
+    {
+      "frequency": 1800,
+      "factor": 33.1
+    },
+    {
+      "frequency": 1900,
+      "factor": 35
+    },
+    {
+      "frequency": 2000,
+      "factor": 34.7
+    },
+    {
+      "frequency": 2100,
+      "factor": 37.8
+    },
+    {
+      "frequency": 2200,
+      "factor": 39.7
+    },
+    {
+      "frequency": 2300,
+      "factor": 39.7
+    },
+    {
+      "frequency": 2400,
+      "factor": 39.7
+    },
+    {
+      "frequency": 2500,
+      "factor": 41.2
+    },
+    {
+      "frequency": 2600,
+      "factor": 42.7
+    },
+    {
+      "frequency": 2700,
+      "factor": 40.4
+    },
+    {
+      "frequency": 2800,
+      "factor": 37.9
+    },
+    {
+      "frequency": 2900,
+      "factor": 37.2
+    },
+    {
+      "frequency": 3000,
+      "factor": 37.4
+    },
+    {
+      "frequency": 3100,
+      "factor": 39.8
+    },
+    {
+      "frequency": 3200,
+      "factor": 39.6
+    },
+    {
+      "frequency": 3300,
+      "factor": 38.7
+    },
+    {
+      "frequency": 3400,
+      "factor": 38.6
+    },
+    {
+      "frequency": 3500,
+      "factor": 39.5
+    },
+    {
+      "frequency": 3600,
+      "factor": 40.3
+    },
+    {
+      "frequency": 3700,
+      "factor": 40.4
+    },
+    {
+      "frequency": 3800,
+      "factor": 39.9
+    },
+    {
+      "frequency": 3900,
+      "factor": 40.2
+    },
+    {
+      "frequency": 4000,
+      "factor": 39.1
+    },
+    {
+      "frequency": 4100,
+      "factor": 39.1
+    },
+    {
+      "frequency": 4200,
+      "factor": 39.4
+    },
+    {
+      "frequency": 4300,
+      "factor": 40.4
+    },
+    {
+      "frequency": 4400,
+      "factor": 41.3
+    },
+    {
+      "frequency": 4500,
+      "factor": 41.2
+    },
+    {
+      "frequency": 4600,
+      "factor": 41.6
+    },
+    {
+      "frequency": 4700,
+      "factor": 42.7
+    },
+    {
+      "frequency": 4800,
+      "factor": 41.7
+    },
+    {
+      "frequency": 4900,
+      "factor": 40
+    },
+    {
+      "frequency": 5000,
+      "factor": 39.7
+    },
+    {
+      "frequency": 5100,
+      "factor": 39.2
+    },
+    {
+      "frequency": 5200,
+      "factor": 39.5
+    },
+    {
+      "frequency": 5300,
+      "factor": 40.3
+    },
+    {
+      "frequency": 5400,
+      "factor": 39.6
+    },
+    {
+      "frequency": 5500,
+      "factor": 40.6
+    },
+    {
+      "frequency": 5600,
+      "factor": 40.5
+    },
+    {
+      "frequency": 5700,
+      "factor": 42
+    },
+    {
+      "frequency": 5800,
+      "factor": 41.7
+    },
+    {
+      "frequency": 5900,
+      "factor": 43
+    },
+    {
+      "frequency": 6000,
+      "factor": 42.8
+    },
+    {
+      "frequency": 6100,
+      "factor": 43
+    },
+    {
+      "frequency": 6200,
+      "factor": 43.9
+    },
+    {
+      "frequency": 6300,
+      "factor": 44.4
+    },
+    {
+      "frequency": 6400,
+      "factor": 46
+    },
+    {
+      "frequency": 6500,
+      "factor": 46.3
+    },
+    {
+      "frequency": 6600,
+      "factor": 47.7
+    },
+    {
+      "frequency": 6700,
+      "factor": 48.1
+    },
+    {
+      "frequency": 6800,
+      "factor": 48.3
+    },
+    {
+      "frequency": 6900,
+      "factor": 47.6
+    },
+    {
+      "frequency": 7000,
+      "factor": 46.7
+    },
+    {
+      "frequency": 7100,
+      "factor": 47
+    },
+    {
+      "frequency": 7200,
+      "factor": 46.1
+    },
+    {
+      "frequency": 7300,
+      "factor": 45.6
+    },
+    {
+      "frequency": 7400,
+      "factor": 46.7
+    },
+    {
+      "frequency": 7500,
+      "factor": 47
+    },
+    {
+      "frequency": 7600,
+      "factor": 49.5
+    },
+    {
+      "frequency": 7700,
+      "factor": 51.3
+    },
+    {
+      "frequency": 7800,
+      "factor": 53.6
+    },
+    {
+      "frequency": 7900,
+      "factor": 53.9
+    },
+    {
+      "frequency": 8000,
+      "factor": 50.8
+    }
+  ],
+  "active": [
+    {
+      "frequency": 20,
+      "factor": 29
+    },
+    {
+      "frequency": 22,
+      "factor": 30.4
+    },
+    {
+      "frequency": 24,
+      "factor": 29.3
+    },
+    {
+      "frequency": 26,
+      "factor": 27.6
+    },
+    {
+      "frequency": 28,
+      "factor": 26.7
+    },
+    {
+      "frequency": 30,
+      "factor": 25.5
+    },
+    {
+      "frequency": 32,
+      "factor": 24.9
+    },
+    {
+      "frequency": 34,
+      "factor": 24.3
+    },
+    {
+      "frequency": 36,
+      "factor": 23.6
+    },
+    {
+      "frequency": 38,
+      "factor": 23.2
+    },
+    {
+      "frequency": 40,
+      "factor": 22.4
+    },
+    {
+      "frequency": 42,
+      "factor": 21.8
+    },
+    {
+      "frequency": 44,
+      "factor": 21
+    },
+    {
+      "frequency": 46,
+      "factor": 20.2
+    },
+    {
+      "frequency": 48,
+      "factor": 20.1
+    },
+    {
+      "frequency": 50,
+      "factor": 19.5
+    },
+    {
+      "frequency": 52,
+      "factor": 19.2
+    },
+    {
+      "frequency": 54,
+      "factor": 18.7
+    },
+    {
+      "frequency": 56,
+      "factor": 18.4
+    },
+    {
+      "frequency": 58,
+      "factor": 18.2
+    },
+    {
+      "frequency": 60,
+      "factor": 17.9
+    },
+    {
+      "frequency": 62,
+      "factor": 17.9
+    },
+    {
+      "frequency": 64,
+      "factor": 17.4
+    },
+    {
+      "frequency": 66,
+      "factor": 17.5
+    },
+    {
+      "frequency": 68,
+      "factor": 17.1
+    },
+    {
+      "frequency": 70,
+      "factor": 17.1
+    },
+    {
+      "frequency": 72,
+      "factor": 16.8
+    },
+    {
+      "frequency": 74,
+      "factor": 16.7
+    },
+    {
+      "frequency": 76,
+      "factor": 16.6
+    },
+    {
+      "frequency": 78,
+      "factor": 16.3
+    },
+    {
+      "frequency": 80,
+      "factor": 16.2
+    },
+    {
+      "frequency": 82,
+      "factor": 15.9
+    },
+    {
+      "frequency": 84,
+      "factor": 16.1
+    },
+    {
+      "frequency": 86,
+      "factor": 16
+    },
+    {
+      "frequency": 88,
+      "factor": 16.2
+    },
+    {
+      "frequency": 90,
+      "factor": 16.3
+    },
+    {
+      "frequency": 92,
+      "factor": 16.6
+    },
+    {
+      "frequency": 94,
+      "factor": 16.9
+    },
+    {
+      "frequency": 96,
+      "factor": 17
+    },
+    {
+      "frequency": 98,
+      "factor": 17.4
+    },
+    {
+      "frequency": 100,
+      "factor": 17.6
+    },
+    {
+      "frequency": 102,
+      "factor": 17.8
+    },
+    {
+      "frequency": 104,
+      "factor": 18
+    },
+    {
+      "frequency": 106,
+      "factor": 18.1
+    },
+    {
+      "frequency": 108,
+      "factor": 18.3
+    },
+    {
+      "frequency": 110,
+      "factor": 18.4
+    },
+    {
+      "frequency": 112,
+      "factor": 18.4
+    },
+    {
+      "frequency": 114,
+      "factor": 18.3
+    },
+    {
+      "frequency": 116,
+      "factor": 18.1
+    },
+    {
+      "frequency": 118,
+      "factor": 17.8
+    },
+    {
+      "frequency": 120,
+      "factor": 17.5
+    },
+    {
+      "frequency": 122,
+      "factor": 17
+    },
+    {
+      "frequency": 124,
+      "factor": 16.5
+    },
+    {
+      "frequency": 126,
+      "factor": 16
+    },
+    {
+      "frequency": 128,
+      "factor": 15.4
+    },
+    {
+      "frequency": 130,
+      "factor": 14.9
+    },
+    {
+      "frequency": 132,
+      "factor": 14.2
+    },
+    {
+      "frequency": 134,
+      "factor": 13.7
+    },
+    {
+      "frequency": 136,
+      "factor": 13.1
+    },
+    {
+      "frequency": 138,
+      "factor": 12.9
+    },
+    {
+      "frequency": 140,
+      "factor": 12.6
+    },
+    {
+      "frequency": 142,
+      "factor": 12.6
+    },
+    {
+      "frequency": 144,
+      "factor": 12.8
+    },
+    {
+      "frequency": 146,
+      "factor": 13
+    },
+    {
+      "frequency": 148,
+      "factor": 13.4
+    },
+    {
+      "frequency": 150,
+      "factor": 13.6
+    },
+    {
+      "frequency": 152,
+      "factor": 14.2
+    },
+    {
+      "frequency": 154,
+      "factor": 14.3
+    },
+    {
+      "frequency": 156,
+      "factor": 14.8
+    },
+    {
+      "frequency": 158,
+      "factor": 15.1
+    },
+    {
+      "frequency": 160,
+      "factor": 15.4
+    },
+    {
+      "frequency": 162,
+      "factor": 15.8
+    },
+    {
+      "frequency": 164,
+      "factor": 16
+    },
+    {
+      "frequency": 166,
+      "factor": 16.3
+    },
+    {
+      "frequency": 168,
+      "factor": 16.5
+    },
+    {
+      "frequency": 170,
+      "factor": 16.8
+    },
+    {
+      "frequency": 172,
+      "factor": 16.9
+    },
+    {
+      "frequency": 174,
+      "factor": 17.2
+    },
+    {
+      "frequency": 176,
+      "factor": 17.4
+    },
+    {
+      "frequency": 178,
+      "factor": 17.5
+    },
+    {
+      "frequency": 180,
+      "factor": 17.9
+    },
+    {
+      "frequency": 182,
+      "factor": 17.9
+    },
+    {
+      "frequency": 184,
+      "factor": 18.2
+    },
+    {
+      "frequency": 186,
+      "factor": 18.3
+    },
+    {
+      "frequency": 188,
+      "factor": 18.6
+    },
+    {
+      "frequency": 190,
+      "factor": 18.7
+    },
+    {
+      "frequency": 192,
+      "factor": 19
+    },
+    {
+      "frequency": 194,
+      "factor": 19.3
+    },
+    {
+      "frequency": 196,
+      "factor": 19.2
+    },
+    {
+      "frequency": 198,
+      "factor": 19.5
+    },
+    {
+      "frequency": 200,
+      "factor": 19.5
+    },
+    {
+      "frequency": 202,
+      "factor": 20
+    },
+    {
+      "frequency": 204,
+      "factor": 20.2
+    },
+    {
+      "frequency": 206,
+      "factor": 20.2
+    },
+    {
+      "frequency": 208,
+      "factor": 20.2
+    },
+    {
+      "frequency": 210,
+      "factor": 20.3
+    },
+    {
+      "frequency": 212,
+      "factor": 20.3
+    },
+    {
+      "frequency": 214,
+      "factor": 20.5
+    },
+    {
+      "frequency": 216,
+      "factor": 20.6
+    },
+    {
+      "frequency": 218,
+      "factor": 20.7
+    },
+    {
+      "frequency": 220,
+      "factor": 21
+    },
+    {
+      "frequency": 222,
+      "factor": 21
+    },
+    {
+      "frequency": 224,
+      "factor": 21.4
+    },
+    {
+      "frequency": 226,
+      "factor": 21.5
+    },
+    {
+      "frequency": 228,
+      "factor": 21.4
+    },
+    {
+      "frequency": 230,
+      "factor": 21.7
+    },
+    {
+      "frequency": 232,
+      "factor": 21.7
+    },
+    {
+      "frequency": 234,
+      "factor": 21.9
+    },
+    {
+      "frequency": 236,
+      "factor": 21.9
+    },
+    {
+      "frequency": 238,
+      "factor": 21.9
+    },
+    {
+      "frequency": 240,
+      "factor": 22.1
+    },
+    {
+      "frequency": 242,
+      "factor": 22.1
+    },
+    {
+      "frequency": 244,
+      "factor": 22.2
+    },
+    {
+      "frequency": 246,
+      "factor": 22.4
+    },
+    {
+      "frequency": 248,
+      "factor": 22.4
+    },
+    {
+      "frequency": 250,
+      "factor": 22.5
+    },
+    {
+      "frequency": 252,
+      "factor": 22.6
+    },
+    {
+      "frequency": 254,
+      "factor": 22.7
+    },
+    {
+      "frequency": 256,
+      "factor": 22.8
+    },
+    {
+      "frequency": 258,
+      "factor": 22.8
+    },
+    {
+      "frequency": 260,
+      "factor": 22.9
+    },
+    {
+      "frequency": 262,
+      "factor": 22.9
+    },
+    {
+      "frequency": 264,
+      "factor": 22.9
+    },
+    {
+      "frequency": 266,
+      "factor": 23
+    },
+    {
+      "frequency": 268,
+      "factor": 23
+    },
+    {
+      "frequency": 270,
+      "factor": 23.2
+    },
+    {
+      "frequency": 272,
+      "factor": 23.2
+    },
+    {
+      "frequency": 274,
+      "factor": 23.3
+    },
+    {
+      "frequency": 276,
+      "factor": 23.4
+    },
+    {
+      "frequency": 278,
+      "factor": 23.5
+    },
+    {
+      "frequency": 280,
+      "factor": 23.8
+    },
+    {
+      "frequency": 282,
+      "factor": 23.9
+    },
+    {
+      "frequency": 284,
+      "factor": 24.1
+    },
+    {
+      "frequency": 286,
+      "factor": 24.5
+    },
+    {
+      "frequency": 288,
+      "factor": 25
+    },
+    {
+      "frequency": 290,
+      "factor": 25.8
+    },
+    {
+      "frequency": 292,
+      "factor": 25.9
+    },
+    {
+      "frequency": 294,
+      "factor": 25.4
+    },
+    {
+      "frequency": 296,
+      "factor": 25.1
+    },
+    {
+      "frequency": 298,
+      "factor": 24.8
+    },
+    {
+      "frequency": 300,
+      "factor": 24.6
+    },
+    {
+      "frequency": 305,
+      "factor": 24.3
+    },
+    {
+      "frequency": 310,
+      "factor": 24.4
+    },
+    {
+      "frequency": 315,
+      "factor": 24.2
+    },
+    {
+      "frequency": 320,
+      "factor": 24
+    },
+    {
+      "frequency": 325,
+      "factor": 23.9
+    },
+    {
+      "frequency": 330,
+      "factor": 23.8
+    },
+    {
+      "frequency": 335,
+      "factor": 23.6
+    },
+    {
+      "frequency": 340,
+      "factor": 23.4
+    },
+    {
+      "frequency": 345,
+      "factor": 23.1
+    },
+    {
+      "frequency": 350,
+      "factor": 22.8
+    },
+    {
+      "frequency": 355,
+      "factor": 22.6
+    },
+    {
+      "frequency": 360,
+      "factor": 22.5
+    },
+    {
+      "frequency": 365,
+      "factor": 22.3
+    },
+    {
+      "frequency": 370,
+      "factor": 22.2
+    },
+    {
+      "frequency": 375,
+      "factor": 21.9
+    },
+    {
+      "frequency": 380,
+      "factor": 21.8
+    },
+    {
+      "frequency": 385,
+      "factor": 21.6
+    },
+    {
+      "frequency": 390,
+      "factor": 21.5
+    },
+    {
+      "frequency": 395,
+      "factor": 21.4
+    },
+    {
+      "frequency": 400,
+      "factor": 21.5
+    },
+    {
+      "frequency": 405,
+      "factor": 21.6
+    },
+    {
+      "frequency": 410,
+      "factor": 22
+    },
+    {
+      "frequency": 415,
+      "factor": 22.2
+    },
+    {
+      "frequency": 420,
+      "factor": 22.5
+    },
+    {
+      "frequency": 425,
+      "factor": 22.7
+    },
+    {
+      "frequency": 430,
+      "factor": 23.1
+    },
+    {
+      "frequency": 435,
+      "factor": 23.6
+    },
+    {
+      "frequency": 440,
+      "factor": 24.1
+    },
+    {
+      "frequency": 445,
+      "factor": 24.5
+    },
+    {
+      "frequency": 450,
+      "factor": 24.8
+    },
+    {
+      "frequency": 455,
+      "factor": 25.1
+    },
+    {
+      "frequency": 460,
+      "factor": 25.4
+    },
+    {
+      "frequency": 465,
+      "factor": 25.8
+    },
+    {
+      "frequency": 470,
+      "factor": 26.1
+    },
+    {
+      "frequency": 475,
+      "factor": 26.4
+    },
+    {
+      "frequency": 480,
+      "factor": 26.8
+    },
+    {
+      "frequency": 485,
+      "factor": 26.9
+    },
+    {
+      "frequency": 490,
+      "factor": 27.2
+    },
+    {
+      "frequency": 495,
+      "factor": 27.5
+    },
+    {
+      "frequency": 500,
+      "factor": 27.2
+    },
+    {
+      "frequency": 505,
+      "factor": 27.1
+    },
+    {
+      "frequency": 510,
+      "factor": 27
+    },
+    {
+      "frequency": 515,
+      "factor": 26.8
+    },
+    {
+      "frequency": 520,
+      "factor": 26.9
+    },
+    {
+      "frequency": 525,
+      "factor": 26.9
+    },
+    {
+      "frequency": 530,
+      "factor": 26.8
+    },
+    {
+      "frequency": 535,
+      "factor": 27
+    },
+    {
+      "frequency": 540,
+      "factor": 26.9
+    },
+    {
+      "frequency": 545,
+      "factor": 26.7
+    },
+    {
+      "frequency": 550,
+      "factor": 26.8
+    },
+    {
+      "frequency": 555,
+      "factor": 26.5
+    },
+    {
+      "frequency": 560,
+      "factor": 26.6
+    },
+    {
+      "frequency": 565,
+      "factor": 26.6
+    },
+    {
+      "frequency": 570,
+      "factor": 26.7
+    },
+    {
+      "frequency": 575,
+      "factor": 26.7
+    },
+    {
+      "frequency": 580,
+      "factor": 26.8
+    },
+    {
+      "frequency": 585,
+      "factor": 26.6
+    },
+    {
+      "frequency": 590,
+      "factor": 26.5
+    },
+    {
+      "frequency": 595,
+      "factor": 26.6
+    },
+    {
+      "frequency": 600,
+      "factor": 26.6
+    },
+    {
+      "frequency": 605,
+      "factor": 26.9
+    },
+    {
+      "frequency": 610,
+      "factor": 27.3
+    },
+    {
+      "frequency": 615,
+      "factor": 28.1
+    },
+    {
+      "frequency": 620,
+      "factor": 28.8
+    },
+    {
+      "frequency": 625,
+      "factor": 29.4
+    },
+    {
+      "frequency": 630,
+      "factor": 29.9
+    },
+    {
+      "frequency": 635,
+      "factor": 30.2
+    },
+    {
+      "frequency": 640,
+      "factor": 30.4
+    },
+    {
+      "frequency": 645,
+      "factor": 30.5
+    },
+    {
+      "frequency": 650,
+      "factor": 30.7
+    },
+    {
+      "frequency": 655,
+      "factor": 30.4
+    },
+    {
+      "frequency": 660,
+      "factor": 30.2
+    },
+    {
+      "frequency": 665,
+      "factor": 30.3
+    },
+    {
+      "frequency": 670,
+      "factor": 29.9
+    },
+    {
+      "frequency": 675,
+      "factor": 29.5
+    },
+    {
+      "frequency": 680,
+      "factor": 29.3
+    },
+    {
+      "frequency": 685,
+      "factor": 29.2
+    },
+    {
+      "frequency": 690,
+      "factor": 28.8
+    },
+    {
+      "frequency": 695,
+      "factor": 28.9
+    },
+    {
+      "frequency": 700,
+      "factor": 28.9
+    },
+    {
+      "frequency": 705,
+      "factor": 28.8
+    },
+    {
+      "frequency": 710,
+      "factor": 28.6
+    },
+    {
+      "frequency": 715,
+      "factor": 28.7
+    },
+    {
+      "frequency": 720,
+      "factor": 28.7
+    },
+    {
+      "frequency": 725,
+      "factor": 28.4
+    },
+    {
+      "frequency": 730,
+      "factor": 28.4
+    },
+    {
+      "frequency": 735,
+      "factor": 28.3
+    },
+    {
+      "frequency": 740,
+      "factor": 28.4
+    },
+    {
+      "frequency": 745,
+      "factor": 28.6
+    },
+    {
+      "frequency": 750,
+      "factor": 28.6
+    },
+    {
+      "frequency": 755,
+      "factor": 28.5
+    },
+    {
+      "frequency": 760,
+      "factor": 28.7
+    },
+    {
+      "frequency": 765,
+      "factor": 28.7
+    },
+    {
+      "frequency": 770,
+      "factor": 28.9
+    },
+    {
+      "frequency": 775,
+      "factor": 29.1
+    },
+    {
+      "frequency": 780,
+      "factor": 29.2
+    },
+    {
+      "frequency": 785,
+      "factor": 29.2
+    },
+    {
+      "frequency": 790,
+      "factor": 29
+    },
+    {
+      "frequency": 795,
+      "factor": 28.6
+    },
+    {
+      "frequency": 800,
+      "factor": 28.3
+    },
+    {
+      "frequency": 805,
+      "factor": 28
+    },
+    {
+      "frequency": 810,
+      "factor": 28
+    },
+    {
+      "frequency": 815,
+      "factor": 28.2
+    },
+    {
+      "frequency": 820,
+      "factor": 28.3
+    },
+    {
+      "frequency": 825,
+      "factor": 28.5
+    },
+    {
+      "frequency": 830,
+      "factor": 29
+    },
+    {
+      "frequency": 835,
+      "factor": 29.3
+    },
+    {
+      "frequency": 840,
+      "factor": 29.8
+    },
+    {
+      "frequency": 845,
+      "factor": 29.9
+    },
+    {
+      "frequency": 850,
+      "factor": 30.2
+    },
+    {
+      "frequency": 855,
+      "factor": 30.2
+    },
+    {
+      "frequency": 860,
+      "factor": 30.2
+    },
+    {
+      "frequency": 865,
+      "factor": 30.1
+    },
+    {
+      "frequency": 870,
+      "factor": 29.9
+    },
+    {
+      "frequency": 875,
+      "factor": 29.6
+    },
+    {
+      "frequency": 880,
+      "factor": 29.4
+    },
+    {
+      "frequency": 885,
+      "factor": 29.2
+    },
+    {
+      "frequency": 890,
+      "factor": 29.4
+    },
+    {
+      "frequency": 895,
+      "factor": 29.4
+    },
+    {
+      "frequency": 900,
+      "factor": 29.4
+    },
+    {
+      "frequency": 905,
+      "factor": 29.9
+    },
+    {
+      "frequency": 910,
+      "factor": 30.3
+    },
+    {
+      "frequency": 915,
+      "factor": 30.6
+    },
+    {
+      "frequency": 920,
+      "factor": 31.1
+    },
+    {
+      "frequency": 925,
+      "factor": 31.2
+    },
+    {
+      "frequency": 930,
+      "factor": 31
+    },
+    {
+      "frequency": 935,
+      "factor": 31.2
+    },
+    {
+      "frequency": 940,
+      "factor": 31.1
+    },
+    {
+      "frequency": 945,
+      "factor": 31.3
+    },
+    {
+      "frequency": 950,
+      "factor": 31.5
+    },
+    {
+      "frequency": 955,
+      "factor": 31.3
+    },
+    {
+      "frequency": 960,
+      "factor": 31.2
+    },
+    {
+      "frequency": 965,
+      "factor": 31.3
+    },
+    {
+      "frequency": 970,
+      "factor": 31.3
+    },
+    {
+      "frequency": 975,
+      "factor": 31.3
+    },
+    {
+      "frequency": 980,
+      "factor": 31.6
+    },
+    {
+      "frequency": 985,
+      "factor": 31.9
+    },
+    {
+      "frequency": 990,
+      "factor": 31.5
+    },
+    {
+      "frequency": 995,
+      "factor": 31.5
+    },
+    {
+      "frequency": 1000,
+      "factor": 31.3
+    },
+    {
+      "frequency": 1100,
+      "factor": 32.1
+    },
+    {
+      "frequency": 1200,
+      "factor": 30.4
+    },
+    {
+      "frequency": 1300,
+      "factor": 31
+    },
+    {
+      "frequency": 1400,
+      "factor": 34.3
+    },
+    {
+      "frequency": 1500,
+      "factor": 39.5
+    },
+    {
+      "frequency": 1600,
+      "factor": 33.6
+    },
+    {
+      "frequency": 1700,
+      "factor": 33.4
+    },
+    {
+      "frequency": 1800,
+      "factor": 33.1
+    },
+    {
+      "frequency": 1900,
+      "factor": 35
+    },
+    {
+      "frequency": 2000,
+      "factor": 34.7
+    },
+    {
+      "frequency": 2100,
+      "factor": 37.8
+    },
+    {
+      "frequency": 2200,
+      "factor": 39.7
+    },
+    {
+      "frequency": 2300,
+      "factor": 39.7
+    },
+    {
+      "frequency": 2400,
+      "factor": 39.7
+    },
+    {
+      "frequency": 2500,
+      "factor": 41.2
+    },
+    {
+      "frequency": 2600,
+      "factor": 42.7
+    },
+    {
+      "frequency": 2700,
+      "factor": 40.4
+    },
+    {
+      "frequency": 2800,
+      "factor": 37.9
+    },
+    {
+      "frequency": 2900,
+      "factor": 37.2
+    },
+    {
+      "frequency": 3000,
+      "factor": 37.4
+    },
+    {
+      "frequency": 3100,
+      "factor": 39.8
+    },
+    {
+      "frequency": 3200,
+      "factor": 39.6
+    },
+    {
+      "frequency": 3300,
+      "factor": 38.7
+    },
+    {
+      "frequency": 3400,
+      "factor": 38.6
+    },
+    {
+      "frequency": 3500,
+      "factor": 39.5
+    },
+    {
+      "frequency": 3600,
+      "factor": 40.3
+    },
+    {
+      "frequency": 3700,
+      "factor": 40.4
+    },
+    {
+      "frequency": 3800,
+      "factor": 39.9
+    },
+    {
+      "frequency": 3900,
+      "factor": 40.2
+    },
+    {
+      "frequency": 4000,
+      "factor": 39.1
+    },
+    {
+      "frequency": 4100,
+      "factor": 39.1
+    },
+    {
+      "frequency": 4200,
+      "factor": 39.4
+    },
+    {
+      "frequency": 4300,
+      "factor": 40.4
+    },
+    {
+      "frequency": 4400,
+      "factor": 41.3
+    },
+    {
+      "frequency": 4500,
+      "factor": 41.2
+    },
+    {
+      "frequency": 4600,
+      "factor": 41.6
+    },
+    {
+      "frequency": 4700,
+      "factor": 42.7
+    },
+    {
+      "frequency": 4800,
+      "factor": 41.7
+    },
+    {
+      "frequency": 4900,
+      "factor": 40
+    },
+    {
+      "frequency": 5000,
+      "factor": 39.7
+    },
+    {
+      "frequency": 5100,
+      "factor": 39.2
+    },
+    {
+      "frequency": 5200,
+      "factor": 39.5
+    },
+    {
+      "frequency": 5300,
+      "factor": 40.3
+    },
+    {
+      "frequency": 5400,
+      "factor": 39.6
+    },
+    {
+      "frequency": 5500,
+      "factor": 40.6
+    },
+    {
+      "frequency": 5600,
+      "factor": 40.5
+    },
+    {
+      "frequency": 5700,
+      "factor": 42
+    },
+    {
+      "frequency": 5800,
+      "factor": 41.7
+    },
+    {
+      "frequency": 5900,
+      "factor": 43
+    },
+    {
+      "frequency": 6000,
+      "factor": 42.8
+    },
+    {
+      "frequency": 6100,
+      "factor": 43
+    },
+    {
+      "frequency": 6200,
+      "factor": 43.9
+    },
+    {
+      "frequency": 6300,
+      "factor": 44.4
+    },
+    {
+      "frequency": 6400,
+      "factor": 46
+    },
+    {
+      "frequency": 6500,
+      "factor": 46.3
+    },
+    {
+      "frequency": 6600,
+      "factor": 47.7
+    },
+    {
+      "frequency": 6700,
+      "factor": 48.1
+    },
+    {
+      "frequency": 6800,
+      "factor": 48.3
+    },
+    {
+      "frequency": 6900,
+      "factor": 47.6
+    },
+    {
+      "frequency": 7000,
+      "factor": 46.7
+    },
+    {
+      "frequency": 7100,
+      "factor": 47
+    },
+    {
+      "frequency": 7200,
+      "factor": 46.1
+    },
+    {
+      "frequency": 7300,
+      "factor": 45.6
+    },
+    {
+      "frequency": 7400,
+      "factor": 46.7
+    },
+    {
+      "frequency": 7500,
+      "factor": 47
+    },
+    {
+      "frequency": 7600,
+      "factor": 49.5
+    },
+    {
+      "frequency": 7700,
+      "factor": 51.3
+    },
+    {
+      "frequency": 7800,
+      "factor": 53.6
+    },
+    {
+      "frequency": 7900,
+      "factor": 53.9
+    },
+    {
+      "frequency": 8000,
+      "factor": 50.8
+    }
+  ]
+}

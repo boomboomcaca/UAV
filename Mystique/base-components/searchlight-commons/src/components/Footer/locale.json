@@ -1,0 +1,28 @@
+{
+  "commons": {
+    "audio": {
+      "zh": "音频",
+      "en": "Audio"
+    },
+    "screenShoot": {
+      "zh": "截图",
+      "en": "Screenshoots"
+    },
+    "start": {
+      "zh": "开始",
+      "en": "Start"
+    },
+    "stop": {
+      "zh": "停止",
+      "en": "Stop"
+    },
+    "record": {
+      "zh": "录制",
+      "en": "Record"
+    },
+    "data": {
+      "zh": "数据",
+      "en": "Data"
+    }
+  }
+}

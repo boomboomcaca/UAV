@@ -1,0 +1,6 @@
+{
+  "appId": "com.android.uavdefense",
+  "appName": "uavdefense",
+  "webDir": "build",
+  "bundledWebRuntime": false
+}

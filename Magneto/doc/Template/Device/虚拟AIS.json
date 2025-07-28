@@ -1,0 +1,208 @@
+﻿{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "edgeId": null,
+  "mfid": null,
+  "type": "Magneto.Device.VirtualAIS",
+  "moduleType": "device",
+  "moduleCategory": [
+    "decoder"
+  ],
+  "moduleState": "idle",
+  "supportedFeatures": [
+    "bsdec"
+  ],
+  "displayName": "虚拟AIS",
+  "description": "虚拟AIS接收器",
+  "manufacturer": "成都阿莱夫信息技术有限公司",
+  "model": "VirtualAIS",
+  "sn": "",
+  "maximumInstance": 1,
+  "parameters": [
+    {
+      "name": "aisSwitch",
+      "supportedFeatures": [
+        "none"
+      ],
+      "displayName": "AIS模拟",
+      "description": "是否开启AIS数据模拟",
+      "unit": "",
+      "category": "配置参数",
+      "style": "switch",
+      "type": "bool",
+      "children": [],
+      "relatedValue": [],
+      "default": true,
+      "minimum": null,
+      "maximum": null,
+      "step": null,
+      "values": [
+        true,
+        false
+      ],
+      "displayValues": [
+        "开",
+        "关"
+      ],
+      "browsable": true,
+      "selectOnly": true,
+      "readonly": false,
+      "isInstallation": true,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 0,
+      "template": [],
+      "value": true
+    },
+    {
+      "name": "adsSwitch",
+      "supportedFeatures": [
+        "none"
+      ],
+      "displayName": "ADS_B模拟",
+      "description": "是否开启ADS_B数据模拟",
+      "unit": "",
+      "category": "配置参数",
+      "style": "switch",
+      "type": "bool",
+      "children": [],
+      "relatedValue": [],
+      "default": true,
+      "minimum": null,
+      "maximum": null,
+      "step": null,
+      "values": [
+        true,
+        false
+      ],
+      "displayValues": [
+        "开",
+        "关"
+      ],
+      "browsable": true,
+      "selectOnly": true,
+      "readonly": false,
+      "isInstallation": true,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 1,
+      "template": [],
+      "value": true
+    },
+    {
+      "name": "bsSwitch",
+      "supportedFeatures": [
+        "none"
+      ],
+      "displayName": "基站信号模拟",
+      "description": "是否开启基站信号数据模拟",
+      "unit": "",
+      "category": "配置参数",
+      "style": "switch",
+      "type": "bool",
+      "children": [],
+      "relatedValue": [],
+      "default": true,
+      "minimum": null,
+      "maximum": null,
+      "step": null,
+      "values": [
+        true,
+        false
+      ],
+      "displayValues": [
+        "开",
+        "关"
+      ],
+      "browsable": true,
+      "selectOnly": true,
+      "readonly": false,
+      "isInstallation": true,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 1,
+      "template": [],
+      "value": true
+    },
+    {
+      "name": "aisInterval",
+      "supportedFeatures": [
+        "none"
+      ],
+      "displayName": "AIS发送间隔",
+      "description": "消息发送间隔,单位 毫秒",
+      "unit": "",
+      "category": "配置参数",
+      "style": "input",
+      "type": "number",
+      "children": [],
+      "relatedValue": [],
+      "default": 500,
+      "minimum": 100.0,
+      "maximum": 10000.0,
+      "step": 0.0,
+      "values": [],
+      "displayValues": [],
+      "browsable": true,
+      "selectOnly": false,
+      "readonly": false,
+      "isInstallation": true,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 2,
+      "template": [],
+      "value": 500
+    },
+    {
+      "name": "adsInterval",
+      "supportedFeatures": [
+        "none"
+      ],
+      "displayName": "ADS发送间隔",
+      "description": "消息发送间隔,单位 毫秒",
+      "unit": "",
+      "category": "配置参数",
+      "style": "input",
+      "type": "number",
+      "children": [],
+      "relatedValue": [],
+      "default": 500,
+      "minimum": 100.0,
+      "maximum": 10000.0,
+      "step": 0.0,
+      "values": [],
+      "displayValues": [],
+      "browsable": true,
+      "selectOnly": false,
+      "readonly": false,
+      "isInstallation": true,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 3,
+      "template": [],
+      "value": 500
+    }
+  ],
+  "constraintScript": {},
+  "version": "1.2.0",
+  "capability": null
+}

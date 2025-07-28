@@ -1,0 +1,16 @@
+{
+  "global": {
+    "$detector.value=='fast'": [
+      "$sweepNumLoops.browsable=false"
+    ],
+    "$detector.value!='fast'": [
+      "$sweepNumLoops.browsable=true",
+      "$sweepNumLoops.value=3"
+    ]
+  },
+  "ffm,mscan": {
+    "$frequency.value > 6000-$ifBandwidth.value/2000": [
+      "$frequency.value=6000-$ifBandwidth.value/2000"
+    ]
+  }
+}

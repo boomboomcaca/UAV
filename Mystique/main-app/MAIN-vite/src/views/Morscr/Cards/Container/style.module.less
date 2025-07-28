@@ -1,0 +1,56 @@
+@titlHeight: 36px;
+
+.conRoot {
+  height: 100%;
+  position: relative;
+  box-shadow: inset 0px 0px 27px #1b4e9a;
+  border-radius: 6px;
+
+  .titlecon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    height: @titlHeight;
+    width: 220px;
+    min-width: 180px;
+    max-width: 260px;
+    text-align: center;
+    align-items: center;
+    color: #25c8f4;
+    background: var(--theme-background-main);
+    align-self: center;
+    line-height: @titlHeight;
+    border-radius: 0 0 @titlHeight @titlHeight;
+    box-shadow: inset 0px 0px 27px #1b4e9a;
+    font-weight: 500;
+    font-size: large;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+
+  .child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0px 0px 27px #1b4e9a;
+    z-index: 3;
+    border-radius: 6px;
+    pointer-events: none;
+  }
+}

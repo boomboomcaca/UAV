@@ -1,0 +1,64 @@
+@page
+@model Magneto.Pages.ConfigModel
+@{
+    ViewData["Title"] = "边缘端配置";
+}
+<h1>@ViewData["Title"]</h1>
+<h4>配置边缘端基本属性</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="EdgeId" class="custom-control-label">边缘端ID:</label>
+                <input asp-for="EdgeId" class="form-control" />
+                <span asp-validation-for="EdgeId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IpAddress" class="custom-control-label">边缘端IP:</label>
+                <input asp-for="IpAddress" class="form-control" />
+                <span asp-validation-for="IpAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Port" class="custom-control-label">边缘端端口:</label>
+                <input asp-for="Port" class="form-control" />
+                <span asp-validation-for="Port" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CloudIp" class="custom-control-label">云端IP:</label>
+                <input asp-for="CloudIp" class="form-control" />
+                <span asp-validation-for="CloudIp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CloudPort" class="custom-control-label">云端端口:</label>
+                <input asp-for="CloudPort" class="form-control" />
+                <span asp-validation-for="CloudPort" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Type" class="custom-control-label">边缘端类型:</label>
+                <input asp-for="Type" name="Type" id="type_false" type="radio" value="0" />
+                <label for="type_false">边缘端</label>
+                <input asp-for="Type" name="Type" id="type_true" type="radio" value="1" />
+                <label for="type_true">环境监控</label>
+                <span asp-validation-for="Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CloudUser" class="custom-control-label">云端用户名:</label>
+                <input asp-for="CloudUser" class="form-control" />
+                <span asp-validation-for="CloudPort" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CloudPassword" class="custom-control-label">云端密码:</label>
+                <input asp-for="CloudPassword" type="password" class="form-control" />
+                <span asp-validation-for="CloudPort" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="保存" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-page="Index">返回</a>
+</div>

@@ -1,0 +1,47 @@
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  background-color: #122f68;
+  text-align: center;
+}
+
+.tbody {
+  // display: flex;
+  flex: 1;
+  padding: 0 8px 8px 8px;
+  color: lightgrey;
+  &.day {
+    color: #5bb6b2;
+  }
+}
+
+.thead {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 8px 0 8px;
+  line-height: 32px;
+  .tcell {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+.row {
+  line-height: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .rcell {
+    flex: 1;
+    text-align: center;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

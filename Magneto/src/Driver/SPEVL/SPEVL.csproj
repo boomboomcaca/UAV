@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+        <InvariantGlobalization>true</InvariantGlobalization>
+        <OutputPath>../../../bin/$(Configuration)/Driver/</OutputPath>
+        <PublishDir>../../../publish/$(RuntimeIdentifier)/$(Configuration)/Driver/</PublishDir>
+        <SelfContained>false</SelfContained>
+        <Company>成都阿莱夫信息技术有限公司</Company>
+        <Description>适用于频谱评估的功能模块</Description>
+        <Copyright>@Aleph Co. Ltd. 2023</Copyright>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)'=='Release'">
+        <DebugType>none</DebugType>
+        <DebugSymbols>false</DebugSymbols>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\Protocol\Protocol.csproj">
+            <Private>false</Private>
+            <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+        </ProjectReference>
+        <ProjectReference Include="..\..\Contract\Contract.csproj">
+            <Private>false</Private>
+            <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+        </ProjectReference>
+    </ItemGroup>
+</Project>

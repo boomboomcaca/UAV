@@ -1,0 +1,65 @@
+.popPanel {
+  display: flex;
+  flex-direction: row;
+  height: 250px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  .selItem {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: var(--theme-background-chart);
+    justify-content: space-between;
+    .label {
+      color: var(--theme-font-50);
+      font-size: 12px;
+    }
+  }
+  .selItem > span {
+    background: var(--theme-background-chart);
+    padding: 5px 14px;
+    color: var(--theme-font-100);
+    text-align: center;
+  }
+
+  .selItem div {
+    flex: 1;
+    height: 350px;
+    overflow: auto;
+    padding: 5px 10px 5px 10px;
+  }
+}
+.normalItem {
+  width: 52px;
+  padding: 5px 0;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+}
+
+.selectedItem {
+  cursor: pointer;
+  width: 52px;
+  padding: 5px 0;
+  text-align: center;
+  color: #3ce5d3 !important;
+  font-weight: 800;
+  font-size: 14px;
+  background: var(--theme-background-chart);
+}
+.timeSelector {
+  width: 154px;
+  height: 50px;
+  position: relative;
+}
+.valuelabel {
+  display: inline-block;
+  width: 154px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

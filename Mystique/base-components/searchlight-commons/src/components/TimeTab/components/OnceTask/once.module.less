@@ -1,0 +1,28 @@
+.configItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  .tipLabel {
+    margin-right: 10px;
+    color: var(--theme-font-80);
+  }
+}
+.setting {
+  > div {
+    width: 315px;
+    > div:nth-child(2) {
+      padding: 0;
+    }
+  }
+}
+.comRoot {
+  flex: 1;
+}
+.valueDiv {
+  background: var(--theme-background-chart);
+  border-radius: 2px;
+  font-size: 20px;
+  color: var(--theme-font-100);
+  cursor: pointer;
+}

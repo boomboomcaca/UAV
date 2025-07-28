@@ -1,0 +1,36 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "cSpell.words": [
+            "Crond",
+            "DFIND",
+            "FSCAN",
+            "IFOUT",
+            "NSIC",
+            "SSOA",
+            "TDOA",
+            "WBDF",
+            "dfscan",
+            "pscan",
+            "wifi"
+        ],
+        "cSpell.enableFiletypes": [
+            "!c",
+            "!csharp"
+        ],
+        "dotnet-test-explorer.autoWatch": true,
+        "dotnet-test-explorer.autoExpandTree": true,
+        "files.exclude": {
+            "**/.vs": true,
+            "**/obj": true,
+            "**/Properties": true
+        },
+        "omnisharp.enableRoslynAnalyzers": true,
+        "dotnet.defaultSolution": "magneto.sln",
+        "dotnet.codeLens.enableTestsCodeLens": true
+    }
+}

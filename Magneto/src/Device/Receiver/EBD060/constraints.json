@@ -1,0 +1,20 @@
+{
+  "fdf": {
+    "$filterBandwidth.value<6": [
+      "$demMode.values=['fm','am','cw','usb','lsb']",
+      "$demMode.displayValues=['FM','AM','CW','USB','LSB']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'fm'"
+    ],
+    "$filterBandwidth.value>=6": [
+      "$demMode.values=['fm','am']",
+      "$demMode.displayValues=['FM','AM']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'fm'"
+    ],
+    "(['cw','usb','lsb'].includes($demMode.value))": [
+      "$bfo.browsable=true"
+    ],
+    "!(['cw','usb','lsb'].includes($demMode.value))": [
+      "$bfo.browsable=false"
+    ]
+  }
+}

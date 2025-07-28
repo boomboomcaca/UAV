@@ -1,0 +1,128 @@
+.mapcon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.regionShow {
+  position: absolute;
+  bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .regions {
+    padding: 5px;
+    // opacity: 0.3;
+    text-align: center;
+    width: 380px;
+    background: rgba(45, 45, 45, 0.5);
+  }
+
+  .reg0 {
+    color: #ff6a00;
+  }
+
+  .reg2 {
+    color: #ffc200;
+    margin-left: 10px;
+  }
+
+  .reg3 {
+    color: #e1ff00;
+    margin-left: 10px;
+  }
+
+  .reg5 {
+    color: #00ff21;
+    margin-left: 10px;
+  }
+}
+
+.more {
+  position: absolute;
+  left: 17px;
+  bottom: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  z-index: 9;
+  height: auto;
+
+  .opbtn {
+    position: absolute;
+    bottom: 8px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(48, 180, 255, 1);
+    background: #082147;
+    border-radius: 4px;
+
+    .icon {
+      width: 18px;
+      height: 17px;
+    }
+
+    &:hover {
+      opacity: 0.85;
+
+      .icon {
+        width: 20px;
+        height: 19px;
+      }
+    }
+
+    &:active {
+      opacity: 1;
+      .icon {
+        width: 18px;
+        height: 17px;
+      }
+    }
+  }
+
+  .options {
+    margin-left: 40px;
+    background: #082147;
+    border-radius: 4px;
+    padding: 8px 0px 4px 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .item {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      > span {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 12px;
+      }
+    }
+
+    &.hide {
+      display: none;
+    }
+
+    &.show {
+      display: flex;
+    }
+  }
+}
+
+.mouseGPS {
+  position: fixed;
+  left: 84px;
+  bottom: 26px;
+  // background-color: gray;
+  opacity: 0.6;
+  color: white;
+  font-size: 12px;
+  padding: 0 8px 0 8px;
+}

@@ -1,0 +1,10 @@
+{
+  "global": {
+    "($frequency.value-($ifBandwidth.value/1000/2))<20.0": [
+      "$frequency.value=20+($ifBandwidth.value/1000/2)"
+    ],
+    "($frequency.value+($ifBandwidth.value/1000/2))>5031.0": [
+      "$frequency.value=5031-($ifBandwidth.value/1000/2)"
+    ]
+  }
+}

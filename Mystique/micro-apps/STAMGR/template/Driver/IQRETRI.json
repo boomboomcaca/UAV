@@ -1,0 +1,478 @@
+﻿{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "edgeId": null,
+  "mfid": null,
+  "type": "Cosmos.Driver.IQRETRI.IQRETRI",
+  "moduleType": "driver",
+  "moduleCategory": [
+    "monitoring"
+  ],
+  "moduleState": "idle",
+  "supportedFeatures": [
+    "iqretri"
+  ],
+  "displayName": "流盘分析",
+  "description": "流盘分析功能",
+  "manufacturer": "Decentest",
+  "model": "",
+  "sn": "",
+  "maximumInstance": 0,
+  "parameters": [
+    {
+      "name": "receiver",
+      "supportedFeatures": [
+        "iqretri"
+      ],
+      "displayName": "接收机",
+      "description": "提供监测数据的主设备",
+      "unit": "",
+      "category": "安装参数",
+      "style": "input",
+      "type": "string",
+      "children": [],
+      "relatedValue": [],
+      "default": null,
+      "minimum": null,
+      "maximum": null,
+      "step": 100.0,
+      "values": [],
+      "displayValues": [],
+      "browsable": true,
+      "selectOnly": false,
+      "readonly": false,
+      "isInstallation": true,
+      "required": true,
+      "isPrimaryDevice": true,
+      "needModuleCategory": [
+        "monitoring"
+      ],
+      "needFeature": [
+        "ffm"
+      ],
+      "owners": [],
+      "parameters": [],
+      "order": 0,
+      "template": [],
+      "value": null
+    },
+    {
+      "name": "ssDevice",
+      "supportedFeatures": [
+        "iqretri"
+      ],
+      "displayName": "流盘设备",
+      "description": "提供流盘存储与读取的设备",
+      "unit": "",
+      "category": "安装参数",
+      "style": "input",
+      "type": "string",
+      "children": [],
+      "relatedValue": [],
+      "default": null,
+      "minimum": null,
+      "maximum": null,
+      "step": 100.0,
+      "values": [],
+      "displayValues": [],
+      "browsable": true,
+      "selectOnly": false,
+      "readonly": false,
+      "isInstallation": true,
+      "required": true,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [
+        "ioStorage"
+      ],
+      "needFeature": [
+        "iqretri"
+      ],
+      "owners": [],
+      "parameters": [],
+      "order": 0,
+      "template": [],
+      "value": null
+    },
+    {
+      "name": "antennaController",
+      "supportedFeatures": [
+        "iqretri"
+      ],
+      "displayName": "天线控制器",
+      "description": "使用的天线控制器，实现天线的逻辑控制",
+      "unit": "",
+      "category": "安装参数",
+      "style": "input",
+      "type": "string",
+      "children": [],
+      "relatedValue": [],
+      "default": null,
+      "minimum": null,
+      "maximum": null,
+      "step": 100.0,
+      "values": [],
+      "displayValues": [],
+      "browsable": true,
+      "selectOnly": false,
+      "readonly": false,
+      "isInstallation": true,
+      "required": true,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [
+        "antennaControl"
+      ],
+      "needFeature": [
+        "none"
+      ],
+      "owners": [],
+      "parameters": [],
+      "order": 0,
+      "template": [],
+      "value": null
+    },
+    {
+      "name": "iqRecordSwitch",
+      "supportedFeatures": [
+        "iqretri"
+      ],
+      "displayName": "信号解调数据采集开关",
+      "description": "是否开启信号解调数据采集",
+      "unit": "",
+      "category": "功能参数",
+      "style": "switch",
+      "type": "bool",
+      "children": [],
+      "relatedValue": [],
+      "default": false,
+      "minimum": null,
+      "maximum": null,
+      "step": null,
+      "values": [
+        true,
+        false
+      ],
+      "displayValues": [
+        "开",
+        "关"
+      ],
+      "browsable": true,
+      "selectOnly": true,
+      "readonly": false,
+      "isInstallation": false,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 34,
+      "template": [],
+      "value": false
+    },
+    {
+      "name": "iqCalibrationValue",
+      "supportedFeatures": [
+        "iqretri"
+      ],
+      "displayName": "IQ校准值",
+      "description": "用于接收机IQ的校准值，这个值每台接收机必须根据实际情况计算并重配。",
+      "unit": "",
+      "category": "功能参数",
+      "style": "input",
+      "type": "number",
+      "children": [],
+      "relatedValue": [],
+      "default": 1073741824.0,
+      "minimum": 0.0,
+      "maximum": 107374182400.0,
+      "step": 1.0,
+      "values": [],
+      "displayValues": [],
+      "browsable": true,
+      "selectOnly": false,
+      "readonly": false,
+      "isInstallation": false,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 35,
+      "template": [],
+      "value": 1073741824.0
+    },
+    {
+      "name": "rawSwitch",
+      "supportedFeatures": [
+        "iqretri"
+      ],
+      "displayName": "原始数据开关",
+      "description": "是否开启原始数据保存",
+      "unit": "",
+      "category": "数据开关",
+      "style": "radio",
+      "type": "number",
+      "children": [],
+      "relatedValue": [],
+      "default": 0,
+      "minimum": null,
+      "maximum": null,
+      "step": null,
+      "values": [
+        0.0,
+        1.0,
+        2.0
+      ],
+      "displayValues": [
+        "关",
+        "开",
+        "清除"
+      ],
+      "browsable": false,
+      "selectOnly": true,
+      "readonly": false,
+      "isInstallation": false,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 34,
+      "template": [],
+      "value": 0
+    },
+    {
+      "name": "saveDataSwitch",
+      "supportedFeatures": [
+        "iqretri"
+      ],
+      "displayName": "录制数据保存开关",
+      "description": "IQ、频谱、音频数据是否存储原始数据的开关",
+      "unit": "",
+      "category": "数据开关",
+      "style": "input",
+      "type": "number",
+      "children": [],
+      "relatedValue": [],
+      "default": 0,
+      "minimum": 0.0,
+      "maximum": 65535.0,
+      "step": 0.0,
+      "values": [],
+      "displayValues": [],
+      "browsable": false,
+      "selectOnly": false,
+      "readonly": false,
+      "isInstallation": false,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 34,
+      "template": [],
+      "value": 0
+    },
+    {
+      "name": "unitSelection",
+      "supportedFeatures": [
+        "iqretri"
+      ],
+      "displayName": "单位选择",
+      "description": "单位选择",
+      "unit": "",
+      "category": "功能参数",
+      "style": "radio",
+      "type": "number",
+      "children": [],
+      "relatedValue": [],
+      "default": 0,
+      "minimum": null,
+      "maximum": null,
+      "step": null,
+      "values": [
+        0.0,
+        1.0,
+        2.0
+      ],
+      "displayValues": [
+        "dBμV",
+        "dBμV/m",
+        "dBm"
+      ],
+      "browsable": false,
+      "selectOnly": true,
+      "readonly": false,
+      "isInstallation": false,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 35,
+      "template": [],
+      "value": 0
+    },
+    {
+      "name": "maximumSwitch",
+      "supportedFeatures": [
+        "iqretri"
+      ],
+      "displayName": "频谱最大值显示",
+      "description": "设置是否显示频谱数据的最大值",
+      "unit": "",
+      "category": "功能参数",
+      "style": "switch",
+      "type": "bool",
+      "children": [],
+      "relatedValue": [],
+      "default": false,
+      "minimum": null,
+      "maximum": null,
+      "step": null,
+      "values": [
+        true,
+        false
+      ],
+      "displayValues": [
+        "开",
+        "关"
+      ],
+      "browsable": false,
+      "selectOnly": true,
+      "readonly": false,
+      "isInstallation": false,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 30,
+      "template": [],
+      "value": false
+    },
+    {
+      "name": "minimumSwitch",
+      "supportedFeatures": [
+        "iqretri"
+      ],
+      "displayName": "频谱最小值显示",
+      "description": "设置是否显示频谱数据的最小值",
+      "unit": "",
+      "category": "功能参数",
+      "style": "switch",
+      "type": "bool",
+      "children": [],
+      "relatedValue": [],
+      "default": false,
+      "minimum": null,
+      "maximum": null,
+      "step": null,
+      "values": [
+        true,
+        false
+      ],
+      "displayValues": [
+        "开",
+        "关"
+      ],
+      "browsable": false,
+      "selectOnly": true,
+      "readonly": false,
+      "isInstallation": false,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 31,
+      "template": [],
+      "value": false
+    },
+    {
+      "name": "meanSwitch",
+      "supportedFeatures": [
+        "iqretri"
+      ],
+      "displayName": "频谱平均值显示",
+      "description": "设置是否显示频谱数据的平均值",
+      "unit": "",
+      "category": "功能参数",
+      "style": "switch",
+      "type": "bool",
+      "children": [],
+      "relatedValue": [],
+      "default": false,
+      "minimum": null,
+      "maximum": null,
+      "step": null,
+      "values": [
+        true,
+        false
+      ],
+      "displayValues": [
+        "开",
+        "关"
+      ],
+      "browsable": false,
+      "selectOnly": true,
+      "readonly": false,
+      "isInstallation": false,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 32,
+      "template": [],
+      "value": false
+    },
+    {
+      "name": "noiseSwitch",
+      "supportedFeatures": [
+        "iqretri"
+      ],
+      "displayName": "频谱噪声显示",
+      "description": "设置是否显示频谱数据的噪声",
+      "unit": "",
+      "category": "功能参数",
+      "style": "switch",
+      "type": "bool",
+      "children": [],
+      "relatedValue": [],
+      "default": false,
+      "minimum": null,
+      "maximum": null,
+      "step": null,
+      "values": [
+        true,
+        false
+      ],
+      "displayValues": [
+        "开",
+        "关"
+      ],
+      "browsable": false,
+      "selectOnly": true,
+      "readonly": false,
+      "isInstallation": false,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 33,
+      "template": [],
+      "value": false
+    }
+  ],
+  "constraintScript": "",
+  "version": "1.3.0"
+}

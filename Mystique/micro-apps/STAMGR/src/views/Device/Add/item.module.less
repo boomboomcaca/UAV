@@ -1,0 +1,80 @@
+.root {
+  width: 100%;
+  height: 32px;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  flex: 1;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+  justify-content: space-between;
+  background: #3ce5d325;
+  border-radius: 2px;
+  font-size: 12px;
+  color: white;
+  & > :nth-child(2) {
+    opacity: 0.3;
+  }
+  position: relative;
+}
+
+.content:hover {
+  background: #3ce5d340;
+}
+
+.checked {
+  background: #3ce5d3b7;
+  &:hover {
+    background: #3ce5d3b7;
+  }
+  & > :nth-child(2) {
+    opacity: 0.75;
+  }
+}
+
+.del {
+  width: 16px;
+  height: 16px;
+  margin-left: 12px;
+  margin-right: 4px;
+  background: #ffffff25;
+  position: relative;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.75;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 1px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+  }
+  &:hover {
+    opacity: 0.9;
+  }
+  &:active {
+    opacity: 1;
+    background-color: orangered;
+  }
+}
+
+.error::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px dashed #ff0000a0;
+  box-sizing: border-box;
+  border-radius: 2px;
+}

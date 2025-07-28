@@ -1,0 +1,91 @@
+{
+  "global": {
+    "$filterBandwidth.value<=9": [
+      "$demMode.values=['am','fm','pulse','pm','iq','isb','cw','usb','lsb','tv']",
+      "$demMode.displayValues=['AM','FM','PULSE','PM','IQ','ISB','CW','USB','LSB','TV']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'fm'"
+    ],
+    "$filterBandwidth.value>9": [
+      "$demMode.values=['am','fm','pulse','pm','iq','isb','cw','usb','lsb','tv']",
+      "$demMode.displayValues=['AM','FM','PULSE','PM','IQ','ISB','CW','USB','LSB','TV']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'fm'"
+    ],
+    "$scanMode.value=='pscan'": [
+      "$detector.browsable=false",
+      "$filterBandwidth.browsable=false",
+      "$fftMode.browsable=true"
+    ],
+    "$scanMode.value!='pscan'": [
+      "$detector.browsable=true",
+      "$filterBandwidth.browsable=true",
+      "$fftMode.browsable=false"
+    ],
+    "$bandMeasureMode.value=='XDB'": [
+      "$xdB.browsable=true",
+      "$betaValue.browsable=false"
+    ],
+    "$bandMeasureMode.value=='BETA'": [
+      "$xdB.browsable=false",
+      "$betaValue.browsable=true"
+    ],
+    "$detector.value=='fast'": [
+      "$measureTime.values=[-1,1,2,4,7,16,32,63,125,250,500]",
+      "$measureTime.displayValues=['自动','1μs','2μs','4μs','7μs','16μs','32μs','63μs','125μs','250μs','500μs']",
+      "$measureTime.value=$measureTime.values.includes($measureTime.value)?$measureTime.value:-1"
+    ],
+    "$detector.value=='pos'": [
+      "$measureTime.values=[-1,1000,2000,4000,5000,10000,20000,30000,60000,100000,200000,400000,500000]",
+      "$measureTime.displayValues=['自动','1ms','2ms','4ms','5ms','10ms','20ms','30ms','60ms','100ms','200ms','400ms','500ms']",
+      "$measureTime.value=$measureTime.values.includes($measureTime.value)?$measureTime.value:-1"
+    ],
+    "$detector.value=='avg'||$detector.value=='rms'": [
+      "$measureTime.values=[-1,1000,2000,3000,4000,6000,12000,25000,50000,100000,200000]",
+      "$measureTime.displayValues=['自动','1ms','2ms','3ms','4ms','6ms','12ms','25ms','50ms','100ms','200ms']",
+      "$measureTime.value=$measureTime.values.includes($measureTime.value)?$measureTime.value:-1"
+    ],
+    "$demMode.value!='TV'": [
+      "$filterBandwidth.values=[1,2,5,10,20,50,100,200,500,1000,2000,5000,10000,20000]",
+      "$filterBandwidth.displayValues=['1kHz','2kHz','5kHz','10kHz','20kHz','50kHz','100kHz','200kHz','500kHz','1MHz','2MHz','5MHz','10MHz','20MHz']"
+    ],
+    "$demMode.value=='TV'": [
+      "$filterBandwidth.values=[20000]",
+      "$filterBandwidth.displayValues=['20MHz']"
+    ]
+  },
+  "fdf": {
+    "$iqSamplingCount.name=='iqSamplingCount'": [
+      "$iqSamplingCount.values=[512]",
+      "$iqSamplingCount.displayValues=[512]",
+      "$filterBandwidth.values=[30,50,75,120,150,250,300,500,800,1000,1250,1500,2000,5000,8000,10000,12500,15000,20000]",
+      "$filterBandwidth.displayValues=['30kHz','50kHz','75kHz','120kHz','150kHz','250kHz','300kHz','500kHz','800kHz','1MHz','1.25MHz','1.5MHz','2MHz','5MHz','8MHz','10MHz','12.5MHz','15MHz','20MHz']",
+      "$iqSamplingCount.value=$iqSamplingCount.values.includes($iqSamplingCount.value)?$iqSamplingCount.value:512"
+    ]
+  },
+  "ifmca": {
+    "$detector.value=='fast'": [
+      "$measureTime.values=[-1,1,2,4,7,16,32,63,125,250,500]",
+      "$measureTime.displayValues=['自动','1μs','2μs','4μs','7μs','16μs','32μs','63μs','125μs','250μs','500μs']",
+      "$measureTime.value=$measureTime.values.includes($measureTime.value)?$measureTime.value:-1"
+    ],
+    "$detector.value=='pos'": [
+      "$measureTime.values=[-1,1000,2000,4000,5000,10000,20000,30000,60000,100000,200000,400000,500000]",
+      "$measureTime.displayValues=['自动','1ms','2ms','4ms','5ms','10ms','20ms','30ms','60ms','100ms','200ms','400ms','500ms']",
+      "$measureTime.value=$measureTime.values.includes($measureTime.value)?$measureTime.value:-1"
+    ],
+    "$detector.value=='avg'||$detector.value=='rms'": [
+      "$measureTime.values=[-1,1000,2000,3000,4000,6000,12000,25000,50000,100000,200000]",
+      "$measureTime.displayValues=['自动','1ms','2ms','3ms','4ms','6ms','12ms','25ms','50ms','100ms','200ms']",
+      "$measureTime.value=$measureTime.values.includes($measureTime.value)?$measureTime.value:-1"
+    ],
+    "$filterBandwidth.value<=9": [
+      "$demMode.values=['am','fm','pulse','pm','iq','isb','cw','usb','lsb','tv']",
+      "$demMode.displayValues=['AM','FM','PULSE','PM','IQ','ISB','CW','USB','LSB','TV']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'fm'"
+    ],
+    "$filterBandwidth.value>9": [
+      "$demMode.values=['am','fm','pulse','pm','iq','isb','cw','usb','lsb','tv']",
+      "$demMode.displayValues=['AM','FM','PULSE','PM','IQ','ISB','CW','USB','LSB','TV']",
+      "$demMode.value=$demMode.values.includes($demMode.value)?$demMode.value:'fm'"
+    ]
+  }
+}

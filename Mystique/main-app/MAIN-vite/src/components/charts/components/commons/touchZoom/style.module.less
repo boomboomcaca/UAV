@@ -1,0 +1,51 @@
+.touchZoomRoot {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 8;
+
+  &.dragging {
+    background-color: rgba(30, 20, 20, 0.2);
+    border: 1px solid #40a9ff;
+  }
+
+  &.zooming {
+    background-color: rgba(30, 20, 20, 0.2);
+    border: 1px solid #40a9ff;
+    &::after {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      background: linear-gradient(
+        to top right,
+        transparent,
+        transparent calc(50% - 1px),
+        #40a9ff,
+        transparent calc(50% + 1px),
+        transparent
+      );
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      background: linear-gradient(
+        to bottom right,
+        transparent,
+        transparent calc(50% - 1px),
+        #40a9ff,
+        transparent calc(50% + 1px),
+        transparent
+      );
+    }
+  }
+}

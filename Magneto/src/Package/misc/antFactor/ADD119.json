@@ -1,0 +1,41 @@
+{
+  "passive": [
+    {
+      "frequency": 0.3,
+      "factor": 20
+    },
+    {
+      "frequency": 1,
+      "factor": 20
+    },
+    {
+      "frequency": 2,
+      "factor": 20
+    },
+    {
+      "frequency": 5,
+      "factor": 20
+    },
+    {
+      "frequency": 10,
+      "factor": 20
+    },
+    {
+      "frequency": 15,
+      "factor": 20
+    },
+    {
+      "frequency": 20,
+      "factor": 20
+    },
+    {
+      "frequency": 25,
+      "factor": 20
+    },
+    {
+      "frequency": 30,
+      "factor": 20
+    }
+  ],
+  "active": []
+}

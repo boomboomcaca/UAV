@@ -1,0 +1,442 @@
+﻿{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "edgeId": null,
+  "mfid": null,
+  "type": "Magneto.Device.DT2000AS_E.DT2000AS_E",
+  "moduleType": "device",
+  "moduleCategory": [
+    "decoder"
+  ],
+  "moduleState": "idle",
+  "supportedFeatures": [
+    "bsdec"
+  ],
+  "displayName": "DT2000AS_E",
+  "description": "DT2000AS 网口全制式基站扫频仪，支持2/3/4/5G基站信息解码。",
+  "manufacturer": "成都阿莱夫信息技术有限公司",
+  "model": "DT2000AS_E",
+  "sn": "",
+  "maximumInstance": 1,
+  "parameters": [
+    {
+      "name": "scanInterval",
+      "supportedFeatures": [
+        "bsdec"
+      ],
+      "displayName": "查询间隔",
+      "description": "查询时间间隔，单位 毫秒",
+      "unit": "",
+      "category": "测量参数",
+      "style": "input",
+      "type": "number",
+      "children": [],
+      "relatedValue": [],
+      "default": 200,
+      "minimum": 10.0,
+      "maximum": 10000.0,
+      "step": 1.0,
+      "values": [],
+      "displayValues": [],
+      "browsable": true,
+      "selectOnly": false,
+      "readonly": false,
+      "isInstallation": false,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 0,
+      "template": [],
+      "value": 200
+    },
+    {
+      "name": "isSearchTD_SCDMA",
+      "supportedFeatures": [
+        "bsdec"
+      ],
+      "displayName": "TD_SCDMA",
+      "description": "设置是否搜索TD_SCDMA类型基站。",
+      "unit": "",
+      "category": "测量参数",
+      "style": "switch",
+      "type": "bool",
+      "children": [],
+      "relatedValue": [],
+      "default": true,
+      "minimum": null,
+      "maximum": null,
+      "step": null,
+      "values": [
+        true,
+        false
+      ],
+      "displayValues": [
+        "搜索",
+        "不搜索"
+      ],
+      "browsable": true,
+      "selectOnly": true,
+      "readonly": false,
+      "isInstallation": false,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 10,
+      "template": [],
+      "value": true
+    },
+    {
+      "name": "isSearchLTE",
+      "supportedFeatures": [
+        "bsdec"
+      ],
+      "displayName": "LTE",
+      "description": "设置是否搜索LTE类型基站。",
+      "unit": "",
+      "category": "测量参数",
+      "style": "switch",
+      "type": "bool",
+      "children": [],
+      "relatedValue": [],
+      "default": true,
+      "minimum": null,
+      "maximum": null,
+      "step": null,
+      "values": [
+        true,
+        false
+      ],
+      "displayValues": [
+        "搜索",
+        "不搜索"
+      ],
+      "browsable": true,
+      "selectOnly": true,
+      "readonly": false,
+      "isInstallation": false,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 11,
+      "template": [],
+      "value": true
+    },
+    {
+      "name": "isSearchGSM",
+      "supportedFeatures": [
+        "bsdec"
+      ],
+      "displayName": "GSM",
+      "description": "设置是否搜索GSM类型基站。",
+      "unit": "",
+      "category": "测量参数",
+      "style": "switch",
+      "type": "bool",
+      "children": [],
+      "relatedValue": [],
+      "default": true,
+      "minimum": null,
+      "maximum": null,
+      "step": null,
+      "values": [
+        true,
+        false
+      ],
+      "displayValues": [
+        "搜索",
+        "不搜索"
+      ],
+      "browsable": true,
+      "selectOnly": true,
+      "readonly": false,
+      "isInstallation": false,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 12,
+      "template": [],
+      "value": true
+    },
+    {
+      "name": "isSearchWCDMA",
+      "supportedFeatures": [
+        "bsdec"
+      ],
+      "displayName": "WCDMA",
+      "description": "设置是否搜索WCDMA类型基站。",
+      "unit": "",
+      "category": "测量参数",
+      "style": "switch",
+      "type": "bool",
+      "children": [],
+      "relatedValue": [],
+      "default": true,
+      "minimum": null,
+      "maximum": null,
+      "step": null,
+      "values": [
+        true,
+        false
+      ],
+      "displayValues": [
+        "搜索",
+        "不搜索"
+      ],
+      "browsable": true,
+      "selectOnly": true,
+      "readonly": false,
+      "isInstallation": false,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 13,
+      "template": [],
+      "value": true
+    },
+    {
+      "name": "isSearchCDMA_1X",
+      "supportedFeatures": [
+        "bsdec"
+      ],
+      "displayName": "CDMA_1X",
+      "description": "设置是否搜索CDMA_1X类型基站。",
+      "unit": "",
+      "category": "测量参数",
+      "style": "switch",
+      "type": "bool",
+      "children": [],
+      "relatedValue": [],
+      "default": true,
+      "minimum": null,
+      "maximum": null,
+      "step": null,
+      "values": [
+        true,
+        false
+      ],
+      "displayValues": [
+        "搜索",
+        "不搜索"
+      ],
+      "browsable": true,
+      "selectOnly": true,
+      "readonly": false,
+      "isInstallation": false,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 14,
+      "template": [],
+      "value": true
+    },
+    {
+      "name": "isSearchEVDO",
+      "supportedFeatures": [
+        "bsdec"
+      ],
+      "displayName": "EVDO",
+      "description": "设置是否搜索EVDO类型基站。",
+      "unit": "",
+      "category": "测量参数",
+      "style": "switch",
+      "type": "bool",
+      "children": [],
+      "relatedValue": [],
+      "default": true,
+      "minimum": null,
+      "maximum": null,
+      "step": null,
+      "values": [
+        true,
+        false
+      ],
+      "displayValues": [
+        "搜索",
+        "不搜索"
+      ],
+      "browsable": true,
+      "selectOnly": true,
+      "readonly": false,
+      "isInstallation": false,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 15,
+      "template": [],
+      "value": true
+    },
+    {
+      "name": "isSearchNR",
+      "supportedFeatures": [
+        "bsdec"
+      ],
+      "displayName": "NR",
+      "description": "设置是否搜索5G NR类型基站。",
+      "unit": "",
+      "category": "测量参数",
+      "style": "switch",
+      "type": "bool",
+      "children": [],
+      "relatedValue": [],
+      "default": true,
+      "minimum": null,
+      "maximum": null,
+      "step": null,
+      "values": [
+        true,
+        false
+      ],
+      "displayValues": [
+        "搜索",
+        "不搜索"
+      ],
+      "browsable": true,
+      "selectOnly": true,
+      "readonly": false,
+      "isInstallation": false,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 16,
+      "template": [],
+      "value": true
+    },
+    {
+      "name": "ipAddress",
+      "supportedFeatures": [
+        "none"
+      ],
+      "displayName": "IP地址",
+      "description": "设备IP地址",
+      "unit": "",
+      "category": "安装参数",
+      "style": "input",
+      "type": "string",
+      "children": [],
+      "relatedValue": [],
+      "default": "192.168.2.1",
+      "minimum": null,
+      "maximum": null,
+      "step": null,
+      "values": [],
+      "displayValues": [],
+      "browsable": true,
+      "selectOnly": false,
+      "readonly": false,
+      "isInstallation": true,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 0,
+      "template": [],
+      "value": "192.168.2.1"
+    },
+    {
+      "name": "globalBand",
+      "supportedFeatures": [
+        "none"
+      ],
+      "displayName": "全球频段",
+      "description": "全球频段",
+      "unit": "",
+      "category": "安装参数",
+      "style": "switch",
+      "type": "bool",
+      "children": [],
+      "relatedValue": [],
+      "default": false,
+      "minimum": null,
+      "maximum": null,
+      "step": null,
+      "values": [
+        true,
+        false
+      ],
+      "displayValues": [
+        "是",
+        "否"
+      ],
+      "browsable": true,
+      "selectOnly": true,
+      "readonly": false,
+      "isInstallation": true,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 0,
+      "template": [],
+      "value": false
+    },
+    {
+      "name": "nrBlind",
+      "supportedFeatures": [
+        "none"
+      ],
+      "displayName": "5G盲扫",
+      "description": "5G盲扫",
+      "unit": "",
+      "category": "安装参数",
+      "style": "switch",
+      "type": "bool",
+      "children": [],
+      "relatedValue": [],
+      "default": true,
+      "minimum": null,
+      "maximum": null,
+      "step": null,
+      "values": [
+        true,
+        false
+      ],
+      "displayValues": [
+        "是",
+        "否"
+      ],
+      "browsable": true,
+      "selectOnly": true,
+      "readonly": false,
+      "isInstallation": true,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 0,
+      "template": [],
+      "value": true
+    }
+  ],
+  "constraintScript": {},
+  "version": "1.0.0",
+  "capability": null
+}

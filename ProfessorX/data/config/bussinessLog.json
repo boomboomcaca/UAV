@@ -1,0 +1,484 @@
+[
+  {
+    "code": "100001",
+    "level": "info",
+    "message": "站点上线",
+    "haveParameter": "0",
+    "haveEdgeID": "1",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "100002",
+    "level": "warn",
+    "message": "站点离线",
+    "haveParameter": "0",
+    "haveEdgeID": "1",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "100003",
+    "level": "warn",
+    "message": "站点故障",
+    "haveParameter": "0",
+    "haveEdgeID": "1",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "100004",
+    "level": "info",
+    "message": "站点恢复正常",
+    "haveParameter": "0",
+    "haveEdgeID": "1",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "200001",
+    "level": "info",
+    "message": "设备上线[设备：{0}]",
+    "haveParameter": "1",
+    "haveEdgeID": "1",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "200002",
+    "level": "warn",
+    "message": "设备离线[设备：{0}]",
+    "haveParameter": "1",
+    "haveEdgeID": "1",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "200003",
+    "level": "info",
+    "message": "设备空闲[设备：{0}]",
+    "haveParameter": "1",
+    "haveEdgeID": "1",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "200004",
+    "level": "info",
+    "message": "设备忙碌[设备：{0}]",
+    "haveParameter": "1",
+    "haveEdgeID": "1",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "200005",
+    "level": "warn",
+    "message": "设备故障[设备：{0}]",
+    "haveParameter": "1",
+    "haveEdgeID": "1",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "200006",
+    "level": "info",
+    "message": "设备恢复正常[设备：{0}]",
+    "haveParameter": "1",
+    "haveEdgeID": "1",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "300001",
+    "level": "info",
+    "message": "任务启动[任务：{0}  功能：{1}]",
+    "haveParameter": "1",
+    "haveEdgeID": "1",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "300002",
+    "level": "info",
+    "message": "任务启动[任务：{0}  多站功能：{1}]",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "300003",
+    "level": "info",
+    "message": "任务停止[任务：{0}  功能：{1}]",
+    "haveParameter": "1",
+    "haveEdgeID": "1",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "300004",
+    "level": "info",
+    "message": "任务停止[任务：{0}  多站功能：{1}]",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "400001",
+    "level": "warn",
+    "message": "温度异常[温度：{0}]",
+    "haveParameter": "1",
+    "haveEdgeID": "1",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "400002",
+    "level": "info",
+    "message": "温度恢复正常[温度：{0}]",
+    "haveParameter": "1",
+    "haveEdgeID": "1",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "400003",
+    "level": "warn",
+    "message": "湿度异常[湿度：{0}]",
+    "haveParameter": "1",
+    "haveEdgeID": "1",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "400004",
+    "level": "info",
+    "message": "湿度恢复正常[湿度：{0}]",
+    "haveParameter": "1",
+    "haveEdgeID": "1",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "400005",
+    "level": "info",
+    "message": "门禁开",
+    "haveParameter": "0",
+    "haveEdgeID": "1",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "400006",
+    "level": "info",
+    "message": "门禁关",
+    "haveParameter": "0",
+    "haveEdgeID": "1",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "400007",
+    "level": "warn",
+    "message": "烟雾警告",
+    "haveParameter": "0",
+    "haveEdgeID": "1",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "400008",
+    "level": "warn",
+    "message": "进水警告",
+    "haveParameter": "0",
+    "haveEdgeID": "1",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "400009",
+    "level": "warn",
+    "message": "电压异常[电压：{0}  通道：{1}]",
+    "haveParameter": "1",
+    "haveEdgeID": "1",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "400010",
+    "level": "info",
+    "message": "电压恢复正常[电压：{0}  通道：{1}]",
+    "haveParameter": "1",
+    "haveEdgeID": "1",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "400011",
+    "level": "warn",
+    "message": "电流异常[电流：{0}  通道：{1}]",
+    "haveParameter": "1",
+    "haveEdgeID": "1",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "400012",
+    "level": "info",
+    "message": "电流恢复正常[电流：{0}  通道：{1}]",
+    "haveParameter": "1",
+    "haveEdgeID": "1",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "500001",
+    "level": "info",
+    "message": "用户登录[{0}]",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "field": "account",
+    "url": "/User/login",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "500002",
+    "level": "info",
+    "message": "用户退出登录[{0}]",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "field": "name",
+    "url": "/User/loginOut",
+    "haveCurrentUser": "0"
+  },
+  {
+    "code": "500003",
+    "level": "info",
+    "message": "添加用户[{0}]",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "field": "name",
+    "url": "/User/add",
+    "haveCurrentUser": "1"
+  },
+  {
+    "code": "500004",
+    "level": "info",
+    "message": "更新用户信息[{0}]",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "field": "name",
+    "url": "/User/update",
+    "haveCurrentUser": "1"
+  },
+  {
+    "code": "500005",
+    "level": "info",
+    "message": "删除用户[{0}]",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "field": "name",
+    "url": "/User/delete",
+    "tableName": "sys_user",
+    "haveCurrentUser": "1"
+  },
+  {
+    "code": "500006",
+    "level": "info",
+    "message": "添加角色[{0}]",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "field": "name",
+    "url": "/Role/add",
+    "haveCurrentUser": "1"
+  },
+  {
+    "code": "500007",
+    "level": "info",
+    "message": "更新角色[{0}]",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "field": "name",
+    "url": "/Role/update",
+    "haveCurrentUser": "1"
+  },
+  {
+    "code": "500008",
+    "level": "info",
+    "message": "删除角色[{0}]",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "field": "name",
+    "url": "/Role/delete",
+    "tableName": "sys_role",
+    "haveCurrentUser": "1"
+  },
+  {
+    "code": "500009",
+    "level": "info",
+    "message": "更新角色权限[{0}]",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "primaryKey": "role_id",
+    "associationQuery": "1",
+    "tableName": "sys_role",
+    "field": "name",
+    "url": "/RolePermission/update",
+    "haveCurrentUser": "1"
+  },
+  {
+    "code": "500101",
+    "level": "info",
+    "message": "添加站点[站点：{0}] ",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "field": "name",
+    "haveCurrentUser": "1",
+    "url": "/Edge/add"
+  },
+  {
+    "code": "500102",
+    "level": "info",
+    "message": "更新站点[站点：{0}] ",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "haveCurrentUser": "1",
+    "url": "/Edge/update"
+  },
+  {
+    "code": "500103",
+    "level": "info",
+    "message": "删除站点[站点：{0}] ",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "tableName": "rmbt_edge",
+    "field": "name",
+    "haveCurrentUser": "1",
+    "url": "/Edge/delete"
+  },
+  {
+    "code": "500111",
+    "level": "info",
+    "message": "添加设备[设备:{0} 站点：{1}] ",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "haveCurrentUser": "1",
+    "url": "/Device/add",
+    "device": "500111",
+    "driver": "500121"
+  },
+  {
+    "code": "500112",
+    "level": "info",
+    "message": "更新设备[设备:{0} 站点：{1}] ",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "haveCurrentUser": "1",
+    "url": "/Device/update",
+    "device": "500112",
+    "driver": "500122"
+  },
+  {
+    "code": "500113",
+    "level": "info",
+    "message": "删除设备[设备:{0} 站点：{1}] ",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "haveCurrentUser": "1",
+    "url": "/Device/delete",
+    "device": "500113",
+    "driver": "500123"
+  },
+  {
+    "code": "500121",
+    "level": "info",
+    "message": "添加功能[功能:{0} 站点：{1}] ",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "haveCurrentUser": "1",
+    "url": "/Device/add"
+  },
+  {
+    "code": "500122",
+    "level": "info",
+    "message": "更新功能[功能:{0} 站点：{1}] ",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "haveCurrentUser": "1",
+    "url": "/Device/update"
+  },
+  {
+    "code": "500123",
+    "level": "info",
+    "message": "删除功能[功能:{0} 站点：{1}] ",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "haveCurrentUser": "1",
+    "url": "/Device/delete"
+  },
+  {
+    "code": "500201",
+    "level": "info",
+    "message": "添加门限[门限：{0}]",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "field": "name",
+    "haveCurrentUser": "1",
+    "url": "/ThresholdTemplate/add"
+  },
+  {
+    "code": "500202",
+    "level": "info",
+    "message": "更新门限[门限：{0}] ",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "haveCurrentUser": "1",
+    "url": "/ThresholdTemplate/update"
+  },
+  {
+    "code": "500203",
+    "level": "info",
+    "message": "删除门限[门限：{0}] ",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "tableName": "rmbt_template_threshold",
+    "field": "name",
+    "haveCurrentUser": "1",
+    "url": "/ThresholdTemplate/delete"
+  },
+  {
+    "code": "500204",
+    "level": "info",
+    "message": "删除模板[模板：{0}]",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "haveCurrentUser": "1",
+    "field": "name",
+    "url": "/FrequencyTemplate/delete"
+  },
+  {
+    "code": "500301",
+    "level": "info",
+    "message": "创建监测计划[{0}]",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "haveCurrentUser": "1",
+    "tableName": "rmbt_plan",
+    "field": "name",
+    "url": "/Plan/add"
+  },
+  {
+    "code": "500301",
+    "level": "info",
+    "message": "撤销监测计划[{0}]",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "field": "name",
+    "tableName": "rmbt_plan",
+    "url": "/Plan/update",
+    "haveCurrentUser": "1"
+  },
+  {
+    "code": "500302",
+    "level": "info",
+    "message": "删除监测计划[{0}]",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "field": "name",
+    "tableName": "rmbt_plan",
+    "url": "/Plan/delete",
+    "haveCurrentUser": "1"
+  },
+  {
+    "code": "501003",
+    "level": "info",
+    "message": "启动{0}",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "haveCurrentUser": "1"
+  },
+  {
+    "code": "501002",
+    "level": "info",
+    "message": "停止{0}",
+    "haveParameter": "1",
+    "haveEdgeID": "0",
+    "haveCurrentUser": "1"
+  }
+]

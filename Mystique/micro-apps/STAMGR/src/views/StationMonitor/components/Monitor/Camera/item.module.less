@@ -1,0 +1,52 @@
+.camera {
+  background: #181c36;
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.2), inset 0px 1px 0px rgba(189, 255, 248, 0.15);
+  border-radius: 8px;
+  padding: 8px;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  position: relative;
+  box-sizing: border-box;
+}
+
+.title {
+  align-self: stretch;
+  display: flex;
+  margin-bottom: 8px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: transparent;
+}
+
+.video {
+  flex: 1;
+  width: 100%;
+  height: calc(100% - 28px);
+  background-color: #ffffff20;
+  > img {
+    border: none;
+  }
+}
+
+.operate {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.operate:hover {
+  opacity: 0.9;
+}
+
+.operate:active {
+  opacity: 1;
+}

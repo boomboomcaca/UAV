@@ -1,0 +1,82 @@
+.params {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+
+  .oneItem {
+    width: 100%;
+    background: #202741;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px 16px;
+    box-sizing: border-box;
+
+    .noumenon {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .label {
+        font-weight: 700;
+      }
+    }
+
+    .dhildmon {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: rgba(4, 5, 27, 0.5);
+
+      .label {
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+
+  .radioArea {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .radioItem {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 2px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 64px;
+      padding: 0 8px;
+      box-sizing: border-box;
+      cursor: pointer;
+
+      &.active {
+        background: #3ce5d3;
+        box-shadow: 0px 2px 4px rgba(2, 6, 30, 0.35), 0px 2px 6px rgba(60, 229, 211, 0.5);
+        border-radius: 8px;
+        color: #181c36;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .switchArea {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    .text {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .sliderArea {
+    height: 68px;
+    width: 65%;
+  }
+}

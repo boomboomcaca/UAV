@@ -1,0 +1,354 @@
+﻿@page
+@model Magneto.Pages.IndexModel
+@{
+	ViewData["Title"] = "Home page";
+}
+
+@functions {
+
+	public string GetColor()
+	{
+		return Model.State ? "#0F0" : "#F00";
+	}
+
+}
+
+<style type="text/css">
+	.yangshi { color: @GetColor(); }
+</style>
+<div class="text-center">
+	<h1 class="display-4">欢迎访问</h1>
+</div>
+<h4>边缘端运行状况</h4>
+<em>版本号: @Model.Version</em>
+<em> 服务器时间: @Model.Time</em>
+<hr/>
+<div>
+<div class="col-md-12">
+<form>
+<div class="form-group">
+	<strong>边缘端状态</strong>
+	<strong>|</strong>
+	<strong>@Model.CpuUseage</strong>
+	<strong>|</strong>
+	<strong>@Model.MemoryUseage</strong>
+	<strong>|</strong>
+	<strong>@Model.HddUseage</strong>
+	<table class="table">
+		<thead>
+		<tr>
+			<th style="border: 1px solid black;">边缘端ID</th>
+			<th style="border: 1px solid black;">边缘端名称</th>
+			<th style="border: 1px solid black;">对外地址</th>
+			<th style="border: 1px solid black;">经度</th>
+			<th style="border: 1px solid black;">纬度</th>
+			<th style="border: 1px solid black;">罗盘</th>
+			<th style="border: 1px solid black;">站点能力</th>
+			<th style="border: 1px solid black;">连接数</th>
+			<th style="border: 1px solid black;">任务数</th>
+			<th style="border: 1px solid black;">云端状态</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td style="border: 1px solid black;">
+				@Html.DisplayFor(modelItem => Program.Settings.EdgeId)
+			</td>
+			<td style="border: 1px solid black;">
+				@Html.DisplayFor(modelItem => Model.EdgeName)
+			</td>
+			<td style="border: 1px solid black;">
+				@Html.DisplayFor(modelItem => Model.IpAddress)
+			</td>
+			<td style="border: 1px solid black;">
+				@Html.DisplayFor(modelItem => Model.Longitude)
+			</td>
+			<td style="border: 1px solid black;">
+				@Html.DisplayFor(modelItem => Model.Latitude)
+			</td>
+			<td style="border: 1px solid black;">
+				@Html.DisplayFor(modelItem => Model.Compass)
+			</td>
+			<td style="border: 1px solid black;">
+				@Html.DisplayFor(modelItem => Model.Capacity)
+			</td>
+			<td style="border: 1px solid black;">
+				@Html.DisplayFor(modelItem => Model.ClientCount)
+			</td>
+			<td style="border: 1px solid black;">
+				@Html.DisplayFor(modelItem => Model.TaskCount)
+			</td>
+			<td class="yangshi" style="border: 1px solid black;">
+				<div>
+					<label>
+						@Html.DisplayFor(modelItem => Model.State)
+					</label>
+					<label>@Model.StateInfo</label>
+				</div>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+<hr/>
+<div class="form-group">
+	<strong>连接信息</strong>
+	<table class="table">
+		<thead>
+		<tr>
+			<th style="border: 1px solid black;">SessionID</th>
+			<th style="border: 1px solid black;">连接地址</th>
+			<th style="border: 1px solid black;">端口</th>
+			<th style="border: 1px solid black;">任务ID</th>
+			<th style="border: 1px solid black;">Map</th>
+		</tr>
+		</thead>
+		<tboMap>
+			<tr>
+			@foreach (var item in Model.ClientList)
+			{
+				<tr>
+					<td style="border: 1px solid black;">
+						@Html.DisplayFor(modelItem => item.SessionId)
+					</td>
+					<td style="border: 1px solid black;">
+						@Html.DisplayFor(modelItem => item.IpAddress)
+					</td>
+					<td style="border: 1px solid black;">
+						@Html.DisplayFor(modelItem => item.Port)
+					</td>
+					<td style="border: 1px solid black;">
+						@Html.DisplayFor(modelItem => item.TaskId)
+					</td>
+					<td style="border: 1px solid black;">
+						@Html.DisplayFor(modelItem => item.Map)
+					</td>
+				</tr>
+			}
+		</tboMap>
+	</table>
+</div>
+<hr/>
+<div>
+	<strong>任务信息</strong>
+	<table class="table">
+		<thead>
+		<tr>
+			<th style="border: 1px solid black;">任务类型</th>
+			<th style="border: 1px solid black;">任务ID</th>
+			<th style="border: 1px solid black;">优先级</th>
+			<th style="border: 1px solid black;">前端模块ID</th>
+			<th style="border: 1px solid black;">前端模块名称</th>
+			<th style="border: 1px solid black;">创建时间</th>
+			<th style="border: 1px solid black;">当前状态</th>
+			<th style="border: 1px solid black;">请求状态</th>
+		</tr>
+		</thead>
+		<tbody>
+		@foreach (var item in Model.TaskInfo)
+		{
+			<tr>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.Feature)
+				</td>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.Id)
+				</td>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.Priority)
+				</td>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.PluginId)
+				</td>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.PluginName)
+				</td>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.CreateTime)
+				</td>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.State)
+				</td>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.RequestState)
+				</td>
+			</tr>
+		}
+		</tbody>
+	</table>
+</div>
+<hr/>
+<div>
+	<strong>计划信息</strong>
+	<table class="table">
+		<thead>
+		<tr>
+			<th style="border: 1px solid black;">计划名称</th>
+			<th style="border: 1px solid black;">计划ID</th>
+			<th style="border: 1px solid black;">创建时间</th>
+			<th style="border: 1px solid black;">状态</th>
+			<th style="border: 1px solid black;">定时规则</th>
+			<th style="border: 1px solid black;">持续时长</th>
+			<th style="border: 1px solid black;">功能类型</th>
+			<th style="border: 1px solid black;">优先级</th>
+			<th style="border: 1px solid black;">任务ID</th>
+			<th style="border: 1px solid black;">任务状态</th>
+			<th style="border: 1px solid black;">信息</th>
+		</tr>
+		</thead>
+		<tbody>
+		@foreach (var item in Model.PlanInfo)
+		{
+			<tr>
+				<td rowspan="@item.Rules.Count">
+					@Html.DisplayFor(modelItem => item.Name)
+				</td>
+				<td rowspan="@item.Rules.Count">
+					@Html.DisplayFor(modelItem => item.BatchId)
+				</td>
+				<td rowspan="@item.Rules.Count">
+					@Html.DisplayFor(modelItem => item.CreatedTime)
+				</td>
+				<td rowspan="@item.Rules.Count">
+					@Html.DisplayFor(modelItem => item.Status)
+				</td>
+				<td rowspan="@item.Rules.Count">
+					@Html.DisplayFor(modelItem => item.Crons)
+				</td>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.Rules[0].Duration)
+				</td>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.Rules[0].Feature)
+				</td>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.Rules[0].Priority)
+				</td>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.Rules[0].TaskId)
+				</td>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.Rules[0].State)
+				</td>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.Rules[0].Message)
+				</td>
+			</tr>
+			@for (var i = 1; i < item.Rules.Count; i++)
+			{
+				var rule = item.Rules[i];
+				<tr>
+					<td style="border: 1px solid black;">
+						@Html.DisplayFor(modelItem => rule.Duration)
+					</td>
+					<td style="border: 1px solid black;">
+						@Html.DisplayFor(modelItem => rule.Feature)
+					</td>
+					<td style="border: 1px solid black;">
+						@Html.DisplayFor(modelItem => rule.Priority)
+					</td>
+					<td style="border: 1px solid black;">
+						@Html.DisplayFor(modelItem => rule.TaskId)
+					</td>
+					<td style="border: 1px solid black;">
+						@Html.DisplayFor(modelItem => rule.State)
+					</td>
+					<td style="border: 1px solid black;">
+						@Html.DisplayFor(modelItem => rule.Message)
+					</td>
+				</tr>
+			}
+		}
+		</tbody>
+	</table>
+</div>
+<hr/>
+<div>
+	<strong>功能信息</strong>
+	<table class="table">
+		<thead>
+		<tr>
+			<th style="border: 1px solid black;">功能名称</th>
+			<th style="border: 1px solid black;">功能类型</th>
+			<th style="border: 1px solid black;">模块类型</th>
+			<th style="border: 1px solid black;">模块状态</th>
+			<th style="border: 1px solid black;">模块版本</th>
+			<th style="border: 1px solid black;">模块计数</th>
+		</tr>
+		</thead>
+		<tbody>
+		@foreach (var item in Model.DriverInfo)
+		{
+			<tr>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.DisplayName)
+				</td>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.Feature)
+				</td>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.ModuleType)
+				</td>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.State)
+				</td>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.Version)
+				</td>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.RefCount)
+				</td>
+			</tr>
+		}
+		</tbody>
+	</table>
+</div>
+<hr/>
+<div>
+	<strong>设备信息</strong>
+	<table class="table">
+		<thead>
+		<tr>
+			<th style="border: 1px solid black;">设备名称</th>
+			<th style="border: 1px solid black;">设备类型</th>
+			<th style="border: 1px solid black;">模块类型</th>
+			<th style="border: 1px solid black;">模块状态</th>
+			<th style="border: 1px solid black;">模块版本</th>
+			<th style="border: 1px solid black;">模块计数</th>
+		</tr>
+		</thead>
+		<tbody>
+		@foreach (var item in Model.DeviceInfo)
+		{
+			<tr>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.DisplayName)
+				</td>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.Category)
+				</td>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.ModuleType)
+				</td>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.State)
+				</td>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.Version)
+				</td>
+				<td style="border: 1px solid black;">
+					@Html.DisplayFor(modelItem => item.RefCount)
+				</td>
+			</tr>
+		}
+		</tbody>
+	</table>
+</div>
+</form>
+</div>
+</div>
+<form method="POST">
+	<div align="right">
+		<input type="submit" value="重启边缘端" class="btn btn-primary"/>
+	</div>
+</form>

@@ -1,0 +1,409 @@
+{
+  "passive": [
+    {
+      "frequency": 800,
+      "factor": 26.6
+    },
+    {
+      "frequency": 1057,
+      "factor": 28.9
+    },
+    {
+      "frequency": 1314,
+      "factor": 30.7
+    },
+    {
+      "frequency": 1571,
+      "factor": 32
+    },
+    {
+      "frequency": 1828,
+      "factor": 33
+    },
+    {
+      "frequency": 2085,
+      "factor": 33.8
+    },
+    {
+      "frequency": 2342,
+      "factor": 34.5
+    },
+    {
+      "frequency": 2599,
+      "factor": 35.2
+    },
+    {
+      "frequency": 2856,
+      "factor": 35.7
+    },
+    {
+      "frequency": 3113,
+      "factor": 36.1
+    },
+    {
+      "frequency": 3370,
+      "factor": 36.5
+    },
+    {
+      "frequency": 3627,
+      "factor": 37.1
+    },
+    {
+      "frequency": 3884,
+      "factor": 38
+    },
+    {
+      "frequency": 4141,
+      "factor": 39
+    },
+    {
+      "frequency": 4398,
+      "factor": 40
+    },
+    {
+      "frequency": 4655,
+      "factor": 40.7
+    },
+    {
+      "frequency": 4912,
+      "factor": 41.2
+    },
+    {
+      "frequency": 5169,
+      "factor": 41.6
+    },
+    {
+      "frequency": 5426,
+      "factor": 41.9
+    },
+    {
+      "frequency": 5683,
+      "factor": 42.1
+    },
+    {
+      "frequency": 5940,
+      "factor": 42.4
+    },
+    {
+      "frequency": 6197,
+      "factor": 42.9
+    },
+    {
+      "frequency": 6454,
+      "factor": 43.4
+    },
+    {
+      "frequency": 6711,
+      "factor": 44
+    },
+    {
+      "frequency": 6968,
+      "factor": 44.4
+    },
+    {
+      "frequency": 7225,
+      "factor": 44.7
+    },
+    {
+      "frequency": 7482,
+      "factor": 44.8
+    },
+    {
+      "frequency": 7739,
+      "factor": 44.8
+    },
+    {
+      "frequency": 7996,
+      "factor": 44.9
+    },
+    {
+      "frequency": 8253,
+      "factor": 45.1
+    },
+    {
+      "frequency": 8510,
+      "factor": 45.4
+    },
+    {
+      "frequency": 8767,
+      "factor": 45.6
+    },
+    {
+      "frequency": 9024,
+      "factor": 45.8
+    },
+    {
+      "frequency": 9281,
+      "factor": 46
+    },
+    {
+      "frequency": 9538,
+      "factor": 46.3
+    },
+    {
+      "frequency": 9795,
+      "factor": 46.7
+    },
+    {
+      "frequency": 10052,
+      "factor": 47
+    },
+    {
+      "frequency": 10309,
+      "factor": 47
+    },
+    {
+      "frequency": 10566,
+      "factor": 46.9
+    },
+    {
+      "frequency": 10823,
+      "factor": 46.7
+    },
+    {
+      "frequency": 11080,
+      "factor": 46.6
+    },
+    {
+      "frequency": 11337,
+      "factor": 46.8
+    },
+    {
+      "frequency": 11594,
+      "factor": 47.4
+    },
+    {
+      "frequency": 11851,
+      "factor": 48.1
+    },
+    {
+      "frequency": 12108,
+      "factor": 48.4
+    },
+    {
+      "frequency": 12365,
+      "factor": 48.2
+    },
+    {
+      "frequency": 12622,
+      "factor": 47.6
+    },
+    {
+      "frequency": 12879,
+      "factor": 47.2
+    },
+    {
+      "frequency": 13136,
+      "factor": 47.3
+    },
+    {
+      "frequency": 13393,
+      "factor": 47.7
+    },
+    {
+      "frequency": 13650,
+      "factor": 48.2
+    },
+    {
+      "frequency": 13907,
+      "factor": 48.7
+    },
+    {
+      "frequency": 14164,
+      "factor": 49.1
+    },
+    {
+      "frequency": 14421,
+      "factor": 49.3
+    },
+    {
+      "frequency": 14678,
+      "factor": 49.3
+    },
+    {
+      "frequency": 14935,
+      "factor": 49.3
+    },
+    {
+      "frequency": 15192,
+      "factor": 49.4
+    },
+    {
+      "frequency": 15449,
+      "factor": 49.6
+    },
+    {
+      "frequency": 15706,
+      "factor": 49.7
+    },
+    {
+      "frequency": 15963,
+      "factor": 50
+    },
+    {
+      "frequency": 16220,
+      "factor": 50.3
+    },
+    {
+      "frequency": 16477,
+      "factor": 50.6
+    },
+    {
+      "frequency": 16734,
+      "factor": 50.8
+    },
+    {
+      "frequency": 16991,
+      "factor": 50.7
+    },
+    {
+      "frequency": 17248,
+      "factor": 50.4
+    },
+    {
+      "frequency": 17505,
+      "factor": 50.1
+    },
+    {
+      "frequency": 17762,
+      "factor": 50
+    },
+    {
+      "frequency": 18019,
+      "factor": 50.2
+    },
+    {
+      "frequency": 18276,
+      "factor": 50.6
+    },
+    {
+      "frequency": 18533,
+      "factor": 51
+    },
+    {
+      "frequency": 18790,
+      "factor": 51.3
+    },
+    {
+      "frequency": 19047,
+      "factor": 51.3
+    },
+    {
+      "frequency": 19304,
+      "factor": 51.3
+    },
+    {
+      "frequency": 19561,
+      "factor": 51.1
+    },
+    {
+      "frequency": 19818,
+      "factor": 51.1
+    },
+    {
+      "frequency": 20075,
+      "factor": 51.1
+    },
+    {
+      "frequency": 20332,
+      "factor": 51.4
+    },
+    {
+      "frequency": 20589,
+      "factor": 51.8
+    },
+    {
+      "frequency": 20846,
+      "factor": 52.2
+    },
+    {
+      "frequency": 21103,
+      "factor": 52.5
+    },
+    {
+      "frequency": 21360,
+      "factor": 52.6
+    },
+    {
+      "frequency": 21617,
+      "factor": 52.5
+    },
+    {
+      "frequency": 21874,
+      "factor": 52.3
+    },
+    {
+      "frequency": 22131,
+      "factor": 52.1
+    },
+    {
+      "frequency": 22388,
+      "factor": 52.2
+    },
+    {
+      "frequency": 22645,
+      "factor": 52.5
+    },
+    {
+      "frequency": 22902,
+      "factor": 52.9
+    },
+    {
+      "frequency": 23159,
+      "factor": 53.2
+    },
+    {
+      "frequency": 23416,
+      "factor": 53.2
+    },
+    {
+      "frequency": 23673,
+      "factor": 53.2
+    },
+    {
+      "frequency": 23930,
+      "factor": 53.1
+    },
+    {
+      "frequency": 24187,
+      "factor": 52.9
+    },
+    {
+      "frequency": 24444,
+      "factor": 52.7
+    },
+    {
+      "frequency": 24701,
+      "factor": 52.7
+    },
+    {
+      "frequency": 24958,
+      "factor": 52.8
+    },
+    {
+      "frequency": 25215,
+      "factor": 53.2
+    },
+    {
+      "frequency": 25472,
+      "factor": 53.6
+    },
+    {
+      "frequency": 25729,
+      "factor": 53.9
+    },
+    {
+      "frequency": 25986,
+      "factor": 53.9
+    },
+    {
+      "frequency": 26243,
+      "factor": 53.8
+    },
+    {
+      "frequency": 26500,
+      "factor": 53.6
+    }
+  ],
+  "active": []
+}

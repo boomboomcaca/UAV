@@ -1,0 +1,25 @@
+/*适用于N9020A参数约束*/
+{
+  "ffm,mscan,ampdf": {
+    "startup": [
+      "$resolutionBandwidth.values=[0,10,24,51,100,300,510,1000,2000,5000,8000]",
+      "$resolutionBandwidth.displayValues=['自动','10kHz','24kHz','51kHz','100kHz','300kHz','510kHz','1MHz','2MHz','5MHz','8MHz']",
+      "$resolutionBandwidth.selectOnly=true"
+    ],
+    "($ifBandwidth.name=='ifBandwidth'||$resolutionBandwidth.name=='resolutionBandwidth') && $resolutionBandwidth.value>0":
+    [
+      "$ifBandwidth.value=($ifBandwidth.value/$resolutionBandwidth.value>100000)?$resolutionBandwidth.value*100000:$ifBandwidth.value"
+    ]
+  },
+  "scan": {
+    "startup": [
+      "$resolutionBandwidth.values=[0,10,24,51,100,300,510,1000,2000,5000,8000]",
+      "$resolutionBandwidth.displayValues=['自动','10kHz','24kHz','51kHz','100kHz','300kHz','510kHz','1MHz','2MHz','5MHz','8MHz']",
+      "$resolutionBandwidth.selectOnly=true"
+    ],
+    "$startFrequency.name=='startFrequency'||$stopFrequency.name=='stopFrequency'||$stepFrequency.name=='stepFrequency'":
+    [
+      "$stopFrequency.value=((($stopFrequency-$startFrequency)/($stepFrequency/1000)+1)>100000)?($startFrequency+$stepFrequency*100):$stopFrequency.value"
+    ]
+  }
+}

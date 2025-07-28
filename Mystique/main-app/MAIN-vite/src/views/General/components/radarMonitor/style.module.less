@@ -1,0 +1,69 @@
+.radarRoot {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    .large {
+      position: unset;
+    }
+  }
+
+  .radarContainer {
+    position: absolute;
+    left: -6%;
+    top: -6.5%;
+    width: 112%;
+    height: 112%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .radarContainer_large {
+    flex: 1;
+  }
+
+  .status {
+    z-index: 2;
+    text-align: center;
+    position: absolute;
+    background-color: #091636;
+    background-image: url("/images/nodata.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.98;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .list {
+    font-size: 13px;
+
+    tr {
+      line-height: 30px;
+    }
+  }
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 3;
+}

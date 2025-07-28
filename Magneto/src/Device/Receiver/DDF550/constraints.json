@@ -1,0 +1,114 @@
+{
+  "scandf": {
+    "startup": [
+      "$stepFrequency.values=[1,1.25,2,2.5,3.125,5,6.25,8.333,10,12.5,20,25,50,100,200,500,1000,2000]",
+      "$stepFrequency.displayValues=['1kHz','1.25kHz','2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz','20kHz','25kHz','50kHz','100kHz','200kHz','500kHz','1MHz','2MHz']"
+    ]
+  },
+  "global": {
+    "$bandMeasureMode.value=='XDB'": [
+      "$xdB.browsable=true",
+      "$betaValue.browsable=false"
+    ],
+    "$bandMeasureMode.value=='BETA'": [
+      "$xdB.browsable=false",
+      "$betaValue.browsable=true"
+    ]
+  },
+  "fdf,sse,wbdf": {
+    "$dfBandwidth.value==80000": [
+      "$resolutionBandwidth.values=[100,200,500,1000,2000]",
+      "$resolutionBandwidth.displayValues=['100kHz','200kHz','500kHz','1MHz','2MHz']"
+    ],
+    "$dfBandwidth.value==40000": [
+      "$resolutionBandwidth.values=[50,100,200,500,1000,2000]",
+      "$resolutionBandwidth.displayValues=['50kHz','100kHz','200kHz','500kHz','1MHz','2MHz']"
+    ],
+    "$dfBandwidth.value==20000": [
+      "$resolutionBandwidth.values=[20,25,50,100,200,500,1000,2000]",
+      "$resolutionBandwidth.displayValues=['20kHz','25kHz','50kHz','100kHz','200kHz','500kHz','1MHz','2MHz']"
+    ],
+    "$dfBandwidth.value==10000": [
+      "$resolutionBandwidth.values=[10,12.5,20,25,50,100,200,500,1000]",
+      "$resolutionBandwidth.displayValues=['10kHz','12.5kHz','20kHz','25kHz','50kHz','100kHz','200kHz','500kHz','1MHz']"
+    ],
+    "$dfBandwidth.value==5000": [
+      "$resolutionBandwidth.values=[5,6.25,8.333,10,12.5,20,25,50,100,200,500]",
+      "$resolutionBandwidth.displayValues=['5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz','20kHz','25kHz','50kHz','100kHz','200kHz','500kHz']"
+    ],
+    "$dfBandwidth.value==2000": [
+      "$resolutionBandwidth.values=[2,2.5,3.125,5,6.25,8.333,10,12.5,20,25,50,100,200]",
+      "$resolutionBandwidth.displayValues=['2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz','20kHz','25kHz','50kHz','100kHz','200kHz']"
+    ],
+    "$dfBandwidth.value==1000": [
+      "$resolutionBandwidth.values=[1,1.25,2,2.5,3.125,5,6.25,8.333,10,12.5,20,25,50,100]",
+      "$resolutionBandwidth.displayValues=['1kHz','1.25kHz','2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz','20kHz','25kHz','50kHz','100kHz']"
+    ],
+    "$dfBandwidth.value==500": [
+      "$resolutionBandwidth.values=[1,1.25,2,2.5,3.125,5,6.25,8.333,10,12.5,20,25,50]",
+      "$resolutionBandwidth.displayValues=['1kHz','1.25kHz','2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz','20kHz','25kHz','50kHz']"
+    ],
+    "$dfBandwidth.value==200": [
+      "$resolutionBandwidth.values=[1,1.25,2,2.5,3.125,5,6.25,8.333,10,12.5,20,25]",
+      "$resolutionBandwidth.displayValues=['1kHz','1.25kHz','2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz','20kHz','25kHz']"
+    ],
+    "$dfBandwidth.value==100": [
+      "$resolutionBandwidth.values=[1,1.25,2,2.5,3.125,5,6.25,8.333,10,12.5]",
+      "$resolutionBandwidth.displayValues=['1kHz','1.25kHz','2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz']"
+    ],
+    "$resolutionBandwidth.value<$resolutionBandwidth.values[0]": [
+      "$resolutionBandwidth.value=$resolutionBandwidth.values[0]"
+    ],
+    "$resolutionBandwidth.value>$resolutionBandwidth.values.at(-1)": [
+      "$resolutionBandwidth.value=$resolutionBandwidth.values.at(-1)"
+    ]
+  },
+  "ffm": {
+    "$ifBandwidth.value==80000": [
+      "$filterBandwidth.values=[25,50,100,200,500,1000,2000]",
+      "$filterBandwidth.displayValues=['25kHz','50kHz','100kHz','200kHz','500kHz','1MHz','2MHz']"
+    ],
+    "$ifBandwidth.value==40000": [
+      "$filterBandwidth.values=[12.5,25,50,100,200,500,1000,2000]",
+      "$filterBandwidth.displayValues=['12.5kHz','25kHz','50kHz','100kHz','200kHz','500kHz','1MHz','2MHz']"
+    ],
+    "$ifBandwidth.value==20000": [
+      "$filterBandwidth.values=[6.25,8.333,10,12.5,25,50,100,200,500,1000,2000]",
+      "$filterBandwidth.displayValues=['6.25kHz','8.333kHz','10kHz','12.5kHz','25kHz','50kHz','100kHz','200kHz','500kHz','1MHz','2MHz']"
+    ],
+    "$ifBandwidth.value==10000": [
+      "$filterBandwidth.values=[3.125,5,6.25,8.333,10,12.5,25,50,100,200,500,1000]",
+      "$filterBandwidth.displayValues=['3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz','25kHz','50kHz','100kHz','200kHz','500kHz','1MHz']"
+    ],
+    "$ifBandwidth.value==5000": [
+      "$filterBandwidth.values=[2,2.5,3.125,5,6.25,8.333,10,12.5,25,50,100,200,500]",
+      "$filterBandwidth.displayValues=['2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz','25kHz','50kHz','100kHz','200kHz','500kHz']"
+    ],
+    "$ifBandwidth.value==2000": [
+      "$filterBandwidth.values=[1,1.25,2,2.5,3.125,5,6.25,8.333,10,12.5,25,50,100,200]",
+      "$filterBandwidth.displayValues=['1kHz','1.25kHz','2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz','25kHz','50kHz','100kHz','200kHz']"
+    ],
+    "$ifBandwidth.value==1000": [
+      "$filterBandwidth.values=[1,1.25,2,2.5,3.125,5,6.25,8.333,10,12.5,25,50,100]",
+      "$filterBandwidth.displayValues=['1kHz','1.25kHz','2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz','25kHz','50kHz','100kHz']"
+    ],
+    "$ifBandwidth.value==500": [
+      "$filterBandwidth.values=[1,1.25,2,2.5,3.125,5,6.25,8.333,10,12.5,25,50]",
+      "$filterBandwidth.displayValues=['1kHz','1.25kHz','2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz','25kHz','50kHz']"
+    ],
+    "$ifBandwidth.value==200": [
+      "$filterBandwidth.values=[1,1.25,2,2.5,3.125,5,6.25,8.333,10,12.5,25]",
+      "$filterBandwidth.displayValues=['1kHz','1.25kHz','2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz','25kHz']"
+    ],
+    "$ifBandwidth.value==100": [
+      "$filterBandwidth.values=[1,1.25,2,2.5,3.125,5,6.25,8.333,10,12.5]",
+      "$filterBandwidth.displayValues=['1kHz','1.25kHz','2kHz','2.5kHz','3.125kHz','5kHz','6.25kHz','8.333kHz','10kHz','12.5kHz']"
+    ],
+    "$filterBandwidth.value<$filterBandwidth.values[0]": [
+      "$filterBandwidth.value=$filterBandwidth.values[0]"
+    ],
+    "$filterBandwidth.value>$filterBandwidth.values.at(-1)": [
+      "$filterBandwidth.value=$filterBandwidth.values.at(-1)"
+    ]
+  }
+}

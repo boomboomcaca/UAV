@@ -1,0 +1,34 @@
+{
+  // 边缘端的本地内网IP地址，例如192.168.30.30
+  "ipAddress": "127.0.0.1",
+  // 边缘端端口，默认10001
+  "port": "10001",
+  // 云端IP地址，连接到的云端的IP地址
+  "cloudIpAddress": "127.0.0.1",
+  // 云端端口，连接到的云端端口，默认值12001
+  "cloudPort": "12001",
+  // 边缘端ID，边缘端ID
+  "edgeID": "1770001",
+  // webSocket心跳超时时间 秒
+  "timeout": 30,
+  // 是否开启动态压帧 true-开启，false-关闭
+  "frameDynamic": true,
+  // 固定压帧时间间隔 ms
+  "frameSpan": 30,
+  // 服务类型 0-边缘端，1-环境监控
+  "type": "0",
+  // IP地址类型 0-以云端返回的IP地址作为边缘端的IP，1-以配置项`ipAddress`作为边缘端的IP
+  "ipType": "1",
+  // 云端使用，默认配置为边缘端ID
+  "computerId": "1770001",
+  // 音频识别服务器的地址
+  "audioRecogAddress": "192.168.102.191",
+  // 音频识别服务器的端口
+  "audioRecogPort": 11011,
+  // 音频识别服务器的Key
+  "audioRecogServerKey": "decentest_1234567890",
+  // 访问云端接口时使用的用户名
+  "cloudUser": "dc_admin",
+  // 访问云端接口时使用的密码
+  "cloudPassword": "456789"
+}

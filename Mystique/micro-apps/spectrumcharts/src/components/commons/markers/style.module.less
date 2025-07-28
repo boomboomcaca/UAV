@@ -1,0 +1,79 @@
+.markersRoot {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  // 允许事件穿透
+  pointer-events: none;
+}
+
+.markerContainer {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  width: auto;
+  background-color: var(--markerContainer-bg-color);
+  padding: 4px 8px 4px 8px;
+  // border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-sizing: border-box;
+  font-size: 13px;
+
+  .markerItemCon {
+    position: relative;
+
+    .delMK {
+      position: absolute;
+      right: -8px;
+      top: -4px;
+      bottom: -4px;
+      width: 27px;
+      cursor: pointer;
+      pointer-events: all;
+      background-color: rgba(128, 128, 140, 0.6);
+      border-radius: 3px;
+      &:active {
+        background-color: rgba(128, 128, 140, 0.8);
+      }
+    }
+  }
+
+  .markerItem {
+    display: flex;
+    flex-direction: row;
+    pointer-events: all;
+    cursor: default;
+    color: var(--marker-caption-color);
+    > span {
+      opacity: 0.6;
+      font-weight: 800;
+      color: var(--marker-caption-title-color);
+    }
+
+    .markerContent {
+      display: flex;
+
+      .freq1 {
+        width: 60px;
+        text-align: left;
+      }
+
+      > div {
+        //    font-weight: 800;
+        margin-left: 11px;
+      }
+      > span {
+        opacity: 0.6;
+        margin-left: 2px;
+      }
+
+      // .level {
+      //   width: 42px;
+      // }
+    }
+  }
+}

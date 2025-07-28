@@ -1,0 +1,23 @@
+{
+  "amap": {
+    "statelite": "http://webst03.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}",
+    "roades": "http://webst01.is.autonavi.com/appmaptile?x={x}&y={y}&z={z}&lang=zh_cn&size=2&scale=1&style=8",
+    "normal2d": "http://webst02.is.autonavi.com/appmaptile?x={x}&y={y}&z={z}&lang=zh_cn&size=2&scale=1&style=7"
+  },
+  "google": {
+    "statelite": "http://gac-geo.googlecnapps.cn/maps/vt?lyrs=s&x={x}&y={y}&z={z}"
+  },
+  "tianditu": {
+    "statelite": "https://t0.tianditu.gov.cn/img_w/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=img&STYLE=default&TILEMATRIXSET=w&FORMAT=tiles&TILECOL={x}&TILEROW={y}&TILEMATRIX={z}&tk=f12dce6502a9ba75333b2fe50d7611cb",
+    "normal2d": "https://t0.tianditu.gov.cn/vec_w/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=vec&STYLE=default&TILEMATRIXSET=w&FORMAT=tiles&transparent=true&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&tk=f12dce6502a9ba75333b2fe50d7611cb",
+    "roades": "https://t6.tianditu.gov.cn/cia_w/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=cia&STYLE=default&TILEMATRIXSET=w&FORMAT=tiles&TILECOL={x}&TILEROW={y}&TILEMATRIX={z}&tk=f12dce6502a9ba75333b2fe50d7611cb"
+  },
+  "complex": {
+    "statelite": "http://gac-geo.googlecnapps.cn/maps/vt?lyrs=s&x={x}&y={y}&z={z}",
+    "roades": "https://t6.tianditu.gov.cn/cia_w/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=cia&STYLE=default&TILEMATRIXSET=w&FORMAT=tiles&TILECOL={x}&TILEROW={y}&TILEMATRIX={z}&tk=f12dce6502a9ba75333b2fe50d7611cb"
+  },
+  "mapbox": {
+    "dem": "https://api.mapbox.com/v4/mapbox.terrain-rgb/{z}/{x}/{y}.pngraw?access_token=pk.eyJ1IjoiZ2lzb3IiLCJhIjoiY2xmdnkzdnJjMGJ0YzNkcXBsNmNsMTYyZiJ9.3mkw2ilDFTtQ2fx4uA3tjQ",
+    "buildings": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/{z}/{x}/{y}.vector.pbf?sku=101Ok9jcm6ljW&access_token=pk.eyJ1IjoiZ2lzb3IiLCJhIjoiY2xmdnkzdnJjMGJ0YzNkcXBsNmNsMTYyZiJ9.3mkw2ilDFTtQ2fx4uA3tjQ"
+  }
+}

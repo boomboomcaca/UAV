@@ -1,0 +1,62 @@
+[
+  {
+    "Name": "1",
+    "Index": 0,
+    "Polarization": 0,
+    "Aperture": 1,
+    "Deviation": 0,
+    "StartFrequency": 20,
+    "StopFrequency": 200,
+    "StepFrequency": 5,
+    "AngleCount": 72,
+    "StepAngle": 5,
+    "GroupCount": 9,
+    "OffCode": "0x70",
+    "OnCode": "0x09|0x0A|0x0B|0x0C|0x0D|0x0E|0x0F|0x10|0x11"
+  },
+  {
+    "Name": "2",
+    "Index": 1,
+    "Polarization": 0,
+    "Aperture": 1,
+    "Deviation": 0,
+    "StartFrequency": 200,
+    "StopFrequency": 1000,
+    "StepFrequency": 5,
+    "AngleCount": 72,
+    "StepAngle": 5,
+    "GroupCount": 9,
+    "OffCode": "0x70",
+    "OnCode": "0x09|0x0A|0x0B|0x0C|0x0D|0x0E|0x0F|0x10|0x11"
+  },
+  {
+    "Name": "3",
+    "Index": 2,
+    "Polarization": 0,
+    "Aperture": 0.35,
+    "Deviation": 0,
+    "StartFrequency": 1000,
+    "StopFrequency": 3600,
+    "StepFrequency": 5,
+    "AngleCount": 72,
+    "StepAngle": 5,
+    "GroupCount": 9,
+    "OffCode": "0x70",
+    "OnCode": "0x0|0x1|0x2|0x3|0x4|0x5|0x6|0x7|0x8"
+  },
+  {
+    "Name": "4",
+    "Index": 3,
+    "Polarization": 1,
+    "Aperture": 0.9,
+    "Deviation": 0,
+    "StartFrequency": 40,
+    "StopFrequency": 1300,
+    "StepFrequency": 5,
+    "AngleCount": 72,
+    "StepAngle": 5,
+    "GroupCount": 9,
+    "OffCode": "0x70",
+    "OnCode": "0x12|0x13|0x14|0x15|0x16|0x17|0x18|0x19|0x1A"
+  }
+]

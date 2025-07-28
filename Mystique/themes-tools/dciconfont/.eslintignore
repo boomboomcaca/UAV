@@ -1,0 +1,9 @@
+vite.config.js
+rollup.config.js
+rollup.config.theme.js
+version.js
+style.js
+generate.js
+
+/dist
+/node_modules

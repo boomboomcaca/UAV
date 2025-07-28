@@ -1,0 +1,262 @@
+.homeroot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: #151924;
+  background-image: url("/images/home_background.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  gap: 16px;
+}
+
+.contentContainer {
+  flex: 1;
+  display: flex;
+  padding: 0 12px;
+}
+
+.content {
+  //   width: 100%;
+  //   height: 100%;
+  display: flex;
+  flex: 1;
+  position: relative;
+  .borderSvg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .borderTick {
+    position: absolute;
+    left: 1%;
+    top: -10.7%;
+    width: 98%;
+    height: 113.4%;
+    background-image: url("/images/home_border_tick.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: url(#indexBj010);
+  }
+
+  // @keyframes greenLeft {
+  //   0% {
+  //     transform: rotate(18deg);
+  //   }
+
+  //   33% {
+  //     transform: rotate(18deg);
+  //   }
+
+  //   100% {
+  //     transform: rotate(-36deg);
+  //   }
+  // }
+
+  @keyframes greenLeft1 {
+    from {
+      transform: rotate(18deg);
+    }
+
+    to {
+      transform: rotate(-36deg);
+    }
+  }
+
+  @keyframes greenRight {
+    from {
+      transform: rotate(-17deg);
+    }
+
+    to {
+      transform: rotate(36deg);
+    }
+  }
+
+  @keyframes tickOpacity {
+    0% {
+      opacity: 0;
+    }
+    85% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .tickBase {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .red {
+    .tickBase();
+    background-image: url("/images/home_tick_red.png");
+    animation: tickOpacity 1.2s ease-in-out infinite alternate;
+  }
+
+  .green {
+    .tickBase();
+    background-image: url("/images/home_tick_green.png");
+    animation: tickOpacity 1.2s ease-in-out infinite alternate;
+  }
+
+  .greenLeft {
+    .tickBase();
+    background-image: url("/images/home_tick_greenLeft.png");
+    transform-origin: 100% 53.4%;
+    transform: rotate(18deg); // -36deg  18
+    animation: greenLeft1 5s linear infinite both;
+  }
+
+  .greenRight {
+    .tickBase();
+    background-image: url("/images/home_tick_greenRight.png");
+    transform-origin: -1.8% 54%;
+    transform: rotate(-17deg);
+    animation: greenRight 5s linear infinite both;
+  }
+
+  .redLeft {
+    .tickBase();
+    background-image: url("/images/home_tick_redLeft.png");
+    transform-origin: 100% 53.4%;
+    transform: rotate(18deg); // -36deg  18
+    animation: greenLeft1 5s linear infinite both;
+  }
+
+  .redRight {
+    .tickBase();
+    background-image: url("/images/home_tick_redRight.png");
+    transform-origin: -1.8% 54%;
+    transform: rotate(-17deg);
+    animation: greenRight 5s linear infinite both;
+  }
+
+  .borderbold {
+    position: absolute;
+    left: -1%;
+
+    width: 102%;
+    top: 29.5%;
+    height: 41%;
+  }
+
+  .mapcon {
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    top: 0%;
+    height: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+    &.nofit {
+      left: 3.5%;
+      width: 93%;
+      top: 1.5%;
+      height: 97%;
+      // border: red solid;
+      clip-path: url(#indexBj01);
+    }
+  }
+  .generalMask {
+    left: 3.5%;
+    width: 93%;
+    top: 1.5%;
+    height: 97%;
+    z-index: 2;
+    position: absolute;
+
+    pointer-events: none;
+    clip-path: url(#indexBj01);
+
+    .testBorder {
+      position: absolute;
+      left: 15%;
+      top: 191px;
+      right: 180px;
+      bottom: 20%;
+      opacity: 0.2;
+    }
+
+    .testBorder2 {
+      position: absolute;
+      pointer-events: none;
+      left: 15%;
+      top: 191px;
+      right: 180px;
+      bottom: 20%;
+      opacity: 0.2;
+      &.showShadow {
+        box-shadow: 0 0 8px 8px #148bed;
+      }
+    }
+
+    .testBorder1 {
+      position: absolute;
+      pointer-events: all;
+      cursor: pointer;
+      left: 0;
+      width: 100%;
+      top: 0%;
+      height: 100%;
+      // background-color: rgba(255, 0, 0, 0.2);
+      clip-path: polygon(
+        0% 0%,
+        0% 100%,
+        15% 100%,
+        15% 191px,
+        calc(100% - 180px) 191px,
+        calc(100% - 180px) 80%,
+        15% 80%,
+        15% 100%,
+        100% 100%,
+        100% 0%
+      );
+    }
+  }
+
+  .maskBorder {
+    left: 3.5%;
+    width: 93%;
+    top: 1.5%;
+    height: 97%;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    &.mouein {
+      // 必须要 子元素div的背景色实心填充才可以。。。。
+      filter: drop-shadow(0 0 6px #148bed);
+    }
+    > div {
+      clip-path: url(#indexBj01);
+      flex: 1;
+      background-color: #062b53;
+    }
+  }
+}
+
+.warning {
+  width: 27px;
+  height: 27px;
+  background-image: url("../../assets/images/warning.png");
+  background-repeat: repeat;
+  background-size: 100% 100%;
+  position: fixed;
+  z-index: 9999;
+  right: 8px;
+  top: 68px;
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
+  }
+}

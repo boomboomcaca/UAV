@@ -1,0 +1,140 @@
+.root {
+  height: 100%;
+  width: 100%;
+  color: var(--theme-font-100);
+  font-size: 14px;
+  position: relative;
+}
+
+.list {
+  width: 100%;
+  height: 100%;
+}
+
+.tool {
+  flex: 0;
+  padding: 8px 0;
+  margin: 0 8px;
+  display: flex;
+  font-size: 16px;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  height: 48px;
+  box-sizing: border-box;
+  display: none;
+}
+
+.idel {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: transparent;
+}
+
+.operate {
+  position: absolute;
+  bottom: -16px;
+  left: -8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+  width: calc(100% + 16px);
+  height: 80px;
+  background: var(--theme-background-light);
+  opacity: 1;
+  box-shadow: 0px -10px 12px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  font-size: 14px;
+  .icon {
+    background: #3ce5d3;
+    border-radius: 2px;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.hide {
+  opacity: 0;
+}
+
+.imgMax {
+  flex: 1;
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--theme-background-light);
+  box-shadow: inset 0px 0px 2px rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  border: 1px solid var(--theme-font-100);
+  overflow: hide;
+  pointer-events: all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .image {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    img {
+      width: 100%;
+      object-fit: fill;
+    }
+  }
+  .btnMax {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    .closeMax {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #00000099;
+      cursor: pointer;
+    }
+    .okMax {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(60, 229, 211, 0.5);
+      cursor: pointer;
+    }
+  }
+}

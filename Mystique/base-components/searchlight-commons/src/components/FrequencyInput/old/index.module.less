@@ -1,0 +1,110 @@
+.freqInput {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 120px;
+  height: 32px;
+  line-height: 32px;
+  color: #3ce5d3;
+  text-align: center;
+  user-select: none;
+  background-color: var(--theme-input);
+  border-radius: 2px;
+  box-shadow: var(--theme-input-shadow);
+
+  &.disable {
+    opacity: 0.8;
+  }
+
+  .text {
+    font-size: 14px;
+    cursor: pointer;
+  }
+}
+
+.freqModal {
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+  left: 0;
+  width: 70%;
+  padding: 32px 48px;
+  margin: 0 auto;
+  color: var(--theme-font-100);
+  text-align: left;
+  user-select: none;
+  background: var(--theme-background-log);
+  box-shadow: inset -1px 0px 1px rgba(60, 229, 211, 0.3), inset 1px 0px 0.5px rgba(60, 229, 211, 0.3),
+    inset 0px 0px 16px rgba(59, 237, 219, 0.2), inset 0px -2px 2px rgba(10, 16, 40, 0.8);
+  border-radius: 8px;
+
+  .freqipt {
+    background: var(--theme-enumSelector-captionTextBg);
+
+    &::selection {
+      background: rgba(60, 229, 211, 0.2);
+    }
+  }
+
+  .error {
+    position: absolute;
+    top: 80px;
+    left: 48px;
+    font-size: 12px;
+    color: #ff4c2b;
+  }
+
+  .tools {
+    margin-top: 30px;
+
+    .numarea {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      gap: 16px;
+    }
+
+    .toolarea {
+      display: grid;
+      grid-template-columns: 6028fr 3972fr;
+      gap: 16px;
+      margin-top: 16px;
+
+      .llg {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 16px;
+      }
+
+      .rrg {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+    }
+
+    .btn {
+      height: 48px;
+      font-size: 20px;
+      line-height: 48px;
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+      border-radius: 4px;
+      background: var(--theme-bubbleSelector-background);
+      background-size: 100% 100%;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &.bbtn {
+        background: var(--theme-bubbleSelector-background);
+        background-size: 100% 100%;
+      }
+    }
+
+    .ban {
+      border-radius: 4px;
+    }
+  }
+}

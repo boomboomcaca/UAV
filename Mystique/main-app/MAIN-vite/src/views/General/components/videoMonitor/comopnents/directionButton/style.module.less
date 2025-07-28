@@ -1,0 +1,110 @@
+.buttongroup {
+  padding: 10px;
+  width: 10vw;
+  height: 10vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  position: relative;
+}
+.outtercircle {
+  //   position: relative;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 100%;
+  overflow: hidden;
+  transform-origin: center;
+  transform: rotate(45deg);
+  box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.15);
+}
+.innerparts {
+  float: left;
+  width: 5vw;
+  height: 5vw;
+  line-height: 5vw;
+  text-align: center;
+  box-shadow: inset 0px 0px 2px 2px rgba(255, 255, 255, 0.15);
+  &:hover {
+    box-shadow: inset 0px 0px 3px 3px #17bdb6;
+  }
+  &:active {
+    background-color: #15394c;
+  }
+}
+.silver {
+  background-color: #181c36;
+}
+.gold {
+  background-color: #162d46;
+}
+.blue {
+  background-color: #181c36;
+}
+.brown {
+  background-color: #162d46;
+}
+
+.rotate {
+  display: inline-block;
+  transform: rotate(-45deg);
+}
+
+.innercircle {
+  position: absolute;
+  z-index: 1;
+  top: 32%;
+  left: 32%;
+  text-align: center;
+  width: 36%;
+  height: 36%;
+  line-height: 4vw;
+  border-radius: 100%;
+  background-color: #353d5b;
+  box-shadow: 0px 2px 2px rgba(4, 4, 28, 0.2),
+    inset 0px 1px 1px rgba(59, 237, 219, 0.2),
+    inset 0px -1px 1px rgba(10, 16, 40, 0.3);
+  &:hover {
+    box-shadow: inset 0px 0px 3px 3px #17bdb6;
+  }
+  &:active {
+    background-color: #162d46;
+  }
+}
+
+.okbutton {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  > div {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.svgcomRoot {
+  .right {
+    &:hover {
+      fill: #1d4c84f0;
+    }
+    &:active {
+      fill: #1d4c8430;
+    }
+  }
+
+  .stopTrack {
+    &:hover {
+      opacity: 0.85;
+    }
+    &:active {
+      opacity: 1;
+    }
+  }
+}

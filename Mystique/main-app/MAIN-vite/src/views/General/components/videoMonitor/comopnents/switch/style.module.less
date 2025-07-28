@@ -1,0 +1,29 @@
+.wroot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+  > span {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  > div {
+    height: 22px;
+    margin-right: 12px;
+  }
+  .icon {
+    &:hover {
+      opacity: 0.75;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
+
+  &.true {
+    > span {
+      color: rgba(255, 255, 255);
+    }
+  }
+}

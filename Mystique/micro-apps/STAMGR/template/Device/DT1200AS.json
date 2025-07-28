@@ -1,0 +1,96 @@
+﻿{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "edgeId": null,
+  "mfid": null,
+  "type": "Cosmos.Device.DT1200AS.DT1200AS",
+  "moduleType": "device",
+  "moduleCategory": [
+    "decoder"
+  ],
+  "moduleState": "idle",
+  "supportedFeatures": [
+    "bsdec"
+  ],
+  "displayName": "DT1200AS",
+  "description": "DT1200AS全制式基站扫频仪，支持2/3/4G基站信息解码。",
+  "manufacturer": "北京德辰科技股份有限公司",
+  "model": "DT1200AS",
+  "sn": "",
+  "maximumInstance": 1,
+  "parameters": [
+    {
+      "name": "Second",
+      "supportedFeatures": [
+        "bsdec"
+      ],
+      "displayName": "查询间隔",
+      "description": "查询时间间隔，单位 秒",
+      "unit": "",
+      "category": "测量参数",
+      "style": "input",
+      "type": "number",
+      "children": [],
+      "relatedValue": [],
+      "default": 1,
+      "minimum": 1.0,
+      "maximum": 100.0,
+      "step": 0.0,
+      "values": [],
+      "displayValues": [],
+      "browsable": true,
+      "selectOnly": false,
+      "readonly": false,
+      "isInstallation": false,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 0,
+      "template": [],
+      "value": 1
+    },
+    {
+      "name": "SegmentCategory",
+      "supportedFeatures": [
+        "none"
+      ],
+      "displayName": "频段类别",
+      "description": "按照频段类别切换扫频频段及模式",
+      "unit": "",
+      "category": "测量参数",
+      "style": "input",
+      "type": "string",
+      "children": [],
+      "relatedValue": [],
+      "default": "中国频段",
+      "minimum": null,
+      "maximum": null,
+      "step": 100.0,
+      "values": [
+        "中国频段",
+        "边境频段"
+      ],
+      "displayValues": [
+        "中国频段",
+        "边境频段"
+      ],
+      "browsable": true,
+      "selectOnly": true,
+      "readonly": false,
+      "isInstallation": true,
+      "required": false,
+      "isPrimaryDevice": false,
+      "needModuleCategory": [],
+      "needFeature": [],
+      "owners": [],
+      "parameters": [],
+      "order": 0,
+      "template": [],
+      "value": "中国频段"
+    }
+  ],
+  "constraintScript": "",
+  "version": "1.1.0"
+}

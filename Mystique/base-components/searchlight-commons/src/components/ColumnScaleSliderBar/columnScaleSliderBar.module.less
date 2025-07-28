@@ -1,0 +1,156 @@
+.rootCon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  // justify-content: flex-end;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  gap: 8px;
+  .title {
+    text-align: center;
+  }
+  .setBox {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    .setButton {
+      width: 20px;
+      height: 20px;
+      border-radius: 1px;
+      background-color: var(--theme-primary-10);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      user-select: none;
+    }
+    .setValue {
+      width: 48px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      background-color: var(--theme-select);
+      color: var(--theme-font-100);
+      span {
+        color: var(--theme-font-50);
+      }
+    }
+  }
+  .valueBox {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 14px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    .valText {
+      color: var(--theme-font-100);
+      line-height: 20px;
+    }
+    .unitText {
+      color: var(--theme-font-50);
+      line-height: 20px;
+    }
+  }
+  .sbroot {
+    flex: 1;
+    position: relative;
+    user-select: none;
+  }
+}
+
+.scaleBox {
+  padding: 4px 0px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sbrootCon {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: 2;
+  .sliderBox {
+    box-sizing: border-box;
+    width: 100%;
+    // padding: 0 4px;
+    position: absolute;
+    top: 4px;
+    right: 0;
+    left: 0;
+    bottom: 4px;
+    .dragSlider {
+      z-index: 4;
+      position: absolute;
+      //   width: 22px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      //   .sliderLabel {
+      //     color: #3de7d5;
+      //     font-size: 14px;
+      //     flex: 1;
+      //     text-align: center;
+      //   }
+
+      .slider {
+        transform: rotate(90deg);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        background-image: var(--theme-slider-icon);
+        img {
+          pointer-events: none;
+        }
+      }
+    }
+  }
+  .track {
+    height: 100%;
+    padding: 4px;
+    // height: 12px;
+    box-sizing: border-box;
+    left: 50%;
+    transform: translatex(-50%);
+    position: relative;
+    background: var(--theme-slider-trackerbg);
+    box-shadow: var(--theme-slider-track-shadow); // inset 0px -1px 1px #ffffff2e, inset -1px 1px 1px #0000004d;
+    border-radius: 11px;
+    .clickFillBar {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      padding: 4px;
+      box-sizing: border-box;
+    }
+    .fillBar {
+      height: 100%;
+      width: 100%;
+      border-radius: 7px;
+      background-color: var(--theme-button-primary);
+      position: relative;
+      .valueBar {
+        position: absolute;
+        height: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: var(--theme-primary);
+        border-radius: 7px;
+        box-shadow: inset 0px -1px 1px rgba(26, 32, 56, 0.5), inset 0px 1px 0px rgba(240, 253, 255, 0.2);
+      }
+    }
+  }
+}

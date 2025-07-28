@@ -1,0 +1,152 @@
+@keyframes rotaeCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes onLight {
+  from {
+    background-color: #82d712;
+  }
+  to {
+    background-color: #ffafaf;
+  }
+}
+
+.controlRoot {
+  // width: calc(100% - 8px);
+  // height: calc(100% - 8px);
+  // padding: 4px;
+
+  // position: relative;
+  width: 100%;
+  height: 100%;
+  // box-sizing: border-box;
+  // padding: 2px;
+  display: flex;
+
+  .content {
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(0, 163, 75, 0.3) 0%,
+      rgba(0, 163, 75, 0) 100%
+    );
+
+    .ctlbtn {
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      right: 2px;
+      bottom: 2px;
+      background-image: url("./control.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .controling {
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      right: 2px;
+      bottom: 2px;
+      background-image: url("./ingCircle.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      transform-origin: center;
+      animation: rotaeCircle 1s linear infinite;
+    }
+
+    .controlingbg {
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      right: 2px;
+      bottom: 2px;
+      background-image: url("./controling0.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .lightning {
+        width: 13px;
+        height: 20px;
+        margin-top: 4px;
+        transform-origin: center;
+        transform: scale(0.625);
+        // background-color: #ffafaf;
+        background-color: #82d712;
+        clip-path: path(
+          "M0 10.2703L8.18103 0L6.18293 7.43243L13 7.83784L2.01724 20L6.34146 10.5405L0 10.2703Z"
+        );
+        // animation: onLight 500ms linear ease;
+        animation: 0.4s linear 0.8s infinite alternate onLight;
+      }
+    }
+
+    .tip {
+      position: absolute;
+      bottom: 20px;
+      left: 30px;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 10px;
+    }
+  }
+}
+
+.button {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 95%;
+  position: absolute;
+  z-index: 11;
+}
+
+.btnMask {
+  z-index: 12;
+  opacity: 0.3;
+  background-color: aliceblue;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.status {
+  z-index: 2;
+  text-align: center;
+  position: absolute;
+  background-color: #091636;
+  background-image: url("/images/nodata.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.98;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}

@@ -1,0 +1,46 @@
+.tabButton {
+  display: inline-block;
+  display: flex;
+  .container {
+    height: 40px;
+    width: auto;
+    background: var(--theme-button-radio-unchecked);
+    border: 1px solid var(--theme-iconswitch-border);
+    box-shadow: var(--theme-iconswitch-shadow);
+    border-radius: 4px;
+    position: relative;
+    .bottomBox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      float: left;
+      padding: 0 16px;
+      height: 100%;
+      font-size: 14px;
+      color: var(--theme-font-100);
+      cursor: pointer;
+    }
+    .tabBox {
+      position: absolute;
+      top: 2px;
+      margin: 0px;
+      height: 36px;
+      transition-property: left width;
+      transition-duration: 0.3s;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 14px;
+      color: #3ce5d3;
+      justify-content: center;
+      background: var(--theme-button-primary);
+      box-shadow: var(--theme-iconswitch-select);
+      border-radius: 2px;
+      .icon {
+        position: absolute;
+        right: 0;
+        top: -6px;
+      }
+    }
+  }
+}

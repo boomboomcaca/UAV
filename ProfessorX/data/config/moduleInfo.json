@@ -1,0 +1,124 @@
+{
+  "httpWhiteList": [
+    "/demo/*",
+    "/doc*",
+    "/License/*",
+    "/Edge*",
+    "/SyncConfiguration/*",
+    "/User/*",
+    "/Permission/*",
+    "/PermissionModule/*",
+    "/Role/*",
+    "/RolePermission/*",
+    "/UserRole/*",
+    "/UserPermission/*",
+    "/Group/*",
+    "/UserGroup/*",
+    "/RoleGroup/*",
+    "/Dictionary/*",
+    "/DictionaryList/*",
+    "/testdevice/*",
+    "/testproject/*",
+    "/Device/*",
+    "/Template/*",
+    "/FrequencyTemplate/*",
+    "/ThresholdTemplate/*",
+    "/PlanningBusiness/*",
+    "/PlanningSegmentType​/*",
+    "/PlanningSegment/*",
+    "/ChannelDivision/*",
+    "/ResourceAlarm/*",
+    "/ResourceThreshold/*",
+    "/Plan/*",
+    "/Log*",
+    "/Task*",
+    "/Runtime/*"
+  ],
+  "httpRoutes": [
+    {
+      "url": "/newSignal*",
+      "moduleCode": "NSIC"
+    },
+    {
+      "url": "/ExamSignal*",
+      "moduleCode": "EXAS"
+    },
+    {
+      "url": "/ScanSignal/*",
+      "moduleCode": "SCAN"
+    }
+  ],
+  "wsFeatures": [
+    {
+      "feature": "tdoa",
+      "moduleCode": "TDOA",
+      "parentCode": "MSOA"
+    },
+    {
+      "feature": "intersectionPositioning",
+      "moduleCode": "AOA",
+      "parentCode": "MSOA"
+    },
+    {
+      "feature": "poa",
+      "moduleCode": "POA",
+      "parentCode": "MSOA"
+    },
+    {
+      "feature": "ssoa",
+      "moduleCode": "SSOA"
+    },
+    {
+      "feature": "ffm",
+      "moduleCode": "FFM"
+    },
+    {
+      "feature": "scan",
+      "moduleCode": "SCAN"
+    },
+    {
+      "feature": "mscan",
+      "moduleCode": "MSCAN"
+    },
+    {
+      "feature": "ffdf",
+      "moduleCode": "FFDF"
+    },
+    {
+      "feature": "wbdf",
+      "moduleCode": "WBDF"
+    },
+    {
+      "feature": "ampdf",
+      "moduleCode": "AmpDF"
+    },
+    {
+      "feature": "scandf",
+      "moduleCode": "ScanDF"
+    },
+    {
+      "feature": "sse",
+      "moduleCode": "SSE"
+    },
+    {
+      "feature": "fscne",
+      "moduleCode": "FScne"
+    },
+    {
+      "feature": "mscne",
+      "moduleCode": "MScne"
+    },
+    {
+      "feature": "ifmca",
+      "moduleCode": "IFMCA"
+    },
+    {
+      "feature": "ese",
+      "moduleCode": "EXAS"
+    },
+    {
+      "feature": "nsic",
+      "moduleCode": "NSIC"
+    }
+  ]
+}

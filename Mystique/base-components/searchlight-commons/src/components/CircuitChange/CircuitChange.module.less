@@ -1,0 +1,58 @@
+.root {
+  height: 100%;
+  width: 100%;
+  .titleBox {
+    margin-top: 8px;
+    .titler {
+      margin: 0 auto;
+      width: 168px;
+      height: 40px;
+      background: radial-gradient(50% 50% at 50% 50%, rgba(60, 229, 211, 0.1) 53.12%, rgba(60, 229, 211, 0) 100%),
+        #202741;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 40px;
+      text-align: center;
+      position: relative;
+      .line {
+        position: absolute;
+        width: 32px;
+        height: 1px;
+        top: 20px;
+        z-index: 100;
+        background: linear-gradient(90deg, rgba(60, 229, 211, 0) 0%, #3ce5d3 51.58%, rgba(60, 229, 211, 0) 100%);
+      }
+      .border {
+        top: 5px;
+        position: absolute;
+        height: 32px;
+        width: 22px;
+        background: radial-gradient(
+          60.83% 50% at 50% 0%,
+          rgba(60, 229, 211, 0.2) 0%,
+          rgba(60, 229, 211, 0.2) 0.01%,
+          rgba(60, 229, 211, 0) 100%
+        );
+        filter: blur(2px);
+      }
+      span {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+  }
+  .imgBox {
+    margin-top: 16px;
+    width: 100%;
+    height: calc(100% - 48px - 16px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 60%;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.Mode2 {
+  width: 690px;
+  flex: 1;
+  overflow-y: auto;
+
+  .dealsvgheightbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .listArea {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+
+    .groupitem {
+      background: #181c36;
+      border-radius: 4px;
+      padding: 8px 40px 8px 0;
+      padding-left: 36px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+      &.edit {
+        padding-left: 16px;
+      }
+
+      .infoArea {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        .name {
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
+        }
+
+        .extra {
+          height: 20px;
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          color: rgba(255, 255, 255, 0.5);
+        }
+      }
+
+      .editIcon {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        display: flex;
+        cursor: pointer;
+      }
+
+      .closeIcon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        cursor: pointer;
+      }
+
+      .iptBtn {
+        width: 32px;
+        height: 32px;
+        background: #353d5b;
+        border-radius: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+.specChartRoot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.plotArea {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.plotArea1 {
+  flex: 1;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  position: relative;
+
+  .tickCon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+.chartCon {
+  // flex: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #04051b10;
+  .operation {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .segbgLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    .segbg {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+    }
+    .segbgeven {
+      background-color: lightgray;
+      opacity: 0.1;
+    }
+  }
+  .chartLayer {
+    // margin: 8px 0 8px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1px;
+    .specChart {
+      // flex: 1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+          90deg,
+          #353e5c80 1px,
+          rgba(0, 0, 0, 0) 1px
+        ),
+        linear-gradient(#353e5c80 1px, rgba(0, 0, 0, 0) 1px);
+      background-size: 10% 10%;
+      background-color: #091636;
+    }
+    .rainChart {
+      // flex: 1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #091636;
+    }
+    .wbdfChart {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+          90deg,
+          #353e5c80 1px,
+          rgba(0, 0, 0, 0) 1px
+        ),
+        linear-gradient(#353e5c80 1px, rgba(0, 0, 0, 0) 1px);
+      background-size: 10% 25%;
+      background-color: #091636;
+    }
+  }
+}

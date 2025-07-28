@@ -1,0 +1,121 @@
+.container {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 8px;
+  width: 100%;
+  .left {
+    flex: 50%;
+    height: 48px;
+    background: var(--theme-background-primary);
+    box-shadow: inset 0px 0px 2px 1px rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+  }
+
+  .right {
+    flex: 50%;
+    height: 48px;
+    display: flex;
+    gap: 8px;
+  }
+
+  .center {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 48px;
+    background: var(--theme-background-primary);
+    box-shadow: inset 0px 0px 2px 1px rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+  }
+
+  .mainBtnBack {
+    background: linear-gradient(180deg, #3ce5d3 47.03%, #0791af 100%);
+    box-shadow: inset 0px 1px 1px 1px rgba(36, 174, 190, 0.5), inset 0px -2px 2px rgba(15, 54, 131, 0.2);
+    border-radius: 12px;
+    padding: 4px 0;
+    margin-left: 3px;
+    margin-right: 3px;
+    box-sizing: border-box;
+  }
+
+  .mainBtnBackChecked {
+    background: linear-gradient(180deg, #ffd118 47.03%, #e7902a 100%);
+    box-shadow: inset 0px 1px 1px 1px rgba(190, 110, 36, 0.5), inset 0px -2px 2px rgba(131, 36, 15, 0.2);
+    border-radius: 12px;
+    padding: 4px 0;
+    margin-left: 3px;
+    margin-right: 3px;
+    box-sizing: border-box;
+  }
+
+  .mainBtn {
+    color: #2ee8d5 !important;
+    border-radius: 10px !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .mainBtnChecked {
+    color: #ffd118 !important;
+    border-radius: 10px !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .disable1 {
+    background: #3ce5d340;
+    box-shadow: none;
+  }
+
+  .disable2 {
+    background: #ffd11840;
+    box-shadow: none;
+  }
+
+  .info {
+    flex: 60%;
+    background: var(--theme-background-primary);
+    box-shadow: inset 0px 0px 2px 1px rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    height: 48px;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > div {
+      height: 32px;
+    }
+  }
+
+  .edgeInfo {
+    flex: 40%;
+    height: 48px;
+  }
+
+  .edgeInfoNull {
+    flex: 40%;
+    height: 48px;
+    box-sizing: border-box;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    align-items: center;
+    background: var(--theme-background-primary);
+    box-shadow: inset 0px 0px 2px 1px rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    cursor: pointer;
+    z-index: 11;
+  }
+
+  .hideButton {
+    background: var(--theme-button-hover);
+    box-shadow: inset 0px -1px 1px rgba(4, 4, 28, 0.3), inset 0px 1px 1px rgba(240, 253, 255, 0.2);
+    border-radius: 2px;
+    width: 80px;
+    height: 32px;
+  }
+}

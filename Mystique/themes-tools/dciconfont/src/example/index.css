@@ -1,0 +1,52 @@
+.dcIconContainer {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.IconItem {
+  width: 160px;
+  height: 120px;
+  display: flex;
+  margin: 0 10px 10px 0;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.6);
+  background-color: #3c3f4b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.IconItemSel {
+  width: 160px;
+  height: 120px;
+  display: flex;
+  margin: 0 10px 10px 0;
+  border-radius: 12px;
+  box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.6);
+  background-color: #3c3f4b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: solid medium #00ff00;
+  box-sizing: border-box;
+}
+
+.IconArea {
+}
+
+.TextArea {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
+
+body {
+  background-color: #3c3f4b;
+}

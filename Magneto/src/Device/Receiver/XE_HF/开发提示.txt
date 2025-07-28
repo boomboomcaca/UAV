@@ -1,0 +1,28 @@
+﻿1.为什么要用Telnet？
+The WBAT CSCI is not launched automatically on MRE unit power-up. Before opening the command link, it is necessary to
+check the physical link and launch the software. To do this, the following operations have to be carried out: 
+• Check that the MRE unit is present, powered up and with the Linux system active by opening a client IP link at the unit
+address (22.250.11.2 by default) on port 26 for a XE unit or 27 for a TRC6200 unit. If the connection is accepted, the unit 
+is ready for WBAT software launching. The link must then be closed. 
+• Launch the WBAT software via the following TelNet command: « telnet 22.250.11.2 26 » (port 26 for a unit of XE type or
+27 for a unit of TRC6200 type). The WBAT software remains active as long as the TelNet process is open. 
+• Wait 1 s until the WBAT software is initialized. 
+• Open a client TCP/IP link on port 49000 for the transmission and reception of commands. 
+• Message 0x80 (Interface Version) is sent automatically by the WBAT software on connection of a client. 
+• On closing the command link, close the TelNet process to terminate the WBAT software.
+2.数据端口
+FFT narrow band   | 5001  (message 0x0C, FFT Port parameter)                                                  | 0x20 FFT results 
+FFT broadband     | 49100 (message 0x02, UDP FFT WB port parameter)                                           | 0x20 FFT results 
+Extraction        | 49200 (WBAT configuration file, message 0x02)                                             | 0x30 Extraction results 
+Direction finding | 49300 (WBAT configuration file, message 0x02 or message 0x78, UDP recept. port parameter) | 0x40 Direction finding results 0x41 Maintenance direction finding results 
+Audio             | 49400 (message X84, UDP port parameter)                                                   | 0x90 Demodulated audio result 
+Single shot DF    | 49500 (message 0x73, UDP port parameter)                                                  | 0x40 Direction finding results 
+Calibration       | 49600 (message 0x74, Port parameter)                                                      | 0x75 Level calibration results 
+ITU broadband     | 49700 (message 0x82, UDP port parameter)                                                  | 0x83 Result of ITU measurements 
+ITU narrow band   | 49800 (message 0x82, UDP port parameter)                                                  | 0x83 Result of ITU measurements 
+Rate of occupancy | 49900 (message 0x87, UDP port parameter)                                                  | 0x88 Result of percentage occupancy 
+IQ                | 51000 (message 0x0C, IQ port parameter)                                                   | 0x50 IQ Product results
+3.命令端口
+The exchanges of command messages are achieved via the TCP/IP protocol according to the BIG ENDIAN 
+convention on port 49 000 (configurable via the XML file) : 
+Server : LINUX PC Extraction. The link is established at start-up and closed on quitting the application.

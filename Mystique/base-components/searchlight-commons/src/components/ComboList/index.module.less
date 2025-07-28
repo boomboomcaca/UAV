@@ -1,0 +1,154 @@
+.base {
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 2px;
+  background: var(--theme-background-chart);
+}
+
+.baseDisabled {
+  background-color: #14141e;
+  cursor: default;
+}
+
+.twinkling {
+  animation-name: twink;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes twink {
+  0% {
+    box-shadow: 0 0 7px 0px rgba(255, 76, 43, 0.2);
+  }
+  40% {
+    box-shadow: 0 0 10px 0px rgba(255, 76, 43, 0.75);
+  }
+  100% {
+    box-shadow: 0 0 5px 0px rgba(255, 76, 43, 0.5);
+  }
+}
+
+.collapse {
+  visibility: hidden;
+}
+
+.icon {
+  min-width: 40px;
+  min-height: 40px;
+  display: flex;
+  color: var(--theme-font-100);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.plate {
+  width: calc(100% - 75px);
+  height: 100%;
+  top: 0;
+  left: 36px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+}
+
+// .plate:active {
+//   background-color: #08091f;
+// }
+
+.plateDisabled {
+  // background-color: #2a2a40;
+  background-color: #14141e;
+  pointer-events: none;
+}
+
+.dropToggle {
+  position: absolute;
+  right: 5px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--theme-font-100);
+  transform: rotate(0deg);
+}
+
+.dropdownToggle {
+  transform: rotate(180deg);
+}
+
+.content {
+  width: 100%;
+  margin-left: 5px;
+  z-index: 1;
+  word-break: break-all;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.nodata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #808080;
+  z-index: 1;
+}
+
+.dropdownCollapse {
+  position: absolute;
+  z-index: 99;
+  bottom: calc(100% + 1px);
+  right: 0px;
+  width: 100%;
+  height: 0px;
+  border-radius: 2px;
+  overflow: auto;
+  background-color: var(--theme-background-chart);
+  color: var(--theme-font-100);
+  // animation: fade-in; /*动画名称*/
+  // animation-duration: 0.5s; /*动画持续时间*/
+  transition: all ease-in-out 0.2s;
+  &::-webkit-scrollbar {
+    width: 2px;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    // background-color: #3ce5d3a0;
+    background: var(--theme-font-30);
+    border-radius: 2px;
+  }
+  &:hover {
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+  }
+  :nth-last-child(1) {
+    border-bottom: none !important;
+  }
+}
+
+.dropdownVisible {
+  height: 200px;
+}
+
+.dropdownNodata {
+  display: flex;
+  flex-direction: row;
+}

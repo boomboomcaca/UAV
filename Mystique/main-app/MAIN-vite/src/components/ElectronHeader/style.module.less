@@ -1,0 +1,79 @@
+@keyframes identifier {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.eleHeader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 40px !important;
+  background-color: #dee1e6;
+  pointer-events: none;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  user-select: none;
+  .title {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+
+    .logo {
+      background-image: url("/favicon.png");
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 52px;
+      height: 27px;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    //     pointer-events: all;
+
+    height: 100%;
+
+    .button {
+      width: 52px;
+      height: 100%;
+      display: flex;
+      //  flex-direction: rr;
+      align-items: center;
+      text-align: center;
+      &:hover {
+        background-color: #c7cacf;
+      }
+
+      &:active {
+        background-color: #b2b4b8;
+      }
+
+      > img {
+        width: 17px;
+        height: 16px;
+        margin-left: 17px;
+      }
+    }
+  }
+
+  &.show {
+    animation: identifier 320ms;
+    opacity: 1;
+    pointer-events: all;
+    box-shadow: 0 0 8px 0 #b3b4b6;
+  }
+}

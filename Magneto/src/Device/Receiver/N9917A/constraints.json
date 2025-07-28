@@ -1,0 +1,47 @@
+/*适用于N9917A参数约束*/
+{
+  "ffm,scan,ampdf": {
+    "startup": [
+      "$frequency.minimum=0",
+      "$frequency.maximum=18000",
+      "$startFrequency.minimum=0",
+      "$startFrequency.maximum=18000",
+      "$stopFrequency.minimum=0",
+      "$stopFrequency.maximum=18000",
+      "$ip.description='N9917A频谱仪接收指令的IP地址。'",
+      "$tcpPort.description='N9917A频谱仪接收指令通讯端口号。'"
+    ],
+    "$startFrequency.name=='startFrequency'||$stopFrequency.name=='stopFrequency'||$stepFrequency.name=='stepFrequency'":
+    [
+      "$stopFrequency.value=((($stopFrequency-$startFrequency)/($stepFrequency/1000)+1)>10001)?($startFrequency+$stepFrequency*10):$stopFrequency.value"
+    ],
+    "$frequency.name=='frequency'": [
+      "$frequency.value=($frequency.value<0.000001)?0:$frequency.value.toFixed(6)"
+    ],
+    "$ifBandwidth.name=='ifBandwidth'": [
+      "$ifBandwidth.value=($ifBandwidth.value<0.000001)?0:$ifBandwidth.value.toFixed(6)"
+    ],
+    "SweepType.value=='FFT'": [
+      "$resolutionBandwidth.values=[0,1,5,10,30,50,100,200]",
+      "$resolutionBandwidth.displayValues=['自动','1kHz','5kHz','10kHz','30kHz','50kHz','100kHz','200kHz']",
+      "$resolutionBandwidth.value=$resolutionBandwidth.values.includes($resolutionBandwidth.value)?$resolutionBandwidth.value:30"
+    ],
+    "SweepType.value=='STEP'": [
+      "$resolutionBandwidth.values=[0,1,3,10,30,100,300,1000,3000]",
+      "$resolutionBandwidth.displayValues=['自动','1kHz','3kHz','10kHz','30kHz','100kHz','300kHz','1MHz','3MHz']",
+      "$resolutionBandwidth.value=$resolutionBandwidth.values.includes($resolutionBandwidth.value)?$resolutionBandwidth.value:30"
+    ],
+    "SweepType.value!='STEP'&&SweepType.value!='FFT'": [
+      "$resolutionBandwidth.values=[0,1,5,10,30,50,100,300,1000,3000]",
+      "$resolutionBandwidth.displayValues=['自动','1kHz','5kHz','10kHz','30kHz','50kHz','100kHz','200kHz','300kHz','1MHz','3MHz']",
+      "$resolutionBandwidth.value=$resolutionBandwidth.values.includes($resolutionBandwidth.value)?$resolutionBandwidth.value:30"
+    ]
+  },
+  "ampdf": {
+    "startup": [
+      "$ifBandwidth.values=[0,1,6,8,12.5,25,50,90,100,120,150,200,250,300,500,1000,2000,8000]",
+      "$ifBandwidth.displayValues=['自动','1kHz','6kHz','8kHz','12.5kHz','25kHz','50kHz','90kHz','100kHz','120kHz','150kHz','200kHz','250kHz','300kHz','500kHz','1MHz','2MHz','8MHz']",
+      "$ifBandwidth.value=$ifBandwidth.values.includes($ifBandwidth.value)?$ifBandwidth.value:120"
+    ]
+  }
+}

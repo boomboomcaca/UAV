@@ -1,0 +1,54 @@
+.alienRoot {
+  background: #082147;
+  border-radius: 8px;
+  //   padding: 0 16px 0 16px;
+  width: 100%;
+}
+
+.sortContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #001e40 0%, #0e417c 100%) 1 1 1 1;
+  background-color: #091636;
+  padding: 16px;
+
+  > div {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 4px;
+    flex: 1;
+    cursor: pointer;
+    &:hover {
+      background-color: #072b54;
+    }
+    > img {
+      height: 48px;
+      width: 48px;
+      object-fit: fill;
+    }
+  }
+}
+
+.conHelper {
+  color: white !important;
+  background-color: #072b54;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 4px;
+  > img {
+    height: 56px;
+    width: 56px;
+    object-fit: fill;
+  }
+}

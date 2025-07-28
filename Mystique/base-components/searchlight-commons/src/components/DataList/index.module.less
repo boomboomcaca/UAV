@@ -1,0 +1,35 @@
+.root {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  color: white;
+  z-index: 15;
+  padding: 0px 8px 8px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--theme-background-main);
+}
+
+.elect {
+  width: 450px;
+  margin-bottom: 8px;
+}
+
+.hide {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.normal1 {
+  height: calc(100% - 42px);
+}
+
+.normal2 {
+  height: calc(100%);
+}

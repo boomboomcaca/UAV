@@ -1,0 +1,136 @@
+.SegList {
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(4, 5, 27, 0.5);
+  border: 1px solid rgba(60, 229, 211, 0.3);
+  box-shadow: inset 0px 0px 2px 1px rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  .righthead {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(60, 229, 211, 0.1) 53.12%, rgba(60, 229, 211, 0) 100%), #202741;
+    border: 1px solid rgba(60, 229, 211, 0.2);
+    border-radius: 2px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+
+    .leftgx {
+      position: absolute;
+      width: 40px;
+      height: 32px;
+      left: -5px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .rightgx {
+      position: absolute;
+      width: 40px;
+      height: 32px;
+      right: -5px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .tstext {
+    color: #ffd118;
+    margin-top: 8px;
+  }
+
+  .rightcontent {
+    flex: 1;
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    gap: 4px;
+    width: 100%;
+    padding: 8px 16px;
+    box-sizing: border-box;
+
+    .segitem {
+      padding: 0 8px;
+      flex: calc(1 / 8);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #202741;
+      border-radius: 4px;
+      border: 2px solid transparent;
+      box-sizing: border-box;
+      cursor: pointer;
+
+      &.active {
+        background: #353d5b;
+        border: 2px solid #3ce5d3;
+
+        .infohead,
+        .unit {
+          color: #3ce5d3 !important;
+        }
+      }
+
+      .segidx {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #b4dbd6;
+        box-sizing: border-box;
+      }
+
+      .seginfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+        .infoitem {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+
+          .infohead {
+            font-size: 16px;
+            font-weight: 700;
+          }
+
+          .unit {
+            font-size: 12px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.8);
+          }
+
+          .segname {
+            max-width: 160px;
+            padding: 0 4px;
+            box-sizing: border-box;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            background: rgba(60, 229, 211, 0.12);
+            border-radius: 4px;
+            color: #3ce5d3;
+            font-size: 12px;
+            font-weight: 400;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            box-sizing: border-box;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}

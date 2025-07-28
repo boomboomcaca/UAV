@@ -1,0 +1,48 @@
+.itemRoot {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f3f3;
+  border: solid thin #efefef;
+  .itemTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 40px;
+    padding-right: 16px;
+
+    .itemLeft {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .itemRight {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      color: gray;
+      //  gap: 12px;
+      width: 120px;
+      font-size: 12px;
+    }
+
+    .download {
+      background-repeat: no-repeat;
+      background-size: 24px 24px;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAPUExURQWQ3ySd42O560Or5wAAAKrairkAAAAFdFJOU/////8A+7YOUwAAAAlwSFlzAAAOwwAADsMBx2+oZAAAAHtJREFUOE/tj9EOgCAIRVH5/29OuBeyNnNurafOg8DlrFR0wa4gHbbkF8CLQvEzBYydEEQ8CoGjdSiVGxSfGjbxBV81CA09c1YYxVd2VKaD4EbAqDO0g8HA6P2Z+B/yAdbeBBj5QM+vgg1x/Ymgef2ZcLInzPhKeGYhqB5i7gtgLi5oIwAAAABJRU5ErkJggg==);
+      width: 27px;
+      height: 27px;
+      cursor: pointer;
+    }
+
+    &.level1 {
+      background-color: #fafafa;
+    }
+  }
+  .childnodes {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+}

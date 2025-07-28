@@ -1,0 +1,93 @@
+.root {
+  width: 64px;
+  height: 32px;
+  background: #04051b;
+  border-radius: 2px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+}
+
+.content {
+  font-size: 14px;
+  color: rgba(255, 255, 255);
+  margin-left: 8px;
+}
+
+.icon {
+  opacity: 0.5;
+  right: 10px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+  margin-right: 14px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.dropdown {
+  position: absolute;
+  bottom: 100%;
+  width: 100%;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  background: #181c36;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 0;
+  transition: height ease 0.3s;
+  z-index: 12;
+  overflow: hidden;
+
+  :nth-child(1) {
+    > div {
+      border-bottom: 1px solid #ffffff20;
+    }
+  }
+}
+
+.dropshow {
+  height: 64px;
+}
+
+.dropitem {
+  height: 32px;
+  > div {
+    margin-left: 8px;
+    margin-right: 8px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(4, 5, 27, 0.3);
+  }
+  &:active {
+    color: rgba(255, 255, 255);
+    background: rgba(4, 5, 27, 0.3);
+  }
+}
+
+.dropselect {
+  height: 32px;
+  > div {
+    margin-left: 8px;
+    margin-right: 8px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(4, 5, 27, 0.3);
+  &:active {
+    color: rgba(255, 255, 255);
+  }
+}

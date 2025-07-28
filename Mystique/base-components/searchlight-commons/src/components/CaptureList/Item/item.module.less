@@ -1,0 +1,113 @@
+.item {
+  margin: 8px;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  background: var(--theme-background-light);
+  box-shadow: inset 0px 0px 2px var(--theme-font-20);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  user-select: none;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.itemchecked {
+  background: linear-gradient(0deg, rgba(60, 229, 211, 0.1), rgba(60, 229, 211, 0.1)), var(--theme-background-light);
+}
+
+.name {
+  cursor: pointer;
+  margin: 8px 0;
+  width: 64%;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  background: var(--theme-input);
+  /* 内凹 */
+  box-shadow: var(--theme-timetab-bs);
+  border-radius: 2px;
+}
+
+.time {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.check {
+  cursor: pointer;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 16px;
+  height: 16px;
+  opacity: 0.3;
+  border: 1px solid var(--theme-font-100);
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.hide {
+  display: none;
+}
+
+.checked {
+  background: #3ce5d3;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+.imgdiv {
+  width: 100%;
+  height: 100%;
+  background-color: var(--theme-background-tabs-pane);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.imgdiv:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  // background: linear-gradient(90deg, rgba(53, 62, 92, 0.5) 1px, transparent 0),
+  //   linear-gradient(rgba(53, 62, 92, 0.5) 1px, transparent 0);
+  // background-size: 20% 16.667%;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 90%;
+  & > :nth-child(1) {
+    flex: 1;
+    color: var(--theme-font-100);
+    opacity: 0.5;
+  }
+  & > :nth-child(2) {
+    color: var(--theme-font-100);
+    opacity: 1;
+    margin-right: 5px;
+  }
+  & > :nth-child(3) {
+    color: var(--theme-font-100);
+    opacity: 0.5;
+  }
+}

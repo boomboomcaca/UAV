@@ -1,0 +1,24 @@
+.btn {
+  border-radius: @border-radius-base;
+  border: 1px solid #3ce5d3;
+  background: transparent;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 5px;
+  user-select: none;
+  height: 32px;
+  font-size: 14px;
+  padding: 6px 16px;
+  color: var(--theme-font-100);
+  box-sizing: border-box;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    border: 1px solid #3ce5d3;
+  }
+  &_selected {
+    border: 1px solid #3ce5d3;
+  }
+}

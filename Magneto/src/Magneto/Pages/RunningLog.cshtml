@@ -1,0 +1,33 @@
+@page
+@using Magneto.Definition
+@model Magneto.Pages.RunningLogModel
+@{
+	ViewData["Title"] = "日志查询";
+}
+<h1>@ViewData["Title"]</h1>
+<form method="POST">
+	<div align="left">
+		<input type="submit" value="清空日志" class="btn btn-primary"/>
+	</div>
+</form>
+<table class="table">
+	<thead>
+	<tr>
+		<th>时间</th>
+		<th>内容</th>
+	</tr>
+	</thead>
+	<tbody>
+	@foreach (var item in RunningLog.Instance.Logs)
+	{
+		<tr>
+			<td>
+				@Html.DisplayFor(modelItem => item.DateTime)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.Log)
+			</td>
+		</tr>
+	}
+	</tbody>
+</table>

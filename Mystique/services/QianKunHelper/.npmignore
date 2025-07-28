@@ -1,0 +1,16 @@
+.DS_Store
+.vscode
+node_modules
+src
+.babelrc
+.eslintignore
+.eslintic.js
+.gitignore
+.npmignore
+.prettierrc.js
+global.ts
+package-lock.json
+postcss.config.json
+yarn-error.log
+rollup.config.js
+README.md

@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+        <InvariantGlobalization>true</InvariantGlobalization>
+        <OutputPath>../../bin/$(Configuration)/</OutputPath>
+        <PublishDir>../../publish/$(RuntimeIdentifier)/$(Configuration)/</PublishDir>
+        <SelfContained>false</SelfContained>
+        <Company>成都阿莱夫信息技术有限公司</Company>
+        <Description />
+        <Copyright>@Aleph Co. Ltd. 2023</Copyright>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <RootNamespace>Magneto.Contract</RootNamespace>
+        <Version>1.10.1.0</Version>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)'=='Release'">
+        <DebugType>none</DebugType>
+        <DebugSymbols>false</DebugSymbols>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Protocol\Protocol.csproj">
+            <Private>false</Private>
+            <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+        </ProjectReference>
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Dapper" Version="2.1.66" />
+        <PackageReference Include="FFmpeg.AutoGen" Version="7.0.0" />
+        <PackageReference Include="GeoAPI" Version="1.7.5" />
+        <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.2">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.2" />
+        <PackageReference Include="NAudio" Version="2.2.1" />
+        <PackageReference Include="NetTopologySuite" Version="2.5.0" />
+        <PackageReference Include="Npgsql" Version="9.0.3" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.3" />
+        <PackageReference Include="SkiaSharp" Version="3.116.1" />
+        <PackageReference Include="SkiaSharp.NativeAssets.Linux.NoDependencies" Version="3.116.1" />
+        <PackageReference Include="StreamJsonRpc" Version="2.21.10" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.0" />
+        <!-- <PackageReference Include="System.Drawing.Common" Version="6.0.0-preview.2.21154.6" /> -->
+        <PackageReference Include="System.IO.Ports" Version="9.0.2" />
+        <PackageReference Include="System.Text.Encoding.CodePages" Version="9.0.2" />
+    </ItemGroup>
+</Project>

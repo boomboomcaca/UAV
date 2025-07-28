@@ -1,0 +1,113 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 12px;
+  box-sizing: border-box;
+  background: #181c36;
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.2), inset 0px 1px 0px rgba(189, 255, 248, 0.15);
+  border-radius: 8px;
+}
+
+.operate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+
+.title {
+  // margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  display: flex;
+}
+
+.icon {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(180.25deg, #4e5778 0.23%, #2e3350 101.73%), #2e3350;
+  box-shadow: inset 0px -1px 1px rgba(26, 32, 56, 0.5), inset 0px 1px 0px rgba(240, 253, 255, 0.2);
+  border-radius: 6px;
+}
+
+.name {
+  flex: 1;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 5px;
+  text-align: start;
+  & > :nth-child(2) {
+    opacity: 0.5;
+  }
+}
+
+.info {
+  flex: 1;
+  margin-top: 16px;
+  position: relative;
+  background: rgba(4, 5, 27, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+}
+
+.infotitle {
+  position: absolute;
+  width: 100%;
+  height: 35px;
+  top: 0;
+  left: 0;
+  background: #ffffff25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.infolist {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 35px);
+  top: 35px;
+  left: 0;
+  overflow: auto;
+}
+
+.infoitem {
+  margin-top: 8px;
+  padding-right: 5px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  & > :nth-child(1) {
+    width: 35%;
+    // display: flex;
+    // align-items: center;
+    // justify-content: flex-end;
+    color: rgba(255, 255, 255, 0.5);
+    padding-right: 5px;
+    text-align: end;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  & > :nth-child(2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+  }
+}
+
+.loading {
+  background-color: transparent;
+}

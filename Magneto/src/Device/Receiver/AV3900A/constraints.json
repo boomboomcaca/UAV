@@ -1,0 +1,67 @@
+{
+  "global": {
+    "$detector.value=='fast'": [
+      "$measureTime.browsable=false",
+      "$measureTime.value=0.0"
+    ],
+    "$detector.value!='fast'": [
+      "$measureTime.browsable=true",
+      "$measureTime.value=1000",
+      "$measureTime.values=[5000000,2000000,1000000,500000,200000,100000,50000,20000,10000,1000,500]",
+      "$measureTime.displayValues=['5s','2s','1s','500ms','200ms','100ms','50ms','20ms','10ms','1ms','500us']"
+    ]
+  },
+  "ffm": {
+    "$ifBandwidth.value==20000||$ifBandwidth.value==10000||$ifBandwidth.value==5000||$ifBandwidth.value==2000||$ifBandwidth.value==1000":
+    [
+      "$filterBandwidth.values=[800,500,300,250,150,120,75,50,20,15,12,10,5,2,1,0.5]",
+      "$filterBandwidth.displayValues=['800kHz','500kHz','300kHz','250kHz','150kHz','120kHz','75kHz','50kHz','20kHz','15kHz','12kHz','10kHz','5kHz','2kHz','1kHz','500Hz']",
+      "$filterBandwidth.value=$filterBandwidth.values.includes($filterBandwidth.value)?$filterBandwidth.value:800.0"
+    ],
+    "$ifBandwidth.value==500": [
+      "$filterBandwidth.values=[500,300,250,150,120,75,50,20,15,12,10,5,2,1,0.5]",
+      "$filterBandwidth.displayValues=['500kHz','300kHz','250kHz','150kHz','120kHz','75kHz','50kHz','20kHz','15kHz','12kHz','10kHz','5kHz','2kHz','1kHz','500Hz']",
+      "$filterBandwidth.value=$filterBandwidth.values.includes($filterBandwidth.value)?$filterBandwidth.value:500.0"
+    ],
+    "$ifBandwidth.value==200": [
+      "$filterBandwidth.values=[150,120,75,50,20,15,12,10,5,2,1,0.5]",
+      "$filterBandwidth.displayValues=['150kHz','120kHz','75kHz','50kHz','20kHz','15kHz','12kHz','10kHz','5kHz','2kHz','1kHz','500Hz']",
+      "$filterBandwidth.value=$filterBandwidth.values.includes($filterBandwidth.value)?$filterBandwidth.value:200.0"
+    ],
+    "$ifBandwidth.value==100": [
+      "$filterBandwidth.values=[75,50,20,15,12,10,5,2,1,0.5]",
+      "$filterBandwidth.displayValues=['75kHz','50kHz','20kHz','15kHz','12kHz','10kHz','5kHz','2kHz','1kHz','500Hz']",
+      "$filterBandwidth.value=$filterBandwidth.values.includes($filterBandwidth.value)?$filterBandwidth.value:100.0"
+    ],
+    "$ifBandwidth.value==50": [
+      "$filterBandwidth.values=[50,20,15,12,10,5,2,1,0.5]",
+      "$filterBandwidth.displayValues=['50kHz','20kHz','15kHz','12kHz','10kHz','5kHz','2kHz','1kHz','500Hz']",
+      "$filterBandwidth.value=$filterBandwidth.values.includes($filterBandwidth.value)?$filterBandwidth.value:50.0"
+    ],
+    "$ifBandwidth.value==20": [
+      "$filterBandwidth.values=[20,15,12,10,5,2,1,0.5]",
+      "$filterBandwidth.displayValues=['20kHz','15kHz','12kHz','10kHz','5kHz','2kHz','1kHz','500Hz']",
+      "$filterBandwidth.value=$filterBandwidth.values.includes($filterBandwidth.value)?$filterBandwidth.value:20.0"
+    ],
+    "$ifBandwidth.value==10": [
+      "$filterBandwidth.values=[10,5,2,1,0.5]",
+      "$filterBandwidth.displayValues=['10kHz','5kHz','2kHz','1kHz','500Hz']",
+      "$filterBandwidth.value=$filterBandwidth.values.includes($filterBandwidth.value)?$filterBandwidth.value:10.0"
+    ],
+    "$ifBandwidth.value==5": [
+      "$filterBandwidth.values=[5,2,1,0.5]",
+      "$filterBandwidth.displayValues=['5kHz','2kHz','1kHz','500Hz']",
+      "$filterBandwidth.value=$filterBandwidth.values.includes($filterBandwidth.value)?$filterBandwidth.value:5.0"
+    ],
+    "$ifBandwidth.value==2": [
+      "$filterBandwidth.values=[2,1,0.5]",
+      "$filterBandwidth.displayValues=['2kHz','1kHz','500Hz']",
+      "$filterBandwidth.value=$filterBandwidth.values.includes($filterBandwidth.value)?$filterBandwidth.value:2.0"
+    ],
+    "$ifBandwidth.value==1": [
+      "$filterBandwidth.values=[1,0.5]",
+      "$filterBandwidth.displayValues=['1kHz','500Hz']",
+      "$filterBandwidth.value=$filterBandwidth.values.includes($filterBandwidth.value)?$filterBandwidth.value:1.0"
+    ]
+  }
+}

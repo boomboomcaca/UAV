@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "start-vite",
+        "type": "shell",
+        "command": "cd MAIN-vite; npm run dev",
+        "isBackground": true,
+        "problemMatcher": {
+          "pattern": {
+            "regexp": "."
+          },
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": ".",
+            "endsPattern": "ready in"
+          }
+        }
+      },
+      {
+        "label": "stop-vite",
+        "type": "shell",
+        "command": "taskkill /F /IM node.exe /T",
+        "windows": {
+          "command": "taskkill /F /IM node.exe /T"
+        },
+        "linux": {
+          "command": "pkill -f 'node.*vite'"
+        },
+        "osx": {
+          "command": "pkill -f 'node.*vite'"
+        },
+        "problemMatcher": []
+      }
+    ]
+  }

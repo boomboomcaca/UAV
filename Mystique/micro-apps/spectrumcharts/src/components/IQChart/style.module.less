@@ -1,0 +1,51 @@
+.chartCon {
+  box-sizing: border-box;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chartCon1 {
+  box-sizing: border-box;
+  flex: 1;
+  position: relative;
+
+  > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .poltCon {
+    width: 100%;
+    height: 100%;
+  }
+
+  .lengend {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    font-size: small;
+
+    &.light {
+      color: black;
+      > span {
+        color: black;
+      }
+    }
+  }
+}
+
+.chartbg {
+  background-image: linear-gradient(
+      90deg,
+      var(--chart-tick-line) 1px,
+      rgba(0, 0, 0, 0) 1px
+    ),
+    linear-gradient(var(--chart-tick-line) 1px, rgba(0, 0, 0, 0) 1px);
+  background-size: 10% 10%;
+  background-color: var(--chart-bg-color);
+}

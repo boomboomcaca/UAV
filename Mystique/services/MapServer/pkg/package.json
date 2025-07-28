@@ -1,0 +1,21 @@
+{
+  "name": "mapserver-gisor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pkg-win": "pkg . -t node16-win-x64 --out-path dist/win-x64",
+    "pkg-linux": "pkg . -t node16-linux-x64 --out-path dist/linux-x64",
+    "pkg-linux-arm": "pkg . -t node16-linux-arm64 --out-path dist/linux-arm64",
+    "start": "node index.js"
+  },
+  "author": "gisor",
+  "license": "ISC",
+  "pkg": {
+    "assets": [
+      "build/Release/*.node"
+    ]
+  }
+}

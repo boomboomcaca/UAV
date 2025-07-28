@@ -1,0 +1,160 @@
+.root {
+  font-size: 14px;
+}
+
+.system {
+  margin: 8px;
+  height: calc(100% - 16px);
+  width: calc(100% - 16px);
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-around;
+  height: 0 auto;
+  position: relative;
+  background: #181c36;
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.2), inset 0px 1px 0px rgba(189, 255, 248, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(60, 229, 211, 0) 10%, #3ce5d3a0 50%, rgba(60, 229, 211, 0) 90%);
+    filter: blur(1px);
+    border-radius: 32px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(60, 229, 211, 0) 10%, #3ce5d3a0 50%, rgba(60, 229, 211, 0) 90%);
+    filter: blur(1px);
+    border-radius: 32px;
+  }
+}
+
+.sensorItem {
+  max-width: 100%;
+  min-width: 85%;
+  margin: 10px;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.item1 {
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & > :nth-child(1) {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    & > div {
+      width: 4px;
+      height: 4px;
+      margin-right: 4px;
+      border-radius: 2px;
+      background-color: #ffffff80;
+    }
+  }
+  & > :nth-child(2) {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    & > :nth-child(1) {
+      font-size: 24px;
+      color: #3ce5d3;
+    }
+    & > :nth-child(2) {
+      margin-top: 8px;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+  & > :nth-child(3) {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.alarmItem {
+  max-width: 100%;
+  min-width: 85%;
+  margin: 10px;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.item2 {
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & > :nth-child(1) {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    & > div {
+      width: 8px;
+      height: 8px;
+      margin-right: 4px;
+      border-radius: 4px;
+      background-color: #ffffff80;
+    }
+  }
+  & > :nth-child(2) {
+    margin-top: 8px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.ss {
+  width: 90px;
+  height: 32px;
+  position: absolute;
+  content: '';
+  background: radial-gradient(rgba(60, 229, 211, 0.2) 0%, rgba(60, 229, 211, 0.2) 0.01%, rgba(60, 229, 211, 0) 100%);
+  filter: blur(10px);
+  border-radius: 21px;
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.shadow::before {
+  .ss ();
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.shadow::after {
+  .ss ();
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%) rotate(90deg);
+}

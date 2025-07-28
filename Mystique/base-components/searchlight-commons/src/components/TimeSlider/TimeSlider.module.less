@@ -1,0 +1,52 @@
+.timeSlider {
+  height: 34px;
+  user-select: none;
+
+  .bar {
+    height: 16px;
+    width: 100%;
+    background-color: #3ce5d3;
+    position: relative;
+    .divRange {
+      position: absolute;
+      height: 16px;
+      background-color: rgb(34, 69, 81);
+    }
+    .dragSlider {
+      position: absolute;
+      top: -34px;
+      right: 0;
+      .sliderLabel {
+        color: #3de7d5;
+        font-weight: 700;
+        font-size: 12px;
+        flex: 1;
+        text-align: left;
+        display: inline-block;
+        height: 26px;
+        background: rgba(0, 0, 0, 0.8);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 2px;
+        line-height: 26px;
+        padding: 0px 8px;
+      }
+      .slider {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        img {
+          pointer-events: none;
+        }
+      }
+    }
+  }
+  .time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 12px;
+    height: 18px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
